@@ -1,0 +1,133 @@
+[System]
+Output filename=Z:\git\arph-2020\code\age-specific-cod-1969-2017.txt
+Matrix filename=Rate Session-1 Matrix-1
+Database name=Mortality - All COD, Aggregated With State, Total U.S. (1969-2017) <Katrina/Rita Population Adjustment>
+
+[Session Options]
+Type=Rate
+RatesAsCasesPer=100000
+
+[Export Options]
+GZipped=false
+Variable format=numeric
+File format=DOS/Windows
+Field delimiter=tab
+Missing character=space
+Fields with delimiter in quotes=false
+Remove thousands separators=true
+Flags included=false
+Variable names included=true
+Column Variables as Stats=false
+
+[Variables]
+Var1Name=COD recode (24 causes)
+Var1Base=Cause of death recode
+Var1Dimension=Page
+Var2Name=Sex (no total)
+Var2Base=Sex
+Var2Dimension=Row
+Var3Name=Race recode (White, Black)
+Var3Base=Race recode (White, Black, Other)
+Var3Dimension=Row
+Var4Name=Age recode with <1 year olds (5cat)
+Var4Base=Age recode with <1 year olds
+Var4Dimension=Row
+Var5Name=Year of death (no total)
+Var5Base=Year of death
+Var5Dimension=Row
+Var6Name=Age-Adjusted Rate
+Var7Name=Count
+Var8Name=Population
+
+[Format=COD recode (24 causes)]
+0=heart diseases
+1=hypertension
+2=stroke
+3=other cvd
+4=colorectal
+5=lung
+6=breast
+7=prostate
+8=other cancer
+9=flu/pneumonia
+10=septicemia
+11=hiv
+12=other infectious
+13=alzheimers
+14=clrd
+15=diabetes
+16=nephritis
+17=cirrhosis
+18=homicide
+19=suicide
+20=congenital anomalies
+21=perinatal death
+22=accidents
+23=residual
+
+[Format=Sex (no total)]
+0="  Male"
+1="  Female"
+
+[Format=Race recode (White, Black)]
+0="  White"
+1="  Black"
+
+[Format=Age recode with <1 year olds (5cat)]
+0=00 years
+1=01-14 years
+2=15-34 years
+3=35-64 years
+4=65 + years
+
+[Format=Year of death (no total)]
+0=1969
+1=1970
+2=1971
+3=1972
+4=1973
+5=1974
+6=1975
+7=1976
+8=1977
+9=1978
+10=1979
+11=1980
+12=1981
+13=1982
+14=1983
+15=1984
+16=1985
+17=1986
+18=1987
+19=1988
+20=1989
+21=1990
+22=1991
+23=1992
+24=1993
+25=1994
+26=1995
+27=1996
+28=1997
+29=1998
+30=1999
+31=2000
+32=2001
+33=2002
+34=2003
+35=2004
+36=2005
+37=2006
+38=2007
+39=2008
+40=2009
+41=2010
+42=2011
+43=2012
+44=2013
+45=2014
+46=2015
+47=2016
+48=2017
+

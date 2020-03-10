@@ -1,0 +1,32 @@
+{
+    "id": "2FB2E068",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1583853342436.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "expression": "aadr",
+        "caption": "aadr",
+        "totalObservations": 6720,
+        "displayedObservations": 6720,
+        "variables": 7,
+        "cacheKey": "13707419",
+        "object": "aadr",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=aadr&cache_key=13707419&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 8243327098466533385,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1583853342436,
+    "read_only": false,
+    "read_only_alternatives": []
+}
