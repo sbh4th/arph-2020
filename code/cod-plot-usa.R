@@ -1,7 +1,7 @@
 #  program:  cod-plot-use.R
 #  task:     analyses of LE in OECD countries
 #  input:    none
-#  output:   
+#  output:   aadr-sex-race-cod-1990-2017.txt
 #  project:  ARPH Life Expectancy
 #  author:   sam harper \ 2020-03-10
 
@@ -16,9 +16,8 @@ here::here()
 
 ##### 1  #####
 ##### Overall age-adjusted mortality by gender and race
-aadr <- read_tsv("code/aadr-sex-race-cod-1990-2017.txt", skip = 1,
-                 col_names=c("cod", "sex", "raceeth", "year", "aadr", "count", "pop"), 
-                 col_types = "ddddddd")
+aadr <- read_tsv(here("data", "aadr-sex-race-cod-1990-2017.txt"), skip = 1,
+                 col_names=c("cod", "sex", "raceeth", "year", "aadr", "count", "pop"), col_types = "ddddddd")
 
 # rescale year
 aadr$year <- aadr$year + 1990
@@ -36,14 +35,12 @@ aadr$codf <- recode_factor(aadr$cod, `0`= "heart diseases", `1`= "hypertension",
   `23`= "residual")
 
 # race-ethnicity
-aadr$raceethf <- recode_factor(aadr$raceeth, `0`= "Non-Hispanic White", `1`= "Non-Hispanic Black", 
-                               `2`= "Non-Hispanic AI/AN", `3`= "Non-Hispanic API", 
-                               `4`= "Hispanic")
+aadr$raceethf <- recode_factor(aadr$raceeth, `0`= "Non-Hispanic White", `1`= "Non-Hispanic Black", `2`= "Non-Hispanic AI/AN", `3`= "Non-Hispanic API", `4`= "Hispanic")
 
 # Men
 ggplot(subset(aadr, sex == 0 & cod != 6), 
        aes(x = year, y = aadr, colour = as.factor(raceethf))) + 
-  geom_line(aes(colour = as.factor(raceethf))) + facet_wrap(~ codf, scales="free") +
+  geom_smooth(aes(colour = as.factor(raceethf))) + facet_wrap(~ codf, scales="free") +
   scale_color_discrete(name="Race-Ethnicity") + labs(y = "Age-adjusted rate per 100,000", x = "")
 
 # Women
