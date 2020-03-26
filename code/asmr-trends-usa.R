@@ -65,6 +65,8 @@ asmr5 <- select(asmr4, -acode) %>%
 
 asmrd <- bind_rows(asmr3, asmr5)
 
+stheme <- theme_classic() + theme(plot.title = element_text(size = 18, face = "bold"), plot.subtitle = element_text(size=16)) + theme(axis.text.x = element_text(size = 16, colour = "grey60"), axis.title.y=element_text(size=16, angle=90, colour="grey60"), axis.text.y = element_text(size = 16, colour="grey60"), legend.position="none", panel.grid.major.y = element_line(linetype="dotted", colour="grey60"), panel.grid.major.x = element_line(colour="white"), panel.grid.minor = element_line(colour="white")) + theme(axis.line.x=element_line(colour="white"), axis.line.y=element_line(colour="white"), axis.ticks = element_blank())
+
 ggplot(subset(asmrd, gender=="Male"), aes(x=year, y=rate, colour=race)) + 
   geom_line(show.legend=F) + facet_wrap(~age, scales="free", ncol=3)
 
@@ -87,6 +89,21 @@ af <- ggplot(subset(asmrr, gender=="Female" & year>=2010), aes(x=year, y=rrate, 
 
 ggplot(subset(asmrr, gender=="Female" & year>=2010), aes(x=year, y=rrate, colour=age, label=age)) + geom_line(data=subset(asmrr, gender=="Female" & year>=2010 & ag==0), aes(x=year, y=rrate, group=age), show.legend=F, colour="grey") + geom_line(data=subset(asmrr, gender=="Female" & year>=2010 & ag==1), aes(x=year, y=rrate, colour=age), show.legend=F) + geom_text_repel(data=subset(asmrr, gender=="Female" & year==2018 & ag==1), hjust=0) + scale_x_continuous(limits=c(2010, 2022), breaks=c(2010, 2014, 2018))  + facet_wrap(~race) + stheme + theme(strip.text = element_text(size = 16), strip.background = element_rect(colour="white")) + theme(panel.spacing = unit(2, "lines")) + xlab("") + ylab("") + ggtitle("Death rates per 100,000 population") + scale_colour_brewer()
                                                                                                               
-ggplot(subset(asmrr, gender=="Male" & year>=2010), aes(x=year, y=rrate, colour=age, label=age)) + geom_line(show.legend=F) + geom_text_repel(data=subset(asmrr, gender=="Female" & year==2018), hjust=1, nudge_x=3) + scale_x_continuous(limits=c(2010, 2022), breaks=c(2010, 2014, 2018)) + facet_wrap(~race) + stheme + theme(strip.text = element_text(size = 16), strip.background = element_rect(colour="white")) + theme(panel.spacing = unit(2, "lines")) + xlab("") + ylab("") + ggtitle("Death rates per 100,000 population")
+ggplot(subset(asmrr, gender=="Male" & year>=2010 & race=="White"), aes(x=year, y=rrate, colour=age, label=age)) + geom_line(show.legend=F) + geom_text_repel(data=subset(asmrr, gender=="Female" & year==2018), hjust=1, nudge_x=3) + scale_x_continuous(limits=c(2010, 2022), breaks=c(2010, 2014, 2018)) + facet_wrap(~age) + stheme + theme(strip.text = element_text(size = 16), strip.background = element_rect(colour="white")) + theme(panel.spacing = unit(2, "lines")) + xlab("") + ylab("") + ggtitle("Death rates per 100,000 population")
 
-ggsave(here("figures", "us-mort-trends-2010.png"), plot=af, width=6.5, height=8)
+ggplot(subset(asmrr, gender=="Male" & year>=2010 & race=="White"), aes(x=year, y=rrate, group=age)) + geom_line(show.legend=F, colour="grey") + geom_line(data=subset(asmrr, gender=="Male" & year>=2010 & race=="White" & age=="<1yrs"), colour="#d95f02", size=1.5) + scale_x_continuous(limits=c(2010, 2018), breaks=c(2010, 2014, 2018)) + stheme + xlab("") + ylab("") + ggtitle("<1 year") + theme(plot.title = element_text(colour="#d95f02")) + scale_y_continuous(limits=c(70,130))
+
+# create list of age groups in data to loop over 
+age_list <- unique(asmrr$age)
+  
+# create for loop to produce ggplot2 graphs 
+for (i in seq_along(age_list)) { 
+  assign(paste0("p",i), ggplot(subset(asmrr, gender=="Male" & year>=2010 & race=="White"), aes(x=year, y=rrate, group=age)) + geom_hline(yintercept=100, linetype="dashed", color = "black") + geom_line(show.legend=F, colour="grey") + geom_line(data=subset(asmrr, gender=="Male" & year>=2010 & race=="White" & age==age_list[i]), colour="#d95f02", size=1.5) + geom_point(data=subset(asmrr, gender=="Male" & year==2018 & race=="White" & age==age_list[i]), shape=21, colour="white", fill="#d95f02", size=3, stroke=2)  + annotate("text", label = age_list[i], x = 2010, y = 135, size = 5, hjust=0, colour = "#d95f02") + scale_x_continuous(limits=c(2009, 2019), breaks=c(2010, 2014, 2018)) + scale_y_continuous(limits=c(70,140)) + stheme + xlab("") + ylab("") + theme(axis.text.x = element_text(size = 12, margin=margin(-20,0,0,0))) )
+}
+
+agep <- p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8 + 
+  p9 + p10 + p11 + plot_layout(ncol=4)
+
+ggsave(here("figures", "age-mort-trends-2010-wm.png"), plot=agep, width=11, height=8.5)
+
+ggplot(subset(asmrr, gender=="Male" & year>=2010 & race=="White"), aes(x=year, y=rrate, group=age)) + geom_line(show.legend=F, colour="grey") + geom_line(data=subset(asmrr, gender=="Male" & year>=2010 & race=="White" & age=="25-34yrs"), colour="#d95f02", size=1.5) + geom_point(data=subset(asmrr, gender=="Male" & year==2018 & race=="White" & age=="25-34yrs"), shape=21, colour="white", fill="#d95f02",size=3, stroke=3)  + annotate("text", label = "25-34yrs", x = 2010, y = 125, size = 5, hjust=0, colour = "#d95f02") + scale_x_continuous(limits=c(2010, 2019), breaks=c(2010, 2014, 2018)) + scale_y_continuous(limits=c(70,140)) + stheme + xlab("") + ylab("") + theme(axis.text.x = element_text(size = 14))

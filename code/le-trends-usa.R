@@ -71,6 +71,10 @@ both
 
 ggsave(here("figures", "us-le-trends-race.png"), plot=both, width=11, height=10)
 
+
+## show periods of le decline in graph
+e0 <- read_csv(here("data", "e0-race-usa.csv"))
+
 e0d <- e0 %>% pivot_longer(
   cols = all_both:black_female,
   names_to = c("race", "gender"),
@@ -78,6 +82,18 @@ e0d <- e0 %>% pivot_longer(
   values_to = "le"
 )
 
-le <- subset(e0d, gender!="both" & race!="all")
+le <- subset(e0d, gender=="both" & race=="all")
+
+lec <- mutate(le, lechange = le - lag(le, order_by = year))
+lecs <- subset(lec, lechange<0)
                     
-ggplot(le, aes(x=year, y=le, group=race)) + geom_line(aes(color=race)) + facet_wrap(~gender)   
+ggplot(lec, aes(x=year, y=le)) + geom_line() + geom_ribbon(data=lecs, aes(ymax=le, ymin=70, xmin=-Inf, xmax=Inf))
+
+geom_rect(data = lecs, aes(xmin = begin, xmax = end, ymin = -Inf, ymax = +Inf),
+            inherit.aes = FALSE, fill = "red", alpha = 0.2)
+
+
+
+ggplot(subset(lec, year>1975), aes(x=year, y=le)) + geom_line() + geom_area(mapping = aes(y = ifelse(lechange<=0, le, 70), x=year), fill = "red") 
+
+ggplot(subset(lec, year>1975), aes(x=year, y=le)) + geom_line() + geom_area(data=subset(lec, lechange<0), aes(x=year, y=le), fill="blue") 

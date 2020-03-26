@@ -1,0 +1,380 @@
+"Notes"	"Gender"	"Gender Code"	"Year"	"Year Code"	"Ten-Year Age Groups"	"Ten-Year Age Groups Code"	Deaths	Population	Crude Rate
+	"Female"	"F"	"1999"	"1999"	"15-24 years"	"15-24"	2	18860184	Unreliable
+	"Female"	"F"	"1999"	"1999"	"25-34 years"	"25-34"	94	19945090	0.5
+	"Female"	"F"	"1999"	"1999"	"35-44 years"	"35-44"	666	22669604	2.9
+	"Female"	"F"	"1999"	"1999"	"45-54 years"	"45-54"	875	18632305	4.7
+	"Female"	"F"	"1999"	"1999"	"55-64 years"	"55-64"	665	12378763	5.4
+	"Female"	"F"	"1999"	"1999"	"65-74 years"	"65-74"	438	10125424	4.3
+	"Female"	"F"	"1999"	"1999"	"75-84 years"	"75-84"	251	7411198	3.4
+	"Female"	"F"	"1999"	"1999"	"85+ years"	"85+"	45	2960708	1.5
+	"Female"	"F"	"2000"	"2000"	"15-24 years"	"15-24"	3	19105073	Unreliable
+	"Female"	"F"	"2000"	"2000"	"25-34 years"	"25-34"	77	19771195	0.4
+	"Female"	"F"	"2000"	"2000"	"35-44 years"	"35-44"	693	22700729	3.1
+	"Female"	"F"	"2000"	"2000"	"45-54 years"	"45-54"	920	19180722	4.8
+	"Female"	"F"	"2000"	"2000"	"55-64 years"	"55-64"	753	12629328	6.0
+	"Female"	"F"	"2000"	"2000"	"65-74 years"	"65-74"	458	10087712	4.5
+	"Female"	"F"	"2000"	"2000"	"75-84 years"	"75-84"	190	7481827	2.5
+	"Female"	"F"	"2000"	"2000"	"85+ years"	"85+"	30	3012589	1.0
+	"Female"	"F"	"2001"	"2001"	"15-24 years"	"15-24"	3	19585847	Unreliable
+	"Female"	"F"	"2001"	"2001"	"25-34 years"	"25-34"	85	19567043	0.4
+	"Female"	"F"	"2001"	"2001"	"35-44 years"	"35-44"	699	22642429	3.1
+	"Female"	"F"	"2001"	"2001"	"45-54 years"	"45-54"	1104	20047081	5.5
+	"Female"	"F"	"2001"	"2001"	"55-64 years"	"55-64"	671	13043566	5.1
+	"Female"	"F"	"2001"	"2001"	"65-74 years"	"65-74"	469	10043126	4.7
+	"Female"	"F"	"2001"	"2001"	"75-84 years"	"75-84"	212	7589733	2.8
+	"Female"	"F"	"2001"	"2001"	"85+ years"	"85+"	32	3051430	1.0
+	"Female"	"F"	"2002"	"2002"	"15-24 years"	"15-24"	2	19898124	Unreliable
+	"Female"	"F"	"2002"	"2002"	"25-34 years"	"25-34"	80	19518779	0.4
+	"Female"	"F"	"2002"	"2002"	"35-44 years"	"35-44"	666	22439455	3.0
+	"Female"	"F"	"2002"	"2002"	"45-54 years"	"45-54"	1063	20357603	5.2
+	"Female"	"F"	"2002"	"2002"	"55-64 years"	"55-64"	746	13853658	5.4
+	"Female"	"F"	"2002"	"2002"	"65-74 years"	"65-74"	482	10016658	4.8
+	"Female"	"F"	"2002"	"2002"	"75-84 years"	"75-84"	235	7664104	3.1
+	"Female"	"F"	"2002"	"2002"	"85+ years"	"85+"	33	3077446	1.1
+	"Female"	"F"	"2003"	"2003"	"15-24 years"	"15-24"	3	20180290	Unreliable
+	"Female"	"F"	"2003"	"2003"	"25-34 years"	"25-34"	61	19500922	0.3
+	"Female"	"F"	"2003"	"2003"	"35-44 years"	"35-44"	654	22206703	2.9
+	"Female"	"F"	"2003"	"2003"	"45-54 years"	"45-54"	1060	20776919	5.1
+	"Female"	"F"	"2003"	"2003"	"55-64 years"	"55-64"	788	14519419	5.4
+	"Female"	"F"	"2003"	"2003"	"65-74 years"	"65-74"	445	10048202	4.4
+	"Female"	"F"	"2003"	"2003"	"75-84 years"	"75-84"	211	7713157	2.7
+	"Female"	"F"	"2003"	"2003"	"85+ years"	"85+"	34	3127975	1.1
+	"Female"	"F"	"2004"	"2004"	"15-24 years"	"15-24"	3	20433434	Unreliable
+	"Female"	"F"	"2004"	"2004"	"25-34 years"	"25-34"	61	19520225	0.3
+	"Female"	"F"	"2004"	"2004"	"35-44 years"	"35-44"	604	22015734	2.7
+	"Female"	"F"	"2004"	"2004"	"45-54 years"	"45-54"	1216	21184129	5.7
+	"Female"	"F"	"2004"	"2004"	"55-64 years"	"55-64"	844	15185747	5.6
+	"Female"	"F"	"2004"	"2004"	"65-74 years"	"65-74"	449	10110363	4.4
+	"Female"	"F"	"2004"	"2004"	"75-84 years"	"75-84"	182	7738742	2.4
+	"Female"	"F"	"2004"	"2004"	"85+ years"	"85+"	33	3166584	1.0
+	"Female"	"F"	"2005"	"2005"	"15-24 years"	"15-24"	1	20657595	Unreliable
+	"Female"	"F"	"2005"	"2005"	"25-34 years"	"25-34"	70	19547698	0.4
+	"Female"	"F"	"2005"	"2005"	"35-44 years"	"35-44"	617	21865343	2.8
+	"Female"	"F"	"2005"	"2005"	"45-54 years"	"45-54"	1216	21614529	5.6
+	"Female"	"F"	"2005"	"2005"	"55-64 years"	"55-64"	871	15868410	5.5
+	"Female"	"F"	"2005"	"2005"	"65-74 years"	"65-74"	492	10198569	4.8
+	"Female"	"F"	"2005"	"2005"	"75-84 years"	"75-84"	210	7753835	2.7
+	"Female"	"F"	"2005"	"2005"	"85+ years"	"85+"	26	3249455	0.8
+	"Female"	"F"	"2006"	"2006"	"15-24 years"	"15-24"	8	20836077	Unreliable
+	"Female"	"F"	"2006"	"2006"	"25-34 years"	"25-34"	70	19626340	0.4
+	"Female"	"F"	"2006"	"2006"	"35-44 years"	"35-44"	610	21727611	2.8
+	"Female"	"F"	"2006"	"2006"	"45-54 years"	"45-54"	1267	22011575	5.8
+	"Female"	"F"	"2006"	"2006"	"55-64 years"	"55-64"	953	16532054	5.8
+	"Female"	"F"	"2006"	"2006"	"65-74 years"	"65-74"	426	10350638	4.1
+	"Female"	"F"	"2006"	"2006"	"75-84 years"	"75-84"	235	7732685	3.0
+	"Female"	"F"	"2006"	"2006"	"85+ years"	"85+"	38	3347539	1.1
+	"Female"	"F"	"2007"	"2007"	"15-24 years"	"15-24"	9	21001489	Unreliable
+	"Female"	"F"	"2007"	"2007"	"25-34 years"	"25-34"	92	19788593	0.5
+	"Female"	"F"	"2007"	"2007"	"35-44 years"	"35-44"	614	21502002	2.9
+	"Female"	"F"	"2007"	"2007"	"45-54 years"	"45-54"	1446	22337962	6.5
+	"Female"	"F"	"2007"	"2007"	"55-64 years"	"55-64"	1015	17148671	5.9
+	"Female"	"F"	"2007"	"2007"	"65-74 years"	"65-74"	454	10595802	4.3
+	"Female"	"F"	"2007"	"2007"	"75-84 years"	"75-84"	193	7694491	2.5
+	"Female"	"F"	"2007"	"2007"	"85+ years"	"85+"	34	3446309	1.0
+	"Female"	"F"	"2008"	"2008"	"15-24 years"	"15-24"	10	21144714	Unreliable
+	"Female"	"F"	"2008"	"2008"	"25-34 years"	"25-34"	106	20019411	0.5
+	"Female"	"F"	"2008"	"2008"	"35-44 years"	"35-44"	620	21195733	2.9
+	"Female"	"F"	"2008"	"2008"	"45-54 years"	"45-54"	1487	22597536	6.6
+	"Female"	"F"	"2008"	"2008"	"55-64 years"	"55-64"	1077	17681763	6.1
+	"Female"	"F"	"2008"	"2008"	"65-74 years"	"65-74"	500	11004244	4.5
+	"Female"	"F"	"2008"	"2008"	"75-84 years"	"75-84"	204	7656443	2.7
+	"Female"	"F"	"2008"	"2008"	"85+ years"	"85+"	43	3533026	1.2
+	"Female"	"F"	"2009"	"2009"	"15-24 years"	"15-24"	1	21263984	Unreliable
+	"Female"	"F"	"2009"	"2009"	"25-34 years"	"25-34"	108	20267430	0.5
+	"Female"	"F"	"2009"	"2009"	"35-44 years"	"35-44"	600	20841610	2.9
+	"Female"	"F"	"2009"	"2009"	"45-54 years"	"45-54"	1643	22797854	7.2
+	"Female"	"F"	"2009"	"2009"	"55-64 years"	"55-64"	1219	18329541	6.7
+	"Female"	"F"	"2009"	"2009"	"65-74 years"	"65-74"	484	11375157	4.3
+	"Female"	"F"	"2009"	"2009"	"75-84 years"	"75-84"	213	7590640	2.8
+	"Female"	"F"	"2009"	"2009"	"85+ years"	"85+"	33	3631954	0.9
+	"Female"	"F"	"2010"	"2010"	"15-24 years"	"15-24"	12	21308500	Unreliable
+	"Female"	"F"	"2010"	"2010"	"25-34 years"	"25-34"	143	20431857	0.7
+	"Female"	"F"	"2010"	"2010"	"35-44 years"	"35-44"	599	20634607	2.9
+	"Female"	"F"	"2010"	"2010"	"45-54 years"	"45-54"	1741	22864357	7.6
+	"Female"	"F"	"2010"	"2010"	"55-64 years"	"55-64"	1293	18881581	6.8
+	"Female"	"F"	"2010"	"2010"	"65-74 years"	"65-74"	532	11616910	4.6
+	"Female"	"F"	"2010"	"2010"	"75-84 years"	"75-84"	196	7584360	2.6
+	"Female"	"F"	"2010"	"2010"	"85+ years"	"85+"	33	3703754	0.9
+	"Female"	"F"	"2011"	"2011"	"15-24 years"	"15-24"	5	21366229	Unreliable
+	"Female"	"F"	"2011"	"2011"	"25-34 years"	"25-34"	157	20746335	0.8
+	"Female"	"F"	"2011"	"2011"	"35-44 years"	"35-44"	631	20404484	3.1
+	"Female"	"F"	"2011"	"2011"	"45-54 years"	"45-54"	1867	22698956	8.2
+	"Female"	"F"	"2011"	"2011"	"55-64 years"	"55-64"	1498	19703935	7.6
+	"Female"	"F"	"2011"	"2011"	"65-74 years"	"65-74"	507	12005425	4.2
+	"Female"	"F"	"2011"	"2011"	"75-84 years"	"75-84"	204	7602197	2.7
+	"Female"	"F"	"2011"	"2011"	"85+ years"	"85+"	33	3843148	0.9
+	"Female"	"F"	"2012"	"2012"	"15-24 years"	"15-24"	4	21431588	Unreliable
+	"Female"	"F"	"2012"	"2012"	"25-34 years"	"25-34"	164	20970529	0.8
+	"Female"	"F"	"2012"	"2012"	"35-44 years"	"35-44"	597	20342813	2.9
+	"Female"	"F"	"2012"	"2012"	"45-54 years"	"45-54"	1828	22461868	8.1
+	"Female"	"F"	"2012"	"2012"	"55-64 years"	"55-64"	1512	19983308	7.6
+	"Female"	"F"	"2012"	"2012"	"65-74 years"	"65-74"	639	12782530	5.0
+	"Female"	"F"	"2012"	"2012"	"75-84 years"	"75-84"	210	7624484	2.8
+	"Female"	"F"	"2012"	"2012"	"85+ years"	"85+"	43	3923297	1.1
+	"Female"	"F"	"2013"	"2013"	"15-24 years"	"15-24"	8	21429247	Unreliable
+	"Female"	"F"	"2013"	"2013"	"25-34 years"	"25-34"	207	21203096	1.0
+	"Female"	"F"	"2013"	"2013"	"35-44 years"	"35-44"	608	20307429	3.0
+	"Female"	"F"	"2013"	"2013"	"45-54 years"	"45-54"	1824	22198448	8.2
+	"Female"	"F"	"2013"	"2013"	"55-64 years"	"55-64"	1616	20359676	7.9
+	"Female"	"F"	"2013"	"2013"	"65-74 years"	"65-74"	645	13419124	4.8
+	"Female"	"F"	"2013"	"2013"	"75-84 years"	"75-84"	193	7686002	2.5
+	"Female"	"F"	"2013"	"2013"	"85+ years"	"85+"	54	3999007	1.4
+	"Female"	"F"	"2014"	"2014"	"15-24 years"	"15-24"	8	21456371	Unreliable
+	"Female"	"F"	"2014"	"2014"	"25-34 years"	"25-34"	243	21546290	1.1
+	"Female"	"F"	"2014"	"2014"	"35-44 years"	"35-44"	703	20353904	3.5
+	"Female"	"F"	"2014"	"2014"	"45-54 years"	"45-54"	1849	22033807	8.4
+	"Female"	"F"	"2014"	"2014"	"55-64 years"	"55-64"	1942	20755699	9.4
+	"Female"	"F"	"2014"	"2014"	"65-74 years"	"65-74"	707	14049245	5.0
+	"Female"	"F"	"2014"	"2014"	"75-84 years"	"75-84"	220	7789312	2.8
+	"Female"	"F"	"2014"	"2014"	"85+ years"	"85+"	50	4053362	1.2
+	"Female"	"F"	"2015"	"2015"	"15-24 years"	"15-24"	6	21382495	Unreliable
+	"Female"	"F"	"2015"	"2015"	"25-34 years"	"25-34"	250	21838064	1.1
+	"Female"	"F"	"2015"	"2015"	"35-44 years"	"35-44"	778	20386206	3.8
+	"Female"	"F"	"2015"	"2015"	"45-54 years"	"45-54"	2043	21889385	9.3
+	"Female"	"F"	"2015"	"2015"	"55-64 years"	"55-64"	2128	21163072	10.1
+	"Female"	"F"	"2015"	"2015"	"65-74 years"	"65-74"	806	14658169	5.5
+	"Female"	"F"	"2015"	"2015"	"75-84 years"	"75-84"	247	7899603	3.1
+	"Female"	"F"	"2015"	"2015"	"85+ years"	"85+"	55	4112863	1.3
+	"Female"	"F"	"2016"	"2016"	"15-24 years"	"15-24"	12	21218116	Unreliable
+	"Female"	"F"	"2016"	"2016"	"25-34 years"	"25-34"	298	22077505	1.3
+	"Female"	"F"	"2016"	"2016"	"35-44 years"	"35-44"	838	20317393	4.1
+	"Female"	"F"	"2016"	"2016"	"45-54 years"	"45-54"	2016	21680540	9.3
+	"Female"	"F"	"2016"	"2016"	"55-64 years"	"55-64"	2256	21464106	10.5
+	"Female"	"F"	"2016"	"2016"	"65-74 years"	"65-74"	947	15239221	6.2
+	"Female"	"F"	"2016"	"2016"	"75-84 years"	"75-84"	246	8056660	3.1
+	"Female"	"F"	"2016"	"2016"	"85+ years"	"85+"	52	4155488	1.3
+	"Female"	"F"	"2017"	"2017"	"15-24 years"	"15-24"	3	21100662	Unreliable
+	"Female"	"F"	"2017"	"2017"	"25-34 years"	"25-34"	293	22351311	1.3
+	"Female"	"F"	"2017"	"2017"	"35-44 years"	"35-44"	831	20506270	4.1
+	"Female"	"F"	"2017"	"2017"	"45-54 years"	"45-54"	1975	21468595	9.2
+	"Female"	"F"	"2017"	"2017"	"55-64 years"	"55-64"	2376	21737855	10.9
+	"Female"	"F"	"2017"	"2017"	"65-74 years"	"65-74"	974	15806306	6.2
+	"Female"	"F"	"2017"	"2017"	"75-84 years"	"75-84"	256	8298676	3.1
+	"Female"	"F"	"2017"	"2017"	"85+ years"	"85+"	68	4189013	1.6
+	"Female"	"F"	"2018"	"2018"	"15-24 years"	"15-24"	3	20994345	Unreliable
+	"Female"	"F"	"2018"	"2018"	"25-34 years"	"25-34"	333	22487065	1.5
+	"Female"	"F"	"2018"	"2018"	"35-44 years"	"35-44"	896	20690288	4.3
+	"Female"	"F"	"2018"	"2018"	"45-54 years"	"45-54"	1904	21090497	9.0
+	"Female"	"F"	"2018"	"2018"	"55-64 years"	"55-64"	2497	21873773	11.4
+	"Female"	"F"	"2018"	"2018"	"65-74 years"	"65-74"	1115	16246231	6.9
+	"Female"	"F"	"2018"	"2018"	"75-84 years"	"75-84"	270	8659334	3.1
+	"Female"	"F"	"2018"	"2018"	"85+ years"	"85+"	55	4218810	1.3
+	"Male"	"M"	"1999"	"1999"	"15-24 years"	"15-24"	6	19815847	Unreliable
+	"Male"	"M"	"1999"	"1999"	"25-34 years"	"25-34"	165	20233316	0.8
+	"Male"	"M"	"1999"	"1999"	"35-44 years"	"35-44"	1520	22407073	6.8
+	"Male"	"M"	"1999"	"1999"	"45-54 years"	"45-54"	2927	17945514	16.3
+	"Male"	"M"	"1999"	"1999"	"55-64 years"	"55-64"	2194	11399263	19.2
+	"Male"	"M"	"1999"	"1999"	"65-74 years"	"65-74"	1497	8293485	18.1
+	"Male"	"M"	"1999"	"1999"	"75-84 years"	"75-84"	538	4813716	11.2
+	"Male"	"M"	"1999"	"1999"	"85+ years"	"85+"	73	1193310	6.1
+	"Male"	"M"	"2000"	"2000"	"15-24 years"	"15-24"	5	20078818	Unreliable
+	"Male"	"M"	"2000"	"2000"	"25-34 years"	"25-34"	202	20120529	1.0
+	"Male"	"M"	"2000"	"2000"	"35-44 years"	"35-44"	1533	22447798	6.8
+	"Male"	"M"	"2000"	"2000"	"45-54 years"	"45-54"	2968	18497230	16.0
+	"Male"	"M"	"2000"	"2000"	"55-64 years"	"55-64"	2216	11645356	19.0
+	"Male"	"M"	"2000"	"2000"	"65-74 years"	"65-74"	1433	8303274	17.3
+	"Male"	"M"	"2000"	"2000"	"75-84 years"	"75-84"	561	4879353	11.5
+	"Male"	"M"	"2000"	"2000"	"85+ years"	"85+"	65	1226998	5.3
+	"Male"	"M"	"2001"	"2001"	"15-24 years"	"15-24"	5	20627723	Unreliable
+	"Male"	"M"	"2001"	"2001"	"25-34 years"	"25-34"	179	19904479	0.9
+	"Male"	"M"	"2001"	"2001"	"35-44 years"	"35-44"	1446	22409323	6.5
+	"Male"	"M"	"2001"	"2001"	"45-54 years"	"45-54"	3099	19339187	16.0
+	"Male"	"M"	"2001"	"2001"	"55-64 years"	"55-64"	2242	12061729	18.6
+	"Male"	"M"	"2001"	"2001"	"65-74 years"	"65-74"	1379	8341053	16.5
+	"Male"	"M"	"2001"	"2001"	"75-84 years"	"75-84"	505	5003885	10.1
+	"Male"	"M"	"2001"	"2001"	"85+ years"	"85+"	72	1261064	5.7
+	"Male"	"M"	"2002"	"2002"	"15-24 years"	"15-24"	6	20956011	Unreliable
+	"Male"	"M"	"2002"	"2002"	"25-34 years"	"25-34"	162	19830867	0.8
+	"Male"	"M"	"2002"	"2002"	"35-44 years"	"35-44"	1305	22201194	5.9
+	"Male"	"M"	"2002"	"2002"	"45-54 years"	"45-54"	3074	19634591	15.7
+	"Male"	"M"	"2002"	"2002"	"55-64 years"	"55-64"	2337	12849674	18.2
+	"Male"	"M"	"2002"	"2002"	"65-74 years"	"65-74"	1367	8371877	16.3
+	"Male"	"M"	"2002"	"2002"	"75-84 years"	"75-84"	495	5100760	9.7
+	"Male"	"M"	"2002"	"2002"	"85+ years"	"85+"	65	1291362	5.0
+	"Male"	"M"	"2003"	"2003"	"15-24 years"	"15-24"	3	21208564	Unreliable
+	"Male"	"M"	"2003"	"2003"	"25-34 years"	"25-34"	182	19742873	0.9
+	"Male"	"M"	"2003"	"2003"	"35-44 years"	"35-44"	1317	21947503	6.0
+	"Male"	"M"	"2003"	"2003"	"45-54 years"	"45-54"	3228	20043035	16.1
+	"Male"	"M"	"2003"	"2003"	"55-64 years"	"55-64"	2459	13489526	18.2
+	"Male"	"M"	"2003"	"2003"	"65-74 years"	"65-74"	1343	8452713	15.9
+	"Male"	"M"	"2003"	"2003"	"75-84 years"	"75-84"	518	5183281	10.0
+	"Male"	"M"	"2003"	"2003"	"85+ years"	"85+"	52	1338201	3.9
+	"Male"	"M"	"2004"	"2004"	"15-24 years"	"15-24"	8	21514678	Unreliable
+	"Male"	"M"	"2004"	"2004"	"25-34 years"	"25-34"	167	19746331	0.8
+	"Male"	"M"	"2004"	"2004"	"35-44 years"	"35-44"	1267	21784541	5.8
+	"Male"	"M"	"2004"	"2004"	"45-54 years"	"45-54"	3176	20445801	15.5
+	"Male"	"M"	"2004"	"2004"	"55-64 years"	"55-64"	2549	14119557	18.1
+	"Male"	"M"	"2004"	"2004"	"65-74 years"	"65-74"	1392	8557170	16.3
+	"Male"	"M"	"2004"	"2004"	"75-84 years"	"75-84"	527	5251161	10.0
+	"Male"	"M"	"2004"	"2004"	"85+ years"	"85+"	69	1379299	5.0
+	"Male"	"M"	"2005"	"2005"	"15-24 years"	"15-24"	6	21788574	Unreliable
+	"Male"	"M"	"2005"	"2005"	"25-34 years"	"25-34"	147	19710949	0.7
+	"Male"	"M"	"2005"	"2005"	"35-44 years"	"35-44"	1189	21640195	5.5
+	"Male"	"M"	"2005"	"2005"	"45-54 years"	"45-54"	3274	20881375	15.7
+	"Male"	"M"	"2005"	"2005"	"55-64 years"	"55-64"	2850	14773087	19.3
+	"Male"	"M"	"2005"	"2005"	"65-74 years"	"65-74"	1352	8683128	15.6
+	"Male"	"M"	"2005"	"2005"	"75-84 years"	"75-84"	537	5320967	10.1
+	"Male"	"M"	"2005"	"2005"	"85+ years"	"85+"	68	1443844	4.7
+	"Male"	"M"	"2006"	"2006"	"15-24 years"	"15-24"	6	22007767	Unreliable
+	"Male"	"M"	"2006"	"2006"	"25-34 years"	"25-34"	175	19768839	0.9
+	"Male"	"M"	"2006"	"2006"	"35-44 years"	"35-44"	1122	21516190	5.2
+	"Male"	"M"	"2006"	"2006"	"45-54 years"	"45-54"	3295	21274584	15.5
+	"Male"	"M"	"2006"	"2006"	"55-64 years"	"55-64"	2870	15398059	18.6
+	"Male"	"M"	"2006"	"2006"	"65-74 years"	"65-74"	1357	8852389	15.3
+	"Male"	"M"	"2006"	"2006"	"75-84 years"	"75-84"	538	5362466	10.0
+	"Male"	"M"	"2006"	"2006"	"85+ years"	"85+"	79	1518390	5.2
+	"Male"	"M"	"2007"	"2007"	"15-24 years"	"15-24"	8	22144326	Unreliable
+	"Male"	"M"	"2007"	"2007"	"25-34 years"	"25-34"	201	19924870	1.0
+	"Male"	"M"	"2007"	"2007"	"35-44 years"	"35-44"	1220	21294228	5.7
+	"Male"	"M"	"2007"	"2007"	"45-54 years"	"45-54"	3680	21601977	17.0
+	"Male"	"M"	"2007"	"2007"	"55-64 years"	"55-64"	3294	15979763	20.6
+	"Male"	"M"	"2007"	"2007"	"65-74 years"	"65-74"	1505	9102925	16.5
+	"Male"	"M"	"2007"	"2007"	"75-84 years"	"75-84"	554	5392948	10.3
+	"Male"	"M"	"2007"	"2007"	"85+ years"	"85+"	84	1593236	5.3
+	"Male"	"M"	"2008"	"2008"	"15-24 years"	"15-24"	8	22246778	Unreliable
+	"Male"	"M"	"2008"	"2008"	"25-34 years"	"25-34"	212	20188062	1.1
+	"Male"	"M"	"2008"	"2008"	"35-44 years"	"35-44"	1207	20996753	5.7
+	"Male"	"M"	"2008"	"2008"	"45-54 years"	"45-54"	3693	21862911	16.9
+	"Male"	"M"	"2008"	"2008"	"55-64 years"	"55-64"	3499	16475300	21.2
+	"Male"	"M"	"2008"	"2008"	"65-74 years"	"65-74"	1560	9501435	16.4
+	"Male"	"M"	"2008"	"2008"	"75-84 years"	"75-84"	555	5419659	10.2
+	"Male"	"M"	"2008"	"2008"	"85+ years"	"85+"	83	1662814	5.0
+	"Male"	"M"	"2009"	"2009"	"15-24 years"	"15-24"	12	22312948	Unreliable
+	"Male"	"M"	"2009"	"2009"	"25-34 years"	"25-34"	224	20455912	1.1
+	"Male"	"M"	"2009"	"2009"	"35-44 years"	"35-44"	1209	20646201	5.9
+	"Male"	"M"	"2009"	"2009"	"45-54 years"	"45-54"	3640	22069234	16.5
+	"Male"	"M"	"2009"	"2009"	"55-64 years"	"55-64"	3650	17076059	21.4
+	"Male"	"M"	"2009"	"2009"	"65-74 years"	"65-74"	1543	9857942	15.7
+	"Male"	"M"	"2009"	"2009"	"75-84 years"	"75-84"	506	5432135	9.3
+	"Male"	"M"	"2009"	"2009"	"85+ years"	"85+"	95	1735347	5.5
+	"Male"	"M"	"2010"	"2010"	"15-24 years"	"15-24"	12	22317842	Unreliable
+	"Male"	"M"	"2010"	"2010"	"25-34 years"	"25-34"	235	20632091	1.1
+	"Male"	"M"	"2010"	"2010"	"35-44 years"	"35-44"	1170	20435999	5.7
+	"Male"	"M"	"2010"	"2010"	"45-54 years"	"45-54"	3724	22142359	16.8
+	"Male"	"M"	"2010"	"2010"	"55-64 years"	"55-64"	3964	17601148	22.5
+	"Male"	"M"	"2010"	"2010"	"65-74 years"	"65-74"	1677	10096519	16.6
+	"Male"	"M"	"2010"	"2010"	"75-84 years"	"75-84"	566	5476762	10.3
+	"Male"	"M"	"2010"	"2010"	"85+ years"	"85+"	92	1789679	5.1
+	"Male"	"M"	"2011"	"2011"	"15-24 years"	"15-24"	14	22431646	Unreliable
+	"Male"	"M"	"2011"	"2011"	"25-34 years"	"25-34"	232	21044163	1.1
+	"Male"	"M"	"2011"	"2011"	"35-44 years"	"35-44"	1155	20223470	5.7
+	"Male"	"M"	"2011"	"2011"	"45-54 years"	"45-54"	3757	22019247	17.1
+	"Male"	"M"	"2011"	"2011"	"55-64 years"	"55-64"	4294	18358205	23.4
+	"Male"	"M"	"2011"	"2011"	"65-74 years"	"65-74"	1713	10476313	16.4
+	"Male"	"M"	"2011"	"2011"	"75-84 years"	"75-84"	587	5573033	10.5
+	"Male"	"M"	"2011"	"2011"	"85+ years"	"85+"	94	1894025	5.0
+	"Male"	"M"	"2012"	"2012"	"15-24 years"	"15-24"	16	22512317	Unreliable
+	"Male"	"M"	"2012"	"2012"	"25-34 years"	"25-34"	292	21338792	1.4
+	"Male"	"M"	"2012"	"2012"	"35-44 years"	"35-44"	1155	20173607	5.7
+	"Male"	"M"	"2012"	"2012"	"45-54 years"	"45-54"	3884	21806870	17.8
+	"Male"	"M"	"2012"	"2012"	"55-64 years"	"55-64"	4513	18602894	24.3
+	"Male"	"M"	"2012"	"2012"	"65-74 years"	"65-74"	1842	11202862	16.4
+	"Male"	"M"	"2012"	"2012"	"75-84 years"	"75-84"	625	5648150	11.1
+	"Male"	"M"	"2012"	"2012"	"85+ years"	"85+"	94	1964033	4.8
+	"Male"	"M"	"2013"	"2013"	"15-24 years"	"15-24"	14	22525155	Unreliable
+	"Male"	"M"	"2013"	"2013"	"25-34 years"	"25-34"	339	21641491	1.6
+	"Male"	"M"	"2013"	"2013"	"35-44 years"	"35-44"	1199	20145261	6.0
+	"Male"	"M"	"2013"	"2013"	"45-54 years"	"45-54"	3822	21569084	17.7
+	"Male"	"M"	"2013"	"2013"	"55-64 years"	"55-64"	4842	18956755	25.5
+	"Male"	"M"	"2013"	"2013"	"65-74 years"	"65-74"	2014	11797642	17.1
+	"Male"	"M"	"2013"	"2013"	"75-84 years"	"75-84"	653	5760517	11.3
+	"Male"	"M"	"2013"	"2013"	"85+ years"	"85+"	108	2041782	5.3
+	"Male"	"M"	"2014"	"2014"	"15-24 years"	"15-24"	15	22523450	Unreliable
+	"Male"	"M"	"2014"	"2014"	"25-34 years"	"25-34"	346	21970214	1.6
+	"Male"	"M"	"2014"	"2014"	"35-44 years"	"35-44"	1196	20159229	5.9
+	"Male"	"M"	"2014"	"2014"	"45-54 years"	"45-54"	3796	21425044	17.7
+	"Male"	"M"	"2014"	"2014"	"55-64 years"	"55-64"	5174	19321882	26.8
+	"Male"	"M"	"2014"	"2014"	"65-74 years"	"65-74"	2363	12349045	19.1
+	"Male"	"M"	"2014"	"2014"	"75-84 years"	"75-84"	656	5893378	11.1
+	"Male"	"M"	"2014"	"2014"	"85+ years"	"85+"	118	2108869	5.6
+	"Male"	"M"	"2015"	"2015"	"15-24 years"	"15-24"	13	22465721	Unreliable
+	"Male"	"M"	"2015"	"2015"	"25-34 years"	"25-34"	431	22299138	1.9
+	"Male"	"M"	"2015"	"2015"	"35-44 years"	"35-44"	1369	20203577	6.8
+	"Male"	"M"	"2015"	"2015"	"45-54 years"	"45-54"	3954	21298776	18.6
+	"Male"	"M"	"2015"	"2015"	"55-64 years"	"55-64"	5446	19714747	27.6
+	"Male"	"M"	"2015"	"2015"	"65-74 years"	"65-74"	2607	12892348	20.2
+	"Male"	"M"	"2015"	"2015"	"75-84 years"	"75-84"	765	6023571	12.7
+	"Male"	"M"	"2015"	"2015"	"85+ years"	"85+"	128	2174298	5.9
+	"Male"	"M"	"2016"	"2016"	"15-24 years"	"15-24"	16	22292911	Unreliable
+	"Male"	"M"	"2016"	"2016"	"25-34 years"	"25-34"	469	22599738	2.1
+	"Male"	"M"	"2016"	"2016"	"35-44 years"	"35-44"	1375	20152763	6.8
+	"Male"	"M"	"2016"	"2016"	"45-54 years"	"45-54"	3816	21106139	18.1
+	"Male"	"M"	"2016"	"2016"	"55-64 years"	"55-64"	5705	19999038	28.5
+	"Male"	"M"	"2016"	"2016"	"65-74 years"	"65-74"	2791	13391109	20.8
+	"Male"	"M"	"2016"	"2016"	"75-84 years"	"75-84"	819	6176874	13.3
+	"Male"	"M"	"2016"	"2016"	"85+ years"	"85+"	157	2224843	7.1
+	"Male"	"M"	"2017"	"2017"	"15-24 years"	"15-24"	11	22149633	Unreliable
+	"Male"	"M"	"2017"	"2017"	"25-34 years"	"25-34"	460	22991361	2.0
+	"Male"	"M"	"2017"	"2017"	"35-44 years"	"35-44"	1435	20369100	7.0
+	"Male"	"M"	"2017"	"2017"	"45-54 years"	"45-54"	3811	20906357	18.2
+	"Male"	"M"	"2017"	"2017"	"55-64 years"	"55-64"	5750	20257803	28.4
+	"Male"	"M"	"2017"	"2017"	"65-74 years"	"65-74"	3002	13877140	21.6
+	"Male"	"M"	"2017"	"2017"	"75-84 years"	"75-84"	841	6407875	13.1
+	"Male"	"M"	"2017"	"2017"	"85+ years"	"85+"	159	2279669	7.0
+	"Male"	"M"	"2018"	"2018"	"15-24 years"	"15-24"	18	21976455	Unreliable
+	"Male"	"M"	"2018"	"2018"	"25-34 years"	"25-34"	499	23210709	2.1
+	"Male"	"M"	"2018"	"2018"	"35-44 years"	"35-44"	1508	20587600	7.3
+	"Male"	"M"	"2018"	"2018"	"45-54 years"	"45-54"	3713	20541202	18.1
+	"Male"	"M"	"2018"	"2018"	"55-64 years"	"55-64"	6029	20398863	29.6
+	"Male"	"M"	"2018"	"2018"	"65-74 years"	"65-74"	3267	14246085	22.9
+	"Male"	"M"	"2018"	"2018"	"75-84 years"	"75-84"	912	6735040	13.5
+	"Male"	"M"	"2018"	"2018"	"85+ years"	"85+"	152	2325693	6.5
+"---"
+"Dataset: Underlying Cause of Death, 1999-2018"
+"Query Parameters:"
+"ICD-10 Codes: K70.0 (Alcoholic fatty liver); K70.1 (Alcoholic hepatitis); K70.2 (Alcoholic fibrosis and sclerosis of liver);"
+"K70.3 (Alcoholic cirrhosis of liver); K70.4 (Alcoholic hepatic failure); K70.9 (Alcoholic liver disease, unspecified)"
+"Ten-Year Age Groups: 15-24 years; 25-34 years; 35-44 years; 45-54 years; 55-64 years; 65-74 years; 75-84 years; 85+ years"
+"Group By: Gender; Year; Ten-Year Age Groups"
+"Show Totals: False"
+"Show Zero Values: True"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: Mar 23, 2020 5:05:22 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Underlying Cause of Death"
+"1999-2018 on CDC WONDER Online Database, released in 2020. Data are from the Multiple Cause of Death Files, 1999-2018, as"
+"compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
+"at http://wonder.cdc.gov/ucd-icd10.html on Mar 23, 2020 5:05:22 PM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Circumstances in Georgia for the years 2008 and 2009 have resulted in unusually high death counts for the ICD-10 cause of"
+"death code R99, ""Other ill-defined and unspecified causes of mortality."" Caution should be used in interpreting these data."
+"More information: http://wonder.cdc.gov/wonder/help/ucd.html#Georgia-Reporting-Anomalies."
+"3. Circumstances in New Jersey for the year 2009 have resulted in unusually high death counts for the ICD-10 cause of death code"
+"R99, ""Other ill-defined and unspecified causes of mortality"" and therefore unusually low death counts in other ICD-10 codes,"
+"most notably R95, ""Sudden Infant Death Syndrome"" and X40-X49, ""Unintentional poisoning."" Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#New-Jersey-Reporting-Anomalies."
+"4. Circumstances in California resulted in unusually high death counts for the ICD-10 cause of death code R99, ""Other"
+"ill-defined and unspecified causes of mortality"" for deaths occurring in years 2000 and 2001. Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#California-Reporting-Anomalies."
+"5. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"6. Deaths of persons with Age ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among age groups,"
+"so are not included in age-specific counts, age-specific rates or in any age-adjusted rates. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Not Stated."
+"7. The population figures for year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018"
+"postcensal series released by NCHS on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for"
+"year 2016 are bridged-race estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS"
+"on June 26, 2017. The population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2015 postcensal series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The"
+"population figures for year 2013 are bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal"
+"series released by NCHS on June 26, 2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2012 postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18,"
+"2012. Population figures for 2010 are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race"
+"estimates of the July 1 resident population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on"
+"October 26, 2012. Population figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999"
+"intercensal series of July 1 estimates. Population figures for the infant age groups are the number of live births."
+"<br/><b>Note:</b> Rates and population figures for years 2001 - 2009 differ slightly from previously published reports, due to"
+"use of the population estimates which were available at the time of release."
+"8. Changes to cause of death classification affect reporting trends. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#ICD-10 Changes."
