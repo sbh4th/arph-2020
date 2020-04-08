@@ -1,0 +1,1209 @@
+--------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/samharper/git/arph-2020/data/gss-despair/gss-data-prep.log
+  log type:  text
+ opened on:   2 Apr 2020, 14:49:04
+
+. 
+. //  program: gss-data-prep.do
+. //  task:    create GSS data for analysis     
+. //  input:   GSS.do, GSS.dct, GSS.dat
+. //  output:  none
+. //  project: ARPH-2020
+. //  author:  sam harper \ 2020-04-02
+. 
+. 
+. // #0
+. // program setup
+. 
+. version 14
+
+. set linesize 80
+
+. clear all
+
+. macro drop _all
+
+. 
+. // #1
+. // input GSS data from GSS Explorer extract
+. do GSS.do
+
+. #delimit ;
+delimiter now ;
+.    infix
+>       year     1 - 20
+>       kidssol  21 - 40
+>       suicide1 41 - 60
+>       suicide2 61 - 80
+>       suicide3 81 - 100
+>       suicide4 101 - 120
+>       cohort   121 - 140
+>       zodiac   141 - 160
+>       ballot   161 - 180
+>       sample   181 - 200
+>       oversamp 201 - 220
+>       wtss     221 - 240
+>       wtssnr   241 - 260
+>       wtssall  261 - 280
+>       vstrat   281 - 300
+>       parsol   301 - 320
+>       satfin   321 - 340
+>       id_      341 - 360
+>       age      361 - 380
+>       degree   381 - 400
+>       race     401 - 420
+>       region   421 - 440
+>       attend   441 - 460
+>       happy    461 - 480
+>       hapmar   481 - 500
+>       helpful  501 - 520
+>       trust    521 - 540
+>       satfrnd  541 - 560
+>       sathealt 561 - 580
+>       consci   581 - 600
+>       satjob   601 - 620
+>       vpsu     621 - 640
+> using GSS.dat;
+(64,814 observations read)
+
+. label variable year     "Gss year for this respondent                       ";
+
+. label variable kidssol  "Rs kids living standard compared to r";
+
+. label variable suicide1 "Suicide if incurable disease";
+
+. label variable suicide2 "Suicide if bankrupt";
+
+. label variable suicide3 "Suicide if dishonored family";
+
+. label variable suicide4 "Suicide if tired of living";
+
+. label variable cohort   "Year of birth";
+
+. label variable zodiac   "Respondents astrological sign";
+
+. label variable ballot   "Ballot used for interview";
+
+. label variable sample   "Sampling frame and method";
+
+. label variable oversamp "Weights for black oversamples";
+
+. label variable wtss     "Weight variable";
+
+. label variable wtssnr   "Weight variable";
+
+. label variable wtssall  "Weight variable";
+
+. label variable vstrat   "Variance stratum";
+
+. label variable parsol   "Rs living standard compared to parents";
+
+. label variable satfin   "Satisfaction with financial situation";
+
+. label variable id_      "Respondent id number";
+
+. label variable age      "Age of respondent";
+
+. label variable degree   "Rs highest degree";
+
+. label variable race     "Race of respondent";
+
+. label variable region   "Region of interview";
+
+. label variable attend   "How often r attends religious services";
+
+. label variable happy    "General happiness";
+
+. label variable hapmar   "Happiness of marriage";
+
+. label variable helpful  "People helpful or looking out for selves";
+
+. label variable trust    "Can people be trusted";
+
+. label variable satfrnd  "Friendships";
+
+. label variable sathealt "Health and physical condition";
+
+. label variable consci   "Confidence in scientific community";
+
+. label variable satjob   "Job or housework";
+
+. label variable vpsu     "Variance primary sampling unit";
+
+. label define gsp001x
+>    9        "No answer"
+>    8        "Don't know"
+>    6        "No children -volunteered-"
+>    5        "Much worse"
+>    4        "Somewhat worse"
+>    3        "About the same"
+>    2        "Somewhat better"
+>    1        "Much better"
+>    0        "Not applicable"
+> ;
+
+. label define gsp002x
+>    9        "No answer"
+>    8        "Don't know"
+>    2        "No"
+>    1        "Yes"
+>    0        "Not applicable"
+> ;
+
+. label define gsp003x
+>    9        "No answer"
+>    8        "Don't know"
+>    2        "No"
+>    1        "Yes"
+>    0        "Not applicable"
+> ;
+
+. label define gsp004x
+>    9        "No answer"
+>    8        "Don't know"
+>    2        "No"
+>    1        "Yes"
+>    0        "Not applicable"
+> ;
+
+. label define gsp005x
+>    9        "No answer"
+>    8        "Don't know"
+>    2        "No"
+>    1        "Yes"
+>    0        "Not applicable"
+> ;
+
+. label define gsp006x
+>    9999     "No answer"
+>    0        "Not applicable"
+> ;
+
+. label define gsp007x
+>    99       "No answer"
+>    98       "Don't know"
+>    12       "Pisces"
+>    11       "Aquarius"
+>    10       "Capricorn"
+>    9        "Sagittarius"
+>    8        "Scorpio"
+>    7        "Libra"
+>    6        "Virgo"
+>    5        "Leo"
+>    4        "Cancer"
+>    3        "Gemini"
+>    2        "Taurus"
+>    1        "Aries"
+>    0        "Not applicable"
+> ;
+
+. label define gsp008x
+>    4        "Ballot d"
+>    3        "Ballot c"
+>    2        "Ballot b"
+>    1        "Ballot a"
+>    0        "Not applicable"
+> ;
+
+. label define gsp009x
+>    10       "2010 fp"
+>    9        "2000 fp"
+>    8        "1990 fp"
+>    7        "1980 fp blk oversamp"
+>    6        "1980 fp"
+>    5        "1980 bfp blk oversamp"
+>    4        "1970 fp blk oversamp"
+>    3        "1970 fp"
+>    2        "1970 bq"
+>    1        "1960 bq"
+> ;
+
+. label define gsp010x
+>    9        "No answer"
+>    8        "Don't know"
+>    5        "Much worse"
+>    4        "Somewhat worse"
+>    3        "About the same"
+>    2        "Somewhat better"
+>    1        "Much better"
+>    0        "Not applicable"
+> ;
+
+. label define gsp011x
+>    9        "No answer"
+>    8        "Don't know"
+>    3        "Not at all sat"
+>    2        "More or less"
+>    1        "Satisfied"
+>    0        "Not applicable"
+> ;
+
+. label define gsp012x
+>    99       "No answer"
+>    98       "Don't know"
+>    89       "89 or older"
+> ;
+
+. label define gsp013x
+>    9        "No answer"
+>    8        "Don't know"
+>    7        "Not applicable"
+>    4        "Graduate"
+>    3        "Bachelor"
+>    2        "Junior college"
+>    1        "High school"
+>    0        "Lt high school"
+> ;
+
+. label define gsp014x
+>    3        "Other"
+>    2        "Black"
+>    1        "White"
+>    0        "Not applicable"
+> ;
+
+. label define gsp015x
+>    9        "Pacific"
+>    8        "Mountain"
+>    7        "W. sou. central"
+>    6        "E. sou. central"
+>    5        "South atlantic"
+>    4        "W. nor. central"
+>    3        "E. nor. central"
+>    2        "Middle atlantic"
+>    1        "New england"
+>    0        "Not assigned"
+> ;
+
+. label define gsp016x
+>    9        "Dk,na"
+>    8        "More thn once wk"
+>    7        "Every week"
+>    6        "Nrly every week"
+>    5        "2-3x a month"
+>    4        "Once a month"
+>    3        "Sevrl times a yr"
+>    2        "Once a year"
+>    1        "Lt once a year"
+>    0        "Never"
+> ;
+
+. label define gsp017x
+>    9        "No answer"
+>    8        "Don't know"
+>    3        "Not too happy"
+>    2        "Pretty happy"
+>    1        "Very happy"
+>    0        "Not applicable"
+> ;
+
+. label define gsp018x
+>    9        "No answer"
+>    8        "Don't know"
+>    3        "Not too happy"
+>    2        "Pretty happy"
+>    1        "Very happy"
+>    0        "Not applicable"
+> ;
+
+. label define gsp019x
+>    9        "No answer"
+>    8        "Don't know"
+>    3        "Depends"
+>    2        "Lookout for self"
+>    1        "Helpful"
+>    0        "Not applicable"
+> ;
+
+. label define gsp020x
+>    9        "No answer"
+>    8        "Don't know"
+>    3        "Depends"
+>    2        "Cannot trust"
+>    1        "Can trust"
+>    0        "Not applicable"
+> ;
+
+. label define gsp021x
+>    9        "No answer"
+>    8        "Don't know"
+>    7        "None"
+>    6        "A little"
+>    5        "Some"
+>    4        "A fair amount"
+>    3        "Quite a bit"
+>    2        "Great deal"
+>    1        "Very great deal"
+>    0        "Not applicable"
+> ;
+
+. label define gsp022x
+>    9        "No answer"
+>    8        "Don't know"
+>    7        "None"
+>    6        "A little"
+>    5        "Some"
+>    4        "A fair amount"
+>    3        "Quite a bit"
+>    2        "Great deal"
+>    1        "Very great deal"
+>    0        "Not applicable"
+> ;
+
+. label define gsp023x
+>    9        "No answer"
+>    8        "Don't know"
+>    3        "Hardly any"
+>    2        "Only some"
+>    1        "A great deal"
+>    0        "Not applicable"
+> ;
+
+. label define gsp024x
+>    9        "No answer"
+>    8        "Don't know"
+>    4        "Very dissatisfied"
+>    3        "A little dissat"
+>    2        "Mod. satisfied"
+>    1        "Very satisfied"
+>    0        "Not applicable"
+> ;
+
+. label values kidssol  gsp001x;
+
+. label values suicide1 gsp002x;
+
+. label values suicide2 gsp003x;
+
+. label values suicide3 gsp004x;
+
+. label values suicide4 gsp005x;
+
+. label values cohort   gsp006x;
+
+. label values zodiac   gsp007x;
+
+. label values ballot   gsp008x;
+
+. label values sample   gsp009x;
+
+. label values parsol   gsp010x;
+
+. label values satfin   gsp011x;
+
+. label values age      gsp012x;
+
+. label values degree   gsp013x;
+
+. label values race     gsp014x;
+
+. label values region   gsp015x;
+
+. label values attend   gsp016x;
+
+. label values happy    gsp017x;
+
+. label values hapmar   gsp018x;
+
+. label values helpful  gsp019x;
+
+. label values trust    gsp020x;
+
+. label values satfrnd  gsp021x;
+
+. label values sathealt gsp022x;
+
+. label values consci   gsp023x;
+
+. label values satjob   gsp024x;
+
+. 
+end of do-file
+
+. 
+. 
+. // #2
+. //demographics
+. 
+. * 10-year age cohorts
+. egen cohortg = cut(cohort), at(1885(10)2005) icodes
+(233 missing values generated)
+
+. label var cohortg "10 year birth cohort"
+
+. label define cohortg 0 "1885-1894" 1 "1895-1904" 2 "1905-1914" ///
+>   3 "1915-1924" 4 "1925-1934" 5 "1935-1944" 6 "1945-1954" ///
+>   7 "1955-1964" 8 "1965-1974" 9 "1975-1984" 10 "1985-1994" ///
+>   11 "1995-2004", modify
+
+. label values cohortg cohortg
+
+. numlabel cohortg, add
+
+. 
+. tab cohort cohortg, mis
+
+               |            10 year birth cohort
+ Year of birth | 0. 1885-1  1. 1895-1  2. 1905-1  3. 1915-1 |     Total
+---------------+--------------------------------------------+----------
+          1883 |         0          0          0          0 |         2 
+          1884 |         0          0          0          0 |         3 
+          1885 |         7          0          0          0 |         7 
+          1886 |         4          0          0          0 |         4 
+          1887 |        13          0          0          0 |        13 
+          1888 |        10          0          0          0 |        10 
+          1889 |        21          0          0          0 |        21 
+          1890 |        27          0          0          0 |        27 
+          1891 |        27          0          0          0 |        27 
+          1892 |        31          0          0          0 |        31 
+          1893 |        34          0          0          0 |        34 
+          1894 |        61          0          0          0 |        61 
+          1895 |         0         55          0          0 |        55 
+          1896 |         0         73          0          0 |        73 
+          1897 |         0         72          0          0 |        72 
+          1898 |         0        105          0          0 |       105 
+          1899 |         0        123          0          0 |       123 
+          1900 |         0        130          0          0 |       130 
+          1901 |         0        138          0          0 |       138 
+          1902 |         0        163          0          0 |       163 
+          1903 |         0        173          0          0 |       173 
+          1904 |         0        182          0          0 |       182 
+          1905 |         0          0        219          0 |       219 
+          1906 |         0          0        207          0 |       207 
+          1907 |         0          0        263          0 |       263 
+          1908 |         0          0        246          0 |       246 
+          1909 |         0          0        330          0 |       330 
+          1910 |         0          0        285          0 |       285 
+          1911 |         0          0        318          0 |       318 
+          1912 |         0          0        348          0 |       348 
+          1913 |         0          0        371          0 |       371 
+          1914 |         0          0        417          0 |       417 
+          1915 |         0          0          0        428 |       428 
+          1916 |         0          0          0        455 |       455 
+          1917 |         0          0          0        483 |       483 
+          1918 |         0          0          0        500 |       500 
+          1919 |         0          0          0        530 |       530 
+          1920 |         0          0          0        520 |       520 
+          1921 |         0          0          0        582 |       582 
+          1922 |         0          0          0        572 |       572 
+          1923 |         0          0          0        605 |       605 
+          1924 |         0          0          0        618 |       618 
+          1925 |         0          0          0          0 |       607 
+          1926 |         0          0          0          0 |       650 
+          1927 |         0          0          0          0 |       660 
+          1928 |         0          0          0          0 |       614 
+          1929 |         0          0          0          0 |       646 
+          1930 |         0          0          0          0 |       651 
+          1931 |         0          0          0          0 |       612 
+          1932 |         0          0          0          0 |       630 
+          1933 |         0          0          0          0 |       616 
+          1934 |         0          0          0          0 |       717 
+          1935 |         0          0          0          0 |       724 
+          1936 |         0          0          0          0 |       742 
+          1937 |         0          0          0          0 |       741 
+          1938 |         0          0          0          0 |       774 
+          1939 |         0          0          0          0 |       796 
+          1940 |         0          0          0          0 |       804 
+          1941 |         0          0          0          0 |       860 
+          1942 |         0          0          0          0 |       958 
+          1943 |         0          0          0          0 |     1,026 
+          1944 |         0          0          0          0 |     1,037 
+          1945 |         0          0          0          0 |       966 
+          1946 |         0          0          0          0 |     1,114 
+          1947 |         0          0          0          0 |     1,361 
+          1948 |         0          0          0          0 |     1,304 
+          1949 |         0          0          0          0 |     1,193 
+          1950 |         0          0          0          0 |     1,282 
+          1951 |         0          0          0          0 |     1,359 
+          1952 |         0          0          0          0 |     1,365 
+          1953 |         0          0          0          0 |     1,364 
+          1954 |         0          0          0          0 |     1,300 
+          1955 |         0          0          0          0 |     1,308 
+          1956 |         0          0          0          0 |     1,364 
+          1957 |         0          0          0          0 |     1,343 
+          1958 |         0          0          0          0 |     1,360 
+          1959 |         0          0          0          0 |     1,273 
+          1960 |         0          0          0          0 |     1,191 
+          1961 |         0          0          0          0 |     1,171 
+          1962 |         0          0          0          0 |     1,084 
+          1963 |         0          0          0          0 |     1,079 
+          1964 |         0          0          0          0 |     1,074 
+          1965 |         0          0          0          0 |       978 
+          1966 |         0          0          0          0 |       879 
+          1967 |         0          0          0          0 |       821 
+          1968 |         0          0          0          0 |       869 
+          1969 |         0          0          0          0 |       818 
+          1970 |         0          0          0          0 |       836 
+          1971 |         0          0          0          0 |       689 
+          1972 |         0          0          0          0 |       679 
+          1973 |         0          0          0          0 |       640 
+          1974 |         0          0          0          0 |       638 
+          1975 |         0          0          0          0 |       570 
+          1976 |         0          0          0          0 |       565 
+          1977 |         0          0          0          0 |       576 
+          1978 |         0          0          0          0 |       498 
+          1979 |         0          0          0          0 |       547 
+          1980 |         0          0          0          0 |       488 
+          1981 |         0          0          0          0 |       468 
+          1982 |         0          0          0          0 |       398 
+          1983 |         0          0          0          0 |       365 
+          1984 |         0          0          0          0 |       376 
+          1985 |         0          0          0          0 |       352 
+          1986 |         0          0          0          0 |       292 
+          1987 |         0          0          0          0 |       268 
+          1988 |         0          0          0          0 |       232 
+          1989 |         0          0          0          0 |       245 
+          1990 |         0          0          0          0 |       179 
+          1991 |         0          0          0          0 |       180 
+          1992 |         0          0          0          0 |       123 
+          1993 |         0          0          0          0 |       136 
+          1994 |         0          0          0          0 |       120 
+          1995 |         0          0          0          0 |        87 
+          1996 |         0          0          0          0 |        72 
+          1997 |         0          0          0          0 |        61 
+          1998 |         0          0          0          0 |        22 
+          1999 |         0          0          0          0 |        26 
+          2000 |         0          0          0          0 |        22 
+     No answer |         0          0          0          0 |       228 
+---------------+--------------------------------------------+----------
+         Total |       235      1,214      3,004      5,293 |    64,814 
+
+
+               |            10 year birth cohort
+ Year of birth | 4. 1925-1  5. 1935-1  6. 1945-1  7. 1955-1 |     Total
+---------------+--------------------------------------------+----------
+          1883 |         0          0          0          0 |         2 
+          1884 |         0          0          0          0 |         3 
+          1885 |         0          0          0          0 |         7 
+          1886 |         0          0          0          0 |         4 
+          1887 |         0          0          0          0 |        13 
+          1888 |         0          0          0          0 |        10 
+          1889 |         0          0          0          0 |        21 
+          1890 |         0          0          0          0 |        27 
+          1891 |         0          0          0          0 |        27 
+          1892 |         0          0          0          0 |        31 
+          1893 |         0          0          0          0 |        34 
+          1894 |         0          0          0          0 |        61 
+          1895 |         0          0          0          0 |        55 
+          1896 |         0          0          0          0 |        73 
+          1897 |         0          0          0          0 |        72 
+          1898 |         0          0          0          0 |       105 
+          1899 |         0          0          0          0 |       123 
+          1900 |         0          0          0          0 |       130 
+          1901 |         0          0          0          0 |       138 
+          1902 |         0          0          0          0 |       163 
+          1903 |         0          0          0          0 |       173 
+          1904 |         0          0          0          0 |       182 
+          1905 |         0          0          0          0 |       219 
+          1906 |         0          0          0          0 |       207 
+          1907 |         0          0          0          0 |       263 
+          1908 |         0          0          0          0 |       246 
+          1909 |         0          0          0          0 |       330 
+          1910 |         0          0          0          0 |       285 
+          1911 |         0          0          0          0 |       318 
+          1912 |         0          0          0          0 |       348 
+          1913 |         0          0          0          0 |       371 
+          1914 |         0          0          0          0 |       417 
+          1915 |         0          0          0          0 |       428 
+          1916 |         0          0          0          0 |       455 
+          1917 |         0          0          0          0 |       483 
+          1918 |         0          0          0          0 |       500 
+          1919 |         0          0          0          0 |       530 
+          1920 |         0          0          0          0 |       520 
+          1921 |         0          0          0          0 |       582 
+          1922 |         0          0          0          0 |       572 
+          1923 |         0          0          0          0 |       605 
+          1924 |         0          0          0          0 |       618 
+          1925 |       607          0          0          0 |       607 
+          1926 |       650          0          0          0 |       650 
+          1927 |       660          0          0          0 |       660 
+          1928 |       614          0          0          0 |       614 
+          1929 |       646          0          0          0 |       646 
+          1930 |       651          0          0          0 |       651 
+          1931 |       612          0          0          0 |       612 
+          1932 |       630          0          0          0 |       630 
+          1933 |       616          0          0          0 |       616 
+          1934 |       717          0          0          0 |       717 
+          1935 |         0        724          0          0 |       724 
+          1936 |         0        742          0          0 |       742 
+          1937 |         0        741          0          0 |       741 
+          1938 |         0        774          0          0 |       774 
+          1939 |         0        796          0          0 |       796 
+          1940 |         0        804          0          0 |       804 
+          1941 |         0        860          0          0 |       860 
+          1942 |         0        958          0          0 |       958 
+          1943 |         0      1,026          0          0 |     1,026 
+          1944 |         0      1,037          0          0 |     1,037 
+          1945 |         0          0        966          0 |       966 
+          1946 |         0          0      1,114          0 |     1,114 
+          1947 |         0          0      1,361          0 |     1,361 
+          1948 |         0          0      1,304          0 |     1,304 
+          1949 |         0          0      1,193          0 |     1,193 
+          1950 |         0          0      1,282          0 |     1,282 
+          1951 |         0          0      1,359          0 |     1,359 
+          1952 |         0          0      1,365          0 |     1,365 
+          1953 |         0          0      1,364          0 |     1,364 
+          1954 |         0          0      1,300          0 |     1,300 
+          1955 |         0          0          0      1,308 |     1,308 
+          1956 |         0          0          0      1,364 |     1,364 
+          1957 |         0          0          0      1,343 |     1,343 
+          1958 |         0          0          0      1,360 |     1,360 
+          1959 |         0          0          0      1,273 |     1,273 
+          1960 |         0          0          0      1,191 |     1,191 
+          1961 |         0          0          0      1,171 |     1,171 
+          1962 |         0          0          0      1,084 |     1,084 
+          1963 |         0          0          0      1,079 |     1,079 
+          1964 |         0          0          0      1,074 |     1,074 
+          1965 |         0          0          0          0 |       978 
+          1966 |         0          0          0          0 |       879 
+          1967 |         0          0          0          0 |       821 
+          1968 |         0          0          0          0 |       869 
+          1969 |         0          0          0          0 |       818 
+          1970 |         0          0          0          0 |       836 
+          1971 |         0          0          0          0 |       689 
+          1972 |         0          0          0          0 |       679 
+          1973 |         0          0          0          0 |       640 
+          1974 |         0          0          0          0 |       638 
+          1975 |         0          0          0          0 |       570 
+          1976 |         0          0          0          0 |       565 
+          1977 |         0          0          0          0 |       576 
+          1978 |         0          0          0          0 |       498 
+          1979 |         0          0          0          0 |       547 
+          1980 |         0          0          0          0 |       488 
+          1981 |         0          0          0          0 |       468 
+          1982 |         0          0          0          0 |       398 
+          1983 |         0          0          0          0 |       365 
+          1984 |         0          0          0          0 |       376 
+          1985 |         0          0          0          0 |       352 
+          1986 |         0          0          0          0 |       292 
+          1987 |         0          0          0          0 |       268 
+          1988 |         0          0          0          0 |       232 
+          1989 |         0          0          0          0 |       245 
+          1990 |         0          0          0          0 |       179 
+          1991 |         0          0          0          0 |       180 
+          1992 |         0          0          0          0 |       123 
+          1993 |         0          0          0          0 |       136 
+          1994 |         0          0          0          0 |       120 
+          1995 |         0          0          0          0 |        87 
+          1996 |         0          0          0          0 |        72 
+          1997 |         0          0          0          0 |        61 
+          1998 |         0          0          0          0 |        22 
+          1999 |         0          0          0          0 |        26 
+          2000 |         0          0          0          0 |        22 
+     No answer |         0          0          0          0 |       228 
+---------------+--------------------------------------------+----------
+         Total |     6,403      8,462     12,608     12,247 |    64,814 
+
+
+               |            10 year birth cohort
+ Year of birth | 8. 1965-1  9. 1975-1  10. 1985-  11. 1995- |     Total
+---------------+--------------------------------------------+----------
+          1883 |         0          0          0          0 |         2 
+          1884 |         0          0          0          0 |         3 
+          1885 |         0          0          0          0 |         7 
+          1886 |         0          0          0          0 |         4 
+          1887 |         0          0          0          0 |        13 
+          1888 |         0          0          0          0 |        10 
+          1889 |         0          0          0          0 |        21 
+          1890 |         0          0          0          0 |        27 
+          1891 |         0          0          0          0 |        27 
+          1892 |         0          0          0          0 |        31 
+          1893 |         0          0          0          0 |        34 
+          1894 |         0          0          0          0 |        61 
+          1895 |         0          0          0          0 |        55 
+          1896 |         0          0          0          0 |        73 
+          1897 |         0          0          0          0 |        72 
+          1898 |         0          0          0          0 |       105 
+          1899 |         0          0          0          0 |       123 
+          1900 |         0          0          0          0 |       130 
+          1901 |         0          0          0          0 |       138 
+          1902 |         0          0          0          0 |       163 
+          1903 |         0          0          0          0 |       173 
+          1904 |         0          0          0          0 |       182 
+          1905 |         0          0          0          0 |       219 
+          1906 |         0          0          0          0 |       207 
+          1907 |         0          0          0          0 |       263 
+          1908 |         0          0          0          0 |       246 
+          1909 |         0          0          0          0 |       330 
+          1910 |         0          0          0          0 |       285 
+          1911 |         0          0          0          0 |       318 
+          1912 |         0          0          0          0 |       348 
+          1913 |         0          0          0          0 |       371 
+          1914 |         0          0          0          0 |       417 
+          1915 |         0          0          0          0 |       428 
+          1916 |         0          0          0          0 |       455 
+          1917 |         0          0          0          0 |       483 
+          1918 |         0          0          0          0 |       500 
+          1919 |         0          0          0          0 |       530 
+          1920 |         0          0          0          0 |       520 
+          1921 |         0          0          0          0 |       582 
+          1922 |         0          0          0          0 |       572 
+          1923 |         0          0          0          0 |       605 
+          1924 |         0          0          0          0 |       618 
+          1925 |         0          0          0          0 |       607 
+          1926 |         0          0          0          0 |       650 
+          1927 |         0          0          0          0 |       660 
+          1928 |         0          0          0          0 |       614 
+          1929 |         0          0          0          0 |       646 
+          1930 |         0          0          0          0 |       651 
+          1931 |         0          0          0          0 |       612 
+          1932 |         0          0          0          0 |       630 
+          1933 |         0          0          0          0 |       616 
+          1934 |         0          0          0          0 |       717 
+          1935 |         0          0          0          0 |       724 
+          1936 |         0          0          0          0 |       742 
+          1937 |         0          0          0          0 |       741 
+          1938 |         0          0          0          0 |       774 
+          1939 |         0          0          0          0 |       796 
+          1940 |         0          0          0          0 |       804 
+          1941 |         0          0          0          0 |       860 
+          1942 |         0          0          0          0 |       958 
+          1943 |         0          0          0          0 |     1,026 
+          1944 |         0          0          0          0 |     1,037 
+          1945 |         0          0          0          0 |       966 
+          1946 |         0          0          0          0 |     1,114 
+          1947 |         0          0          0          0 |     1,361 
+          1948 |         0          0          0          0 |     1,304 
+          1949 |         0          0          0          0 |     1,193 
+          1950 |         0          0          0          0 |     1,282 
+          1951 |         0          0          0          0 |     1,359 
+          1952 |         0          0          0          0 |     1,365 
+          1953 |         0          0          0          0 |     1,364 
+          1954 |         0          0          0          0 |     1,300 
+          1955 |         0          0          0          0 |     1,308 
+          1956 |         0          0          0          0 |     1,364 
+          1957 |         0          0          0          0 |     1,343 
+          1958 |         0          0          0          0 |     1,360 
+          1959 |         0          0          0          0 |     1,273 
+          1960 |         0          0          0          0 |     1,191 
+          1961 |         0          0          0          0 |     1,171 
+          1962 |         0          0          0          0 |     1,084 
+          1963 |         0          0          0          0 |     1,079 
+          1964 |         0          0          0          0 |     1,074 
+          1965 |       978          0          0          0 |       978 
+          1966 |       879          0          0          0 |       879 
+          1967 |       821          0          0          0 |       821 
+          1968 |       869          0          0          0 |       869 
+          1969 |       818          0          0          0 |       818 
+          1970 |       836          0          0          0 |       836 
+          1971 |       689          0          0          0 |       689 
+          1972 |       679          0          0          0 |       679 
+          1973 |       640          0          0          0 |       640 
+          1974 |       638          0          0          0 |       638 
+          1975 |         0        570          0          0 |       570 
+          1976 |         0        565          0          0 |       565 
+          1977 |         0        576          0          0 |       576 
+          1978 |         0        498          0          0 |       498 
+          1979 |         0        547          0          0 |       547 
+          1980 |         0        488          0          0 |       488 
+          1981 |         0        468          0          0 |       468 
+          1982 |         0        398          0          0 |       398 
+          1983 |         0        365          0          0 |       365 
+          1984 |         0        376          0          0 |       376 
+          1985 |         0          0        352          0 |       352 
+          1986 |         0          0        292          0 |       292 
+          1987 |         0          0        268          0 |       268 
+          1988 |         0          0        232          0 |       232 
+          1989 |         0          0        245          0 |       245 
+          1990 |         0          0        179          0 |       179 
+          1991 |         0          0        180          0 |       180 
+          1992 |         0          0        123          0 |       123 
+          1993 |         0          0        136          0 |       136 
+          1994 |         0          0        120          0 |       120 
+          1995 |         0          0          0         87 |        87 
+          1996 |         0          0          0         72 |        72 
+          1997 |         0          0          0         61 |        61 
+          1998 |         0          0          0         22 |        22 
+          1999 |         0          0          0         26 |        26 
+          2000 |         0          0          0         22 |        22 
+     No answer |         0          0          0          0 |       228 
+---------------+--------------------------------------------+----------
+         Total |     7,847      4,851      2,127        290 |    64,814 
+
+
+               |  10 year
+               |   birth
+               |   cohort
+ Year of birth |         . |     Total
+---------------+-----------+----------
+          1883 |         2 |         2 
+          1884 |         3 |         3 
+          1885 |         0 |         7 
+          1886 |         0 |         4 
+          1887 |         0 |        13 
+          1888 |         0 |        10 
+          1889 |         0 |        21 
+          1890 |         0 |        27 
+          1891 |         0 |        27 
+          1892 |         0 |        31 
+          1893 |         0 |        34 
+          1894 |         0 |        61 
+          1895 |         0 |        55 
+          1896 |         0 |        73 
+          1897 |         0 |        72 
+          1898 |         0 |       105 
+          1899 |         0 |       123 
+          1900 |         0 |       130 
+          1901 |         0 |       138 
+          1902 |         0 |       163 
+          1903 |         0 |       173 
+          1904 |         0 |       182 
+          1905 |         0 |       219 
+          1906 |         0 |       207 
+          1907 |         0 |       263 
+          1908 |         0 |       246 
+          1909 |         0 |       330 
+          1910 |         0 |       285 
+          1911 |         0 |       318 
+          1912 |         0 |       348 
+          1913 |         0 |       371 
+          1914 |         0 |       417 
+          1915 |         0 |       428 
+          1916 |         0 |       455 
+          1917 |         0 |       483 
+          1918 |         0 |       500 
+          1919 |         0 |       530 
+          1920 |         0 |       520 
+          1921 |         0 |       582 
+          1922 |         0 |       572 
+          1923 |         0 |       605 
+          1924 |         0 |       618 
+          1925 |         0 |       607 
+          1926 |         0 |       650 
+          1927 |         0 |       660 
+          1928 |         0 |       614 
+          1929 |         0 |       646 
+          1930 |         0 |       651 
+          1931 |         0 |       612 
+          1932 |         0 |       630 
+          1933 |         0 |       616 
+          1934 |         0 |       717 
+          1935 |         0 |       724 
+          1936 |         0 |       742 
+          1937 |         0 |       741 
+          1938 |         0 |       774 
+          1939 |         0 |       796 
+          1940 |         0 |       804 
+          1941 |         0 |       860 
+          1942 |         0 |       958 
+          1943 |         0 |     1,026 
+          1944 |         0 |     1,037 
+          1945 |         0 |       966 
+          1946 |         0 |     1,114 
+          1947 |         0 |     1,361 
+          1948 |         0 |     1,304 
+          1949 |         0 |     1,193 
+          1950 |         0 |     1,282 
+          1951 |         0 |     1,359 
+          1952 |         0 |     1,365 
+          1953 |         0 |     1,364 
+          1954 |         0 |     1,300 
+          1955 |         0 |     1,308 
+          1956 |         0 |     1,364 
+          1957 |         0 |     1,343 
+          1958 |         0 |     1,360 
+          1959 |         0 |     1,273 
+          1960 |         0 |     1,191 
+          1961 |         0 |     1,171 
+          1962 |         0 |     1,084 
+          1963 |         0 |     1,079 
+          1964 |         0 |     1,074 
+          1965 |         0 |       978 
+          1966 |         0 |       879 
+          1967 |         0 |       821 
+          1968 |         0 |       869 
+          1969 |         0 |       818 
+          1970 |         0 |       836 
+          1971 |         0 |       689 
+          1972 |         0 |       679 
+          1973 |         0 |       640 
+          1974 |         0 |       638 
+          1975 |         0 |       570 
+          1976 |         0 |       565 
+          1977 |         0 |       576 
+          1978 |         0 |       498 
+          1979 |         0 |       547 
+          1980 |         0 |       488 
+          1981 |         0 |       468 
+          1982 |         0 |       398 
+          1983 |         0 |       365 
+          1984 |         0 |       376 
+          1985 |         0 |       352 
+          1986 |         0 |       292 
+          1987 |         0 |       268 
+          1988 |         0 |       232 
+          1989 |         0 |       245 
+          1990 |         0 |       179 
+          1991 |         0 |       180 
+          1992 |         0 |       123 
+          1993 |         0 |       136 
+          1994 |         0 |       120 
+          1995 |         0 |        87 
+          1996 |         0 |        72 
+          1997 |         0 |        61 
+          1998 |         0 |        22 
+          1999 |         0 |        26 
+          2000 |         0 |        22 
+     No answer |       228 |       228 
+---------------+-----------+----------
+         Total |       233 |    64,814 
+
+. 
+. * 10-year age groups
+. egen agegp = cut(age), at(20(10)90) icodes
+(1330 missing values generated)
+
+. replace agegp = 0 if age==18 | age==19
+(1,102 real changes made)
+
+. replace agegp = . if age==98 | age==99
+(0 real changes made)
+
+. label var agegp "10 year age group"
+
+. label define agegp 0 "18-29 yrs" 1 "30-39 yrs" 2 "40-49 yrs" ///
+>   3 "50-59 yrs" 4 "60-69 yrs" 5 "70-79 yrs" 6 "80+ yrs", modify
+
+. label values agegp agegp
+
+. numlabel agegp, add
+
+. 
+. tab age agegp, mis
+
+     Age of |                   10 year age group
+ respondent | 0. 18-29   1. 30-39   2. 40-49   3. 50-59   4. 60-69  |     Total
+------------+-------------------------------------------------------+----------
+         18 |       241          0          0          0          0 |       241 
+         19 |       861          0          0          0          0 |       861 
+         20 |       885          0          0          0          0 |       885 
+         21 |     1,014          0          0          0          0 |     1,014 
+         22 |     1,082          0          0          0          0 |     1,082 
+         23 |     1,238          0          0          0          0 |     1,238 
+         24 |     1,213          0          0          0          0 |     1,213 
+         25 |     1,378          0          0          0          0 |     1,378 
+         26 |     1,336          0          0          0          0 |     1,336 
+         27 |     1,391          0          0          0          0 |     1,391 
+         28 |     1,432          0          0          0          0 |     1,432 
+         29 |     1,327          0          0          0          0 |     1,327 
+         30 |         0      1,450          0          0          0 |     1,450 
+         31 |         0      1,340          0          0          0 |     1,340 
+         32 |         0      1,431          0          0          0 |     1,431 
+         33 |         0      1,375          0          0          0 |     1,375 
+         34 |         0      1,422          0          0          0 |     1,422 
+         35 |         0      1,383          0          0          0 |     1,383 
+         36 |         0      1,362          0          0          0 |     1,362 
+         37 |         0      1,360          0          0          0 |     1,360 
+         38 |         0      1,350          0          0          0 |     1,350 
+         39 |         0      1,236          0          0          0 |     1,236 
+         40 |         0          0      1,287          0          0 |     1,287 
+         41 |         0          0      1,222          0          0 |     1,222 
+         42 |         0          0      1,201          0          0 |     1,201 
+         43 |         0          0      1,240          0          0 |     1,240 
+         44 |         0          0      1,174          0          0 |     1,174 
+         45 |         0          0      1,091          0          0 |     1,091 
+         46 |         0          0      1,123          0          0 |     1,123 
+         47 |         0          0      1,104          0          0 |     1,104 
+         48 |         0          0      1,100          0          0 |     1,100 
+         49 |         0          0      1,122          0          0 |     1,122 
+         50 |         0          0          0      1,057          0 |     1,057 
+         51 |         0          0          0      1,067          0 |     1,067 
+         52 |         0          0          0      1,028          0 |     1,028 
+         53 |         0          0          0      1,042          0 |     1,042 
+         54 |         0          0          0      1,003          0 |     1,003 
+         55 |         0          0          0        929          0 |       929 
+         56 |         0          0          0      1,018          0 |     1,018 
+         57 |         0          0          0        914          0 |       914 
+         58 |         0          0          0        974          0 |       974 
+         59 |         0          0          0        915          0 |       915 
+         60 |         0          0          0          0        940 |       940 
+         61 |         0          0          0          0        842 |       842 
+         62 |         0          0          0          0        865 |       865 
+         63 |         0          0          0          0        843 |       843 
+         64 |         0          0          0          0        736 |       736 
+         65 |         0          0          0          0        819 |       819 
+         66 |         0          0          0          0        749 |       749 
+         67 |         0          0          0          0        800 |       800 
+         68 |         0          0          0          0        737 |       737 
+         69 |         0          0          0          0        689 |       689 
+         70 |         0          0          0          0          0 |       719 
+         71 |         0          0          0          0          0 |       624 
+         72 |         0          0          0          0          0 |       616 
+         73 |         0          0          0          0          0 |       552 
+         74 |         0          0          0          0          0 |       593 
+         75 |         0          0          0          0          0 |       504 
+         76 |         0          0          0          0          0 |       507 
+         77 |         0          0          0          0          0 |       477 
+         78 |         0          0          0          0          0 |       433 
+         79 |         0          0          0          0          0 |       376 
+         80 |         0          0          0          0          0 |       337 
+         81 |         0          0          0          0          0 |       329 
+         82 |         0          0          0          0          0 |       279 
+         83 |         0          0          0          0          0 |       260 
+         84 |         0          0          0          0          0 |       226 
+         85 |         0          0          0          0          0 |       197 
+         86 |         0          0          0          0          0 |       186 
+         87 |         0          0          0          0          0 |       148 
+         88 |         0          0          0          0          0 |       121 
+89 or older |         0          0          0          0          0 |       364 
+ Don't know |         0          0          0          0          0 |         1 
+  No answer |         0          0          0          0          0 |       227 
+------------+-------------------------------------------------------+----------
+      Total |    13,398     13,709     11,664      9,947      8,020 |    64,814 
+
+
+     Age of |        10 year age group
+ respondent | 5. 70-79   6. 80+ yr          . |     Total
+------------+---------------------------------+----------
+         18 |         0          0          0 |       241 
+         19 |         0          0          0 |       861 
+         20 |         0          0          0 |       885 
+         21 |         0          0          0 |     1,014 
+         22 |         0          0          0 |     1,082 
+         23 |         0          0          0 |     1,238 
+         24 |         0          0          0 |     1,213 
+         25 |         0          0          0 |     1,378 
+         26 |         0          0          0 |     1,336 
+         27 |         0          0          0 |     1,391 
+         28 |         0          0          0 |     1,432 
+         29 |         0          0          0 |     1,327 
+         30 |         0          0          0 |     1,450 
+         31 |         0          0          0 |     1,340 
+         32 |         0          0          0 |     1,431 
+         33 |         0          0          0 |     1,375 
+         34 |         0          0          0 |     1,422 
+         35 |         0          0          0 |     1,383 
+         36 |         0          0          0 |     1,362 
+         37 |         0          0          0 |     1,360 
+         38 |         0          0          0 |     1,350 
+         39 |         0          0          0 |     1,236 
+         40 |         0          0          0 |     1,287 
+         41 |         0          0          0 |     1,222 
+         42 |         0          0          0 |     1,201 
+         43 |         0          0          0 |     1,240 
+         44 |         0          0          0 |     1,174 
+         45 |         0          0          0 |     1,091 
+         46 |         0          0          0 |     1,123 
+         47 |         0          0          0 |     1,104 
+         48 |         0          0          0 |     1,100 
+         49 |         0          0          0 |     1,122 
+         50 |         0          0          0 |     1,057 
+         51 |         0          0          0 |     1,067 
+         52 |         0          0          0 |     1,028 
+         53 |         0          0          0 |     1,042 
+         54 |         0          0          0 |     1,003 
+         55 |         0          0          0 |       929 
+         56 |         0          0          0 |     1,018 
+         57 |         0          0          0 |       914 
+         58 |         0          0          0 |       974 
+         59 |         0          0          0 |       915 
+         60 |         0          0          0 |       940 
+         61 |         0          0          0 |       842 
+         62 |         0          0          0 |       865 
+         63 |         0          0          0 |       843 
+         64 |         0          0          0 |       736 
+         65 |         0          0          0 |       819 
+         66 |         0          0          0 |       749 
+         67 |         0          0          0 |       800 
+         68 |         0          0          0 |       737 
+         69 |         0          0          0 |       689 
+         70 |       719          0          0 |       719 
+         71 |       624          0          0 |       624 
+         72 |       616          0          0 |       616 
+         73 |       552          0          0 |       552 
+         74 |       593          0          0 |       593 
+         75 |       504          0          0 |       504 
+         76 |       507          0          0 |       507 
+         77 |       477          0          0 |       477 
+         78 |       433          0          0 |       433 
+         79 |       376          0          0 |       376 
+         80 |         0        337          0 |       337 
+         81 |         0        329          0 |       329 
+         82 |         0        279          0 |       279 
+         83 |         0        260          0 |       260 
+         84 |         0        226          0 |       226 
+         85 |         0        197          0 |       197 
+         86 |         0        186          0 |       186 
+         87 |         0        148          0 |       148 
+         88 |         0        121          0 |       121 
+89 or older |         0        364          0 |       364 
+ Don't know |         0          0          1 |         1 
+  No answer |         0          0        227 |       227 
+------------+---------------------------------+----------
+      Total |     5,401      2,447        228 |    64,814 
+
+. 
+. 
+. * education groups
+. recode degree (0=0 "<HS") (1=1 "HS") (3=2 "College") ///
+>   (4=3 "Graduate") (8/9 = . ), gen(educ4)
+(14364 differences between degree and educ4)
+
+. label var educ4 "Highest education degree"
+
+. numlabel educ4, add
+
+. 
+. 
+. // #3 
+. // self-reported measures of happiness, etc.
+. 
+. 
+. * binary happiness variables
+. recode happy (0 = .a) (1 2 8 = 0) (3 = 1) (9 = .b), gen(nthappy)
+(64814 differences between happy and nthappy)
+
+. label var nthappy "Not too happy?"
+
+. 
+. recode happy (0 = .a) (3 2 8 = 0) (1 = 1) (9 = .b), gen(vhappy)
+(45991 differences between happy and vhappy)
+
+. label var vhappy "Very happy?"
+
+. 
+. * selfishness
+. recode helpful (0 = .a) (1 3 8 = 0) (2 = 1) (9 = .b), gen(selfish)
+(64814 differences between helpful and selfish)
+
+. label var self "People look out for themselves?"
+
+. 
+. * trust
+. recode trust (0 = .a) (1 3 8 = 0) (2 = 1) (9 = .b), gen(ctrust)
+(64814 differences between trust and ctrust)
+
+. label var ctrust "People can't be trusted?"
+
+. 
+. * trust in scientific
+. recode consci (0 = .a) (2 3 8 = 0) (1 = 1) (9 = .b), gen(tsci)
+(47300 differences between consci and tsci)
+
+. label var tsci "Great deal of trust in scientific community?"
+
+. 
+. * label for binary measures
+. label define noyes 0 "No" 1 "Yes" .a "N/A" .b "No answer", modify
+
+. 
+. label values nthappy vhappy self ctrust tsci noyes
+
+. 
+. // #4
+. // save as dataset
+. export delimited "gss-data.csv", nolabel replace
+(note: file gss-data.csv not found)
+file gss-data.csv saved
+
+. save gss-data, replace
+file gss-data.dta saved
+
+. 
+. log close
+      name:  <unnamed>
+       log:  /Users/samharper/git/arph-2020/data/gss-despair/gss-data-prep.log
+  log type:  text
+ closed on:   2 Apr 2020, 14:49:06
+--------------------------------------------------------------------------------
