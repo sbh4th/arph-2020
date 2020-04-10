@@ -30,6 +30,15 @@ dl <- d %>%
 # remove string from year
 dl$Year <- str_remove(dl$Year, "YR")
 
+# export a .csv file for joinpoint analysis
+dljp <- filter(dl, Country.Code == "OED" | 
+                 Country.Code == "USA") %>%
+  arrange(Country.Code, Year) %>%
+  group_by(Country.Code) %>%
+  mutate(year0 = row_number() - 1) %>%
+  write_delim(here("data", "us-oed-le.txt"), delim = " ")
+
+
 # rank of USA in each year
 ranks <- dl %>% arrange(Year, -LE) %>%
     group_by(Year) %>% 

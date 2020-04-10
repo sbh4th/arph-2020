@@ -53,7 +53,7 @@ w <- ggplot(subset(raw, sex==1 & race!=1)) + geom_bar(aes(y=agef, weight=te)) +
   
 # men
 m <- ggplot(subset(raw, sex==2 & race!=1)) + geom_bar(aes(y=agef, weight=te)) + 
-  geom_text(aes(y=agef, x=te, label = round(te, 2)), hjust=1) +
+  geom_text(aes(y=agef, x=te, label = round(te, 2)), hjust=2) +
   facet_wrap(~raceeth, nrow=1) + 
   scale_y_discrete(limits = rev(levels(raw$agef))) +
   scale_x_continuous(limits=c(-2, 0.5), breaks=c(-2, -1, 0)) +
@@ -92,7 +92,7 @@ w <- ggplot(subset(raw4, sex==1 & race!=1)) +
   geom_bar(aes(y=age4f, weight=total), width=0.5, 
            colour = "#377eb8", fill = "#377eb8") + 
   geom_text(aes(y=age4f, x=total, label = round(total, 2), 
-            hjust=ifelse(total > 0, -0.3, 1.3))) +
+            hjust=ifelse(total > 0, -0.3, 1.2))) +
   facet_wrap(~raceeth, nrow=1) +
   scale_y_discrete(limits = rev(levels(raw4$age4f))) +
   scale_x_continuous(limits=c(-1, 2.5), breaks=c(0, 1, 2)) +
@@ -106,7 +106,7 @@ m <- ggplot(subset(raw4, sex==2 & race!=1)) +
   geom_bar(aes(y=age4f, weight=total), width=0.5, 
            colour = "#377eb8", fill = "#377eb8") +  
   geom_text(aes(y=age4f, x=total, label = round(total, 2), 
-            hjust=ifelse(total > 0, -0.3, 1.3))) +
+            hjust=ifelse(total > 0, -0.3, 1.2))) +
   facet_wrap(~raceeth, nrow=1) +
   scale_y_discrete(limits = rev(levels(raw4$age4f))) +
   scale_x_continuous(limits=c(-1, 2.5), breaks=c(0, 1, 2)) +

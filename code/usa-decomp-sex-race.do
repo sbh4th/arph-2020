@@ -86,7 +86,7 @@ label var count "no. of deaths"
 label var pop "mid-year population"
 
 * save this dataset for life expectancy calculations (#3)
-save "data/usa-decomp-2015-race", replace
+save "data/usa-decomp-race", replace
 
 * erase temporary datasets
 erase "data/`nhisp'.dta"
@@ -96,6 +96,7 @@ erase "data/`hisp'.dta"
 
 // #2
 // set up for life table calculation
+use "data/usa-decomp-race.dta", clear
 
 * have a look at the rates by year
 table age year race, c(mean rate) by(sex) format(%7.1f)
@@ -232,14 +233,18 @@ reshape wide lx Tx Lx mx, i(sex race age) j(year)
 /* decompose LE by age, using formulas from Arriaga (1984) 
 	Measuring and explaining the change in life expectancies. 
 	Demography 1984;21: 83-96. */
+	
+* choose first and last years for decomposition
+local first 2014
+local last 2018
 
 * generate direct effect
-gen de=(lx2018/100000) * ((Lx2010/lx2010) - (Lx2018/lx2018))
+gen de=(lx`last'/100000) * ((Lx`first'/lx`first') - (Lx`last'/lx`last'))
 label var de "direct effect"
 
 * generate indirect effect and interaction term
-gen ie=(Tx2010[_n+1]/100000) * ///
-  ((lx2018/lx2010) - (lx2018[_n+1]/lx2010[_n+1])) if age!=11
+gen ie=(Tx2014[_n+1]/100000) * ///
+  ((lx`last'/lx`first') - (lx`last'[_n+1]/lx`first'[_n+1])) if age!=11
 replace ie=0 if age==11
 label var ie "indirect effect+interact"
 
@@ -248,17 +253,17 @@ label var ie "indirect effect+interact"
 gen te=de+ie
 label var te "diff in life exp"
 
-keep de ie te mx2010 mx2018 sex race age
+keep de ie te mx`first' mx`last' sex race age
 
 * reshape dataset to wide format to calculate total
-reshape wide de ie te mx2010 mx2018, i(sex race) j(age)
+reshape wide de ie te mx`first' mx`last', i(sex race) j(age)
 
 foreach var of newlist de ie te {
 	egen `var'12 = rsum(`var'*) // sum across age groups
 	}
 
 * reshape dataset back to long
-reshape long de ie te mx2010 mx2018, i(sex race) j(age)
+reshape long de ie te mx`first' mx`last', i(sex race) j(age)
 
 * total across all age groups
 label define age 12 "Total", add
@@ -266,10 +271,22 @@ label values age age
 
 * proportional contribution
 sort sex race age
-bysort sex race: gen pctgap=te[_n] / te[12]
+bysort sex race: gen pctgap=( te[_n] / te[12] ) * 100
 
-table age race, c(sum te) by(sex)
-table age race, c(sum pctgap) by(sex)
+table age race, c(sum te) by(sex) format(%4.3f)
+table age race, c(sum pctgap) by(sex) format(%3.2f)
+
+graph hbar (sum) te if sex==1 & race!=1, over(age) by(race, note("")) ///
+  label scheme(tufte) ytitle(" ", margin(small)) bar(1, lcolor(black) /// 
+  lwidth(medium) fcolor(lavender)) ///
+  ytitle("Years of life expectancy", size(medsmall)) ///
+  name(women, replace)
+  
+graph hbar (sum) te if sex==2 & race!=1, over(age) by(race, note("")) ///
+  label scheme(tufte) ytitle(" ", margin(small)) bar(1, lcolor(black) /// 
+  lwidth(medium) fcolor(lavender)) ///
+  ytitle("Years of life expectancy", size(medsmall)) ///
+  name(men, replace)
 
 
 * save this as a dataset for plotting in R

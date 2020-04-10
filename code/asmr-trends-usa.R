@@ -65,16 +65,15 @@ asmr5 <- select(asmr4, -acode) %>%
 
 asmrd <- bind_rows(asmr3, asmr5)
 
-stheme <- theme_classic() + theme(plot.title = element_text(size = 18, face = "bold"), plot.subtitle = element_text(size=16)) + theme(axis.text.x = element_text(size = 16, colour = "grey60"), axis.title.y=element_text(size=16, angle=90, colour="grey60"), axis.text.y = element_text(size = 16, colour="grey60"), legend.position="none", panel.grid.major.y = element_line(linetype="dotted", colour="grey60"), panel.grid.major.x = element_line(colour="white"), panel.grid.minor = element_line(colour="white")) + theme(axis.line.x=element_line(colour="white"), axis.line.y=element_line(colour="white"), axis.ticks = element_blank())
+stheme <- theme_classic() + theme(plot.title = element_text(size = 18, face = "bold"), plot.subtitle = element_text(size=16)) + theme(axis.text.x = element_text(size = 16, colour = "grey60"), axis.title.y=element_text(size=16, angle=90, colour="grey60"), axis.text.y = element_text(size = 16, colour="grey60"), legend.position="none", panel.grid.major.y = element_line(linetype="dotted", colour="grey60"), panel.grid.major.x = element_line(colour="white"), panel.grid.minor = element_line(colour="white")) + theme(axis.line.x=element_line(colour="white"), axis.line.y=element_line(colour="white"), axis.ticks = element_blank(), strip.text = element_text(size = 16), strip.background = element_rect(colour="white"))
 
-ggplot(subset(asmrd, gender=="Male"), aes(x=year, y=rate, colour=race)) + 
-  geom_line(show.legend=F) + facet_wrap(~age, scales="free", ncol=3)
+ggplot(subset(asmrd, year>1999 & (age=="45-54yrs" | age=="55-64yrs")), aes(x=year, y=rate, colour=race)) +  geom_line(show.legend=F) + facet_wrap(vars(gender, age), scales="free")
 
 ggplot(subset(asmr5, gender=="Male"), aes(x=year, y=rate, colour=race)) + 
   geom_line(show.legend=F) + facet_wrap(~age, scales="free", ncol=3)
 
 ggplot(subset(asmr5, gender=="Female"), aes(x=year, y=rate, colour=race)) + 
-  geom_line(show.legend=T) + facet_wrap(~age, scales="free", ncol=3)
+  geom_line(show.legend=T) + facet_wrap(vars(age, scales="free", ncol=3)
 
 # generate relative values of mortality, indexed to 2010
 asmrr <- asmr5 %>%
