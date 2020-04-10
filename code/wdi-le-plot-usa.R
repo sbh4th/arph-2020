@@ -36,7 +36,7 @@ dljp <- filter(dl, Country.Code == "OED" |
   arrange(Country.Code, Year) %>%
   group_by(Country.Code) %>%
   mutate(year0 = row_number() - 1) %>%
-  write_delim(here("data", "us-oed-le.txt"), delim = " ")
+  write_delim(here("data", "us-oed-le.csv"), delim = ",")
 
 
 # rank of USA in each year
