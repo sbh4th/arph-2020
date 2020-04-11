@@ -22,9 +22,9 @@ here::here()
 raw <- read_csv(here("data", "le-age-decomp.csv"))
 
 # race-ethnicity as factor
-raw$raceeth <- recode_factor(raw$race, `1`= "Non-Hispanic AIAN", 
-  `2`= "Non-Hispanic API", `3`= "Non-Hispanic Black", 
-  `4`= "Non-Hispanic White", `5`= "Hispanic")
+raw$raceeth <- recode_factor(raw$race, `1`= "Non-Hispanic API", 
+  `2`= "Non-Hispanic Black", `3`= "Non-Hispanic White", 
+  `4`= "Hispanic")
 
 # age as factor
 raw$agef <- recode_factor(raw$age, `1` = "00-01 yrs", `2` = "01-04 yrs", 
@@ -36,13 +36,13 @@ raw$agef <- recode_factor(raw$age, `1` = "00-01 yrs", `2` = "01-04 yrs",
 ##### 2  #####
 ## Plot options and style
 
-stheme <- theme_classic() + theme(plot.title = element_text(size = 18, face = "bold"), plot.subtitle = element_text(size=16)) + theme(axis.text.x = element_text(size = 16, colour = "grey60"), axis.title.x=element_text(size=16, colour="grey60"), axis.title.y=element_text(size=16, angle=90, colour="grey60"), axis.text.y = element_text(size = 16, colour="grey60"), legend.position="none", panel.grid.major.y = element_line(linetype="dotted", colour="white"), panel.grid.major.x = element_line(colour="white"), panel.grid.minor = element_line(colour="white")) + theme(axis.line.x=element_line(colour="white"), axis.line.y=element_line(colour="white"), axis.ticks = element_blank(), strip.text = element_text(size = 16, colour="grey60"), strip.background = element_rect(colour="white"))
+stheme <- theme_classic() + theme(plot.title = element_text(size = 18, face = "bold"), plot.subtitle = element_text(size=16)) + theme(axis.text.x = element_text(size = 16, colour = "grey60"), axis.title.x=element_text(size=16, colour="grey60"), axis.title.y=element_text(size=16, angle=90, colour="grey60"), axis.text.y = element_text(size = 16, colour="grey60"), legend.position="none", panel.grid.major.y = element_line(linetype="dotted", colour="white"), panel.grid.major.x = element_line(colour="white"), panel.grid.minor = element_line(colour="white")) + theme(axis.line.x=element_line(colour="grey60"), axis.line.y=element_line(colour="white"), axis.ticks = element_blank(), strip.text = element_text(size = 16, colour="grey60"), strip.background = element_rect(colour="white"))
 
 ##### 3  #####
 ## Graph for all 11 age groups
 
 # women
-w <- ggplot(subset(raw, sex==1 & race!=1)) + geom_bar(aes(y=agef, weight=te)) + 
+w <- ggplot(subset(raw, sex==1)) + geom_bar(aes(y=agef, weight=te)) + 
   geom_text(aes(y=agef, x=te, label = round(te, 2)), hjust=2) +
   facet_wrap(~raceeth, nrow=1) + facet_wrap()
   scale_y_discrete(limits = rev(levels(raw$agef))) +
@@ -82,12 +82,12 @@ raw4 <- raw %>%
   summarise(total = sum(te) * -1 )
 
 # race-ethnicity as factor
-raw4$raceeth <- recode_factor(raw4$race, `1`= "Non-Hispanic AIAN", 
-  `2`= "Non-Hispanic API", `3`= "Non-Hispanic Black", 
-  `4`= "Non-Hispanic White", `5`= "Hispanic")
+raw4$raceeth <- recode_factor(raw4$race, `1`= "Non-Hispanic\nAPI", 
+  `2`= "Non-Hispanic\nBlack", `3`= "Non-Hispanic\nWhite", 
+  `4`= "Hispanic")
 
 # women
-w <- ggplot(subset(raw4, sex==1 & race!=1)) + 
+w <- ggplot(subset(raw4, sex==1)) + 
   geom_vline(xintercept = 0, linetype="dotted", colour="grey60") +
   geom_bar(aes(y=age4f, weight=total), width=0.5, 
            colour = "#377eb8", fill = "#377eb8") + 
@@ -95,13 +95,13 @@ w <- ggplot(subset(raw4, sex==1 & race!=1)) +
             hjust=ifelse(total > 0, -0.3, 1.2))) +
   facet_wrap(~raceeth, nrow=1) +
   scale_y_discrete(limits = rev(levels(raw4$age4f))) +
-  scale_x_continuous(limits=c(-1, 2.5), breaks=c(0, 1, 2)) +
+  scale_x_continuous(limits=c(-1, 1), breaks=c(-1, 0, 1)) +
   labs(y = "", x = "") + 
-  ggtitle("Age group contribution to change in life expectancy at birth, 2010-2018", subtitle="Women") +
+  ggtitle("Age group contribution to change in life expectancy at birth, 2014-2018", subtitle="Women") +
   stheme + theme(panel.spacing = unit(2, "lines"))
   
 # men
-m <- ggplot(subset(raw4, sex==2 & race!=1)) + 
+m <- ggplot(subset(raw4, sex==2)) + 
   geom_vline(xintercept = 0, linetype="dotted", colour="grey60") +
   geom_bar(aes(y=age4f, weight=total), width=0.5, 
            colour = "#377eb8", fill = "#377eb8") +  
@@ -109,7 +109,7 @@ m <- ggplot(subset(raw4, sex==2 & race!=1)) +
             hjust=ifelse(total > 0, -0.3, 1.2))) +
   facet_wrap(~raceeth, nrow=1) +
   scale_y_discrete(limits = rev(levels(raw4$age4f))) +
-  scale_x_continuous(limits=c(-1, 2.5), breaks=c(0, 1, 2)) +
+  scale_x_continuous(limits=c(-1, 1), breaks=c(-1, 0, 1)) +
   labs(y = "", x = "Years") + 
   ggtitle("", subtitle="Men") +
   stheme + theme(panel.spacing = unit(2, "lines"))

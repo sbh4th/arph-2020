@@ -65,6 +65,34 @@ p <- ggplot(dl, aes(x=Year, y=LE, group=Country.Name)) + geom_line(colour="grey"
 # export to figures folder
 ggsave(here("figures", "us-le-lagging.png"), plot=p)
 
+# Raw data
+jp <- read_tsv(here("data", "us-oed-le-jp-results.txt"))
+  
+jp <-rename(jp, lem = Model) %>%
+  mutate(Year = as.character(year0 + 1969))
+jp$Country.Code <- ifelse(jp$Country.Code==0, "OED", "USA")
+
+dljpp <- full_join(dl, jp)
+
+p <- ggplot(subset(dljpp, Country.Name!="NA"), 
+            aes(x=Year, y=LE, group=Country.Name)) + 
+  geom_line(colour="grey") +
+  geom_line(data=subset(dl, Country.Code=="OED"), 
+            colour="#1b9e77", size=1.5) +
+  geom_point(data=subset(dljpp, Country.Code=="USA"), 
+             aes(x=Year, y=LE), colour="#d95f02", size=2, alpha=0.3) +
+  geom_line(data=subset(dljpp, Country.Code=="USA"), 
+             aes(x=Year, y=lem), colour="#d95f02", size=1) +
+  scale_y_continuous(limits=c(65,85)) +
+  scale_x_discrete(breaks=c(1970, 1980, 1990, 2000, 2010, 2020), 
+                   expand = c(0,2)) + 
+  annotate("text", label = "USA", x = 48, y = 78, size = 5, colour = "#d95f02") +
+  annotate("text", label = "OECD\naverage", x = 1, y = 68, size = 5, colour = "#1b9e77", hjust=0) + ylab("") + xlab("") + 
+  ggtitle("Life expectancy at birth (years)") + stheme
+  
+# export to figures folder
+ggsave(here("figures", "us-le-lagging-jp.png"), plot=p, width=11, height=8.5)
+
 
 # generate lagged values of LE, calculate annual change
 dlc <- dl %>%
@@ -76,10 +104,10 @@ dlcusa <- subset(dlc, Country.Code=="USA")
 
 # plot absolute change life expectancy over time
 # highlighting relative lagging in USA
-pc <- ggplot(dlc, aes(x=Year, y=lechange, group=Country.Name)) + geom_hline(yintercept=0, linetype="dashed", color = "black") + geom_line(colour="grey") + scale_y_continuous(limits=c(-2,2.5)) + geom_point(data=dlcusa, colour="#d95f02", size=1) + geom_smooth(data=dlcusa, colour="#d95f02", se=F, span=0.25) + geom_point(data=subset(dlc, Country.Code=="OED"), colour="#1b9e77",, size=1)  + geom_smooth(data=subset(dlc, Country.Code=="OED"), colour="#1b9e77",, se=F, span=0.25) + theme_classic() + scale_x_discrete(breaks=c(1970, 1980, 1990, 2000, 2010, 2020), expand = c(0,2)) + annotate("text", label = "USA", x = 48, y = -0.4, size = 5, colour = "#d95f02") + annotate("text", label = "OECD\naverage", x = 2, y = 2, size = 5, colour = "#1b9e77", hjust=0) + geom_curve(aes(x = 1, y = 2, xend = 1, yend = 0.4), curvature=0.2, arrow = arrow(length = unit(0.03, "npc")), colour="#1b9377") + ylab("") + xlab("") + ggtitle("Annual change (years)") + stheme
+pc <- ggplot(dlc, aes(x=Year, y=lechange, group=Country.Name)) + geom_hline(yintercept=0, linetype="dashed", color = "black") + geom_line(colour="grey") + scale_y_continuous(limits=c(-2,2.5)) + geom_point(data=dlcusa, colour="#d95f02", size=1) + geom_smooth(data=dlcusa, colour="#d95f02", se=F, span=0.25) + geom_point(data=subset(dlc, Country.Code=="OED"), colour="#1b9e77",, size=1)  + geom_smooth(data=subset(dlc, Country.Code=="OED"), colour="#1b9e77",, se=F, span=0.25) + scale_x_discrete(breaks=c(1970, 1980, 1990, 2000, 2010, 2020), expand = c(0,2)) + annotate("text", label = "USA", x = 48, y = -0.4, size = 5, colour = "#d95f02") + annotate("text", label = "OECD\naverage", x = 2, y = 2, size = 5, colour = "#1b9e77", hjust=0) + geom_curve(aes(x = 1, y = 2, xend = 1, yend = 0.4), curvature=0.2, arrow = arrow(length = unit(0.03, "npc")), colour="#1b9377") + ylab("") + xlab("") + ggtitle("Annual change (years)") + stheme
 
 # export to figures file
-ggsave(here("figures", "us-le-change.png"), plot=pc)
+ggsave(here("figures", "us-le-change.png"), plot=pc, width=11, height=8.5)
 
 # single figure with both plots
 t <- p + pc
