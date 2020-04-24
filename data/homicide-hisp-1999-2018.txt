@@ -1,0 +1,385 @@
+"Notes"	"Gender"	"Gender Code"	"Hispanic Origin"	"Hispanic Origin Code"	"Ten-Year Age Groups"	"Ten-Year Age Groups Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"1999"	"1999"	129	2909067	4.4
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2000"	"2000"	112	3017378	3.7
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2001"	"2001"	117	3149694	3.7
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2002"	"2002"	118	3253690	3.6
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2003"	"2003"	146	3357905	4.3
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2004"	"2004"	110	3461703	3.2
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2005"	"2005"	118	3577781	3.3
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2006"	"2006"	133	3701886	3.6
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2007"	"2007"	122	3828229	3.2
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2008"	"2008"	129	3962357	3.3
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2009"	"2009"	123	4101469	3.0
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2010"	"2010"	108	4206060	2.6
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2011"	"2011"	97	4314296	2.2
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2012"	"2012"	97	4381583	2.2
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2013"	"2013"	107	4448802	2.4
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2014"	"2014"	120	4550960	2.6
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2015"	"2015"	111	4616696	2.4
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2016"	"2016"	118	4661453	2.5
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2017"	"2017"	132	4734211	2.8
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2018"	"2018"	141	4786228	2.9
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"1999"	"1999"	103	2925524	3.5
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2000"	"2000"	113	3016025	3.7
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2001"	"2001"	125	3156431	4.0
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2002"	"2002"	113	3273556	3.5
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2003"	"2003"	118	3376578	3.5
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2004"	"2004"	117	3476654	3.4
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2005"	"2005"	129	3578646	3.6
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2006"	"2006"	113	3681946	3.1
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2007"	"2007"	130	3782296	3.4
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2008"	"2008"	133	3874826	3.4
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2009"	"2009"	123	3957846	3.1
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2010"	"2010"	105	4015770	2.6
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2011"	"2011"	117	4069856	2.9
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2012"	"2012"	109	4092079	2.7
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2013"	"2013"	106	4123983	2.6
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2014"	"2014"	99	4215110	2.3
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2015"	"2015"	117	4272746	2.7
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2016"	"2016"	135	4320902	3.1
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2017"	"2017"	148	4431070	3.3
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2018"	"2018"	130	4488709	2.9
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"1999"	"1999"	78	2384658	3.3
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2000"	"2000"	88	2476300	3.6
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2001"	"2001"	96	2623197	3.7
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2002"	"2002"	97	2732606	3.5
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2003"	"2003"	100	2845357	3.5
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2004"	"2004"	92	2953817	3.1
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2005"	"2005"	92	3065347	3.0
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2006"	"2006"	97	3185031	3.0
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2007"	"2007"	96	3295387	2.9
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2008"	"2008"	92	3400614	2.7
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2009"	"2009"	92	3492206	2.6
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2010"	"2010"	81	3564335	2.3
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2011"	"2011"	99	3662224	2.7
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2012"	"2012"	80	3729644	2.1
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2013"	"2013"	78	3794385	2.1
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2014"	"2014"	85	3910211	2.2
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2015"	"2015"	93	3996573	2.3
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2016"	"2016"	92	4027467	2.3
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2017"	"2017"	116	4124711	2.8
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2018"	"2018"	101	4169801	2.4
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"1999"	"1999"	47	1502112	3.1
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2000"	"2000"	52	1585172	3.3
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2001"	"2001"	40	1713991	2.3
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2002"	"2002"	48	1814352	2.6
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2003"	"2003"	51	1916006	2.7
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2004"	"2004"	43	2023366	2.1
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2005"	"2005"	44	2140640	2.1
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2006"	"2006"	53	2259521	2.3
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2007"	"2007"	44	2383813	1.8
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2008"	"2008"	58	2507667	2.3
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2009"	"2009"	57	2635186	2.2
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2010"	"2010"	55	2727612	2.0
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2011"	"2011"	43	2841771	1.5
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2012"	"2012"	51	2922099	1.7
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2013"	"2013"	40	3011386	1.3
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2014"	"2014"	43	3136326	1.4
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2015"	"2015"	66	3238650	2.0
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2016"	"2016"	60	3312816	1.8
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2017"	"2017"	72	3419060	2.1
+	"Female"	"F"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2018"	"2018"	60	3484917	1.7
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"1999"	"1999"	671	15951117	4.2
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2000"	"2000"	613	16087695	3.8
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2001"	"2001"	593	16436153	3.6
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2002"	"2002"	618	16644434	3.7
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2003"	"2003"	583	16822385	3.5
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2004"	"2004"	582	16971731	3.4
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2005"	"2005"	573	17079814	3.4
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2006"	"2006"	580	17134191	3.4
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2007"	"2007"	588	17173260	3.4
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2008"	"2008"	568	17182357	3.3
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2009"	"2009"	526	17162515	3.1
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2010"	"2010"	498	17102440	2.9
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2011"	"2011"	513	17051933	3.0
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2012"	"2012"	515	17050005	3.0
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2013"	"2013"	451	16980445	2.7
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2014"	"2014"	425	16905411	2.5
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2015"	"2015"	479	16765799	2.9
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2016"	"2016"	573	16556663	3.5
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2017"	"2017"	536	16366451	3.3
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2018"	"2018"	539	16208117	3.3
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"1999"	"1999"	770	17019566	4.5
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2000"	"2000"	686	16755170	4.1
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2001"	"2001"	705	16410612	4.3
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2002"	"2002"	691	16245223	4.3
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2003"	"2003"	647	16124344	4.0
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2004"	"2004"	606	16043571	3.8
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2005"	"2005"	611	15969052	3.8
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2006"	"2006"	618	15944394	3.9
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2007"	"2007"	607	16006297	3.8
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2008"	"2008"	576	16144585	3.6
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2009"	"2009"	598	16309584	3.7
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2010"	"2010"	577	16416087	3.5
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2011"	"2011"	561	16676479	3.4
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2012"	"2012"	576	16878450	3.4
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2013"	"2013"	563	17079113	3.3
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2014"	"2014"	572	17331180	3.3
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2015"	"2015"	638	17565318	3.6
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2016"	"2016"	694	17756603	3.9
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2017"	"2017"	727	17920241	4.1
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2018"	"2018"	737	17998356	4.1
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"1999"	"1999"	810	20284946	4.0
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2000"	"2000"	801	20224429	4.0
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2001"	"2001"	822	20019232	4.1
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2002"	"2002"	738	19706849	3.7
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2003"	"2003"	685	19361346	3.5
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2004"	"2004"	659	19061917	3.5
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2005"	"2005"	691	18799996	3.7
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2006"	"2006"	643	18542580	3.5
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2007"	"2007"	660	18206615	3.6
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2008"	"2008"	558	17795119	3.1
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2009"	"2009"	540	17349404	3.1
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2010"	"2010"	506	17070272	3.0
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2011"	"2011"	470	16742260	2.8
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2012"	"2012"	477	16613169	2.9
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2013"	"2013"	473	16513044	2.9
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2014"	"2014"	437	16443693	2.7
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2015"	"2015"	462	16389633	2.8
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2016"	"2016"	560	16289926	3.4
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2017"	"2017"	555	16381559	3.4
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2018"	"2018"	544	16520487	3.3
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"1999"	"1999"	386	17130193	2.3
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2000"	"2000"	406	17595550	2.3
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2001"	"2001"	426	18333090	2.3
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2002"	"2002"	464	18543251	2.5
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2003"	"2003"	469	18860913	2.5
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2004"	"2004"	464	19160763	2.4
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2005"	"2005"	426	19473889	2.2
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2006"	"2006"	512	19752054	2.6
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2007"	"2007"	512	19954149	2.6
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2008"	"2008"	462	20089869	2.3
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2009"	"2009"	486	20162668	2.4
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2010"	"2010"	455	20136745	2.3
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2011"	"2011"	498	19857185	2.5
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2012"	"2012"	464	19539769	2.4
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2013"	"2013"	461	19187062	2.4
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2014"	"2014"	430	18897481	2.3
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2015"	"2015"	406	18650735	2.2
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2016"	"2016"	452	18367724	2.5
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2017"	"2017"	462	18049535	2.6
+	"Female"	"F"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2018"	"2018"	466	17605580	2.6
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"1999"	"1999"	987	3407725	29.0
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2000"	"2000"	1013	3563695	28.4
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2001"	"2001"	1078	3705319	29.1
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2002"	"2002"	1077	3808168	28.3
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2003"	"2003"	1134	3897867	29.1
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2004"	"2004"	1118	3992606	28.0
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2005"	"2005"	1186	4098649	28.9
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2006"	"2006"	1206	4215091	28.6
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2007"	"2007"	1165	4324082	26.9
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2008"	"2008"	1082	4440881	24.4
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2009"	"2009"	1037	4559056	22.7
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2010"	"2010"	910	4648370	19.6
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2011"	"2011"	834	4744908	17.6
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2012"	"2012"	815	4783953	17.0
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2013"	"2013"	738	4826129	15.3
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2014"	"2014"	690	4867881	14.2
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2015"	"2015"	805	4912223	16.4
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2016"	"2016"	865	4932463	17.5
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2017"	"2017"	837	5000515	16.7
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"15-24 years"	"15-24"	"2018"	"2018"	779	5028028	15.5
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"1999"	"1999"	693	3387762	20.5
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2000"	"2000"	690	3494210	19.7
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2001"	"2001"	744	3630261	20.5
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2002"	"2002"	785	3745957	21.0
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2003"	"2003"	842	3842401	21.9
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2004"	"2004"	840	3939446	21.3
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2005"	"2005"	943	4032197	23.4
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2006"	"2006"	874	4129775	21.2
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2007"	"2007"	887	4222625	21.0
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2008"	"2008"	801	4307837	18.6
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2009"	"2009"	719	4376667	16.4
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2010"	"2010"	734	4419184	16.6
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2011"	"2011"	660	4535264	14.6
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2012"	"2012"	666	4579473	14.5
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2013"	"2013"	613	4638238	13.2
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2014"	"2014"	599	4666247	12.8
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2015"	"2015"	668	4710492	14.2
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2016"	"2016"	820	4744881	17.3
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2017"	"2017"	757	4889623	15.5
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"25-34 years"	"25-34"	"2018"	"2018"	698	4940457	14.1
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"1999"	"1999"	350	2545704	13.7
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2000"	"2000"	356	2653010	13.4
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2001"	"2001"	377	2809147	13.4
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2002"	"2002"	362	2919575	12.4
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2003"	"2003"	392	3029768	12.9
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2004"	"2004"	379	3140262	12.1
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2005"	"2005"	419	3254506	12.9
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2006"	"2006"	431	3371248	12.8
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2007"	"2007"	398	3476080	11.4
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2008"	"2008"	434	3579653	12.1
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2009"	"2009"	413	3666767	11.3
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2010"	"2010"	331	3734405	8.9
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2011"	"2011"	338	3845565	8.8
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2012"	"2012"	360	3919266	9.2
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2013"	"2013"	330	3995834	8.3
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2014"	"2014"	396	4082534	9.7
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2015"	"2015"	407	4179196	9.7
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2016"	"2016"	473	4221547	11.2
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2017"	"2017"	454	4347457	10.4
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"35-44 years"	"35-44"	"2018"	"2018"	450	4417311	10.2
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"1999"	"1999"	146	1461909	10.0
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2000"	"2000"	156	1550931	10.1
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2001"	"2001"	152	1684409	9.0
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2002"	"2002"	161	1788830	9.0
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2003"	"2003"	189	1894427	10.0
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2004"	"2004"	184	2005794	9.2
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2005"	"2005"	213	2132716	10.0
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2006"	"2006"	204	2254150	9.0
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2007"	"2007"	204	2382593	8.6
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2008"	"2008"	202	2510039	8.0
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2009"	"2009"	202	2640935	7.6
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2010"	"2010"	215	2735916	7.9
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2011"	"2011"	182	2874312	6.3
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2012"	"2012"	186	2967274	6.3
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2013"	"2013"	207	3070193	6.7
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2014"	"2014"	196	3194380	6.1
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2015"	"2015"	222	3301061	6.7
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2016"	"2016"	222	3372447	6.6
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2017"	"2017"	237	3476449	6.8
+	"Male"	"M"	"Hispanic or Latino"	"2135-2"	"45-54 years"	"45-54"	"2018"	"2018"	257	3540648	7.3
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"1999"	"1999"	3177	16408122	19.4
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2000"	"2000"	3148	16515123	19.1
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2001"	"2001"	3327	16922404	19.7
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2002"	"2002"	3340	17147843	19.5
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2003"	"2003"	3438	17310697	19.9
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2004"	"2004"	3226	17522072	18.4
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2005"	"2005"	3540	17689925	20.0
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2006"	"2006"	3739	17792676	21.0
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2007"	"2007"	3611	17820244	20.3
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2008"	"2008"	3444	17805897	19.3
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2009"	"2009"	3105	17753892	17.5
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2010"	"2010"	3117	17669472	17.6
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2011"	"2011"	3080	17686738	17.4
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2012"	"2012"	3153	17728364	17.8
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2013"	"2013"	2998	17699026	16.9
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2014"	"2014"	2906	17655569	16.5
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2015"	"2015"	3286	17553498	18.7
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2016"	"2016"	3580	17360448	20.6
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2017"	"2017"	3368	17149118	19.6
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"15-24 years"	"15-24"	"2018"	"2018"	3120	16948427	18.4
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"1999"	"1999"	2607	16845554	15.5
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2000"	"2000"	2623	16626319	15.8
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2001"	"2001"	2727	16274218	16.8
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2002"	"2002"	2835	16084910	17.6
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2003"	"2003"	2839	15900472	17.9
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2004"	"2004"	2875	15806885	18.2
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2005"	"2005"	3008	15678752	19.2
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2006"	"2006"	3052	15639064	19.5
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2007"	"2007"	3073	15702245	19.6
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2008"	"2008"	3047	15880225	19.2
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2009"	"2009"	2702	16079245	16.8
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2010"	"2010"	2770	16212907	17.1
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2011"	"2011"	2801	16508899	17.0
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2012"	"2012"	2926	16759319	17.5
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2013"	"2013"	2898	17003253	17.0
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2014"	"2014"	2836	17303967	16.4
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2015"	"2015"	3373	17588646	19.2
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2016"	"2016"	3676	17854857	20.6
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2017"	"2017"	3807	18101738	21.0
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"25-34 years"	"25-34"	"2018"	"2018"	3618	18270252	19.8
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"1999"	"1999"	1907	19861369	9.6
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2000"	"2000"	1909	19794788	9.6
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2001"	"2001"	1859	19600176	9.5
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2002"	"2002"	1972	19281619	10.2
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2003"	"2003"	1858	18917735	9.8
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2004"	"2004"	1796	18644279	9.6
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2005"	"2005"	1827	18385689	9.9
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2006"	"2006"	1784	18144942	9.8
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2007"	"2007"	1830	17818148	10.3
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2008"	"2008"	1768	17417100	10.2
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2009"	"2009"	1641	16979434	9.7
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2010"	"2010"	1493	16701594	8.9
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2011"	"2011"	1556	16377905	9.5
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2012"	"2012"	1726	16254341	10.6
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2013"	"2013"	1651	16149427	10.2
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2014"	"2014"	1619	16076695	10.1
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2015"	"2015"	1877	16024381	11.7
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2016"	"2016"	2181	15931216	13.7
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2017"	"2017"	2181	16021643	13.6
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"35-44 years"	"35-44"	"2018"	"2018"	2154	16170289	13.3
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"1999"	"1999"	1045	16483605	6.3
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2000"	"2000"	1091	16946299	6.4
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2001"	"2001"	1162	17654778	6.6
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2002"	"2002"	1181	17845761	6.6
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2003"	"2003"	1258	18148608	6.9
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2004"	"2004"	1243	18440007	6.7
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2005"	"2005"	1311	18748659	7.0
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2006"	"2006"	1369	19020434	7.2
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2007"	"2007"	1332	19219384	6.9
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2008"	"2008"	1339	19352872	6.9
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2009"	"2009"	1240	19428299	6.4
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2010"	"2010"	1215	19406443	6.3
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2011"	"2011"	1258	19144935	6.6
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2012"	"2012"	1297	18839596	6.9
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2013"	"2013"	1228	18498891	6.6
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2014"	"2014"	1221	18230664	6.7
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2015"	"2015"	1347	17997715	7.5
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2016"	"2016"	1366	17733692	7.7
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2017"	"2017"	1452	17429908	8.3
+	"Male"	"M"	"Not Hispanic or Latino"	"2186-2"	"45-54 years"	"45-54"	"2018"	"2018"	1292	17000554	7.6
+"---"
+"Dataset: Underlying Cause of Death, 1999-2018"
+"Query Parameters:"
+"Gender: Female; Male"
+"Hispanic Origin: Hispanic or Latino; Not Hispanic or Latino"
+"ICD-10 Codes: X85-Y09 (Assault)"
+"Ten-Year Age Groups: 15-24 years; 25-34 years; 35-44 years; 45-54 years"
+"Group By: Gender; Hispanic Origin; Ten-Year Age Groups; Year"
+"Show Totals: False"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: Apr 22, 2020 6:45:15 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Underlying Cause of Death"
+"1999-2018 on CDC WONDER Online Database, released in 2020. Data are from the Multiple Cause of Death Files, 1999-2018, as"
+"compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
+"at http://wonder.cdc.gov/ucd-icd10.html on Apr 22, 2020 6:45:15 PM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Circumstances in Georgia for the years 2008 and 2009 have resulted in unusually high death counts for the ICD-10 cause of"
+"death code R99, ""Other ill-defined and unspecified causes of mortality."" Caution should be used in interpreting these data."
+"More information: http://wonder.cdc.gov/wonder/help/ucd.html#Georgia-Reporting-Anomalies."
+"3. Circumstances in New Jersey for the year 2009 have resulted in unusually high death counts for the ICD-10 cause of death code"
+"R99, ""Other ill-defined and unspecified causes of mortality"" and therefore unusually low death counts in other ICD-10 codes,"
+"most notably R95, ""Sudden Infant Death Syndrome"" and X40-X49, ""Unintentional poisoning."" Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#New-Jersey-Reporting-Anomalies."
+"4. Circumstances in California resulted in unusually high death counts for the ICD-10 cause of death code R99, ""Other"
+"ill-defined and unspecified causes of mortality"" for deaths occurring in years 2000 and 2001. Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#California-Reporting-Anomalies."
+"5. Deaths of persons with Age ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among age groups,"
+"so are not included in age-specific counts, age-specific rates or in any age-adjusted rates. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Not Stated."
+"6. Deaths of persons with Hispanic origin ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among"
+"Hispanic Origin groups, so are not included in the Hispanic Origin specific counts and rates. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Not Stated."
+"7. Information included on the death certificate about the race and Hispanic ethnicity of the decedent is reported by the"
+"funeral director as provided by an informant, often the surviving next of kin, or, in the absence of an informant, on the basis"
+"of observation. Race and ethnicity information from the census is by self-report. To the extent that race and Hispanic origin"
+"are inconsistent between these two data sources, death rates will be biased. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Racial Differences."
+"8. The population figures for year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018"
+"postcensal series released by NCHS on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for"
+"year 2016 are bridged-race estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS"
+"on June 26, 2017. The population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2015 postcensal series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The"
+"population figures for year 2013 are bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal"
+"series released by NCHS on June 26, 2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2012 postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18,"
+"2012. Population figures for 2010 are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race"
+"estimates of the July 1 resident population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on"
+"October 26, 2012. Population figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999"
+"intercensal series of July 1 estimates. Population figures for the infant age groups are the number of live births."
+"<br/><b>Note:</b> Rates and population figures for years 2001 - 2009 differ slightly from previously published reports, due to"
+"use of the population estimates which were available at the time of release."

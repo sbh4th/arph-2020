@@ -1,0 +1,1027 @@
+"Notes"	"Gender"	"Gender Code"	"Race"	"Race Code"	"Five-Year Age Groups"	"Five-Year Age Groups Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"1999"	"1999"	21	538451	3.9
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2000"	"2000"	22	548078	4.0
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2001"	"2001"	25	573042	4.4
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2002"	"2002"	17	589239	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2003"	"2003"	23	604070	3.8
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2004"	"2004"	26	622785	4.2
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2005"	"2005"	23	643938	3.6
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2006"	"2006"	22	669545	3.3
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2007"	"2007"	27	689659	3.9
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2008"	"2008"	50	703854	7.1
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2009"	"2009"	26	709678	3.7
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2010"	"2010"	23	709975	3.2
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2011"	"2011"	38	714287	5.3
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2012"	"2012"	29	736776	3.9
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2013"	"2013"	26	753483	3.5
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2014"	"2014"	29	793200	3.7
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2015"	"2015"	38	832049	4.6
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2016"	"2016"	28	849170	3.3
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2017"	"2017"	41	879740	4.7
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2018"	"2018"	34	888194	3.8
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"1999"	"1999"	23	513397	4.5
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2000"	"2000"	15	530178	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2001"	"2001"	14	569096	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2002"	"2002"	23	605051	3.8
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2003"	"2003"	23	631308	3.6
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2004"	"2004"	26	650582	4.0
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2005"	"2005"	16	666782	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2006"	"2006"	25	680073	3.7
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2007"	"2007"	31	688527	4.5
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2008"	"2008"	26	696605	3.7
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2009"	"2009"	25	708322	3.5
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2010"	"2010"	36	716442	5.0
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2011"	"2011"	31	736002	4.2
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2012"	"2012"	30	770646	3.9
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2013"	"2013"	31	799179	3.9
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2014"	"2014"	33	830874	4.0
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2015"	"2015"	50	860017	5.8
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2016"	"2016"	40	868686	4.6
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2017"	"2017"	33	898568	3.7
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2018"	"2018"	50	915766	5.5
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"1999"	"1999"	17	499670	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2000"	"2000"	16	511721	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2001"	"2001"	11	532921	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2002"	"2002"	16	548991	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2003"	"2003"	17	565346	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2004"	"2004"	24	585145	4.1
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2005"	"2005"	21	614038	3.4
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2006"	"2006"	19	645210	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2007"	"2007"	28	680256	4.1
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2008"	"2008"	27	706516	3.8
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2009"	"2009"	36	725394	5.0
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2010"	"2010"	30	736014	4.1
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2011"	"2011"	38	740718	5.1
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2012"	"2012"	32	751696	4.3
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2013"	"2013"	28	760403	3.7
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2014"	"2014"	32	784639	4.1
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2015"	"2015"	27	813291	3.3
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2016"	"2016"	30	826672	3.6
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2017"	"2017"	36	866524	4.2
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2018"	"2018"	37	893205	4.1
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"1999"	"1999"	15	471192	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2000"	"2000"	14	484384	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2001"	"2001"	14	502915	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2002"	"2002"	20	517274	3.9
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2003"	"2003"	16	536631	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2004"	"2004"	26	557421	4.7
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2005"	"2005"	21	571872	3.7
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2006"	"2006"	20	588556	3.4
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2007"	"2007"	30	603236	5.0
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2008"	"2008"	23	618948	3.7
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2009"	"2009"	19	637956	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2010"	"2010"	32	657970	4.9
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2011"	"2011"	21	691663	3.0
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2012"	"2012"	30	730929	4.1
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2013"	"2013"	32	757749	4.2
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2014"	"2014"	36	785655	4.6
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2015"	"2015"	37	804171	4.6
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2016"	"2016"	26	803102	3.2
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2017"	"2017"	35	820470	4.3
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2018"	"2018"	32	822093	3.9
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"1999"	"1999"	20	418230	4.8
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2000"	"2000"	14	434249	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2001"	"2001"	22	460454	4.8
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2002"	"2002"	13	480709	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2003"	"2003"	25	499611	5.0
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2004"	"2004"	18	515758	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2005"	"2005"	24	534097	4.5
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2006"	"2006"	30	548292	5.5
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2007"	"2007"	22	562994	3.9
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2008"	"2008"	17	583134	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2009"	"2009"	37	605099	6.1
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2010"	"2010"	26	615869	4.2
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2011"	"2011"	28	627281	4.5
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2012"	"2012"	26	641599	4.1
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2013"	"2013"	24	654112	3.7
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2014"	"2014"	27	679819	4.0
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2015"	"2015"	47	713214	6.6
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2016"	"2016"	31	734739	4.2
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2017"	"2017"	41	776616	5.3
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2018"	"2018"	41	792778	5.2
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"1999"	"1999"	10	337069	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2000"	"2000"	10	361283	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2001"	"2001"	15	397141	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2002"	"2002"	22	417869	5.3
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2003"	"2003"	17	437347	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2004"	"2004"	25	455364	5.5
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2005"	"2005"	14	472336	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2006"	"2006"	16	495382	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2007"	"2007"	19	516451	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2008"	"2008"	33	536415	6.2
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2009"	"2009"	25	553434	4.5
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2010"	"2010"	32	566927	5.6
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2011"	"2011"	29	577376	5.0
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2012"	"2012"	32	590264	5.4
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2013"	"2013"	31	609582	5.1
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2014"	"2014"	40	638850	6.3
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2015"	"2015"	29	654043	4.4
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2016"	"2016"	37	660590	5.6
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2017"	"2017"	28	677715	4.1
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2018"	"2018"	35	678804	5.2
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"1999"	"1999"	7	233434	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2000"	"2000"	11	247103	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2001"	"2001"	12	270413	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2002"	"2002"	11	296606	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2003"	"2003"	15	326688	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2004"	"2004"	9	358016	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2005"	"2005"	14	393965	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2006"	"2006"	15	422635	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2007"	"2007"	15	443546	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2008"	"2008"	11	463560	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2009"	"2009"	15	481752	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2010"	"2010"	19	494181	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2011"	"2011"	23	518064	4.4
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2012"	"2012"	20	539910	3.7
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2013"	"2013"	19	559480	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2014"	"2014"	24	580942	4.1
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2015"	"2015"	30	601515	5.0
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2016"	"2016"	20	605533	3.3
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2017"	"2017"	24	623050	3.9
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2018"	"2018"	35	633422	5.5
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"1999"	"1999"	9	186983	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2000"	"2000"	5	195482	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2001"	"2001"	3	209826	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2002"	"2002"	9	223323	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2003"	"2003"	6	236483	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2004"	"2004"	19	252754	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2005"	"2005"	11	269425	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2006"	"2006"	12	287849	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2007"	"2007"	16	313885	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2008"	"2008"	10	344050	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2009"	"2009"	19	375300	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2010"	"2010"	24	403199	6.0
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2011"	"2011"	19	436322	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2012"	"2012"	18	457090	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2013"	"2013"	17	476790	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2014"	"2014"	13	500512	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2015"	"2015"	27	522369	5.2
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2016"	"2016"	28	539301	5.2
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2017"	"2017"	17	566149	Unreliable
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2018"	"2018"	22	579405	3.8
+	"Female"	"F"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"1999"	"1999"	29	1358176	2.1
+	"Female"	"F"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2000"	"2000"	40	1345107	3.0
+	"Female"	"F"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2001"	"2001"	31	1304639	2.4
+	"Female"	"F"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2002"	"2002"	27	1293736	2.1
+	"Female"	"F"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2003"	"2003"	29	1295263	2.2
+	"Female"	"F"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2004"	"2004"	40	1324683	3.0
+	"Female"	"F"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2005"	"2005"	42	1363164	3.1
+	"Female"	"F"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2006"	"2006"	29	1406128	2.1
+	"Female"	"F"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2007"	"2007"	39	1434645	2.7
+	"Female"	"F"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2008"	"2008"	46	1454865	3.2
+	"Female"	"F"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2009"	"2009"	52	1459525	3.6
+	"Female"	"F"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2010"	"2010"	43	1454543	3.0
+	"Female"	"F"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2011"	"2011"	50	1465672	3.4
+	"Female"	"F"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2012"	"2012"	41	1482708	2.8
+	"Female"	"F"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2013"	"2013"	49	1510526	3.2
+	"Female"	"F"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2014"	"2014"	40	1571068	2.5
+	"Female"	"F"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2015"	"2015"	56	1639497	3.4
+	"Female"	"F"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2016"	"2016"	64	1707945	3.7
+	"Female"	"F"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2017"	"2017"	73	1773228	4.1
+	"Female"	"F"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2018"	"2018"	95	1811064	5.2
+	"Female"	"F"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"1999"	"1999"	36	1393840	2.6
+	"Female"	"F"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2000"	"2000"	32	1384892	2.3
+	"Female"	"F"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2001"	"2001"	35	1388476	2.5
+	"Female"	"F"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2002"	"2002"	29	1393457	2.1
+	"Female"	"F"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2003"	"2003"	45	1388044	3.2
+	"Female"	"F"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2004"	"2004"	50	1376595	3.6
+	"Female"	"F"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2005"	"2005"	38	1350939	2.8
+	"Female"	"F"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2006"	"2006"	23	1320401	1.7
+	"Female"	"F"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2007"	"2007"	33	1313374	2.5
+	"Female"	"F"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2008"	"2008"	32	1320241	2.4
+	"Female"	"F"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2009"	"2009"	35	1353009	2.6
+	"Female"	"F"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2010"	"2010"	26	1384808	1.9
+	"Female"	"F"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2011"	"2011"	52	1424682	3.6
+	"Female"	"F"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2012"	"2012"	38	1450157	2.6
+	"Female"	"F"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2013"	"2013"	41	1470609	2.8
+	"Female"	"F"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2014"	"2014"	47	1484560	3.2
+	"Female"	"F"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2015"	"2015"	42	1487728	2.8
+	"Female"	"F"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2016"	"2016"	62	1498513	4.1
+	"Female"	"F"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2017"	"2017"	68	1519870	4.5
+	"Female"	"F"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2018"	"2018"	74	1549097	4.8
+	"Female"	"F"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"1999"	"1999"	29	1507328	1.9
+	"Female"	"F"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2000"	"2000"	33	1505402	2.2
+	"Female"	"F"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2001"	"2001"	39	1491812	2.6
+	"Female"	"F"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2002"	"2002"	38	1467701	2.6
+	"Female"	"F"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2003"	"2003"	38	1440844	2.6
+	"Female"	"F"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2004"	"2004"	39	1408319	2.8
+	"Female"	"F"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2005"	"2005"	41	1396992	2.9
+	"Female"	"F"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2006"	"2006"	32	1405559	2.3
+	"Female"	"F"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2007"	"2007"	45	1413720	3.2
+	"Female"	"F"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2008"	"2008"	31	1412276	2.2
+	"Female"	"F"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2009"	"2009"	33	1403007	2.4
+	"Female"	"F"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2010"	"2010"	47	1384151	3.4
+	"Female"	"F"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2011"	"2011"	32	1344610	2.4
+	"Female"	"F"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2012"	"2012"	45	1338520	3.4
+	"Female"	"F"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2013"	"2013"	26	1344139	1.9
+	"Female"	"F"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2014"	"2014"	40	1374316	2.9
+	"Female"	"F"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2015"	"2015"	37	1413525	2.6
+	"Female"	"F"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2016"	"2016"	52	1445255	3.6
+	"Female"	"F"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2017"	"2017"	67	1475146	4.5
+	"Female"	"F"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2018"	"2018"	56	1494278	3.7
+	"Female"	"F"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"1999"	"1999"	48	1420696	3.4
+	"Female"	"F"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2000"	"2000"	48	1442018	3.3
+	"Female"	"F"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2001"	"2001"	50	1475496	3.4
+	"Female"	"F"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2002"	"2002"	49	1487168	3.3
+	"Female"	"F"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2003"	"2003"	47	1498869	3.1
+	"Female"	"F"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2004"	"2004"	37	1510161	2.5
+	"Female"	"F"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2005"	"2005"	41	1506129	2.7
+	"Female"	"F"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2006"	"2006"	32	1494626	2.1
+	"Female"	"F"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2007"	"2007"	41	1471651	2.8
+	"Female"	"F"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2008"	"2008"	38	1446445	2.6
+	"Female"	"F"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2009"	"2009"	36	1414333	2.5
+	"Female"	"F"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2010"	"2010"	48	1404513	3.4
+	"Female"	"F"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2011"	"2011"	49	1410151	3.5
+	"Female"	"F"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2012"	"2012"	63	1415866	4.4
+	"Female"	"F"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2013"	"2013"	54	1412452	3.8
+	"Female"	"F"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2014"	"2014"	47	1406532	3.3
+	"Female"	"F"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2015"	"2015"	34	1386639	2.5
+	"Female"	"F"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2016"	"2016"	48	1352538	3.5
+	"Female"	"F"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2017"	"2017"	57	1351467	4.2
+	"Female"	"F"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2018"	"2018"	61	1354893	4.5
+	"Female"	"F"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"1999"	"1999"	30	1192724	2.5
+	"Female"	"F"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2000"	"2000"	27	1225916	2.2
+	"Female"	"F"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2001"	"2001"	43	1272430	3.4
+	"Female"	"F"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2002"	"2002"	20	1321076	1.5
+	"Female"	"F"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2003"	"2003"	32	1363748	2.3
+	"Female"	"F"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2004"	"2004"	39	1398644	2.8
+	"Female"	"F"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2005"	"2005"	37	1436071	2.6
+	"Female"	"F"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2006"	"2006"	30	1461455	2.1
+	"Female"	"F"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2007"	"2007"	40	1473530	2.7
+	"Female"	"F"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2008"	"2008"	31	1485776	2.1
+	"Female"	"F"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2009"	"2009"	49	1496992	3.3
+	"Female"	"F"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2010"	"2010"	36	1493767	2.4
+	"Female"	"F"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2011"	"2011"	36	1475059	2.4
+	"Female"	"F"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2012"	"2012"	45	1453232	3.1
+	"Female"	"F"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2013"	"2013"	52	1428396	3.6
+	"Female"	"F"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2014"	"2014"	42	1402364	3.0
+	"Female"	"F"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2015"	"2015"	46	1396052	3.3
+	"Female"	"F"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2016"	"2016"	39	1403832	2.8
+	"Female"	"F"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2017"	"2017"	50	1413393	3.5
+	"Female"	"F"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2018"	"2018"	51	1406949	3.6
+	"Female"	"F"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"1999"	"1999"	13	930401	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2000"	"2000"	29	980443	3.0
+	"Female"	"F"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2001"	"2001"	29	1066260	2.7
+	"Female"	"F"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2002"	"2002"	33	1105949	3.0
+	"Female"	"F"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2003"	"2003"	35	1144404	3.1
+	"Female"	"F"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2004"	"2004"	26	1185311	2.2
+	"Female"	"F"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2005"	"2005"	34	1223782	2.8
+	"Female"	"F"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2006"	"2006"	29	1264163	2.3
+	"Female"	"F"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2007"	"2007"	35	1315461	2.7
+	"Female"	"F"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2008"	"2008"	25	1361382	1.8
+	"Female"	"F"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2009"	"2009"	42	1399562	3.0
+	"Female"	"F"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2010"	"2010"	37	1431800	2.6
+	"Female"	"F"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2011"	"2011"	29	1454259	2.0
+	"Female"	"F"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2012"	"2012"	41	1460480	2.8
+	"Female"	"F"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2013"	"2013"	31	1467990	2.1
+	"Female"	"F"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2014"	"2014"	45	1473543	3.1
+	"Female"	"F"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2015"	"2015"	43	1467603	2.9
+	"Female"	"F"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2016"	"2016"	33	1451167	2.3
+	"Female"	"F"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2017"	"2017"	31	1432173	2.2
+	"Female"	"F"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2018"	"2018"	38	1404709	2.7
+	"Female"	"F"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"1999"	"1999"	13	703574	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2000"	"2000"	11	721707	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2001"	"2001"	16	749059	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2002"	"2002"	11	799225	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2003"	"2003"	19	846733	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2004"	"2004"	13	906422	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2005"	"2005"	20	976118	2.0
+	"Female"	"F"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2006"	"2006"	14	1046312	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2007"	"2007"	20	1085461	1.8
+	"Female"	"F"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2008"	"2008"	17	1123799	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2009"	"2009"	24	1164471	2.1
+	"Female"	"F"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2010"	"2010"	26	1194067	2.2
+	"Female"	"F"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2011"	"2011"	28	1242711	2.3
+	"Female"	"F"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2012"	"2012"	32	1292069	2.5
+	"Female"	"F"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2013"	"2013"	41	1330735	3.1
+	"Female"	"F"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2014"	"2014"	35	1364351	2.6
+	"Female"	"F"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2015"	"2015"	28	1395987	2.0
+	"Female"	"F"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2016"	"2016"	31	1412482	2.2
+	"Female"	"F"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2017"	"2017"	41	1421202	2.9
+	"Female"	"F"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2018"	"2018"	40	1426347	2.8
+	"Female"	"F"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"1999"	"1999"	8	585855	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2000"	"2000"	10	596149	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2001"	"2001"	8	610941	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2002"	"2002"	17	629297	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2003"	"2003"	11	653908	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2004"	"2004"	11	678186	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2005"	"2005"	14	698748	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2006"	"2006"	13	720394	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2007"	"2007"	12	768767	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2008"	"2008"	6	815179	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2009"	"2009"	9	873483	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2010"	"2010"	10	927423	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2011"	"2011"	12	1006503	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2012"	"2012"	10	1040236	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2013"	"2013"	18	1075039	Unreliable
+	"Female"	"F"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2014"	"2014"	21	1114807	1.9
+	"Female"	"F"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2015"	"2015"	22	1153658	1.9
+	"Female"	"F"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2016"	"2016"	25	1190046	2.1
+	"Female"	"F"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2017"	"2017"	28	1239642	2.3
+	"Female"	"F"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2018"	"2018"	38	1272746	3.0
+	"Female"	"F"	"White"	"2106-3"	"25-29 years"	"25-29"	"1999"	"1999"	298	6213778	4.8
+	"Female"	"F"	"White"	"2106-3"	"25-29 years"	"25-29"	"2000"	"2000"	285	6046122	4.7
+	"Female"	"F"	"White"	"2106-3"	"25-29 years"	"25-29"	"2001"	"2001"	276	5726230	4.8
+	"Female"	"F"	"White"	"2106-3"	"25-29 years"	"25-29"	"2002"	"2002"	344	5617832	6.1
+	"Female"	"F"	"White"	"2106-3"	"25-29 years"	"25-29"	"2003"	"2003"	284	5616483	5.1
+	"Female"	"F"	"White"	"2106-3"	"25-29 years"	"25-29"	"2004"	"2004"	277	5693279	4.9
+	"Female"	"F"	"White"	"2106-3"	"25-29 years"	"25-29"	"2005"	"2005"	295	5809404	5.1
+	"Female"	"F"	"White"	"2106-3"	"25-29 years"	"25-29"	"2006"	"2006"	366	5981543	6.1
+	"Female"	"F"	"White"	"2106-3"	"25-29 years"	"25-29"	"2007"	"2007"	345	6091079	5.7
+	"Female"	"F"	"White"	"2106-3"	"25-29 years"	"25-29"	"2008"	"2008"	362	6167902	5.9
+	"Female"	"F"	"White"	"2106-3"	"25-29 years"	"25-29"	"2009"	"2009"	363	6189856	5.9
+	"Female"	"F"	"White"	"2106-3"	"25-29 years"	"25-29"	"2010"	"2010"	410	6173965	6.6
+	"Female"	"F"	"White"	"2106-3"	"25-29 years"	"25-29"	"2011"	"2011"	425	6197345	6.9
+	"Female"	"F"	"White"	"2106-3"	"25-29 years"	"25-29"	"2012"	"2012"	450	6194866	7.3
+	"Female"	"F"	"White"	"2106-3"	"25-29 years"	"25-29"	"2013"	"2013"	465	6208491	7.5
+	"Female"	"F"	"White"	"2106-3"	"25-29 years"	"25-29"	"2014"	"2014"	479	6264882	7.6
+	"Female"	"F"	"White"	"2106-3"	"25-29 years"	"25-29"	"2015"	"2015"	479	6331715	7.6
+	"Female"	"F"	"White"	"2106-3"	"25-29 years"	"25-29"	"2016"	"2016"	493	6399370	7.7
+	"Female"	"F"	"White"	"2106-3"	"25-29 years"	"25-29"	"2017"	"2017"	534	6424521	8.3
+	"Female"	"F"	"White"	"2106-3"	"25-29 years"	"25-29"	"2018"	"2018"	547	6398908	8.5
+	"Female"	"F"	"White"	"2106-3"	"30-34 years"	"30-34"	"1999"	"1999"	424	6834676	6.2
+	"Female"	"F"	"White"	"2106-3"	"30-34 years"	"30-34"	"2000"	"2000"	384	6731412	5.7
+	"Female"	"F"	"White"	"2106-3"	"30-34 years"	"30-34"	"2001"	"2001"	405	6683770	6.1
+	"Female"	"F"	"White"	"2106-3"	"30-34 years"	"30-34"	"2002"	"2002"	400	6581643	6.1
+	"Female"	"F"	"White"	"2106-3"	"30-34 years"	"30-34"	"2003"	"2003"	428	6425488	6.7
+	"Female"	"F"	"White"	"2106-3"	"30-34 years"	"30-34"	"2004"	"2004"	406	6211982	6.5
+	"Female"	"F"	"White"	"2106-3"	"30-34 years"	"30-34"	"2005"	"2005"	418	5970540	7.0
+	"Female"	"F"	"White"	"2106-3"	"30-34 years"	"30-34"	"2006"	"2006"	363	5721361	6.3
+	"Female"	"F"	"White"	"2106-3"	"30-34 years"	"30-34"	"2007"	"2007"	404	5621514	7.2
+	"Female"	"F"	"White"	"2106-3"	"30-34 years"	"30-34"	"2008"	"2008"	413	5629864	7.3
+	"Female"	"F"	"White"	"2106-3"	"30-34 years"	"30-34"	"2009"	"2009"	402	5713926	7.0
+	"Female"	"F"	"White"	"2106-3"	"30-34 years"	"30-34"	"2010"	"2010"	445	5798092	7.7
+	"Female"	"F"	"White"	"2106-3"	"30-34 years"	"30-34"	"2011"	"2011"	514	5956676	8.6
+	"Female"	"F"	"White"	"2106-3"	"30-34 years"	"30-34"	"2012"	"2012"	502	6059124	8.3
+	"Female"	"F"	"White"	"2106-3"	"30-34 years"	"30-34"	"2013"	"2013"	531	6149466	8.6
+	"Female"	"F"	"White"	"2106-3"	"30-34 years"	"30-34"	"2014"	"2014"	546	6195268	8.8
+	"Female"	"F"	"White"	"2106-3"	"30-34 years"	"30-34"	"2015"	"2015"	591	6219254	9.5
+	"Female"	"F"	"White"	"2106-3"	"30-34 years"	"30-34"	"2016"	"2016"	588	6233319	9.4
+	"Female"	"F"	"White"	"2106-3"	"30-34 years"	"30-34"	"2017"	"2017"	625	6220020	10.0
+	"Female"	"F"	"White"	"2106-3"	"30-34 years"	"30-34"	"2018"	"2018"	592	6227598	9.5
+	"Female"	"F"	"White"	"2106-3"	"35-39 years"	"35-39"	"1999"	"1999"	601	8065587	7.5
+	"Female"	"F"	"White"	"2106-3"	"35-39 years"	"35-39"	"2000"	"2000"	561	7922913	7.1
+	"Female"	"F"	"White"	"2106-3"	"35-39 years"	"35-39"	"2001"	"2001"	575	7605475	7.6
+	"Female"	"F"	"White"	"2106-3"	"35-39 years"	"35-39"	"2002"	"2002"	557	7331110	7.6
+	"Female"	"F"	"White"	"2106-3"	"35-39 years"	"35-39"	"2003"	"2003"	518	7053358	7.3
+	"Female"	"F"	"White"	"2106-3"	"35-39 years"	"35-39"	"2004"	"2004"	540	6821388	7.9
+	"Female"	"F"	"White"	"2106-3"	"35-39 years"	"35-39"	"2005"	"2005"	522	6706426	7.8
+	"Female"	"F"	"White"	"2106-3"	"35-39 years"	"35-39"	"2006"	"2006"	599	6677963	9.0
+	"Female"	"F"	"White"	"2106-3"	"35-39 years"	"35-39"	"2007"	"2007"	541	6582209	8.2
+	"Female"	"F"	"White"	"2106-3"	"35-39 years"	"35-39"	"2008"	"2008"	569	6433106	8.8
+	"Female"	"F"	"White"	"2106-3"	"35-39 years"	"35-39"	"2009"	"2009"	559	6225356	9.0
+	"Female"	"F"	"White"	"2106-3"	"35-39 years"	"35-39"	"2010"	"2010"	567	6048449	9.4
+	"Female"	"F"	"White"	"2106-3"	"35-39 years"	"35-39"	"2011"	"2011"	555	5749992	9.7
+	"Female"	"F"	"White"	"2106-3"	"35-39 years"	"35-39"	"2012"	"2012"	574	5665167	10.1
+	"Female"	"F"	"White"	"2106-3"	"35-39 years"	"35-39"	"2013"	"2013"	563	5673580	9.9
+	"Female"	"F"	"White"	"2106-3"	"35-39 years"	"35-39"	"2014"	"2014"	605	5731690	10.6
+	"Female"	"F"	"White"	"2106-3"	"35-39 years"	"35-39"	"2015"	"2015"	660	5833729	11.3
+	"Female"	"F"	"White"	"2106-3"	"35-39 years"	"35-39"	"2016"	"2016"	690	5961787	11.6
+	"Female"	"F"	"White"	"2106-3"	"35-39 years"	"35-39"	"2017"	"2017"	646	6056650	10.7
+	"Female"	"F"	"White"	"2106-3"	"35-39 years"	"35-39"	"2018"	"2018"	693	6141169	11.3
+	"Female"	"F"	"White"	"2106-3"	"40-44 years"	"40-44"	"1999"	"1999"	658	8133518	8.1
+	"Female"	"F"	"White"	"2106-3"	"40-44 years"	"40-44"	"2000"	"2000"	692	8166125	8.5
+	"Female"	"F"	"White"	"2106-3"	"40-44 years"	"40-44"	"2001"	"2001"	700	8220183	8.5
+	"Female"	"F"	"White"	"2106-3"	"40-44 years"	"40-44"	"2002"	"2002"	776	8166129	9.5
+	"Female"	"F"	"White"	"2106-3"	"40-44 years"	"40-44"	"2003"	"2003"	749	8080271	9.3
+	"Female"	"F"	"White"	"2106-3"	"40-44 years"	"40-44"	"2004"	"2004"	809	7996027	10.1
+	"Female"	"F"	"White"	"2106-3"	"40-44 years"	"40-44"	"2005"	"2005"	748	7823510	9.6
+	"Female"	"F"	"White"	"2106-3"	"40-44 years"	"40-44"	"2006"	"2006"	730	7551583	9.7
+	"Female"	"F"	"White"	"2106-3"	"40-44 years"	"40-44"	"2007"	"2007"	785	7278629	10.8
+	"Female"	"F"	"White"	"2106-3"	"40-44 years"	"40-44"	"2008"	"2008"	787	7003322	11.2
+	"Female"	"F"	"White"	"2106-3"	"40-44 years"	"40-44"	"2009"	"2009"	740	6772049	10.9
+	"Female"	"F"	"White"	"2106-3"	"40-44 years"	"40-44"	"2010"	"2010"	692	6669786	10.4
+	"Female"	"F"	"White"	"2106-3"	"40-44 years"	"40-44"	"2011"	"2011"	742	6638515	11.2
+	"Female"	"F"	"White"	"2106-3"	"40-44 years"	"40-44"	"2012"	"2012"	716	6544669	10.9
+	"Female"	"F"	"White"	"2106-3"	"40-44 years"	"40-44"	"2013"	"2013"	722	6398972	11.3
+	"Female"	"F"	"White"	"2106-3"	"40-44 years"	"40-44"	"2014"	"2014"	772	6195322	12.5
+	"Female"	"F"	"White"	"2106-3"	"40-44 years"	"40-44"	"2015"	"2015"	775	5972413	13.0
+	"Female"	"F"	"White"	"2106-3"	"40-44 years"	"40-44"	"2016"	"2016"	728	5734030	12.7
+	"Female"	"F"	"White"	"2106-3"	"40-44 years"	"40-44"	"2017"	"2017"	733	5643966	13.0
+	"Female"	"F"	"White"	"2106-3"	"40-44 years"	"40-44"	"2018"	"2018"	694	5645389	12.3
+	"Female"	"F"	"White"	"2106-3"	"45-49 years"	"45-49"	"1999"	"1999"	592	7455738	7.9
+	"Female"	"F"	"White"	"2106-3"	"45-49 years"	"45-49"	"2000"	"2000"	603	7573110	8.0
+	"Female"	"F"	"White"	"2106-3"	"45-49 years"	"45-49"	"2001"	"2001"	682	7733075	8.8
+	"Female"	"F"	"White"	"2106-3"	"45-49 years"	"45-49"	"2002"	"2002"	788	7879024	10.0
+	"Female"	"F"	"White"	"2106-3"	"45-49 years"	"45-49"	"2003"	"2003"	773	7989220	9.7
+	"Female"	"F"	"White"	"2106-3"	"45-49 years"	"45-49"	"2004"	"2004"	887	8044996	11.0
+	"Female"	"F"	"White"	"2106-3"	"45-49 years"	"45-49"	"2005"	"2005"	842	8092109	10.4
+	"Female"	"F"	"White"	"2106-3"	"45-49 years"	"45-49"	"2006"	"2006"	863	8136683	10.6
+	"Female"	"F"	"White"	"2106-3"	"45-49 years"	"45-49"	"2007"	"2007"	896	8084577	11.1
+	"Female"	"F"	"White"	"2106-3"	"45-49 years"	"45-49"	"2008"	"2008"	945	8001922	11.8
+	"Female"	"F"	"White"	"2106-3"	"45-49 years"	"45-49"	"2009"	"2009"	895	7920775	11.3
+	"Female"	"F"	"White"	"2106-3"	"45-49 years"	"45-49"	"2010"	"2010"	878	7796240	11.3
+	"Female"	"F"	"White"	"2106-3"	"45-49 years"	"45-49"	"2011"	"2011"	953	7463157	12.8
+	"Female"	"F"	"White"	"2106-3"	"45-49 years"	"45-49"	"2012"	"2012"	948	7198963	13.2
+	"Female"	"F"	"White"	"2106-3"	"45-49 years"	"45-49"	"2013"	"2013"	925	6926729	13.4
+	"Female"	"F"	"White"	"2106-3"	"45-49 years"	"45-49"	"2014"	"2014"	926	6707094	13.8
+	"Female"	"F"	"White"	"2106-3"	"45-49 years"	"45-49"	"2015"	"2015"	894	6607066	13.5
+	"Female"	"F"	"White"	"2106-3"	"45-49 years"	"45-49"	"2016"	"2016"	882	6587079	13.4
+	"Female"	"F"	"White"	"2106-3"	"45-49 years"	"45-49"	"2017"	"2017"	930	6488048	14.3
+	"Female"	"F"	"White"	"2106-3"	"45-49 years"	"45-49"	"2018"	"2018"	832	6336597	13.1
+	"Female"	"F"	"White"	"2106-3"	"50-54 years"	"50-54"	"1999"	"1999"	507	6656729	7.6
+	"Female"	"F"	"White"	"2106-3"	"50-54 years"	"50-54"	"2000"	"2000"	544	6873199	7.9
+	"Female"	"F"	"White"	"2106-3"	"50-54 years"	"50-54"	"2001"	"2001"	594	7248518	8.2
+	"Female"	"F"	"White"	"2106-3"	"50-54 years"	"50-54"	"2002"	"2002"	563	7178574	7.8
+	"Female"	"F"	"White"	"2106-3"	"50-54 years"	"50-54"	"2003"	"2003"	644	7261641	8.9
+	"Female"	"F"	"White"	"2106-3"	"50-54 years"	"50-54"	"2004"	"2004"	749	7390853	10.1
+	"Female"	"F"	"White"	"2106-3"	"50-54 years"	"50-54"	"2005"	"2005"	710	7540599	9.4
+	"Female"	"F"	"White"	"2106-3"	"50-54 years"	"50-54"	"2006"	"2006"	802	7666481	10.5
+	"Female"	"F"	"White"	"2106-3"	"50-54 years"	"50-54"	"2007"	"2007"	851	7817829	10.9
+	"Female"	"F"	"White"	"2106-3"	"50-54 years"	"50-54"	"2008"	"2008"	885	7935231	11.2
+	"Female"	"F"	"White"	"2106-3"	"50-54 years"	"50-54"	"2009"	"2009"	989	7998446	12.4
+	"Female"	"F"	"White"	"2106-3"	"50-54 years"	"50-54"	"2010"	"2010"	953	8042859	11.8
+	"Female"	"F"	"White"	"2106-3"	"50-54 years"	"50-54"	"2011"	"2011"	1029	8071899	12.7
+	"Female"	"F"	"White"	"2106-3"	"50-54 years"	"50-54"	"2012"	"2012"	1064	8009019	13.3
+	"Female"	"F"	"White"	"2106-3"	"50-54 years"	"50-54"	"2013"	"2013"	1038	7916921	13.1
+	"Female"	"F"	"White"	"2106-3"	"50-54 years"	"50-54"	"2014"	"2014"	1133	7815134	14.5
+	"Female"	"F"	"White"	"2106-3"	"50-54 years"	"50-54"	"2015"	"2015"	1124	7634993	14.7
+	"Female"	"F"	"White"	"2106-3"	"50-54 years"	"50-54"	"2016"	"2016"	1094	7355389	14.9
+	"Female"	"F"	"White"	"2106-3"	"50-54 years"	"50-54"	"2017"	"2017"	1000	7089801	14.1
+	"Female"	"F"	"White"	"2106-3"	"50-54 years"	"50-54"	"2018"	"2018"	1022	6817142	15.0
+	"Female"	"F"	"White"	"2106-3"	"55-59 years"	"55-59"	"1999"	"1999"	360	5304072	6.8
+	"Female"	"F"	"White"	"2106-3"	"55-59 years"	"55-59"	"2000"	"2000"	371	5440411	6.8
+	"Female"	"F"	"White"	"2106-3"	"55-59 years"	"55-59"	"2001"	"2001"	412	5594924	7.4
+	"Female"	"F"	"White"	"2106-3"	"55-59 years"	"55-59"	"2002"	"2002"	441	6061053	7.3
+	"Female"	"F"	"White"	"2106-3"	"55-59 years"	"55-59"	"2003"	"2003"	497	6276773	7.9
+	"Female"	"F"	"White"	"2106-3"	"55-59 years"	"55-59"	"2004"	"2004"	513	6543979	7.8
+	"Female"	"F"	"White"	"2106-3"	"55-59 years"	"55-59"	"2005"	"2005"	535	6839972	7.8
+	"Female"	"F"	"White"	"2106-3"	"55-59 years"	"55-59"	"2006"	"2006"	634	7153684	8.9
+	"Female"	"F"	"White"	"2106-3"	"55-59 years"	"55-59"	"2007"	"2007"	691	7090471	9.7
+	"Female"	"F"	"White"	"2106-3"	"55-59 years"	"55-59"	"2008"	"2008"	689	7178391	9.6
+	"Female"	"F"	"White"	"2106-3"	"55-59 years"	"55-59"	"2009"	"2009"	756	7311741	10.3
+	"Female"	"F"	"White"	"2106-3"	"55-59 years"	"55-59"	"2010"	"2010"	821	7424695	11.1
+	"Female"	"F"	"White"	"2106-3"	"55-59 years"	"55-59"	"2011"	"2011"	799	7580924	10.5
+	"Female"	"F"	"White"	"2106-3"	"55-59 years"	"55-59"	"2012"	"2012"	877	7714989	11.4
+	"Female"	"F"	"White"	"2106-3"	"55-59 years"	"55-59"	"2013"	"2013"	954	7810125	12.2
+	"Female"	"F"	"White"	"2106-3"	"55-59 years"	"55-59"	"2014"	"2014"	992	7844960	12.6
+	"Female"	"F"	"White"	"2106-3"	"55-59 years"	"55-59"	"2015"	"2015"	1082	7872823	13.7
+	"Female"	"F"	"White"	"2106-3"	"55-59 years"	"55-59"	"2016"	"2016"	1024	7895816	13.0
+	"Female"	"F"	"White"	"2106-3"	"55-59 years"	"55-59"	"2017"	"2017"	986	7825343	12.6
+	"Female"	"F"	"White"	"2106-3"	"55-59 years"	"55-59"	"2018"	"2018"	1052	7726628	13.6
+	"Female"	"F"	"White"	"2106-3"	"60-64 years "	"60-64"	"1999"	"1999"	219	4417711	5.0
+	"Female"	"F"	"White"	"2106-3"	"60-64 years "	"60-64"	"2000"	"2000"	257	4438847	5.8
+	"Female"	"F"	"White"	"2106-3"	"60-64 years "	"60-64"	"2001"	"2001"	283	4553355	6.2
+	"Female"	"F"	"White"	"2106-3"	"60-64 years "	"60-64"	"2002"	"2002"	267	4718079	5.7
+	"Female"	"F"	"White"	"2106-3"	"60-64 years "	"60-64"	"2003"	"2003"	287	4979577	5.8
+	"Female"	"F"	"White"	"2106-3"	"60-64 years "	"60-64"	"2004"	"2004"	317	5170611	6.1
+	"Female"	"F"	"White"	"2106-3"	"60-64 years "	"60-64"	"2005"	"2005"	334	5326772	6.3
+	"Female"	"F"	"White"	"2106-3"	"60-64 years "	"60-64"	"2006"	"2006"	404	5449501	7.4
+	"Female"	"F"	"White"	"2106-3"	"60-64 years "	"60-64"	"2007"	"2007"	452	5906519	7.7
+	"Female"	"F"	"White"	"2106-3"	"60-64 years "	"60-64"	"2008"	"2008"	445	6124499	7.3
+	"Female"	"F"	"White"	"2106-3"	"60-64 years "	"60-64"	"2009"	"2009"	479	6392225	7.5
+	"Female"	"F"	"White"	"2106-3"	"60-64 years "	"60-64"	"2010"	"2010"	558	6624212	8.4
+	"Female"	"F"	"White"	"2106-3"	"60-64 years "	"60-64"	"2011"	"2011"	570	6975747	8.2
+	"Female"	"F"	"White"	"2106-3"	"60-64 years "	"60-64"	"2012"	"2012"	579	6902560	8.4
+	"Female"	"F"	"White"	"2106-3"	"60-64 years "	"60-64"	"2013"	"2013"	637	6975231	9.1
+	"Female"	"F"	"White"	"2106-3"	"60-64 years "	"60-64"	"2014"	"2014"	666	7093153	9.4
+	"Female"	"F"	"White"	"2106-3"	"60-64 years "	"60-64"	"2015"	"2015"	753	7239722	10.4
+	"Female"	"F"	"White"	"2106-3"	"60-64 years "	"60-64"	"2016"	"2016"	789	7349441	10.7
+	"Female"	"F"	"White"	"2106-3"	"60-64 years "	"60-64"	"2017"	"2017"	773	7471715	10.3
+	"Female"	"F"	"White"	"2106-3"	"60-64 years "	"60-64"	"2018"	"2018"	771	7550439	10.2
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"1999"	"1999"	64	513188	12.5
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2000"	"2000"	68	532545	12.8
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2001"	"2001"	58	551855	10.5
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2002"	"2002"	58	561384	10.3
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2003"	"2003"	58	567089	10.2
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2004"	"2004"	52	577815	9.0
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2005"	"2005"	73	590607	12.4
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2006"	"2006"	62	609727	10.2
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2007"	"2007"	63	626266	10.1
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2008"	"2008"	52	639395	8.1
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2009"	"2009"	62	645717	9.6
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2010"	"2010"	84	646413	13.0
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2011"	"2011"	77	665239	11.6
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2012"	"2012"	98	691849	14.2
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2013"	"2013"	117	714438	16.4
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2014"	"2014"	83	753605	11.0
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2015"	"2015"	97	795478	12.2
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2016"	"2016"	113	818256	13.8
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2017"	"2017"	116	855600	13.6
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"25-29 years"	"25-29"	"2018"	"2018"	135	872359	15.5
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"1999"	"1999"	50	474644	10.5
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2000"	"2000"	45	506233	8.9
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2001"	"2001"	47	541096	8.7
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2002"	"2002"	55	572827	9.6
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2003"	"2003"	57	595524	9.6
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2004"	"2004"	59	611620	9.6
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2005"	"2005"	66	621379	10.6
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2006"	"2006"	63	628096	10.0
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2007"	"2007"	47	628579	7.5
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2008"	"2008"	55	627521	8.8
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2009"	"2009"	61	630307	9.7
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2010"	"2010"	63	633088	10.0
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2011"	"2011"	74	646009	11.5
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2012"	"2012"	70	678918	10.3
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2013"	"2013"	77	706971	10.9
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2014"	"2014"	82	742695	11.0
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2015"	"2015"	81	775530	10.4
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2016"	"2016"	83	796556	10.4
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2017"	"2017"	109	831642	13.1
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"30-34 years"	"30-34"	"2018"	"2018"	89	857936	10.4
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"1999"	"1999"	53	467697	11.3
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2000"	"2000"	48	482755	9.9
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2001"	"2001"	41	503003	8.2
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2002"	"2002"	44	513799	8.6
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2003"	"2003"	57	524159	10.9
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2004"	"2004"	38	539331	7.0
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2005"	"2005"	47	562279	8.4
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2006"	"2006"	43	587407	7.3
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2007"	"2007"	71	616413	11.5
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2008"	"2008"	58	637789	9.1
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2009"	"2009"	61	651726	9.4
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2010"	"2010"	60	657400	9.1
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2011"	"2011"	69	661859	10.4
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2012"	"2012"	81	668693	12.1
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2013"	"2013"	76	673486	11.3
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2014"	"2014"	53	691339	7.7
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2015"	"2015"	61	712983	8.6
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2016"	"2016"	87	724896	12.0
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2017"	"2017"	77	765640	10.1
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"35-39 years"	"35-39"	"2018"	"2018"	86	796754	10.8
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"1999"	"1999"	36	424059	8.5
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2000"	"2000"	35	437917	8.0
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2001"	"2001"	46	456154	10.1
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2002"	"2002"	39	470712	8.3
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2003"	"2003"	32	487751	6.6
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2004"	"2004"	45	506757	8.9
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2005"	"2005"	39	519428	7.5
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2006"	"2006"	55	534840	10.3
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2007"	"2007"	60	544858	11.0
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2008"	"2008"	47	555228	8.5
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2009"	"2009"	55	569570	9.7
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2010"	"2010"	60	585403	10.2
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2011"	"2011"	62	613614	10.1
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2012"	"2012"	73	646812	11.3
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2013"	"2013"	67	668683	10.0
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2014"	"2014"	67	692457	9.7
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2015"	"2015"	55	709691	7.7
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2016"	"2016"	85	709716	12.0
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2017"	"2017"	64	721808	8.9
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"40-44 years"	"40-44"	"2018"	"2018"	80	721467	11.1
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"1999"	"1999"	31	361376	8.6
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2000"	"2000"	38	377348	10.1
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2001"	"2001"	30	401242	7.5
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2002"	"2002"	40	419957	9.5
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2003"	"2003"	47	438792	10.7
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2004"	"2004"	61	454356	13.4
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2005"	"2005"	43	471985	9.1
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2006"	"2006"	50	485427	10.3
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2007"	"2007"	49	500004	9.8
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2008"	"2008"	51	517576	9.9
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2009"	"2009"	51	537085	9.5
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2010"	"2010"	66	546457	12.1
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2011"	"2011"	59	559506	10.5
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2012"	"2012"	63	570553	11.0
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2013"	"2013"	69	579272	11.9
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2014"	"2014"	70	600657	11.7
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2015"	"2015"	68	628159	10.8
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2016"	"2016"	68	645066	10.5
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2017"	"2017"	75	681607	11.0
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"45-49 years"	"45-49"	"2018"	"2018"	89	696430	12.8
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"1999"	"1999"	37	294288	12.6
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2000"	"2000"	32	312897	10.2
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2001"	"2001"	19	339925	Unreliable
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2002"	"2002"	30	356255	8.4
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2003"	"2003"	29	372422	7.8
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2004"	"2004"	39	387743	10.1
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2005"	"2005"	38	402982	9.4
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2006"	"2006"	43	422778	10.2
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2007"	"2007"	54	441593	12.2
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2008"	"2008"	58	461058	12.6
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2009"	"2009"	61	477029	12.8
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2010"	"2010"	60	489946	12.2
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2011"	"2011"	52	501777	10.4
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2012"	"2012"	61	515539	11.8
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2013"	"2013"	55	534466	10.3
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2014"	"2014"	73	558611	13.1
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2015"	"2015"	60	572473	10.5
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2016"	"2016"	68	578130	11.8
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2017"	"2017"	63	592245	10.6
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"50-54 years"	"50-54"	"2018"	"2018"	68	591517	11.5
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"1999"	"1999"	26	208111	12.5
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2000"	"2000"	18	220008	Unreliable
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2001"	"2001"	25	237836	10.5
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2002"	"2002"	33	258098	12.8
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2003"	"2003"	37	280641	13.2
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2004"	"2004"	34	303854	11.2
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2005"	"2005"	26	331268	7.8
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2006"	"2006"	33	352172	9.4
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2007"	"2007"	33	368177	9.0
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2008"	"2008"	46	384169	12.0
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2009"	"2009"	72	399170	18.0
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2010"	"2010"	49	410141	11.9
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2011"	"2011"	55	432891	12.7
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2012"	"2012"	72	452717	15.9
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2013"	"2013"	51	471568	10.8
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2014"	"2014"	60	491581	12.2
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2015"	"2015"	50	511691	9.8
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2016"	"2016"	66	514635	12.8
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2017"	"2017"	66	530365	12.4
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"55-59 years"	"55-59"	"2018"	"2018"	70	540600	12.9
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"1999"	"1999"	24	163555	14.7
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2000"	"2000"	17	172521	Unreliable
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2001"	"2001"	22	186176	11.8
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2002"	"2002"	10	197224	Unreliable
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2003"	"2003"	18	207769	Unreliable
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2004"	"2004"	20	219535	9.1
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2005"	"2005"	19	231201	Unreliable
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2006"	"2006"	23	244932	9.4
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2007"	"2007"	31	264625	11.7
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2008"	"2008"	28	286959	9.8
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2009"	"2009"	27	310117	8.7
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2010"	"2010"	51	331615	15.4
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2011"	"2011"	45	355003	12.7
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2012"	"2012"	37	371130	10.0
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2013"	"2013"	43	387699	11.1
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2014"	"2014"	48	406975	11.8
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2015"	"2015"	54	425497	12.7
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2016"	"2016"	56	440758	12.7
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2017"	"2017"	50	463369	10.8
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"60-64 years "	"60-64"	"2018"	"2018"	62	474874	13.1
+	"Male"	"M"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"1999"	"1999"	229	1227359	18.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2000"	"2000"	222	1217250	18.2
+	"Male"	"M"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2001"	"2001"	212	1176367	18.0
+	"Male"	"M"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2002"	"2002"	244	1161423	21.0
+	"Male"	"M"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2003"	"2003"	220	1156545	19.0
+	"Male"	"M"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2004"	"2004"	236	1184157	19.9
+	"Male"	"M"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2005"	"2005"	207	1219297	17.0
+	"Male"	"M"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2006"	"2006"	222	1261035	17.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2007"	"2007"	205	1295064	15.8
+	"Male"	"M"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2008"	"2008"	219	1326472	16.5
+	"Male"	"M"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2009"	"2009"	201	1341280	15.0
+	"Male"	"M"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2010"	"2010"	239	1342341	17.8
+	"Male"	"M"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2011"	"2011"	250	1368360	18.3
+	"Male"	"M"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2012"	"2012"	246	1400570	17.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2013"	"2013"	242	1442576	16.8
+	"Male"	"M"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2014"	"2014"	256	1517010	16.9
+	"Male"	"M"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2015"	"2015"	280	1599040	17.5
+	"Male"	"M"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2016"	"2016"	348	1683093	20.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2017"	"2017"	366	1765639	20.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"25-29 years"	"25-29"	"2018"	"2018"	395	1824430	21.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"1999"	"1999"	203	1248190	16.3
+	"Male"	"M"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2000"	"2000"	175	1243849	14.1
+	"Male"	"M"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2001"	"2001"	194	1241242	15.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2002"	"2002"	197	1243774	15.8
+	"Male"	"M"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2003"	"2003"	204	1233902	16.5
+	"Male"	"M"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2004"	"2004"	184	1222155	15.1
+	"Male"	"M"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2005"	"2005"	187	1196334	15.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2006"	"2006"	192	1171760	16.4
+	"Male"	"M"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2007"	"2007"	194	1165879	16.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2008"	"2008"	194	1175694	16.5
+	"Male"	"M"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2009"	"2009"	175	1210245	14.5
+	"Male"	"M"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2010"	"2010"	186	1245147	14.9
+	"Male"	"M"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2011"	"2011"	196	1286022	15.2
+	"Male"	"M"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2012"	"2012"	221	1315999	16.8
+	"Male"	"M"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2013"	"2013"	212	1341923	15.8
+	"Male"	"M"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2014"	"2014"	210	1362152	15.4
+	"Male"	"M"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2015"	"2015"	211	1374657	15.3
+	"Male"	"M"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2016"	"2016"	255	1397545	18.2
+	"Male"	"M"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2017"	"2017"	286	1431359	20.0
+	"Male"	"M"	"Black or African American"	"2054-5"	"30-34 years"	"30-34"	"2018"	"2018"	306	1473500	20.8
+	"Male"	"M"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"1999"	"1999"	215	1334212	16.1
+	"Male"	"M"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2000"	"2000"	172	1333184	12.9
+	"Male"	"M"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2001"	"2001"	188	1322748	14.2
+	"Male"	"M"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2002"	"2002"	191	1298817	14.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2003"	"2003"	171	1273108	13.4
+	"Male"	"M"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2004"	"2004"	145	1248378	11.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2005"	"2005"	156	1238840	12.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2006"	"2006"	192	1244414	15.4
+	"Male"	"M"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2007"	"2007"	175	1253650	14.0
+	"Male"	"M"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2008"	"2008"	163	1253548	13.0
+	"Male"	"M"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2009"	"2009"	164	1244299	13.2
+	"Male"	"M"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2010"	"2010"	180	1226242	14.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2011"	"2011"	192	1193704	16.1
+	"Male"	"M"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2012"	"2012"	167	1189759	14.0
+	"Male"	"M"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2013"	"2013"	184	1199943	15.3
+	"Male"	"M"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2014"	"2014"	187	1231071	15.2
+	"Male"	"M"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2015"	"2015"	185	1271310	14.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2016"	"2016"	190	1303281	14.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2017"	"2017"	230	1336143	17.2
+	"Male"	"M"	"Black or African American"	"2054-5"	"35-39 years"	"35-39"	"2018"	"2018"	254	1361639	18.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"1999"	"1999"	138	1248357	11.1
+	"Male"	"M"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2000"	"2000"	174	1273647	13.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2001"	"2001"	141	1304062	10.8
+	"Male"	"M"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2002"	"2002"	154	1314793	11.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2003"	"2003"	153	1321512	11.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2004"	"2004"	148	1331998	11.1
+	"Male"	"M"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2005"	"2005"	177	1329094	13.3
+	"Male"	"M"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2006"	"2006"	150	1324308	11.3
+	"Male"	"M"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2007"	"2007"	154	1305269	11.8
+	"Male"	"M"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2008"	"2008"	160	1286275	12.4
+	"Male"	"M"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2009"	"2009"	165	1262389	13.1
+	"Male"	"M"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2010"	"2010"	160	1257524	12.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2011"	"2011"	144	1256689	11.5
+	"Male"	"M"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2012"	"2012"	189	1261822	15.0
+	"Male"	"M"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2013"	"2013"	162	1254873	12.9
+	"Male"	"M"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2014"	"2014"	155	1246955	12.4
+	"Male"	"M"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2015"	"2015"	172	1226949	14.0
+	"Male"	"M"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2016"	"2016"	162	1199479	13.5
+	"Male"	"M"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2017"	"2017"	161	1197949	13.4
+	"Male"	"M"	"Black or African American"	"2054-5"	"40-44 years"	"40-44"	"2018"	"2018"	183	1203743	15.2
+	"Male"	"M"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"1999"	"1999"	114	1027188	11.1
+	"Male"	"M"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2000"	"2000"	123	1061019	11.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2001"	"2001"	109	1105384	9.9
+	"Male"	"M"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2002"	"2002"	129	1153639	11.2
+	"Male"	"M"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2003"	"2003"	108	1196401	9.0
+	"Male"	"M"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2004"	"2004"	128	1231607	10.4
+	"Male"	"M"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2005"	"2005"	130	1267913	10.3
+	"Male"	"M"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2006"	"2006"	138	1293433	10.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2007"	"2007"	134	1307530	10.2
+	"Male"	"M"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2008"	"2008"	148	1318543	11.2
+	"Male"	"M"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2009"	"2009"	163	1330207	12.3
+	"Male"	"M"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2010"	"2010"	140	1329666	10.5
+	"Male"	"M"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2011"	"2011"	161	1313392	12.3
+	"Male"	"M"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2012"	"2012"	144	1293068	11.1
+	"Male"	"M"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2013"	"2013"	139	1269490	10.9
+	"Male"	"M"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2014"	"2014"	130	1247238	10.4
+	"Male"	"M"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2015"	"2015"	142	1240517	11.4
+	"Male"	"M"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2016"	"2016"	132	1242735	10.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2017"	"2017"	162	1249902	13.0
+	"Male"	"M"	"Black or African American"	"2054-5"	"45-49 years"	"45-49"	"2018"	"2018"	166	1240961	13.4
+	"Male"	"M"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"1999"	"1999"	69	788057	8.8
+	"Male"	"M"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2000"	"2000"	87	834987	10.4
+	"Male"	"M"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2001"	"2001"	87	912639	9.5
+	"Male"	"M"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2002"	"2002"	83	945720	8.8
+	"Male"	"M"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2003"	"2003"	91	979716	9.3
+	"Male"	"M"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2004"	"2004"	86	1017168	8.5
+	"Male"	"M"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2005"	"2005"	108	1054056	10.2
+	"Male"	"M"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2006"	"2006"	106	1093251	9.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2007"	"2007"	108	1144327	9.4
+	"Male"	"M"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2008"	"2008"	121	1191230	10.2
+	"Male"	"M"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2009"	"2009"	112	1229480	9.1
+	"Male"	"M"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2010"	"2010"	119	1260649	9.4
+	"Male"	"M"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2011"	"2011"	123	1280547	9.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2012"	"2012"	137	1286971	10.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2013"	"2013"	138	1291678	10.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2014"	"2014"	142	1296563	11.0
+	"Male"	"M"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2015"	"2015"	135	1291152	10.5
+	"Male"	"M"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2016"	"2016"	135	1277354	10.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2017"	"2017"	155	1259223	12.3
+	"Male"	"M"	"Black or African American"	"2054-5"	"50-54 years"	"50-54"	"2018"	"2018"	135	1234617	10.9
+	"Male"	"M"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"1999"	"1999"	54	573942	9.4
+	"Male"	"M"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2000"	"2000"	49	590653	8.3
+	"Male"	"M"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2001"	"2001"	62	616383	10.1
+	"Male"	"M"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2002"	"2002"	57	662769	8.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2003"	"2003"	54	706655	7.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2004"	"2004"	93	758635	12.3
+	"Male"	"M"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2005"	"2005"	62	820971	7.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2006"	"2006"	80	881087	9.1
+	"Male"	"M"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2007"	"2007"	78	912345	8.5
+	"Male"	"M"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2008"	"2008"	83	945305	8.8
+	"Male"	"M"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2009"	"2009"	84	981716	8.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2010"	"2010"	97	1009656	9.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2011"	"2011"	92	1054879	8.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2012"	"2012"	104	1100716	9.4
+	"Male"	"M"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2013"	"2013"	109	1139012	9.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2014"	"2014"	103	1171735	8.8
+	"Male"	"M"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2015"	"2015"	116	1200683	9.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2016"	"2016"	115	1216592	9.5
+	"Male"	"M"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2017"	"2017"	106	1224431	8.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"55-59 years"	"55-59"	"2018"	"2018"	143	1227043	11.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"1999"	"1999"	41	459389	8.9
+	"Male"	"M"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2000"	"2000"	31	470342	6.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2001"	"2001"	40	483638	8.3
+	"Male"	"M"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2002"	"2002"	40	497980	8.0
+	"Male"	"M"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2003"	"2003"	48	518313	9.3
+	"Male"	"M"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2004"	"2004"	47	538700	8.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2005"	"2005"	44	556778	7.9
+	"Male"	"M"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2006"	"2006"	46	576788	8.0
+	"Male"	"M"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2007"	"2007"	43	620088	6.9
+	"Male"	"M"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2008"	"2008"	55	661596	8.3
+	"Male"	"M"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2009"	"2009"	58	710808	8.2
+	"Male"	"M"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2010"	"2010"	70	757918	9.2
+	"Male"	"M"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2011"	"2011"	61	820245	7.4
+	"Male"	"M"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2012"	"2012"	61	844889	7.2
+	"Male"	"M"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2013"	"2013"	77	872930	8.8
+	"Male"	"M"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2014"	"2014"	80	904640	8.8
+	"Male"	"M"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2015"	"2015"	72	938589	7.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2016"	"2016"	87	971972	9.0
+	"Male"	"M"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2017"	"2017"	81	1015295	8.0
+	"Male"	"M"	"Black or African American"	"2054-5"	"60-64 years "	"60-64"	"2018"	"2018"	102	1048087	9.7
+	"Male"	"M"	"White"	"2106-3"	"25-29 years"	"25-29"	"1999"	"1999"	1478	6294554	23.5
+	"Male"	"M"	"White"	"2106-3"	"25-29 years"	"25-29"	"2000"	"2000"	1424	6138505	23.2
+	"Male"	"M"	"White"	"2106-3"	"25-29 years"	"25-29"	"2001"	"2001"	1479	5816994	25.4
+	"Male"	"M"	"White"	"2106-3"	"25-29 years"	"25-29"	"2002"	"2002"	1427	5698533	25.0
+	"Male"	"M"	"White"	"2106-3"	"25-29 years"	"25-29"	"2003"	"2003"	1363	5672755	24.0
+	"Male"	"M"	"White"	"2106-3"	"25-29 years"	"25-29"	"2004"	"2004"	1430	5745178	24.9
+	"Male"	"M"	"White"	"2106-3"	"25-29 years"	"25-29"	"2005"	"2005"	1403	5832691	24.1
+	"Male"	"M"	"White"	"2106-3"	"25-29 years"	"25-29"	"2006"	"2006"	1504	5988235	25.1
+	"Male"	"M"	"White"	"2106-3"	"25-29 years"	"25-29"	"2007"	"2007"	1601	6101797	26.2
+	"Male"	"M"	"White"	"2106-3"	"25-29 years"	"25-29"	"2008"	"2008"	1610	6209621	25.9
+	"Male"	"M"	"White"	"2106-3"	"25-29 years"	"25-29"	"2009"	"2009"	1631	6264167	26.0
+	"Male"	"M"	"White"	"2106-3"	"25-29 years"	"25-29"	"2010"	"2010"	1822	6278921	29.0
+	"Male"	"M"	"White"	"2106-3"	"25-29 years"	"25-29"	"2011"	"2011"	1855	6313225	29.4
+	"Male"	"M"	"White"	"2106-3"	"25-29 years"	"25-29"	"2012"	"2012"	1928	6331749	30.4
+	"Male"	"M"	"White"	"2106-3"	"25-29 years"	"25-29"	"2013"	"2013"	1925	6361222	30.3
+	"Male"	"M"	"White"	"2106-3"	"25-29 years"	"25-29"	"2014"	"2014"	1901	6441026	29.5
+	"Male"	"M"	"White"	"2106-3"	"25-29 years"	"25-29"	"2015"	"2015"	2016	6525637	30.9
+	"Male"	"M"	"White"	"2106-3"	"25-29 years"	"25-29"	"2016"	"2016"	2123	6606675	32.1
+	"Male"	"M"	"White"	"2106-3"	"25-29 years"	"25-29"	"2017"	"2017"	2294	6656483	34.5
+	"Male"	"M"	"White"	"2106-3"	"25-29 years"	"25-29"	"2018"	"2018"	2206	6662179	33.1
+	"Male"	"M"	"White"	"2106-3"	"30-34 years"	"30-34"	"1999"	"1999"	1727	6921705	25.0
+	"Male"	"M"	"White"	"2106-3"	"30-34 years"	"30-34"	"2000"	"2000"	1565	6819205	22.9
+	"Male"	"M"	"White"	"2106-3"	"30-34 years"	"30-34"	"2001"	"2001"	1711	6782134	25.2
+	"Male"	"M"	"White"	"2106-3"	"30-34 years"	"30-34"	"2002"	"2002"	1638	6683490	24.5
+	"Male"	"M"	"White"	"2106-3"	"30-34 years"	"30-34"	"2003"	"2003"	1736	6512411	26.7
+	"Male"	"M"	"White"	"2106-3"	"30-34 years"	"30-34"	"2004"	"2004"	1634	6303746	25.9
+	"Male"	"M"	"White"	"2106-3"	"30-34 years"	"30-34"	"2005"	"2005"	1592	6055906	26.3
+	"Male"	"M"	"White"	"2106-3"	"30-34 years"	"30-34"	"2006"	"2006"	1456	5816980	25.0
+	"Male"	"M"	"White"	"2106-3"	"30-34 years"	"30-34"	"2007"	"2007"	1542	5719451	27.0
+	"Male"	"M"	"White"	"2106-3"	"30-34 years"	"30-34"	"2008"	"2008"	1592	5732977	27.8
+	"Male"	"M"	"White"	"2106-3"	"30-34 years"	"30-34"	"2009"	"2009"	1587	5815676	27.3
+	"Male"	"M"	"White"	"2106-3"	"30-34 years"	"30-34"	"2010"	"2010"	1658	5892342	28.1
+	"Male"	"M"	"White"	"2106-3"	"30-34 years"	"30-34"	"2011"	"2011"	1787	6051761	29.5
+	"Male"	"M"	"White"	"2106-3"	"30-34 years"	"30-34"	"2012"	"2012"	1801	6158752	29.2
+	"Male"	"M"	"White"	"2106-3"	"30-34 years"	"30-34"	"2013"	"2013"	1804	6250584	28.9
+	"Male"	"M"	"White"	"2106-3"	"30-34 years"	"30-34"	"2014"	"2014"	1982	6297477	31.5
+	"Male"	"M"	"White"	"2106-3"	"30-34 years"	"30-34"	"2015"	"2015"	2091	6323231	33.1
+	"Male"	"M"	"White"	"2106-3"	"30-34 years"	"30-34"	"2016"	"2016"	2076	6351471	32.7
+	"Male"	"M"	"White"	"2106-3"	"30-34 years"	"30-34"	"2017"	"2017"	2233	6354187	35.1
+	"Male"	"M"	"White"	"2106-3"	"30-34 years"	"30-34"	"2018"	"2018"	2215	6368780	34.8
+	"Male"	"M"	"White"	"2106-3"	"35-39 years"	"35-39"	"1999"	"1999"	2098	8094587	25.9
+	"Male"	"M"	"White"	"2106-3"	"35-39 years"	"35-39"	"2000"	"2000"	2038	7936088	25.7
+	"Male"	"M"	"White"	"2106-3"	"35-39 years"	"35-39"	"2001"	"2001"	2046	7633057	26.8
+	"Male"	"M"	"White"	"2106-3"	"35-39 years"	"35-39"	"2002"	"2002"	2013	7359478	27.4
+	"Male"	"M"	"White"	"2106-3"	"35-39 years"	"35-39"	"2003"	"2003"	1898	7087398	26.8
+	"Male"	"M"	"White"	"2106-3"	"35-39 years"	"35-39"	"2004"	"2004"	1864	6876083	27.1
+	"Male"	"M"	"White"	"2106-3"	"35-39 years"	"35-39"	"2005"	"2005"	1816	6771561	26.8
+	"Male"	"M"	"White"	"2106-3"	"35-39 years"	"35-39"	"2006"	"2006"	1955	6748394	29.0
+	"Male"	"M"	"White"	"2106-3"	"35-39 years"	"35-39"	"2007"	"2007"	1882	6658247	28.3
+	"Male"	"M"	"White"	"2106-3"	"35-39 years"	"35-39"	"2008"	"2008"	1977	6504115	30.4
+	"Male"	"M"	"White"	"2106-3"	"35-39 years"	"35-39"	"2009"	"2009"	1929	6291303	30.7
+	"Male"	"M"	"White"	"2106-3"	"35-39 years"	"35-39"	"2010"	"2010"	1887	6107512	30.9
+	"Male"	"M"	"White"	"2106-3"	"35-39 years"	"35-39"	"2011"	"2011"	1776	5811271	30.6
+	"Male"	"M"	"White"	"2106-3"	"35-39 years"	"35-39"	"2012"	"2012"	1888	5731933	32.9
+	"Male"	"M"	"White"	"2106-3"	"35-39 years"	"35-39"	"2013"	"2013"	1829	5747969	31.8
+	"Male"	"M"	"White"	"2106-3"	"35-39 years"	"35-39"	"2014"	"2014"	1898	5812100	32.7
+	"Male"	"M"	"White"	"2106-3"	"35-39 years"	"35-39"	"2015"	"2015"	1994	5920224	33.7
+	"Male"	"M"	"White"	"2106-3"	"35-39 years"	"35-39"	"2016"	"2016"	2079	6049049	34.4
+	"Male"	"M"	"White"	"2106-3"	"35-39 years"	"35-39"	"2017"	"2017"	2197	6142103	35.8
+	"Male"	"M"	"White"	"2106-3"	"35-39 years"	"35-39"	"2018"	"2018"	2355	6221562	37.9
+	"Male"	"M"	"White"	"2106-3"	"40-44 years"	"40-44"	"1999"	"1999"	2112	8117806	26.0
+	"Male"	"M"	"White"	"2106-3"	"40-44 years"	"40-44"	"2000"	"2000"	2249	8151520	27.6
+	"Male"	"M"	"White"	"2106-3"	"40-44 years"	"40-44"	"2001"	"2001"	2283	8202369	27.8
+	"Male"	"M"	"White"	"2106-3"	"40-44 years"	"40-44"	"2002"	"2002"	2449	8146913	30.1
+	"Male"	"M"	"White"	"2106-3"	"40-44 years"	"40-44"	"2003"	"2003"	2398	8049029	29.8
+	"Male"	"M"	"White"	"2106-3"	"40-44 years"	"40-44"	"2004"	"2004"	2385	7968265	29.9
+	"Male"	"M"	"White"	"2106-3"	"40-44 years"	"40-44"	"2005"	"2005"	2348	7793151	30.1
+	"Male"	"M"	"White"	"2106-3"	"40-44 years"	"40-44"	"2006"	"2006"	2224	7535096	29.5
+	"Male"	"M"	"White"	"2106-3"	"40-44 years"	"40-44"	"2007"	"2007"	2327	7271303	32.0
+	"Male"	"M"	"White"	"2106-3"	"40-44 years"	"40-44"	"2008"	"2008"	2238	7014018	31.9
+	"Male"	"M"	"White"	"2106-3"	"40-44 years"	"40-44"	"2009"	"2009"	2280	6796712	33.5
+	"Male"	"M"	"White"	"2106-3"	"40-44 years"	"40-44"	"2010"	"2010"	2213	6705632	33.0
+	"Male"	"M"	"White"	"2106-3"	"40-44 years"	"40-44"	"2011"	"2011"	2291	6681100	34.3
+	"Male"	"M"	"White"	"2106-3"	"40-44 years"	"40-44"	"2012"	"2012"	2254	6595545	34.2
+	"Male"	"M"	"White"	"2106-3"	"40-44 years"	"40-44"	"2013"	"2013"	2184	6444840	33.9
+	"Male"	"M"	"White"	"2106-3"	"40-44 years"	"40-44"	"2014"	"2014"	2097	6243102	33.6
+	"Male"	"M"	"White"	"2106-3"	"40-44 years"	"40-44"	"2015"	"2015"	2194	6022801	36.4
+	"Male"	"M"	"White"	"2106-3"	"40-44 years"	"40-44"	"2016"	"2016"	2031	5784403	35.1
+	"Male"	"M"	"White"	"2106-3"	"40-44 years"	"40-44"	"2017"	"2017"	2188	5696250	38.4
+	"Male"	"M"	"White"	"2106-3"	"40-44 years"	"40-44"	"2018"	"2018"	2100	5701206	36.8
+	"Male"	"M"	"White"	"2106-3"	"45-49 years"	"45-49"	"1999"	"1999"	1876	7369371	25.5
+	"Male"	"M"	"White"	"2106-3"	"45-49 years"	"45-49"	"2000"	"2000"	2008	7489284	26.8
+	"Male"	"M"	"White"	"2106-3"	"45-49 years"	"45-49"	"2001"	"2001"	2215	7652379	28.9
+	"Male"	"M"	"White"	"2106-3"	"45-49 years"	"45-49"	"2002"	"2002"	2296	7791685	29.5
+	"Male"	"M"	"White"	"2106-3"	"45-49 years"	"45-49"	"2003"	"2003"	2309	7904379	29.2
+	"Male"	"M"	"White"	"2106-3"	"45-49 years"	"45-49"	"2004"	"2004"	2382	7964907	29.9
+	"Male"	"M"	"White"	"2106-3"	"45-49 years"	"45-49"	"2005"	"2005"	2471	8015515	30.8
+	"Male"	"M"	"White"	"2106-3"	"45-49 years"	"45-49"	"2006"	"2006"	2561	8059015	31.8
+	"Male"	"M"	"White"	"2106-3"	"45-49 years"	"45-49"	"2007"	"2007"	2677	8011089	33.4
+	"Male"	"M"	"White"	"2106-3"	"45-49 years"	"45-49"	"2008"	"2008"	2818	7923559	35.6
+	"Male"	"M"	"White"	"2106-3"	"45-49 years"	"45-49"	"2009"	"2009"	2732	7843887	34.8
+	"Male"	"M"	"White"	"2106-3"	"45-49 years"	"45-49"	"2010"	"2010"	2928	7717904	37.9
+	"Male"	"M"	"White"	"2106-3"	"45-49 years"	"45-49"	"2011"	"2011"	2777	7400700	37.5
+	"Male"	"M"	"White"	"2106-3"	"45-49 years"	"45-49"	"2012"	"2012"	2638	7149016	36.9
+	"Male"	"M"	"White"	"2106-3"	"45-49 years"	"45-49"	"2013"	"2013"	2514	6894349	36.5
+	"Male"	"M"	"White"	"2106-3"	"45-49 years"	"45-49"	"2014"	"2014"	2589	6694216	38.7
+	"Male"	"M"	"White"	"2106-3"	"45-49 years"	"45-49"	"2015"	"2015"	2494	6609912	37.7
+	"Male"	"M"	"White"	"2106-3"	"45-49 years"	"45-49"	"2016"	"2016"	2406	6598591	36.5
+	"Male"	"M"	"White"	"2106-3"	"45-49 years"	"45-49"	"2017"	"2017"	2620	6507420	40.3
+	"Male"	"M"	"White"	"2106-3"	"45-49 years"	"45-49"	"2018"	"2018"	2469	6351420	38.9
+	"Male"	"M"	"White"	"2106-3"	"50-54 years"	"50-54"	"1999"	"1999"	1512	6513967	23.2
+	"Male"	"M"	"White"	"2106-3"	"50-54 years"	"50-54"	"2000"	"2000"	1619	6733591	24.0
+	"Male"	"M"	"White"	"2106-3"	"50-54 years"	"50-54"	"2001"	"2001"	1801	7099559	25.4
+	"Male"	"M"	"White"	"2106-3"	"50-54 years"	"50-54"	"2002"	"2002"	1956	7031269	27.8
+	"Male"	"M"	"White"	"2106-3"	"50-54 years"	"50-54"	"2003"	"2003"	2048	7105292	28.8
+	"Male"	"M"	"White"	"2106-3"	"50-54 years"	"50-54"	"2004"	"2004"	2083	7228634	28.8
+	"Male"	"M"	"White"	"2106-3"	"50-54 years"	"50-54"	"2005"	"2005"	2185	7376377	29.6
+	"Male"	"M"	"White"	"2106-3"	"50-54 years"	"50-54"	"2006"	"2006"	2388	7503011	31.8
+	"Male"	"M"	"White"	"2106-3"	"50-54 years"	"50-54"	"2007"	"2007"	2442	7647642	31.9
+	"Male"	"M"	"White"	"2106-3"	"50-54 years"	"50-54"	"2008"	"2008"	2694	7770369	34.7
+	"Male"	"M"	"White"	"2106-3"	"50-54 years"	"50-54"	"2009"	"2009"	2948	7837527	37.6
+	"Male"	"M"	"White"	"2106-3"	"50-54 years"	"50-54"	"2010"	"2010"	2996	7887799	38.0
+	"Male"	"M"	"White"	"2106-3"	"50-54 years"	"50-54"	"2011"	"2011"	3062	7915197	38.7
+	"Male"	"M"	"White"	"2106-3"	"50-54 years"	"50-54"	"2012"	"2012"	3103	7852440	39.5
+	"Male"	"M"	"White"	"2106-3"	"50-54 years"	"50-54"	"2013"	"2013"	3050	7759979	39.3
+	"Male"	"M"	"White"	"2106-3"	"50-54 years"	"50-54"	"2014"	"2014"	2946	7665141	38.4
+	"Male"	"M"	"White"	"2106-3"	"50-54 years"	"50-54"	"2015"	"2015"	3034	7489701	40.5
+	"Male"	"M"	"White"	"2106-3"	"50-54 years"	"50-54"	"2016"	"2016"	2869	7227858	39.7
+	"Male"	"M"	"White"	"2106-3"	"50-54 years"	"50-54"	"2017"	"2017"	2711	6978435	38.8
+	"Male"	"M"	"White"	"2106-3"	"50-54 years"	"50-54"	"2018"	"2018"	2720	6727826	40.4
+	"Male"	"M"	"White"	"2106-3"	"55-59 years"	"55-59"	"1999"	"1999"	1141	5063782	22.5
+	"Male"	"M"	"White"	"2106-3"	"55-59 years"	"55-59"	"2000"	"2000"	1165	5197809	22.4
+	"Male"	"M"	"White"	"2106-3"	"55-59 years"	"55-59"	"2001"	"2001"	1375	5364115	25.6
+	"Male"	"M"	"White"	"2106-3"	"55-59 years"	"55-59"	"2002"	"2002"	1524	5830597	26.1
+	"Male"	"M"	"White"	"2106-3"	"55-59 years"	"55-59"	"2003"	"2003"	1588	6050416	26.2
+	"Male"	"M"	"White"	"2106-3"	"55-59 years"	"55-59"	"2004"	"2004"	1575	6314088	24.9
+	"Male"	"M"	"White"	"2106-3"	"55-59 years"	"55-59"	"2005"	"2005"	1706	6605805	25.8
+	"Male"	"M"	"White"	"2106-3"	"55-59 years"	"55-59"	"2006"	"2006"	1917	6901653	27.8
+	"Male"	"M"	"White"	"2106-3"	"55-59 years"	"55-59"	"2007"	"2007"	1985	6838462	29.0
+	"Male"	"M"	"White"	"2106-3"	"55-59 years"	"55-59"	"2008"	"2008"	2233	6913901	32.3
+	"Male"	"M"	"White"	"2106-3"	"55-59 years"	"55-59"	"2009"	"2009"	2365	7036638	33.6
+	"Male"	"M"	"White"	"2106-3"	"55-59 years"	"55-59"	"2010"	"2010"	2549	7146083	35.7
+	"Male"	"M"	"White"	"2106-3"	"55-59 years"	"55-59"	"2011"	"2011"	2638	7299446	36.1
+	"Male"	"M"	"White"	"2106-3"	"55-59 years"	"55-59"	"2012"	"2012"	2774	7426243	37.4
+	"Male"	"M"	"White"	"2106-3"	"55-59 years"	"55-59"	"2013"	"2013"	2774	7524979	36.9
+	"Male"	"M"	"White"	"2106-3"	"55-59 years"	"55-59"	"2014"	"2014"	2855	7567749	37.7
+	"Male"	"M"	"White"	"2106-3"	"55-59 years"	"55-59"	"2015"	"2015"	2921	7603227	38.4
+	"Male"	"M"	"White"	"2106-3"	"55-59 years"	"55-59"	"2016"	"2016"	2854	7624881	37.4
+	"Male"	"M"	"White"	"2106-3"	"55-59 years"	"55-59"	"2017"	"2017"	2957	7558976	39.1
+	"Male"	"M"	"White"	"2106-3"	"55-59 years"	"55-59"	"2018"	"2018"	3102	7462883	41.6
+	"Male"	"M"	"White"	"2106-3"	"60-64 years "	"60-64"	"1999"	"1999"	860	4089994	21.0
+	"Male"	"M"	"White"	"2106-3"	"60-64 years "	"60-64"	"2000"	"2000"	866	4113867	21.1
+	"Male"	"M"	"White"	"2106-3"	"60-64 years "	"60-64"	"2001"	"2001"	909	4231056	21.5
+	"Male"	"M"	"White"	"2106-3"	"60-64 years "	"60-64"	"2002"	"2002"	1022	4393249	23.3
+	"Male"	"M"	"White"	"2106-3"	"60-64 years "	"60-64"	"2003"	"2003"	1090	4648582	23.4
+	"Male"	"M"	"White"	"2106-3"	"60-64 years "	"60-64"	"2004"	"2004"	1179	4836000	24.4
+	"Male"	"M"	"White"	"2106-3"	"60-64 years "	"60-64"	"2005"	"2005"	1247	4995868	25.0
+	"Male"	"M"	"White"	"2106-3"	"60-64 years "	"60-64"	"2006"	"2006"	1212	5127052	23.6
+	"Male"	"M"	"White"	"2106-3"	"60-64 years "	"60-64"	"2007"	"2007"	1465	5578839	26.3
+	"Male"	"M"	"White"	"2106-3"	"60-64 years "	"60-64"	"2008"	"2008"	1626	5800117	28.0
+	"Male"	"M"	"White"	"2106-3"	"60-64 years "	"60-64"	"2009"	"2009"	1621	6060669	26.7
+	"Male"	"M"	"White"	"2106-3"	"60-64 years "	"60-64"	"2010"	"2010"	1806	6288214	28.7
+	"Male"	"M"	"White"	"2106-3"	"60-64 years "	"60-64"	"2011"	"2011"	1885	6608141	28.5
+	"Male"	"M"	"White"	"2106-3"	"60-64 years "	"60-64"	"2012"	"2012"	2003	6527655	30.7
+	"Male"	"M"	"White"	"2106-3"	"60-64 years "	"60-64"	"2013"	"2013"	2046	6583471	31.1
+	"Male"	"M"	"White"	"2106-3"	"60-64 years "	"60-64"	"2014"	"2014"	2242	6683927	33.5
+	"Male"	"M"	"White"	"2106-3"	"60-64 years "	"60-64"	"2015"	"2015"	2173	6814088	31.9
+	"Male"	"M"	"White"	"2106-3"	"60-64 years "	"60-64"	"2016"	"2016"	2234	6916690	32.3
+	"Male"	"M"	"White"	"2106-3"	"60-64 years "	"60-64"	"2017"	"2017"	2446	7031812	34.8
+	"Male"	"M"	"White"	"2106-3"	"60-64 years "	"60-64"	"2018"	"2018"	2571	7112293	36.1
+"---"
+"Dataset: Underlying Cause of Death, 1999-2018"
+"Query Parameters:"
+"Five-Year Age Groups: 25-29 years; 30-34 years; 35-39 years; 40-44 years; 45-49 years; 50-54 years; 55-59 years; 60-64 years"
+"Hispanic Origin: Not Hispanic or Latino"
+"ICD-10 113 Cause List: #Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)"
+"Race: Asian or Pacific Islander; Black or African American; White"
+"Group By: Gender; Race; Five-Year Age Groups; Year"
+"Show Totals: False"
+"Show Zero Values: True"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: Apr 11, 2020 11:12:39 AM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Underlying Cause of Death"
+"1999-2018 on CDC WONDER Online Database, released in 2020. Data are from the Multiple Cause of Death Files, 1999-2018, as"
+"compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
+"at http://wonder.cdc.gov/ucd-icd10.html on Apr 11, 2020 11:12:39 AM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Circumstances in Georgia for the years 2008 and 2009 have resulted in unusually high death counts for the ICD-10 cause of"
+"death code R99, ""Other ill-defined and unspecified causes of mortality."" Caution should be used in interpreting these data."
+"More information: http://wonder.cdc.gov/wonder/help/ucd.html#Georgia-Reporting-Anomalies."
+"3. Circumstances in New Jersey for the year 2009 have resulted in unusually high death counts for the ICD-10 cause of death code"
+"R99, ""Other ill-defined and unspecified causes of mortality"" and therefore unusually low death counts in other ICD-10 codes,"
+"most notably R95, ""Sudden Infant Death Syndrome"" and X40-X49, ""Unintentional poisoning."" Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#New-Jersey-Reporting-Anomalies."
+"4. Circumstances in California resulted in unusually high death counts for the ICD-10 cause of death code R99, ""Other"
+"ill-defined and unspecified causes of mortality"" for deaths occurring in years 2000 and 2001. Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#California-Reporting-Anomalies."
+"5. Death rates are flagged as Unreliable when the rate is calculated with a numerator of 20 or less. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Unreliable."
+"6. Deaths of persons with Age ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among age groups,"
+"so are not included in age-specific counts, age-specific rates or in any age-adjusted rates. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Not Stated."
+"7. Deaths of persons with Hispanic origin ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among"
+"Hispanic Origin groups, so are not included in the Hispanic Origin specific counts and rates. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Not Stated."
+"8. Information included on the death certificate about the race and Hispanic ethnicity of the decedent is reported by the"
+"funeral director as provided by an informant, often the surviving next of kin, or, in the absence of an informant, on the basis"
+"of observation. Race and ethnicity information from the census is by self-report. To the extent that race and Hispanic origin"
+"are inconsistent between these two data sources, death rates will be biased. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Racial Differences."
+"9. The population figures for year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018"
+"postcensal series released by NCHS on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for"
+"year 2016 are bridged-race estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS"
+"on June 26, 2017. The population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2015 postcensal series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The"
+"population figures for year 2013 are bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal"
+"series released by NCHS on June 26, 2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2012 postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18,"
+"2012. Population figures for 2010 are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race"
+"estimates of the July 1 resident population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on"
+"October 26, 2012. Population figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999"
+"intercensal series of July 1 estimates. Population figures for the infant age groups are the number of live births."
+"<br/><b>Note:</b> Rates and population figures for years 2001 - 2009 differ slightly from previously published reports, due to"
+"use of the population estimates which were available at the time of release."

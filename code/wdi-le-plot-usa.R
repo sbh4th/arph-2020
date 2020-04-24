@@ -18,39 +18,50 @@ here::here()
 ##### import OECD data, transform for analysis
 
 # Read in life expectancy data from World Bank
-d <- read_csv(here("data/world-development-indicators", "wdi-le.csv"))
+d <- read_csv(here("data/world-development-indicators", "wdi-le-gender.csv"))
 
 # convert to numeric
 type_convert(d)
 
 # make dataset long rather than wide
-dl <- d %>%
-  gather(Year, LE, YR1969:YR2017)
+dl <- d %>% 
+  gather(Year, LE, YR1960:YR2018, -`Series Name`) %>%
+  mutate(group = recode(`Series Name`, 
+    "Life expectancy at birth, female (years)" = 1,
+    "Life expectancy at birth, male (years)" = 2,
+    "Life expectancy at birth, total (years)" = 0)) %>%
+  filter(Year != "YR2018")
 
 # remove string from year
 dl$Year <- str_remove(dl$Year, "YR")
+dl$LE <- as.numeric(dl$LE)
 
 # export a .csv file for joinpoint analysis
-dljp <- filter(dl, Country.Code == "OED" | 
-                 Country.Code == "USA") %>%
-  arrange(Country.Code, Year) %>%
-  group_by(Country.Code) %>%
-  mutate(year0 = row_number() - 1) %>%
-  write_delim(here("data", "us-oed-le.csv"), delim = ",")
+dljp <- filter(dl, Year>=1970 & (`Country Code` == "OED" | 
+                 `Country Code` == "USA")) %>%
+  arrange(group, `Country Code`, Year) %>%
+  group_by(group, `Country Code`) %>%
+  mutate(country = `Country Code`, year0 = row_number() - 1) %>%
+  write_delim(here("data", "us-oed-le-gender.csv"), delim = ",")
 
 
 # rank of USA in each year
-ranks <- dl %>% arrange(Year, -LE) %>%
-    group_by(Year) %>% 
+ranks <- dl %>% arrange(group, Year, -LE) %>%
+    group_by(group, Year) %>% 
     mutate(rank = rank(-LE, ties.method = "first"))
 
-print(as_tibble(ranks %>% filter(Year == 1970)), n = 30)
-print(as_tibble(ranks %>% filter(Year == 2017)), n = 30)
+print(as_tibble(ranks %>% filter(group==0 & Year == 1960)), n = 30)
+print(as_tibble(ranks %>% filter(group==0 & Year == 2017)), n = 30)
+
+print(as_tibble(ranks %>% filter(group==1 & Year == 1960)), n = 30)
+print(as_tibble(ranks %>% filter(group==1 & Year == 2017)), n = 30)
+
+
 
 # subsets of data for USA and OECD
 # for labeling in plots
-dlusa <- subset(dl, Country.Code=="USA")
-dloecd <- subset(dl, Country.Code=="OED")
+dlusa <- subset(dl, `Country Code`=="USA")
+dloecd <- subset(dl, `Country Code`=="OED")
 
 
 ##### 2  #####
@@ -60,7 +71,12 @@ stheme <- theme_classic() + theme(plot.title = element_text(size = 18, face = "b
 
 # plot life expectancy over time
 # highlighting relative lagging in USA
-p <- ggplot(dl, aes(x=Year, y=LE, group=Country.Name)) + geom_line(colour="grey") + scale_y_continuous(limits=c(65,85)) + geom_line(data=dlusa, colour="#d95f02", size=1.5) + geom_line(data=subset(dl, Country.Code=="OED"), colour="#1b9e77", size=1.5) + theme_classic() + scale_x_discrete(breaks=c(1970, 1980, 1990, 2000, 2010, 2020), expand = c(0,2)) + annotate("text", label = "USA", x = 48, y = 78, size = 5, colour = "#d95f02") + annotate("text", label = "OECD\naverage", x = 1, y = 68, size = 5, colour = "#1b9e77", hjust=0) + ylab("") + xlab("") + ggtitle("Life expectancy at birth (years)") + stheme
+w <- ggplot(subset(dl, group==1), aes(x=Year, y=LE, group=`Country Name`)) + geom_line(colour="grey") + scale_y_continuous(limits=c(65,87)) + geom_line(data=subset(dlusa, group==1), colour="#d95f02", size=1.5) + geom_line(data=subset(dl, group==1 & `Country Code`=="OED"), colour="#1b9e77", size=1.5) + theme_classic() + scale_x_discrete(breaks=c(1960, 1970, 1980, 1990, 2000, 2010, 2020), expand = c(0,2)) + annotate("text", label = "USA", x = 48, y = 78, size = 5, colour = "#d95f02") + annotate("text", label = "OECD\naverage", x = 1, y = 68, size = 5, colour = "#1b9e77", hjust=0) + ylab("") + xlab("") + ggtitle("Life expectancy at birth (years)") + stheme
+
+m <- ggplot(subset(dl, group==2), aes(x=Year, y=LE, group=`Country Name`)) + geom_line(colour="grey") + scale_y_continuous(limits=c(55,87)) + geom_line(data=subset(dlusa, group==2), colour="#d95f02", size=1.5) + geom_line(data=subset(dl, group==2 & `Country Code`=="OED"), colour="#1b9e77", size=1.5) + theme_classic() + scale_x_discrete(breaks=c(1960, 1970, 1980, 1990, 2000, 2010, 2020), expand = c(0,2)) + annotate("text", label = "USA", x = 48, y = 78, size = 5, colour = "#d95f02") + annotate("text", label = "OECD\naverage", x = 1, y = 68, size = 5, colour = "#1b9e77", hjust=0) + ylab("") + xlab("") + ggtitle("Life expectancy at birth (years)") + stheme
+
+p <- w + m
+p
 
 # export to figures folder
 ggsave(here("figures", "us-le-lagging.png"), plot=p)

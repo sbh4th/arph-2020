@@ -59,7 +59,7 @@ raw4 <- raw %>%
 stheme <- theme_classic() + theme(plot.title = element_text(size = 18, face = "bold"), plot.subtitle = element_text(size=16)) + theme(axis.text.x = element_text(size = 16, colour = "grey60"), axis.title.x=element_text(size=16, colour="grey60"), axis.title.y=element_text(size=16, angle=90, colour="grey60"), axis.text.y = element_text(size = 16, colour="grey60"), legend.position="none", panel.grid.major.y = element_line(linetype="dotted", colour="white"), panel.grid.major.x = element_line(colour="white"), panel.grid.minor = element_line(colour="white")) + theme(axis.line.x=element_line(colour="grey60"), axis.line.y=element_line(colour="white"), axis.ticks = element_blank(), strip.text = element_text(size = 16, colour="grey60"), strip.background = element_rect(colour="white"))
 
 ##### 3  #####
-
+## Plot of decomposition by age
 # women
 w <- ggplot(subset(raw4, gender=="Women")) + 
   geom_vline(xintercept = 0, linetype="dotted", colour="grey60") +
@@ -95,8 +95,9 @@ p
 # export to file
 ggsave(here("figures", "le-age-decomp.png"), plot=p, width=11, height=8.5)
 
+##### 4  #####
+## Plot of decomposition by cause of death
 
-# age and cause in same plot
 rawt <- rawd %>%
   group_by(sex, race, cod) %>%
   summarise(total = sum(cont) * -1 )
@@ -130,21 +131,28 @@ raw15 <- raw %>%
   summarise(total = sum(total))
 
 ##### 3  #####
+# different color for total change 
+# (reversed so need to assign it to CVD)
+a <- levels(raw$codf)
+b <- ifelse(a == "Cardiovascular", "#e41a1c", "grey60")
 
 # women
 w <- ggplot(subset(raw15, gender=="Women")) + 
   geom_vline(xintercept = 0, linetype="dotted", colour="grey60") +
   geom_bar(aes(y=codf, weight=total), width=0.5, 
            colour = "#377eb8", fill = "#377eb8") + 
+  geom_bar(data=subset(raw15, gender=="Women" & codf=="Total change"),
+           aes(y=codf, weight=total), width=0.5,
+           colour = "#e41a1c", fill="#e41a1c") +
   geom_text(aes(y=codf, x=total, label = round(total, 2), 
             hjust=ifelse(total > 0, -0.3, 1.2))) +
   facet_wrap(~raceeth, nrow=1) +
-  scale_y_discrete(limits = rev(levels(raw4$codf))) +
-  scale_x_continuous(limits=c(-1, 1), breaks=c(-1, 0, 1)) +
+  scale_y_discrete(limits = rev(levels(raw15$codf))) +
+  scale_x_continuous(limits=c(-1.1, 1), breaks=c(-1, 0, 1)) +
   labs(y = "", x = "") + 
   ggtitle("Cause contribution to change in life expectancy at birth, 2014-2018", subtitle="Women") +
   stheme + theme(panel.spacing = unit(2, "lines")) +
-  theme(axis.text.y = element_text(size = 14, colour = "grey60"))
+  theme(axis.text.y = element_text(size = 14, colour = b))
   
 # men
 m <- ggplot(subset(raw15, gender=="Men")) + 
@@ -153,13 +161,16 @@ m <- ggplot(subset(raw15, gender=="Men")) +
            colour = "#377eb8", fill = "#377eb8") +  
   geom_text(aes(y=codf, x=total, label = round(total, 2), 
             hjust=ifelse(total > 0, -0.3, 1.2))) +
+    geom_bar(data=subset(raw15, gender=="Men" & codf=="Total change"),
+           aes(y=codf, weight=total), width=0.5,
+           colour = "#e41a1c", fill="#e41a1c") +
   facet_wrap(~raceeth, nrow=1) +
-  scale_y_discrete(limits = rev(levels(raw4$codf))) +
-  scale_x_continuous(limits=c(-1, 1), breaks=c(-1, 0, 1)) +
+  scale_y_discrete(limits = rev(levels(raw15$codf))) +
+  scale_x_continuous(limits=c(-1.1, 1), breaks=c(-1, 0, 1)) +
   labs(y = "", x = "Years") + 
   ggtitle("", subtitle="Men") +
   stheme + theme(panel.spacing = unit(2, "lines")) +
-  theme(axis.text.y = element_text(size = 14, colour = "grey60"))
+  theme(axis.text.y = element_text(size = 14, colour = b))
   
 
 # put both plots together

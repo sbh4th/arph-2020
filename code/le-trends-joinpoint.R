@@ -79,7 +79,7 @@ p <- w + m
 p
 
 # export to file
-ggsave(here("figures", "le-jp0.png"), plot=p, width=11, height=8.5)
+ggsave(here("figures", "le-jp0.png"), plot=p, width=11, height=6.5)
 
 
 ##### 4  #####
@@ -118,7 +118,7 @@ p <- w + m
 p
 
 # export to file
-ggsave(here("figures", "le-jp25.png"), plot=p, width=11, height=8.5)
+ggsave(here("figures", "le-jp25.png"), plot=p, width=11, height=6.5)
 
 
 ##### 4  #####
@@ -157,5 +157,5 @@ p <- w + m
 p
 
 # export to file
-ggsave(here("figures", "le-jp65.png"), plot=p, width=11, height=8.5)
+ggsave(here("figures", "le-jp65.png"), plot=p, width=11, height=6.5)
 
