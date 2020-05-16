@@ -1,0 +1,70 @@
+[System]
+Output filename=Z:\git\arph-2020\data\seer-ur-1974.txt
+Matrix filename=ur-mortality Matrix-3
+Database name=Mortality - All COD, Aggregated With County, Total U.S. (1969-2017) <Katrina/Rita Population Adjustment> - Linked To County Attributes - Total U.S., 1969-2018 Counties
+
+[Session Options]
+Type=Rate
+RatesAsCasesPer=100000
+
+[Export Options]
+GZipped=false
+Variable format=numeric
+File format=DOS/Windows
+Field delimiter=tab
+Missing character=space
+Fields with delimiter in quotes=false
+Remove thousands separators=true
+Flags included=false
+Variable names included=false
+Column Variables as Stats=false
+
+[Variables]
+Var1Name=Rural-Urban Continuum Code 1974 (r)
+Var1Base=Rural-Urban Continuum Code 1974
+Var1Dimension=Page
+Var2Name=Year of death recode (r)
+Var2Base=Year of death recode
+Var2Dimension=Row
+Var3Name=Sex
+Var3Dimension=Column
+Var4Name=Age-Adjusted Rate
+Var5Name=Count
+Var6Name=Population
+
+[Format=Rural-Urban Continuum Code 1974 (r)]
+0=Metropolitan Counties
+1="  Central counties of metropolitan areas ge 1 million pop"
+2="  Fringe counties of metropolitan areas ge 1 million pop"
+3="  Counties in metropolitan areas of 250,000 to 1 million pop"
+4="  Counties in metropolitan areas of lt 250 thousand pop"
+5=Nonmetropolitan Counties
+6="  Urban pop of ge 20,000 adjacent to a metropolitan area"
+7="  Urban pop of ge 20,000 not adjacent to a metropolitan area"
+8="  Urban pop of 2,500 to 19,999, adjacent to a metro area"
+9="  Urban pop of 2,500 to 19,999, not adjacent to a metro area"
+10="  Comp rural lt 2,500 urban pop, adjacent to a metro area"
+11="  Comp rural lt 2,500 urban pop, not adjacent to metro area"
+
+[Format=Year of death recode (r)]
+0=1969-1971
+1=1972-1974
+2=1975-1977
+3=1978-1980
+4=1981-1983
+5=1984-1986
+6=1987-1989
+7=1990-1992
+8=1993-1995
+9=1996-1998
+10=1999-2001
+11=2002-2004
+12=2005-2007
+13=2008-2012
+14=2013-2017
+
+[Format=Sex]
+0=Male and female
+1="  Male"
+2="  Female"
+
