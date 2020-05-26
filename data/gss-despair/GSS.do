@@ -33,7 +33,7 @@
       consci   581 - 600
       satjob   601 - 620
       vpsu     621 - 640
-using GSS.dat;
+using "data/gss-despair/GSS.dat";
 
 label variable year     "Gss year for this respondent                       ";
 label variable kidssol  "Rs kids living standard compared to r";

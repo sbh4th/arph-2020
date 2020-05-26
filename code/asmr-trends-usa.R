@@ -16,7 +16,7 @@ library(patchwork)
 here::here()
 
 ##### 1  #####
-##### Overall age-adjusted mortality by gender and race
+##### Overall age-specific mortality by gender and race
 asmr <- read_tsv(here("data", "asmr-1968-1978.txt"), skip=1, 
   col_names=c("notes", "gender", "gcode", "race", "rcode", "age", "acode", "year", 
   "ycode", "deaths", "pop", "crate"), n_max=858, 

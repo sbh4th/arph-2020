@@ -1,9 +1,9 @@
 #  program:  rural-mortality-graphs.R
 #  task:     urban-rural trends
-#  input:    jp-le-age-sex-race.txt
-#  output:   le-gender-gap.png
+#  input:    seer-ur-1974.txt; seer-ur-2013.txt
+#  output:   rural-mort.png; urban-rural-gradient.png
 #  project:  ARPH Life Expectancy
-#  author:   sam harper \ 2020-04-30
+#  author:   sam harper \ 2020-05-01
 
 # 0
 # load libraries
@@ -16,12 +16,17 @@ library(directlabels)
 
 here::here()
 
+# 1
+# read in data
 
-
-d74 <- read_tsv("seer-ur-1974.txt", col_names=c("ur","year","aadr","deaths","pop"))
+# 1974 rural definitions
+d74 <- read_tsv(here("data", "seer-ur-1974.txt"), 
+                     col_names=c("ur","year","gender","aadr","deaths","pop"))
 d74$urdef <- 0
 
-d13 <- read_tsv("seer-ur-2013.txt", col_names=c("ur","year","aadr","deaths","pop"))
+# 2013 rural definitions
+d13 <- read_tsv(here("data", "seer-ur-2013.txt"), 
+                     col_names=c("ur","year","gender","aadr","deaths","pop"))
 d13$urdef <- 4
 
 d <- bind_rows(d74,d13)
@@ -38,58 +43,71 @@ d$yearc <- 1970 + 3*d$year
 d$yearc <- ifelse(d$year==13, 2010, d$yearc)
 d$yearc <- ifelse(d$year==14, 2015, d$yearc)
 
-dur <- subset(d, ur=="Metro" | ur == "Non-metro") 
+dur <- subset(d, (ur=="Metro" | ur == "Non-metro") & urdef=="2013 rural definition" & gender!=0) 
+# "#1b9e77", "#d95f02", "#7570b3"
 
-p <- ggplot(dur, aes(x=yearc, y=aadr, color=ur)) + geom_line(size=2, show.legend = F) + 
-  geom_dl(aes(label = ur), method=list("last.points", vjust = -2,hjust = .5, cex=1.2)) + facet_wrap(~urdef) + 
-  scale_x_continuous(limits=c(1970,2020), breaks=c(1970,1980,1990,2000,2010)) + 
-  scale_y_continuous(limits = c(650, 1300), breaks = seq(600, 1300, by = 100)) +
-  theme_classic() + ylab("Death rate per 100,000 population") + xlab("") + 
-  theme(axis.text.x = element_text(size = 18), axis.title.y=element_text(size=16, angle=90), 
-        axis.text.y = element_text(size = 20), panel.grid.major = element_line(colour="white"),
-        strip.text = element_text(size = 16), strip.background = element_rect(colour="white"),
-        panel.grid.major.y = element_line(colour="gray"), panel.spacing = unit(2, "lines"),
-        panel.grid.major.x = element_blank())
+stheme <- theme_classic() + theme(plot.title = element_text(size = 18, face = "bold"), plot.subtitle = element_text(size=16)) + theme(axis.text.x = element_text(size = 16, colour = "grey60"), axis.title.y=element_text(size=16, angle=90, colour="grey60"), axis.text.y = element_text(size = 16, colour="grey60"), legend.position="none", panel.grid.major.y = element_line(linetype="dotted", colour="grey60"), panel.grid.major.x = element_line(colour="white"), panel.grid.minor = element_line(colour="white")) + theme(axis.line.x=element_line(colour="white"), axis.line.y=element_line(colour="white"), axis.ticks = element_blank())
 
-ggsave("mort-def.png", p, dpi=600, width=11, height=6.5)
-
-dp <- dur %>%
-  group_by(ur, urdef) %>%
-  mutate(pop, cpop = (pop / pop[1])*100)
-
-ggplot(dp, aes(x=yearc, y=cpop, color=ur)) + geom_line(size=2) + facet_wrap(~urdef) 
-
-dm <- subset(dur, ur=="Non-metro")
-
-ggplot(dm, aes(x=year, y=aadr, color=urdef)) + geom_line(size=2, sh)
-
-
-ggplot(d, aes(x=Year, y=Age.Adjusted.Rate, colour=X2013.Urbanization)) + geom_line(aes(colour=X2013.Urbanization), size=1.5, show.legend=FALSE) + geom_dl(aes(label = X2013.Urbanization), method=list("last.points", hjust = -.05,cex=1.2)) + scale_x_continuous(limits=c(1998,2022),breaks=c(2000,2005,2010,2015)) + theme_classic() + ylab("Rate per 100,000 population") + xlab("") + theme(axis.text.x = element_text(size = 20), axis.title.y=element_text(size=16, angle=90), axis.text.y = element_text(size = 20), panel.grid.major = element_line(colour="white"), panel.grid.minor = element_line(colour="white")) + scale_color_manual(values=c('#08519c','#3182bd','#6baed6','#de2d26','#a50f15','#9ecae1')) + scale_fill_manual(values=c('#08519c','#3182bd','#6baed6','#de2d26','#a50f15','#9ecae1'))
-
-dr$reg <- as.numeric(dr$Census.Region.Code)
-dr$reg <- factor(dr$reg, levels=c(1,2,3,4), labels=c("Northeast", "Midwest", "South", "West"))
-
-dr$urb <- factor(dr$X2013.Urbanization.Code, levels=c(1,2,3,4,5,6), labels=c("Large Central Metro", "Large Fringe Metro", "Medium Metro", "Small Metro", "Micropolitan (Nonmetro)", "Non-Core (Nonmetro)"))
-
-ggplot(dr, aes(x=Year, y=Age.Adjusted.Rate, colour=urb)) + geom_line(aes(colour=urb), size=1.5, show.legend=TRUE) + scale_x_continuous(limits=c(1998,2018),breaks=c(2000,2005,2010,2015)) + facet_wrap(~ reg, nrow=1) + theme_classic() + ylab("Rate per 100,000 population") + xlab("") + theme(axis.text.x = element_text(size = 20), axis.title.y=element_text(size=16, angle=90), axis.text.y = element_text(size = 20), panel.grid.major = element_line(colour="white"), panel.grid.minor = element_line(colour="white")) + scale_color_manual(name="2013 Urbanization scheme", values=c('#08519c','#3182bd','#6baed6', '#9ecae1', '#de2d26','#a50f15')) + scale_fill_manual(values=c('#08519c','#3182bd','#6baed6','#9ecae1','#de2d26','#a50f15')) + theme(strip.text = element_text(size=14)) + theme(strip.background = element_blank()) + theme(legend.position="top")
+p <- ggplot(dur, aes(x=yearc, y=aadr)) + 
+  geom_line(data=subset(dur, ur=="Metro" & gender==1), 
+            colour="#e41a1c", size=2) +
+  geom_line(data=subset(dur, ur=="Non-metro" & gender==1), 
+            colour="#984ea3", size=2) + 
+  geom_line(data=subset(dur, ur=="Metro" & gender==2), 
+            colour="#4daf4a", size=2) +
+  geom_line(data=subset(dur, ur=="Non-metro" & gender==2), 
+            colour="#377eb8", size=2) + 
+  annotate("text", label = "Metro men", 
+           x = 2016, y = 840, size = 5, colour = "#e41a1c", hjust=0) +
+  annotate("text", label = "Non-metro men", 
+           x = 2000, y = 1200, size = 5, colour = "#984ea3", hjust=0) +
+  annotate("text", label = "Metro\nwomen", 
+           x = 2000, y = 550, size = 5, colour = "#4daf4a", hjust=0) +
+  annotate("text", label = "Non-metro\nwomen", 
+           x = 2016, y = 660, size = 5, colour = "#377eb8", hjust=0) +
+  scale_x_continuous(limits=c(1970,2023), breaks=c(1970,1980,1990,2000,2010)) +
+  scale_y_continuous(limits=c(0,1600)) + labs(y = "", x = "") +
+  stheme
   
-du$reg <- as.numeric(du$Census.Region.Code)
-du$reg <- factor(du$reg, levels=c(1,2,3,4), labels=c("Northeast", "Midwest", "South", "West"))
+# export to file
+ggsave(here("figures", "aadr-rural-gender.png"), plot=p, width=8, height=6.5)
 
-du$urb <- factor(du$X2013.Urbanization.Code, levels=c(1,2,3,4,5,6), labels=c("Large Central Metro", "Large Fringe Metro", "Medium Metro", "Small Metro", "Micropolitan (Nonmetro)", "Non-Core (Nonmetro)"))
-
-ggplot(du, aes(x=Year, y=Age.Adjusted.Rate, colour=urb)) + geom_line(aes(colour=urb), size=1.5, show.legend=TRUE) + scale_x_continuous(limits=c(1998,2018),breaks=c(2000,2005,2010,2015)) + facet_wrap(~ reg) + theme_classic() + ylab("Rate per 100,000 population") + xlab("") + theme(axis.text.x = element_text(size = 20), axis.title.y=element_text(size=16, angle=90), axis.text.y = element_text(size = 20), panel.grid.major = element_line(colour="white"), panel.grid.minor = element_line(colour="white")) + scale_color_manual(name="2013 Urbanization scheme", values=c('#08519c','#3182bd','#6baed6', '#9ecae1', '#de2d26','#a50f15')) + scale_fill_manual(values=c('#08519c','#3182bd','#6baed6','#9ecae1','#de2d26','#a50f15')) + theme(strip.text = element_text(size=14)) + theme(strip.background = element_blank())
-
-
-dt$reg <- factor(dt$Region, levels=c(0,1,2,3), labels=c("Northeast", "Midwest", "South", "West"))
-
-dt$urb <- factor(dt$Rural, levels=c(0,1,2,3,4,5), labels=c("Large Central Metro", "Large Fringe Metro", "Medium Metro", "Small Metro", "Micropolitan (Nonmetro)", "Non-Core (Nonmetro)"))
-
-dt$yr <- factor(dt$Year, levels=c(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14), labels=c("1969-1971", "1972-1974", "1975-1977", "1978-1980", "1981-1983", "1984-1986", "1987-1989", "1990-1992", "1993-1995", "1996-1998", "1999-2001", "2002-2004", "2005-2007", "2008-2011", "2012-2016"))
-
-ggplot(dt, aes(x=Year, y=Rate, colour=urb)) + geom_line(aes(colour=urb), size=1.5, show.legend=TRUE) + scale_x_continuous(limits=c(0,15), breaks=c(2,7,13), labels=c("1975", "1990","2010")) + facet_wrap(~ reg) + theme_classic() + ylab("Rate per 100,000 population") + xlab("") + theme(axis.text.x = element_text(size = 20), axis.title.y=element_text(size=16, angle=90), axis.text.y = element_text(size = 20), panel.grid.major = element_line(colour="white"), panel.grid.minor = element_line(colour="white")) + scale_color_manual(name="2013 Urbanization scheme", values=c('#08519c','#3182bd','#6baed6', '#9ecae1', '#de2d26','#a50f15')) + scale_fill_manual(values=c('#08519c','#3182bd','#6baed6','#9ecae1','#de2d26','#a50f15')) + theme(strip.text = element_text(size=14)) + theme(strip.background = element_blank())
-
-scale_x_continuous(limits=c(0,15),breaks=c("1970",3,7,11,15)) +
   
-  
-ggplot(dt, aes(x=yr, y=Rate)) + geom_line(aes(colour=urb), size=1.5, show.legend=TRUE) + facet_wrap(~ reg) + theme_classic()
+
+## Drug overdoses (unintentional)
+
+## read in  data
+upur <- read_tsv(here("data", "unint-poison-ur-1999-2018-allages.txt"), skip=1, 
+  col_names=c("notes", "ur", "urcode", "year", "ycode", 
+              "deaths", "pop", "crate", "arate"), n_max=120,
+  col_types = "ccddddddd")
+
+# dt$urb <- factor(dt$Rural, levels=c(0,1,2,3,4,5), labels=c("Large Central Metro", # "Large Fringe Metro", "Medium Metro", "Small Metro", "Micropolitan (Nonmetro)", # "Non-Core (Nonmetro)"))
+
+p2 <- ggplot(upur, aes(x=year, y=arate, colour=ur, label=ur)) + 
+  geom_line(aes(colour=ur), size=1.5, show.legend=FALSE) + 
+  geom_text_repel(data=subset(upur, year==2018), xlim  = 2019, 
+                  hjust = 1, point.padding = 0.5) +
+  geom_segment(aes(x = 2000, y = 15, xend = 2010, yend = 15), color='grey60', show.legend=FALSE) + 
+  geom_segment(aes(x = 2010, y = 19, xend = 2015, yend = 19), color='grey60', show.legend=FALSE) + 
+  geom_segment(aes(x = 2013, y = 23, xend = 2019, yend = 23), 
+               arrow = arrow(length = unit(0.25, "cm")), color='grey60', 
+               show.legend=FALSE) + 
+  scale_y_continuous(limits=c(0,36)) +
+  scale_x_continuous(limits=c(1998,2025),breaks=c(2000,2005,2010,2015)) + 
+  ylab("Rate per 100,000 population") + xlab("") + 
+  stheme + theme(legend.position = "none") + 
+  scale_color_manual(values=c('#08519c','#3182bd','#6baed6','#de2d26','#a50f15','#9ecae1','#bdbdbd')) + scale_fill_manual(values=c('#08519c','#3182bd','#6baed6','#de2d26','#a50f15','#9ecae1','#bdbdbd')) + 
+  annotate(geom="text", x=2005, y=15.5, label="Prescription painkiller phase", color='grey60', cex=5) + 
+  annotate(geom="text", x=2012.5, y=19.5, label="Heroin phase", color='grey60', cex=5) + 
+  annotate(geom="text", x=2016, y=23.5, label="Synthetic opioid phase", color='grey60', cex=5)
+
+# export to file
+ggsave(here("figures", "rural-poisoining-all-ages.png"), 
+       plot=p2, width=8, height=6.5)
+
+p3 <- p + p2
+p3
+
+ggsave(here("figures", "rural-mort-poison.png"), 
+       plot=p3, width=11, height=6.5)

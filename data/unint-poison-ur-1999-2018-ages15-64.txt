@@ -1,0 +1,190 @@
+"Notes"	"2013 Urbanization"	"2013 Urbanization Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate	Age Adjusted Rate
+	"Large Central Metro"	"1"	"1999"	"1999"	5260	57524898	9.1	9.2
+	"Large Central Metro"	"1"	"2000"	"2000"	4964	58091541	8.5	8.6
+	"Large Central Metro"	"1"	"2001"	"2001"	5126	59051607	8.7	8.7
+	"Large Central Metro"	"1"	"2002"	"2002"	6241	59629603	10.5	10.6
+	"Large Central Metro"	"1"	"2003"	"2003"	6432	60123320	10.7	10.9
+	"Large Central Metro"	"1"	"2004"	"2004"	6772	60650682	11.2	11.4
+	"Large Central Metro"	"1"	"2005"	"2005"	7533	61229019	12.3	12.5
+	"Large Central Metro"	"1"	"2006"	"2006"	8709	61791593	14.1	14.4
+	"Large Central Metro"	"1"	"2007"	"2007"	9225	62426993	14.8	15.0
+	"Large Central Metro"	"1"	"2008"	"2008"	8945	63080593	14.2	14.4
+	"Large Central Metro"	"1"	"2009"	"2009"	9213	63809056	14.4	14.6
+	"Large Central Metro"	"1"	"2010"	"2010"	9235	64286725	14.4	14.4
+	"Large Central Metro"	"1"	"2011"	"2011"	10253	65042939	15.8	15.9
+	"Large Central Metro"	"1"	"2012"	"2012"	10358	65601731	15.8	15.8
+	"Large Central Metro"	"1"	"2013"	"2013"	11186	66107556	16.9	16.9
+	"Large Central Metro"	"1"	"2014"	"2014"	11874	66803900	17.8	17.7
+	"Large Central Metro"	"1"	"2015"	"2015"	13476	67405113	20.0	19.8
+	"Large Central Metro"	"1"	"2016"	"2016"	17058	67565593	25.2	25.1
+	"Large Central Metro"	"1"	"2017"	"2017"	18917	68066510	27.8	27.5
+	"Large Central Metro"	"1"	"2018"	"2018"	18318	67998775	26.9	26.7
+	"Large Fringe Metro"	"2"	"1999"	"1999"	1973	43638181	4.5	4.4
+	"Large Fringe Metro"	"2"	"2000"	"2000"	2291	44274492	5.2	5.1
+	"Large Fringe Metro"	"2"	"2001"	"2001"	2633	45341190	5.8	5.7
+	"Large Fringe Metro"	"2"	"2002"	"2002"	3280	46141760	7.1	7.1
+	"Large Fringe Metro"	"2"	"2003"	"2003"	3559	46885560	7.6	7.6
+	"Large Fringe Metro"	"2"	"2004"	"2004"	3750	47656600	7.9	7.9
+	"Large Fringe Metro"	"2"	"2005"	"2005"	4666	48434268	9.6	9.7
+	"Large Fringe Metro"	"2"	"2006"	"2006"	5794	49134821	11.8	11.9
+	"Large Fringe Metro"	"2"	"2007"	"2007"	6179	49745788	12.4	12.5
+	"Large Fringe Metro"	"2"	"2008"	"2008"	6643	50244337	13.2	13.3
+	"Large Fringe Metro"	"2"	"2009"	"2009"	6586	50701881	13.0	13.1
+	"Large Fringe Metro"	"2"	"2010"	"2010"	7102	51043387	13.9	14.1
+	"Large Fringe Metro"	"2"	"2011"	"2011"	7959	51586594	15.4	15.6
+	"Large Fringe Metro"	"2"	"2012"	"2012"	8226	51840165	15.9	16.0
+	"Large Fringe Metro"	"2"	"2013"	"2013"	8895	52098455	17.1	17.4
+	"Large Fringe Metro"	"2"	"2014"	"2014"	9622	52551667	18.3	18.7
+	"Large Fringe Metro"	"2"	"2015"	"2015"	11041	52952361	20.9	21.5
+	"Large Fringe Metro"	"2"	"2016"	"2016"	14611	53154651	27.5	28.4
+	"Large Fringe Metro"	"2"	"2017"	"2017"	16238	53574345	30.3	31.3
+	"Large Fringe Metro"	"2"	"2018"	"2018"	15204	53724403	28.3	29.1
+	"Medium Metro"	"3"	"1999"	"1999"	2276	37416995	6.1	6.1
+	"Medium Metro"	"3"	"2000"	"2000"	2535	37794021	6.7	6.8
+	"Medium Metro"	"3"	"2001"	"2001"	2767	38448614	7.2	7.3
+	"Medium Metro"	"3"	"2002"	"2002"	3688	39002718	9.5	9.7
+	"Medium Metro"	"3"	"2003"	"2003"	4263	39491689	10.8	11.1
+	"Medium Metro"	"3"	"2004"	"2004"	4673	40096703	11.7	12.0
+	"Medium Metro"	"3"	"2005"	"2005"	5247	40712412	12.9	13.3
+	"Medium Metro"	"3"	"2006"	"2006"	5867	41350793	14.2	14.6
+	"Medium Metro"	"3"	"2007"	"2007"	6354	41844790	15.2	15.6
+	"Medium Metro"	"3"	"2008"	"2008"	6914	42214112	16.4	16.8
+	"Medium Metro"	"3"	"2009"	"2009"	6907	42557942	16.2	16.6
+	"Medium Metro"	"3"	"2010"	"2010"	7358	42827217	17.2	17.7
+	"Medium Metro"	"3"	"2011"	"2011"	7759	43201466	18.0	18.5
+	"Medium Metro"	"3"	"2012"	"2012"	7593	43291994	17.5	18.0
+	"Medium Metro"	"3"	"2013"	"2013"	8187	43404274	18.9	19.4
+	"Medium Metro"	"3"	"2014"	"2014"	9014	43597462	20.7	21.2
+	"Medium Metro"	"3"	"2015"	"2015"	10402	43828877	23.7	24.6
+	"Medium Metro"	"3"	"2016"	"2016"	12504	43949548	28.5	29.5
+	"Medium Metro"	"3"	"2017"	"2017"	14202	44135607	32.2	33.3
+	"Medium Metro"	"3"	"2018"	"2018"	13623	44217338	30.8	31.9
+	"Small Metro"	"4"	"1999"	"1999"	718	17013730	4.2	4.4
+	"Small Metro"	"4"	"2000"	"2000"	789	17146907	4.6	4.7
+	"Small Metro"	"4"	"2001"	"2001"	1001	17371800	5.8	6.0
+	"Small Metro"	"4"	"2002"	"2002"	1227	17582673	7.0	7.3
+	"Small Metro"	"4"	"2003"	"2003"	1530	17766817	8.6	9.0
+	"Small Metro"	"4"	"2004"	"2004"	1688	18012389	9.4	9.8
+	"Small Metro"	"4"	"2005"	"2005"	1844	18245098	10.1	10.6
+	"Small Metro"	"4"	"2006"	"2006"	2139	18503594	11.6	12.2
+	"Small Metro"	"4"	"2007"	"2007"	2451	18683544	13.1	13.8
+	"Small Metro"	"4"	"2008"	"2008"	2615	18815409	13.9	14.4
+	"Small Metro"	"4"	"2009"	"2009"	2725	18939866	14.4	15.1
+	"Small Metro"	"4"	"2010"	"2010"	2817	19018835	14.8	15.5
+	"Small Metro"	"4"	"2011"	"2011"	3124	19126213	16.3	17.3
+	"Small Metro"	"4"	"2012"	"2012"	3068	19100558	16.1	17.1
+	"Small Metro"	"4"	"2013"	"2013"	3364	19087544	17.6	18.6
+	"Small Metro"	"4"	"2014"	"2014"	3627	19112360	19.0	19.9
+	"Small Metro"	"4"	"2015"	"2015"	3970	19122771	20.8	21.9
+	"Small Metro"	"4"	"2016"	"2016"	4576	19095380	24.0	25.5
+	"Small Metro"	"4"	"2017"	"2017"	4977	19102464	26.1	27.7
+	"Small Metro"	"4"	"2018"	"2018"	4744	19107582	24.8	26.3
+	"Micropolitan (Nonmetro)"	"5"	"1999"	"1999"	698	16768962	4.2	4.3
+	"Micropolitan (Nonmetro)"	"5"	"2000"	"2000"	813	16875389	4.8	4.9
+	"Micropolitan (Nonmetro)"	"5"	"2001"	"2001"	991	16998894	5.8	6.0
+	"Micropolitan (Nonmetro)"	"5"	"2002"	"2002"	1250	17117146	7.3	7.6
+	"Micropolitan (Nonmetro)"	"5"	"2003"	"2003"	1583	17231115	9.2	9.5
+	"Micropolitan (Nonmetro)"	"5"	"2004"	"2004"	1852	17362625	10.7	11.2
+	"Micropolitan (Nonmetro)"	"5"	"2005"	"2005"	1936	17497809	11.1	11.6
+	"Micropolitan (Nonmetro)"	"5"	"2006"	"2006"	2334	17640918	13.2	13.9
+	"Micropolitan (Nonmetro)"	"5"	"2007"	"2007"	2600	17729883	14.7	15.4
+	"Micropolitan (Nonmetro)"	"5"	"2008"	"2008"	2737	17776350	15.4	16.1
+	"Micropolitan (Nonmetro)"	"5"	"2009"	"2009"	2803	17805967	15.7	16.4
+	"Micropolitan (Nonmetro)"	"5"	"2010"	"2010"	2859	17832419	16.0	16.8
+	"Micropolitan (Nonmetro)"	"5"	"2011"	"2011"	3258	17844654	18.3	19.2
+	"Micropolitan (Nonmetro)"	"5"	"2012"	"2012"	3196	17733696	18.0	19.1
+	"Micropolitan (Nonmetro)"	"5"	"2013"	"2013"	3184	17658264	18.0	18.9
+	"Micropolitan (Nonmetro)"	"5"	"2014"	"2014"	3525	17594684	20.0	21.1
+	"Micropolitan (Nonmetro)"	"5"	"2015"	"2015"	3834	17530706	21.9	23.1
+	"Micropolitan (Nonmetro)"	"5"	"2016"	"2016"	4369	17438575	25.1	26.5
+	"Micropolitan (Nonmetro)"	"5"	"2017"	"2017"	4785	17345597	27.6	29.3
+	"Micropolitan (Nonmetro)"	"5"	"2018"	"2018"	4535	17266192	26.3	27.9
+	"NonCore (Nonmetro)"	"6"	"1999"	"1999"	455	11924193	3.8	3.9
+	"NonCore (Nonmetro)"	"6"	"2000"	"2000"	560	11994428	4.7	4.8
+	"NonCore (Nonmetro)"	"6"	"2001"	"2001"	732	12016302	6.1	6.3
+	"NonCore (Nonmetro)"	"6"	"2002"	"2002"	896	12066056	7.4	7.8
+	"NonCore (Nonmetro)"	"6"	"2003"	"2003"	1101	12117253	9.1	9.5
+	"NonCore (Nonmetro)"	"6"	"2004"	"2004"	1219	12171178	10.0	10.6
+	"NonCore (Nonmetro)"	"6"	"2005"	"2005"	1363	12229149	11.1	11.7
+	"NonCore (Nonmetro)"	"6"	"2006"	"2006"	1551	12277377	12.6	13.4
+	"NonCore (Nonmetro)"	"6"	"2007"	"2007"	1751	12292883	14.2	15.1
+	"NonCore (Nonmetro)"	"6"	"2008"	"2008"	1868	12278160	15.2	16.1
+	"NonCore (Nonmetro)"	"6"	"2009"	"2009"	1995	12246061	16.3	17.0
+	"NonCore (Nonmetro)"	"6"	"2010"	"2010"	2168	12241758	17.7	18.7
+	"NonCore (Nonmetro)"	"6"	"2011"	"2011"	2241	12194804	18.4	19.3
+	"NonCore (Nonmetro)"	"6"	"2012"	"2012"	2141	12056442	17.8	18.5
+	"NonCore (Nonmetro)"	"6"	"2013"	"2013"	2141	11979549	17.9	18.7
+	"NonCore (Nonmetro)"	"6"	"2014"	"2014"	2302	11885817	19.4	20.4
+	"NonCore (Nonmetro)"	"6"	"2015"	"2015"	2460	11801353	20.8	21.9
+	"NonCore (Nonmetro)"	"6"	"2016"	"2016"	2665	11704502	22.8	23.8
+	"NonCore (Nonmetro)"	"6"	"2017"	"2017"	2709	11614424	23.3	24.7
+	"NonCore (Nonmetro)"	"6"	"2018"	"2018"	2626	11536507	22.8	23.8
+"---"
+"Dataset: Underlying Cause of Death, 1999-2018"
+"Query Parameters:"
+"ICD-10 Codes: X40 (Accidental poisoning by and exposure to nonopioid analgesics, antipyretics and antirheumatics); X41"
+"(Accidental poisoning by and exposure to antiepileptic, sedative-hypnotic, antiparkinsonism and psychotropic drugs, not"
+"elsewhere classified); X42 (Accidental poisoning by and exposure to narcotics and psychodysleptics [hallucinogens], not"
+"elsewhere classified); X43 (Accidental poisoning by and exposure to other drugs acting on the autonomic nervous system); X44"
+"(Accidental poisoning by and exposure to other and unspecified drugs, medicaments and biological substances); X45 (Accidental"
+"poisoning by and exposure to alcohol); X46 (Accidental poisoning by and exposure to organic solvents and halogenated"
+"hydrocarbons and their vapours); X47 (Accidental poisoning by and exposure to other gases and vapours); X48 (Accidental"
+"poisoning by and exposure to pesticides); X49 (Accidental poisoning by and exposure to other and unspecified chemicals and"
+"noxious substances)"
+"Ten-Year Age Groups: 15-24 years; 25-34 years; 35-44 years; 45-54 years; 55-64 years"
+"Group By: 2013 Urbanization; Year"
+"Show Totals: False"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Standard Population: 2000 U.S. Std. Population"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 25, 2020 3:39:17 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Underlying Cause of Death"
+"1999-2018 on CDC WONDER Online Database, released in 2020. Data are from the Multiple Cause of Death Files, 1999-2018, as"
+"compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
+"at http://wonder.cdc.gov/ucd-icd10.html on May 25, 2020 3:39:17 PM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Circumstances in Georgia for the years 2008 and 2009 have resulted in unusually high death counts for the ICD-10 cause of"
+"death code R99, ""Other ill-defined and unspecified causes of mortality."" Caution should be used in interpreting these data."
+"More information: http://wonder.cdc.gov/wonder/help/ucd.html#Georgia-Reporting-Anomalies."
+"3. Circumstances in New Jersey for the year 2009 have resulted in unusually high death counts for the ICD-10 cause of death code"
+"R99, ""Other ill-defined and unspecified causes of mortality"" and therefore unusually low death counts in other ICD-10 codes,"
+"most notably R95, ""Sudden Infant Death Syndrome"" and X40-X49, ""Unintentional poisoning."" Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#New-Jersey-Reporting-Anomalies."
+"4. Circumstances in California resulted in unusually high death counts for the ICD-10 cause of death code R99, ""Other"
+"ill-defined and unspecified causes of mortality"" for deaths occurring in years 2000 and 2001. Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#California-Reporting-Anomalies."
+"5. The populations used to calculate standard age-adjusted rates are documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2000 Standard Population."
+"6. The method used to calculate age-adjusted rates is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Age-Adjusted Rates."
+"7. Deaths of persons with Age ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among age groups,"
+"so are not included in age-specific counts, age-specific rates or in any age-adjusted rates. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Not Stated."
+"8. The population figures for year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018"
+"postcensal series released by NCHS on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for"
+"year 2016 are bridged-race estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS"
+"on June 26, 2017. The population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2015 postcensal series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The"
+"population figures for year 2013 are bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal"
+"series released by NCHS on June 26, 2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2012 postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18,"
+"2012. Population figures for 2010 are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race"
+"estimates of the July 1 resident population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on"
+"October 26, 2012. Population figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999"
+"intercensal series of July 1 estimates. Population figures for the infant age groups are the number of live births."
+"<br/><b>Note:</b> Rates and population figures for years 2001 - 2009 differ slightly from previously published reports, due to"
+"use of the population estimates which were available at the time of release."
+"9. Changes to cause of death classification affect reporting trends. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#ICD-10 Changes."

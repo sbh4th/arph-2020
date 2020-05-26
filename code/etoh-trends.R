@@ -67,7 +67,7 @@ ggplot(etoh1, aes(x=year, y=rate, colour=gender)) + geom_point(alpha=0.2) +
 
     
 ## Same for CVD  
-raw <- read_tsv(here("data", "aaasdr-cvd-1990-2017.txt"),
+raw <- read_tsv(here("data", "aaasdr-etoh-1990-2017.txt"),
                  col_names=c("sex", "raceeth", "age4", "year", "aadr", "count", "pop"), col_types = "ddddddd")
 # rescale year
 raw$year <- raw$year + 1990
@@ -78,15 +78,15 @@ raw$raceethf <- recode_factor(raw$raceeth, `0`= "Non-Hispanic White", `1`= "Non-
 # age-group
 raw$age4f <- recode_factor(raw$age4, `0`= "15-34yrs", `1`= "35-54yrs", `2`= "55-64yrs", `3`= "65+yrs")
 
-m <- ggplot(subset(raw, sex == 0 & age4>0), 
+m <- ggplot(subset(raw, sex == 0 & raceeth!=2), 
        aes(x = year, y = aadr, colour = as.factor(raceethf))) + 
-  geom_line(show.legend=T) + facet_wrap(~ age4f, nrow=1, scales="free") +
+  geom_smooth(aes(colour=as.factor(raceethf))) + facet_wrap(~ age4f, scales="free") +
   scale_color_discrete(name="Race-Ethnicity") + labs(y = "", x = "") +
   ggtitle("Men") + stheme 
 
-w <- ggplot(subset(raw, sex == 1 & age4>0), 
+w <- ggplot(subset(raw, sex == 1 & raceeth!=2), 
        aes(x = year, y = aadr, colour = as.factor(raceethf))) + 
-  geom_line(show.legend=F) + facet_wrap(~ age4f, nrow=1 , scales="free") +
+  geom_smooth() + facet_wrap(~ age4f , scales="free") +
   scale_color_discrete(name="Race-Ethnicity") + labs(y = "", x = "") +
   ggtitle("Women") + stheme 
 

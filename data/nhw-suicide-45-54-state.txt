@@ -1,0 +1,108 @@
+"Notes"	"State"	"State Code"	Deaths	Population	Crude Rate
+	"Alabama"	"01"	888	2058378	43.1
+	"Alaska"	"02"	129	332936	38.7
+	"Arizona"	"04"	1298	2331499	55.7
+	"Arkansas"	"05"	605	1346896	44.9
+	"California"	"06"	3947	10398214	38.0
+	"Colorado"	"08"	1243	2424035	51.3
+	"Connecticut"	"09"	561	1780860	31.5
+	"Delaware"	"10"	170	382521	44.4
+	"District of Columbia"	"11"	32	120980	26.5
+	"Florida"	"12"	3446	7054427	48.8
+	"Georgia"	"13"	1452	3674661	39.5
+	"Hawaii"	"15"	118	227990	51.8
+	"Idaho"	"16"	403	784259	51.4
+	"Illinois"	"17"	1748	5334267	32.8
+	"Indiana"	"18"	1320	3383162	39.0
+	"Iowa"	"19"	590	1662407	35.5
+	"Kansas"	"20"	578	1353916	42.7
+	"Kentucky"	"21"	994	2398967	41.4
+	"Louisiana"	"22"	699	1726391	40.5
+	"Maine"	"23"	336	848522	39.6
+	"Maryland"	"24"	668	2153124	31.0
+	"Massachusetts"	"25"	879	3422871	25.7
+	"Michigan"	"26"	1691	5024470	33.7
+	"Minnesota"	"27"	919	2962975	31.0
+	"Mississippi"	"28"	459	1064097	43.1
+	"Missouri"	"29"	1320	3069935	43.0
+	"Montana"	"30"	281	540522	52.0
+	"Nebraska"	"31"	283	917904	30.8
+	"Nevada"	"32"	615	1031511	59.6
+	"New Hampshire"	"33"	363	876884	41.4
+	"New Jersey"	"34"	984	3590813	27.4
+	"New Mexico"	"35"	292	505961	57.7
+	"New York"	"36"	1950	7344095	26.6
+	"North Carolina"	"37"	1637	4174248	39.2
+	"North Dakota"	"38"	152	371125	41.0
+	"Ohio"	"39"	1985	6009549	33.0
+	"Oklahoma"	"40"	756	1635104	46.2
+	"Oregon"	"41"	862	1901952	45.3
+	"Pennsylvania"	"42"	2520	6574343	38.3
+	"Rhode Island"	"44"	186	533053	34.9
+	"South Carolina"	"45"	832	1935377	43.0
+	"South Dakota"	"46"	175	427259	41.0
+	"Tennessee"	"47"	1303	3139754	41.5
+	"Texas"	"48"	3248	7670985	42.3
+	"Utah"	"49"	642	1146251	56.0
+	"Vermont"	"50"	148	388728	38.1
+	"Virginia"	"51"	1211	3502790	34.6
+	"Washington"	"53"	1193	3313679	36.0
+	"West Virginia"	"54"	435	1069274	40.7
+	"Wisconsin"	"55"	1148	3206922	35.8
+	"Wyoming"	"56"	157	297061	52.9
+"---"
+"Dataset: Underlying Cause of Death, 1999-2018"
+"Query Parameters:"
+"Gender: Male"
+"Hispanic Origin: Not Hispanic or Latino"
+"ICD-10 Codes: X60-X84 (Intentional self-harm)"
+"Race: White"
+"Ten-Year Age Groups: 45-54 years"
+"Year/Month: 2010; 2011; 2012; 2013; 2014; 2015; 2016; 2017; 2018"
+"Group By: State"
+"Show Totals: False"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: May 25, 2020 10:08:47 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Underlying Cause of Death"
+"1999-2018 on CDC WONDER Online Database, released in 2020. Data are from the Multiple Cause of Death Files, 1999-2018, as"
+"compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
+"at http://wonder.cdc.gov/ucd-icd10.html on May 25, 2020 10:08:47 PM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Deaths of persons with Age ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among age groups,"
+"so are not included in age-specific counts, age-specific rates or in any age-adjusted rates. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Not Stated."
+"3. Deaths of persons with Hispanic origin ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among"
+"Hispanic Origin groups, so are not included in the Hispanic Origin specific counts and rates. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Not Stated."
+"4. Information included on the death certificate about the race and Hispanic ethnicity of the decedent is reported by the"
+"funeral director as provided by an informant, often the surviving next of kin, or, in the absence of an informant, on the basis"
+"of observation. Race and ethnicity information from the census is by self-report. To the extent that race and Hispanic origin"
+"are inconsistent between these two data sources, death rates will be biased. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Racial Differences."
+"5. The population figures for year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018"
+"postcensal series released by NCHS on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for"
+"year 2016 are bridged-race estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS"
+"on June 26, 2017. The population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2015 postcensal series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The"
+"population figures for year 2013 are bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal"
+"series released by NCHS on June 26, 2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2012 postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18,"
+"2012. Population figures for 2010 are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race"
+"estimates of the July 1 resident population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on"
+"October 26, 2012. Population figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999"
+"intercensal series of July 1 estimates. Population figures for the infant age groups are the number of live births."
+"<br/><b>Note:</b> Rates and population figures for years 2001 - 2009 differ slightly from previously published reports, due to"
+"use of the population estimates which were available at the time of release."

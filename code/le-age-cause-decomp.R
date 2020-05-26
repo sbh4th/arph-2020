@@ -8,7 +8,6 @@
 # 0
 # load libraries
 library(tidyverse)
-library(plotly)
 library(here)
 library(ggrepel)
 library(patchwork)
@@ -182,56 +181,80 @@ ggsave(here("figures", "le-cause-decomp.png"), plot=p, width=11, height=10)
 
 
 
-### Age and cause in the same plot (not run)
+## Age and cause in the same plot (not run)
+rawt <- rawd %>%
+  group_by(sex, race, cod, age) %>%
+  summarise(total = sum(cont) * -1 )
 
-#rawt <- rawd %>%
-#  group_by(sex, race, cod, age) %>%
-#  summarise(total = sum(cont) * -1 )
-#
-#tot <- aggregate(rawt$total, list(sex = rawt$sex, 
-#  race = rawt$race, age = rawt$age), FUN = sum )
-#tot$cod <- 15
-#colnames(tot)[4] <- "total"
-#
-#rawc <- rawt %>%
-#  bind_rows(tot)
-#
-## gender as factor
-#rawc$gender <- recode_factor(rawc$sex, `1`= "Women", 
-#  `2`= "Men")
-#
-## race-ethnicity as factor
-#rawc$raceeth <- recode_factor(rawc$race, `1`= "Non-Hispanic\nAPI", 
-#  `2`= "Non-Hispanic\nBlack", `3`= "Non-Hispanic\nWhite", 
-#  `4`= "Hispanic")
-#
-#rawc$age4f <- recode_factor(rawc$age, `1` = "<1 yrs", `2` = " 1-15 yrs", 
-#  `3` = " 1-15 yrs", `4` = "15-44 yrs", `5` = "15-44 yrs",
-#  `6` = "15-44 yrs", `7` = "45-64 yrs", `8` = "45-64 yrs", 
-#  `9` = "65+ yrs", `10` = "65+ yrs", `11` = "65+ yrs")
-#
-#rawc$codf <- recode_factor(rawc$cod, `1` = "Cardiovascular", `2` = " Cancers", 
-#  `3` = "Diabetes", `4` = "Alzheimer's", `5` = "Flu/Pneumonia",
-#  `6` = "HIV", `7` = "Respiratory disease", `8` = "Liver disease", 
-#  `9` = "Kidney", `10` = "Motor vehicle crashes", 
-#  `11` = "Unintentional poisoning", `12` = "Suicide", 
-#  `13` = "Homicide", `14` = "All other causes", 
-#  `15` = "Total change")
-#
-#raw4 <- rawc %>%
-#  group_by(gender, raceeth, age4f, codf) %>%
-#  summarise(total = sum(total))
-#
-#ggplot(subset(raw4, gender=="Women")) + 
-#  geom_vline(xintercept = 0, linetype="dotted", colour="grey60") +
-#  geom_bar(aes(y=codf, weight=total, fill=age4f), width=0.75) +
-#  facet_wrap(~raceeth, nrow=1)
-#  
-#  geom_text(aes(y=age4f, x=total, label = round(total, 2), 
-#            hjust=ifelse(total > 0, -0.3, 1.2))) +
-#  facet_wrap(~raceeth, nrow=1) +
-#  scale_y_discrete(limits = rev(levels(raw4$cof))) +
-#  scale_x_continuous(limits=c(-1, 1), breaks=c(-1, 0, 1)) +
-#  labs(y = "", x = "") + 
-#  ggtitle("Age group contribution to change in life expectancy at birth, 2014-2018" subtitle="Women") +
-#  shteme + theme(panel.spacing = unit(2, "lines"))
+tot <- aggregate(rawt$total, list(sex = rawt$sex, 
+  race = rawt$race, age = rawt$age), FUN = sum )
+tot$cod <- 15
+colnames(tot)[4] <- "total"
+
+rawc <- rawt %>%
+  bind_rows(tot)
+
+# gender as factor
+rawc$gender <- recode_factor(rawc$sex, `1`= "Women", 
+  `2`= "Men")
+
+# race-ethnicity as factor
+rawc$raceeth <- recode_factor(rawc$race, `1`= "Non-Hispanic\nAPI", 
+  `2`= "Non-Hispanic\nBlack", `3`= "Non-Hispanic\nWhite", 
+  `4`= "Hispanic")
+
+rawc$age4f <- recode_factor(rawc$age, `1` = "<1 yrs", `2` = " 1-15 yrs", 
+  `3` = " 1-15 yrs", `4` = "15-44 yrs", `5` = "15-44 yrs",
+  `6` = "15-44 yrs", `7` = "45-64 yrs", `8` = "45-64 yrs", 
+  `9` = "65+ yrs", `10` = "65+ yrs", `11` = "65+ yrs")
+
+rawc$codf <- recode_factor(rawc$cod, `1` = "Cardiovascular", `2` = " Cancers", 
+  `3` = "Diabetes", `4` = "Alzheimer's", `5` = "Flu/Pneumonia",
+  `6` = "HIV", `7` = "Respiratory disease", `8` = "Liver disease", 
+  `9` = "Kidney", `10` = "Motor vehicle crashes", 
+  `11` = "Unintentional poisoning", `12` = "Suicide", 
+  `13` = "Homicide", `14` = "All other causes", 
+  `15` = "Total change")
+
+raw4 <- rawc %>%
+  group_by(gender, raceeth, age4f, codf) %>%
+  summarise(total = sum(total))
+
+acw <- ggplot(subset(raw4, gender=="Women")) + 
+  geom_vline(xintercept = 0, linetype="dotted", colour="grey60") +
+  geom_bar(aes(y=codf, weight=total, fill=age4f), width=0.75) +
+  facet_wrap(~raceeth, nrow=1) + 
+  scale_fill_brewer("Age group", type="qual", palette="Set1") +
+  geom_text(data=subset(raw15, gender=="Women"), 
+            aes(y=codf, x=total, label = round(total, 2), 
+            hjust=ifelse(total > 0, -0.3, 1.2))) +
+  scale_y_discrete(limits = rev(levels(raw4$codf))) +
+  scale_x_continuous(limits=c(-1, 1), breaks=c(-1, 0, 1)) +
+ labs(y = "", x = "Years") + 
+ stheme + theme(panel.spacing = unit(2, "lines"), 
+                 legend.position="top", legend.text = element_text(size=14),
+                legend.title=element_text(size=14))
+
+# export to file
+ggsave(here("figures", "le-age-cause-decomp-women.png"), 
+       plot=acw, width=11, height=7.5)
+
+# Figure for Men
+acm <- ggplot(subset(raw4, gender=="Men")) + 
+  geom_vline(xintercept = 0, linetype="dotted", colour="grey60") +
+  geom_bar(aes(y=codf, weight=total, fill=age4f), width=0.75) +
+  facet_wrap(~raceeth, nrow=1) + 
+  scale_fill_brewer("Age group", type="qual", palette="Set1") +
+  geom_text(data=subset(raw15, gender=="Men"), 
+            aes(y=codf, x=total, label = round(total, 2), 
+            hjust=ifelse(total > 0, -0.3, 1.2))) +
+  scale_y_discrete(limits = rev(levels(raw15$codf))) +
+  scale_x_continuous(limits=c(-1.1, 1), breaks=c(-1, 0, 1)) +
+  labs(y = "", x = "Years") +
+  stheme + theme(panel.spacing = unit(2, "lines"), 
+                 legend.position="top", legend.text = element_text(size=14),
+                legend.title=element_text(size=14)) 
+
+# export to file
+ggsave(here("figures", "le-age-cause-decomp-men.png"), 
+       plot=acm, width=11, height=8)

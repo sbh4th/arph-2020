@@ -1,0 +1,44 @@
+---
+title: "My title"
+author: ''
+date: "16/05/2020"
+output:
+  pdf_document:
+    keep_tex: yes
+    toc: yes
+    number_sections: yes
+    citation_package: natbib
+documentclass: ar-1col
+bibliography: arph-manuscript.bib
+biblio-style: ar-style6
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(here)
+here::here()
+```
+
+\begin{abstract}
+Abstract text, approximately 150 words. 
+\end{abstract}
+
+# INTRODUCTION
+Please begin the main text of your article here [@Harper:2017ad]
+
+These data are consistent with other analyses demonstrating that the US life expectancy has been lagging in recent years relative to other countries (1), as the US dropped from the 15th highest life expectancy among 30 OECD countries in 1970 to 23rd in 2017.
+
+# FIRST-LEVEL HEADING
+This is dummy text. 
+
+## Second-Level Heading
+This is dummy text. This is dummy text. This is dummy text. This is dummy text.
+
+### Third-Level Heading
+This is dummy text. This is dummy text. This is dummy text. This is dummy text. 
+
+\begin{textbox}[h]\section{SIDEBARS}
+Sidebar text goes here.
+\subsection{Sidebar Second-Level Heading}
+More text goes here.\subsubsection{Sidebar third-level heading}
+Text goes here.\end{textbox}
