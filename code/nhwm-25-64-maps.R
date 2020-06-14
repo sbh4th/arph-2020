@@ -12,6 +12,7 @@
 library(tidyverse)
 # library(urbnmapr)
 # library(urbnthemes)
+# test <- data.frame(urbnmapr::states) filter to get AK / HI?
     
 # set_urbn_defaults(style = "map")
 

@@ -1,0 +1,228 @@
+"Notes"	"Gender"	"Gender Code"	"Race"	"Race Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate	Age Adjusted Rate
+	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"1999"	"1999"	54	1151278	4.7	4.6
+	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2000"	"2000"	58	1188767	4.9	4.6
+	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2001"	"2001"	60	1197605	5.0	4.9
+	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2002"	"2002"	61	1209695	5.0	4.8
+	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2003"	"2003"	55	1221366	4.5	4.4
+	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2004"	"2004"	95	1233626	7.7	7.4
+	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2005"	"2005"	76	1246875	6.1	5.8
+	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	85	1259856	6.7	6.6
+	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2007"	"2007"	80	1272881	6.3	6.3
+	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2008"	"2008"	96	1286595	7.5	7.2
+	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	109	1299202	8.4	8.1
+	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	118	1308430	9.0	9.1
+	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	103	1323181	7.8	7.9
+	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2012"	"2012"	92	1334724	6.9	6.6
+	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2013"	"2013"	108	1345729	8.0	7.8
+	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2014"	"2014"	118	1358332	8.7	8.7
+	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2015"	"2015"	140	1369293	10.2	10.2
+	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2016"	"2016"	139	1380765	10.1	10.3
+	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2017"	"2017"	154	1390265	11.1	11.0
+	"Female"	"F"	"American Indian or Alaska Native"	"1002-5"	"2018"	"2018"	147	1399506	10.5	10.5
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"1999"	"1999"	188	5649503	3.3	3.4
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"2000"	"2000"	160	5842544	2.7	2.8
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"2001"	"2001"	175	6176359	2.8	2.9
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"2002"	"2002"	190	6440155	3.0	3.1
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"2003"	"2003"	205	6695437	3.1	3.1
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"2004"	"2004"	240	6945549	3.5	3.5
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"2005"	"2005"	227	7207666	3.1	3.3
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"2006"	"2006"	247	7472883	3.3	3.3
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"2007"	"2007"	266	7733773	3.4	3.4
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"2008"	"2008"	288	7995937	3.6	3.5
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"2009"	"2009"	295	8245449	3.6	3.5
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"2010"	"2010"	299	8431185	3.5	3.4
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"2011"	"2011"	312	8662304	3.6	3.5
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"2012"	"2012"	336	8975965	3.7	3.6
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"2013"	"2013"	294	9247628	3.2	3.1
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"2014"	"2014"	350	9635601	3.6	3.5
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"2015"	"2015"	418	9989346	4.2	4.0
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"2016"	"2016"	386	10171988	3.8	3.7
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"2017"	"2017"	424	10535836	4.0	3.9
+	"Female"	"F"	"Asian or Pacific Islander"	"A-PI"	"2018"	"2018"	439	10719798	4.1	3.9
+	"Female"	"F"	"Black or African American"	"2054-5"	"1999"	"1999"	294	18236499	1.6	1.7
+	"Female"	"F"	"Black or African American"	"2054-5"	"2000"	"2000"	322	18419074	1.7	1.8
+	"Female"	"F"	"Black or African American"	"2054-5"	"2001"	"2001"	326	18692119	1.7	1.8
+	"Female"	"F"	"Black or African American"	"2054-5"	"2002"	"2002"	301	18902852	1.6	1.6
+	"Female"	"F"	"Black or African American"	"2054-5"	"2003"	"2003"	352	19101453	1.8	1.9
+	"Female"	"F"	"Black or African American"	"2054-5"	"2004"	"2004"	356	19311650	1.8	1.8
+	"Female"	"F"	"Black or African American"	"2054-5"	"2005"	"2005"	361	19524942	1.8	1.9
+	"Female"	"F"	"Black or African American"	"2054-5"	"2006"	"2006"	279	19749975	1.4	1.4
+	"Female"	"F"	"Black or African American"	"2054-5"	"2007"	"2007"	345	19986736	1.7	1.7
+	"Female"	"F"	"Black or African American"	"2054-5"	"2008"	"2008"	342	20223930	1.7	1.7
+	"Female"	"F"	"Black or African American"	"2054-5"	"2009"	"2009"	385	20455967	1.9	1.9
+	"Female"	"F"	"Black or African American"	"2054-5"	"2010"	"2010"	379	20624873	1.8	1.9
+	"Female"	"F"	"Black or African American"	"2054-5"	"2011"	"2011"	404	20870136	1.9	1.9
+	"Female"	"F"	"Black or African American"	"2054-5"	"2012"	"2012"	441	21087405	2.1	2.1
+	"Female"	"F"	"Black or African American"	"2054-5"	"2013"	"2013"	443	21291814	2.1	2.0
+	"Female"	"F"	"Black or African American"	"2054-5"	"2014"	"2014"	455	21550453	2.1	2.1
+	"Female"	"F"	"Black or African American"	"2054-5"	"2015"	"2015"	464	21781596	2.1	2.1
+	"Female"	"F"	"Black or African American"	"2054-5"	"2016"	"2016"	539	21960417	2.5	2.4
+	"Female"	"F"	"Black or African American"	"2054-5"	"2017"	"2017"	616	22208090	2.8	2.8
+	"Female"	"F"	"Black or African American"	"2054-5"	"2018"	"2018"	648	22361868	2.9	2.9
+	"Female"	"F"	"White"	"2106-3"	"1999"	"1999"	4914	100698584	4.9	4.7
+	"Female"	"F"	"White"	"2106-3"	"2000"	"2000"	4905	100773935	4.9	4.7
+	"Female"	"F"	"White"	"2106-3"	"2001"	"2001"	5103	100952397	5.1	4.8
+	"Female"	"F"	"White"	"2106-3"	"2002"	"2002"	5368	101042357	5.3	5.1
+	"Female"	"F"	"White"	"2106-3"	"2003"	"2003"	5349	101129692	5.3	5.1
+	"Female"	"F"	"White"	"2106-3"	"2004"	"2004"	5787	101220900	5.7	5.5
+	"Female"	"F"	"White"	"2106-3"	"2005"	"2005"	5700	101304484	5.6	5.3
+	"Female"	"F"	"White"	"2106-3"	"2006"	"2006"	6000	101410496	5.9	5.6
+	"Female"	"F"	"White"	"2106-3"	"2007"	"2007"	6237	101520150	6.1	5.8
+	"Female"	"F"	"White"	"2106-3"	"2008"	"2008"	6446	101626674	6.3	6.0
+	"Female"	"F"	"White"	"2106-3"	"2009"	"2009"	6565	101700012	6.5	6.1
+	"Female"	"F"	"White"	"2106-3"	"2010"	"2010"	6772	101740930	6.7	6.2
+	"Female"	"F"	"White"	"2106-3"	"2011"	"2011"	7173	101843411	7.0	6.7
+	"Female"	"F"	"White"	"2106-3"	"2012"	"2012"	7371	101925742	7.2	6.9
+	"Female"	"F"	"White"	"2106-3"	"2013"	"2013"	7632	101981588	7.5	7.1
+	"Female"	"F"	"White"	"2106-3"	"2014"	"2014"	8034	102006574	7.9	7.5
+	"Female"	"F"	"White"	"2106-3"	"2015"	"2015"	8420	102059896	8.3	7.8
+	"Female"	"F"	"White"	"2106-3"	"2016"	"2016"	8421	102080754	8.2	7.9
+	"Female"	"F"	"White"	"2106-3"	"2017"	"2017"	8398	102009336	8.2	7.9
+	"Female"	"F"	"White"	"2106-3"	"2018"	"2018"	8474	101920022	8.3	8.0
+	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"1999"	"1999"	222	1117398	19.9	19.8
+	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2000"	"2000"	225	1155275	19.5	19.5
+	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2001"	"2001"	244	1163016	21.0	21.3
+	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2002"	"2002"	248	1173608	21.1	21.1
+	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2003"	"2003"	259	1183110	21.9	22.0
+	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2004"	"2004"	290	1194873	24.3	24.0
+	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2005"	"2005"	294	1206095	24.4	24.1
+	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2006"	"2006"	292	1217864	24.0	23.6
+	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2007"	"2007"	290	1229652	23.6	23.2
+	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2008"	"2008"	294	1241875	23.7	23.9
+	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2009"	"2009"	298	1252949	23.8	23.1
+	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2010"	"2010"	326	1261137	25.8	24.9
+	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2011"	"2011"	320	1275611	25.1	25.6
+	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2012"	"2012"	364	1285777	28.3	28.2
+	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2013"	"2013"	375	1297271	28.9	29.3
+	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2014"	"2014"	348	1308965	26.6	27.4
+	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2015"	"2015"	395	1320413	29.9	30.3
+	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2016"	"2016"	441	1330302	33.2	33.1
+	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2017"	"2017"	448	1338910	33.5	33.8
+	"Male"	"M"	"American Indian or Alaska Native"	"1002-5"	"2018"	"2018"	468	1346333	34.8	34.2
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"1999"	"1999"	457	5307840	8.6	9.0
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"2000"	"2000"	444	5513009	8.1	8.7
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"2001"	"2001"	451	5806819	7.8	8.4
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"2002"	"2002"	457	6032229	7.6	8.0
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"2003"	"2003"	496	6246900	7.9	8.5
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"2004"	"2004"	515	6460981	8.0	8.4
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"2005"	"2005"	483	6680629	7.2	7.4
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"2006"	"2006"	550	6903113	8.0	7.9
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"2007"	"2007"	612	7120928	8.6	8.9
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"2008"	"2008"	567	7340244	7.7	8.0
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"2009"	"2009"	639	7548546	8.5	8.7
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"2010"	"2010"	718	7702687	9.3	9.5
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"2011"	"2011"	707	7917405	8.9	9.0
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"2012"	"2012"	779	8199631	9.5	9.5
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"2013"	"2013"	794	8446242	9.4	9.2
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"2014"	"2014"	804	8801307	9.1	8.9
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"2015"	"2015"	855	9127211	9.4	9.2
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"2016"	"2016"	977	9307742	10.5	10.2
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"2017"	"2017"	990	9642283	10.3	9.9
+	"Male"	"M"	"Asian or Pacific Islander"	"A-PI"	"2018"	"2018"	1063	9826947	10.8	10.5
+	"Male"	"M"	"Black or African American"	"2054-5"	"1999"	"1999"	1630	16485737	9.9	10.5
+	"Male"	"M"	"Black or African American"	"2054-5"	"2000"	"2000"	1601	16672735	9.6	10.2
+	"Male"	"M"	"Black or African American"	"2054-5"	"2001"	"2001"	1578	16946270	9.3	9.9
+	"Male"	"M"	"Black or African American"	"2054-5"	"2002"	"2002"	1595	17147052	9.3	10.0
+	"Male"	"M"	"Black or African American"	"2054-5"	"2003"	"2003"	1566	17320752	9.0	9.5
+	"Male"	"M"	"Black or African American"	"2054-5"	"2004"	"2004"	1614	17537341	9.2	9.8
+	"Male"	"M"	"Black or African American"	"2054-5"	"2005"	"2005"	1592	17745794	9.0	9.5
+	"Male"	"M"	"Black or African American"	"2054-5"	"2006"	"2006"	1630	17969520	9.1	9.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"2007"	"2007"	1571	18197963	8.6	9.0
+	"Male"	"M"	"Black or African American"	"2054-5"	"2008"	"2008"	1721	18427803	9.3	9.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"2009"	"2009"	1649	18648848	8.8	9.3
+	"Male"	"M"	"Black or African American"	"2054-5"	"2010"	"2010"	1712	18812260	9.1	9.4
+	"Male"	"M"	"Black or African American"	"2054-5"	"2011"	"2011"	1790	19074760	9.4	9.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"2012"	"2012"	1861	19303983	9.6	10.0
+	"Male"	"M"	"Black or African American"	"2054-5"	"2013"	"2013"	1850	19510272	9.5	9.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"2014"	"2014"	1876	19766066	9.5	9.7
+	"Male"	"M"	"Black or African American"	"2054-5"	"2015"	"2015"	1951	19995887	9.8	10.0
+	"Male"	"M"	"Black or African American"	"2054-5"	"2016"	"2016"	2137	20181252	10.6	10.6
+	"Male"	"M"	"Black or African American"	"2054-5"	"2017"	"2017"	2324	20416272	11.4	11.4
+	"Male"	"M"	"Black or African American"	"2054-5"	"2018"	"2018"	2476	20572958	12.0	12.0
+	"Male"	"M"	"White"	"2106-3"	"1999"	"1999"	19620	96455534	20.3	20.2
+	"Male"	"M"	"White"	"2106-3"	"2000"	"2000"	19711	96550749	20.4	20.2
+	"Male"	"M"	"White"	"2106-3"	"2001"	"2001"	20710	96890274	21.4	21.0
+	"Male"	"M"	"White"	"2106-3"	"2002"	"2002"	21323	97059625	22.0	21.5
+	"Male"	"M"	"White"	"2106-3"	"2003"	"2003"	21085	97159794	21.7	21.1
+	"Male"	"M"	"White"	"2106-3"	"2004"	"2004"	21214	97399003	21.8	21.1
+	"Male"	"M"	"White"	"2106-3"	"2005"	"2005"	21605	97576500	22.1	21.4
+	"Male"	"M"	"White"	"2106-3"	"2006"	"2006"	21952	97789900	22.4	21.6
+	"Male"	"M"	"White"	"2106-3"	"2007"	"2007"	22660	97972271	23.1	22.1
+	"Male"	"M"	"White"	"2106-3"	"2008"	"2008"	23835	98157123	24.3	23.1
+	"Male"	"M"	"White"	"2106-3"	"2009"	"2009"	24248	98293067	24.7	23.4
+	"Male"	"M"	"White"	"2106-3"	"2010"	"2010"	25238	98386442	25.7	24.2
+	"Male"	"M"	"White"	"2106-3"	"2011"	"2011"	25858	98579832	26.2	24.8
+	"Male"	"M"	"White"	"2106-3"	"2012"	"2012"	26356	98773105	26.7	25.2
+	"Male"	"M"	"White"	"2106-3"	"2013"	"2013"	26621	98936925	26.9	25.3
+	"Male"	"M"	"White"	"2106-3"	"2014"	"2014"	27410	99042219	27.7	25.9
+	"Male"	"M"	"White"	"2106-3"	"2015"	"2015"	28045	99182385	28.3	26.6
+	"Male"	"M"	"White"	"2106-3"	"2016"	"2016"	28110	99244006	28.3	26.6
+	"Male"	"M"	"White"	"2106-3"	"2017"	"2017"	29708	99231457	29.9	28.2
+	"Male"	"M"	"White"	"2106-3"	"2018"	"2018"	30169	99148256	30.4	28.4
+"---"
+"Dataset: Underlying Cause of Death, 1999-2018"
+"Query Parameters:"
+"Hispanic Origin: Not Hispanic or Latino"
+"ICD-10 113 Cause List: #Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)"
+"Group By: Gender; Race; Year"
+"Show Totals: False"
+"Show Zero Values: True"
+"Show Suppressed: False"
+"Standard Population: 2000 U.S. Std. Population"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: Jun 3, 2020 5:37:48 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Underlying Cause of Death"
+"1999-2018 on CDC WONDER Online Database, released in 2020. Data are from the Multiple Cause of Death Files, 1999-2018, as"
+"compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
+"at http://wonder.cdc.gov/ucd-icd10.html on Jun 3, 2020 5:37:48 PM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Circumstances in Georgia for the years 2008 and 2009 have resulted in unusually high death counts for the ICD-10 cause of"
+"death code R99, ""Other ill-defined and unspecified causes of mortality."" Caution should be used in interpreting these data."
+"More information: http://wonder.cdc.gov/wonder/help/ucd.html#Georgia-Reporting-Anomalies."
+"3. Circumstances in New Jersey for the year 2009 have resulted in unusually high death counts for the ICD-10 cause of death code"
+"R99, ""Other ill-defined and unspecified causes of mortality"" and therefore unusually low death counts in other ICD-10 codes,"
+"most notably R95, ""Sudden Infant Death Syndrome"" and X40-X49, ""Unintentional poisoning."" Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#New-Jersey-Reporting-Anomalies."
+"4. Circumstances in California resulted in unusually high death counts for the ICD-10 cause of death code R99, ""Other"
+"ill-defined and unspecified causes of mortality"" for deaths occurring in years 2000 and 2001. Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#California-Reporting-Anomalies."
+"5. The populations used to calculate standard age-adjusted rates are documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2000 Standard Population."
+"6. The method used to calculate age-adjusted rates is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Age-Adjusted Rates."
+"7. Deaths for persons of unknown age are included in counts and crude rates, but are not included in age-adjusted rates."
+"8. Deaths of persons with Hispanic origin ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among"
+"Hispanic Origin groups, so are not included in the Hispanic Origin specific counts and rates. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Not Stated."
+"9. Information included on the death certificate about the race and Hispanic ethnicity of the decedent is reported by the"
+"funeral director as provided by an informant, often the surviving next of kin, or, in the absence of an informant, on the basis"
+"of observation. Race and ethnicity information from the census is by self-report. To the extent that race and Hispanic origin"
+"are inconsistent between these two data sources, death rates will be biased. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Racial Differences."
+"10. The population figures for year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018"
+"postcensal series released by NCHS on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for"
+"year 2016 are bridged-race estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS"
+"on June 26, 2017. The population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2015 postcensal series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The"
+"population figures for year 2013 are bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal"
+"series released by NCHS on June 26, 2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2012 postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18,"
+"2012. Population figures for 2010 are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race"
+"estimates of the July 1 resident population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on"
+"October 26, 2012. Population figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999"
+"intercensal series of July 1 estimates. Population figures for the infant age groups are the number of live births."
+"<br/><b>Note:</b> Rates and population figures for years 2001 - 2009 differ slightly from previously published reports, due to"
+"use of the population estimates which were available at the time of release."
+"11. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

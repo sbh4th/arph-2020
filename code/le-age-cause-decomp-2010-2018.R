@@ -1,9 +1,9 @@
-#  program:  le-age-cause-decomp.R
+#  program:  le-age-cause-decomp-2010-2018.R
 #  task:     le decomposition graphs
-#  input:    le-age-cause-decomp.csv
+#  input:    le-age-cause-decomp-2010-2018.csv
 #  output:   
 #  project:  ARPH Life Expectancy
-#  author:   sam harper \ 2020-05-28
+#  author:   sam harper \ 2020-05-27
 
 # 0
 # load libraries
@@ -18,7 +18,7 @@ here::here()
 ## Read in raw data and label it
 
 # Raw data
-rawd <- read_csv(here("data", "le-age-cause-decomp-2014-2017.csv"))
+rawd <- read_csv(here("data", "le-age-cause-decomp-2010-2018.csv"))
 
 rawt <- rawd %>%
   group_by(sex, race, age) %>%
@@ -65,22 +65,21 @@ stheme <- theme_classic() + theme(plot.title = element_text(size = 18, face = "b
 a <- levels(raw$age4f)
 b <- ifelse(a == "<1 yrs", "#e41a1c", "grey60")
 
-
 # women
 w <- ggplot(subset(raw4, gender=="Women")) + 
   geom_vline(xintercept = 0, linetype="dotted", colour="grey60") +
   geom_bar(aes(y=age4f, weight=total), width=0.5, 
-           colour = "#377eb8", fill = "#377eb8") + 
+           colour = "#377eb8", fill = "#377eb8") +
   geom_bar(data=subset(raw4, gender=="Women" & age4f=="Total change"),
            aes(y=age4f, weight=total), width=0.5,
            colour = "#e41a1c", fill="#e41a1c") +
   geom_text(aes(y=age4f, x=total, label = round(total, 2), 
-            hjust=ifelse(total > 0, -0.3, 1.2))) +
+            hjust=ifelse(total > 0, -0.2, 1.2))) +
   facet_wrap(~raceeth, nrow=1) +
   scale_y_discrete(limits = rev(levels(raw4$age4f))) +
-  scale_x_continuous(limits=c(-1, 1), breaks=c(-1, 0, 1)) +
+  scale_x_continuous(limits=c(-1, 2), breaks=c(-1, 0, 1, 2)) +
   labs(y = "", x = "") + 
-  ggtitle("Age group contribution to change in life expectancy at birth, 2014-2017", subtitle="Women") +
+  ggtitle("Age group contribution to change in life expectancy at birth, 2010-2018", subtitle="Women") +
   stheme + theme(panel.spacing = unit(2, "lines")) +
   theme(axis.text.y = element_text(size = 14, colour = b))
   
@@ -88,18 +87,18 @@ w <- ggplot(subset(raw4, gender=="Women")) +
 m <- ggplot(subset(raw4, gender=="Men")) + 
   geom_vline(xintercept = 0, linetype="dotted", colour="grey60") +
   geom_bar(aes(y=age4f, weight=total), width=0.5, 
-           colour = "#377eb8", fill = "#377eb8") +  
+           colour = "#377eb8", fill = "#377eb8") + 
   geom_bar(data=subset(raw4, gender=="Men" & age4f=="Total change"),
            aes(y=age4f, weight=total), width=0.5,
            colour = "#e41a1c", fill="#e41a1c") +
   geom_text(aes(y=age4f, x=total, label = round(total, 2), 
-            hjust=ifelse(total > 0, -0.3, 1.2))) +
+            hjust=ifelse(total > 0, -0.2, 1.2))) +
   facet_wrap(~raceeth, nrow=1) +
   scale_y_discrete(limits = rev(levels(raw4$age4f))) +
-  scale_x_continuous(limits=c(-1, 1), breaks=c(-1, 0, 1)) +
+  scale_x_continuous(limits=c(-1, 2), breaks=c(-1, 0, 1, 2)) +
   labs(y = "", x = "Years") + 
   ggtitle("", subtitle="Men") +
-  stheme + theme(panel.spacing = unit(2, "lines"))+
+  stheme + theme(panel.spacing = unit(2, "lines")) +
   theme(axis.text.y = element_text(size = 14, colour = b))
 
 # put both plots together
@@ -107,44 +106,8 @@ p <- w / m
 p
 
 # export to file
-ggsave(here("figures", "le-age-decomp-2014-2017.png"), plot=p, width=11, height=8.5)
+ggsave(here("figures", "le-age-decomp-2010-2018.png"), plot=p, width=11, height=8.5)
 
-# alternative color scheme
-wr <- ggplot(subset(raw4, gender=="Women")) + 
-  geom_vline(xintercept = 0, linetype="dotted", colour="grey60") +
-  geom_bar(data=subset(raw4, gender=="Women" & total<0), aes(y=age4f, weight=total), width=0.5, colour = "#e41a1c", fill="#e41a1c") + 
-  geom_bar(data=subset(raw4, gender=="Women" & total>=0), aes(y=age4f, weight=total), width=0.5, colour = "#377eb8", fill = "#377eb8") +  
-  geom_text(aes(y=age4f, x=total, label = round(total, 2), 
-            hjust=ifelse(total > 0, -0.3, 1.2))) +
-  facet_wrap(~raceeth, nrow=1) +
-  scale_y_discrete(limits = rev(levels(raw4$age4f))) +
-  scale_x_continuous(limits=c(-1, 1), breaks=c(-1, 0, 1)) +
-  labs(y = "", x = "") + 
-  ggtitle("Age group contribution to change in life expectancy at birth, 2014-2017", subtitle="Women") +
-  stheme + theme(panel.spacing = unit(2, "lines")) +
-  theme(axis.text.y = element_text(size = 14))
-
-mr <- ggplot(subset(raw4, gender=="Men")) + 
-  geom_vline(xintercept = 0, linetype="dotted", colour="grey60") +
-  geom_bar(data=subset(raw4, gender=="Men" & total<0), aes(y=age4f, weight=total), width=0.5, colour = "#e41a1c", fill="#e41a1c") + 
-  geom_bar(data=subset(raw4, gender=="Men" & total>=0), aes(y=age4f, weight=total), width=0.5, colour = "#377eb8", fill = "#377eb8") +  
-  geom_text(aes(y=age4f, x=total, label = round(total, 2), 
-            hjust=ifelse(total > 0, -0.3, 1.2))) +
-  facet_wrap(~raceeth, nrow=1) +
-  scale_y_discrete(limits = rev(levels(raw4$age4f))) +
-  scale_x_continuous(limits=c(-1, 1), breaks=c(-1, 0, 1)) +
-  labs(y = "", x = "Years") + 
-  ggtitle("", subtitle="Men") +
-  stheme + theme(panel.spacing = unit(2, "lines"))+
-  theme(axis.text.y = element_text(size = 14))
-
-
-# put both plots together
-pr <- wr / mr 
-pr
-
-# export to file
-ggsave(here("figures", "le-age-decomp-2014-2017.png"), plot=pr, width=11, height=8.5)
 
 
 ##### 4  #####
@@ -197,12 +160,12 @@ w <- ggplot(subset(raw15, gender=="Women")) +
            aes(y=codf, weight=total), width=0.5,
            colour = "#e41a1c", fill="#e41a1c") +
   geom_text(aes(y=codf, x=total, label = round(total, 2), 
-            hjust=ifelse(total > 0, -0.3, 1.2))) +
+            hjust=ifelse(total > 0, -0.2, 1.2))) +
   facet_wrap(~raceeth, nrow=1) +
   scale_y_discrete(limits = rev(levels(raw15$codf))) +
-  scale_x_continuous(limits=c(-1.1, 1), breaks=c(-1, 0, 1)) +
+  scale_x_continuous(limits=c(-1.1, 2), breaks=c(-1, 0, 1, 2)) +
   labs(y = "", x = "") + 
-  ggtitle("Cause contribution to change in life expectancy at birth, 2014-2017", subtitle="Women") +
+  ggtitle("Cause contribution to change in life expectancy at birth, 2010-2018", subtitle="Women") +
   stheme + theme(panel.spacing = unit(2, "lines")) +
   theme(axis.text.y = element_text(size = 14, colour = b))
   
@@ -212,13 +175,13 @@ m <- ggplot(subset(raw15, gender=="Men")) +
   geom_bar(aes(y=codf, weight=total), width=0.5, 
            colour = "#377eb8", fill = "#377eb8") +  
   geom_text(aes(y=codf, x=total, label = round(total, 2), 
-            hjust=ifelse(total > 0, -0.3, 1.2))) +
+            hjust=ifelse(total > 0, -0.2, 1.2))) +
     geom_bar(data=subset(raw15, gender=="Men" & codf=="Total change"),
            aes(y=codf, weight=total), width=0.5,
            colour = "#e41a1c", fill="#e41a1c") +
   facet_wrap(~raceeth, nrow=1) +
   scale_y_discrete(limits = rev(levels(raw15$codf))) +
-  scale_x_continuous(limits=c(-1.1, 1), breaks=c(-1, 0, 1)) +
+  scale_x_continuous(limits=c(-1.1, 2), breaks=c(-1, 0, 1, 2)) +
   labs(y = "", x = "Years") + 
   ggtitle("", subtitle="Men") +
   stheme + theme(panel.spacing = unit(2, "lines")) +
@@ -230,55 +193,14 @@ p <- w / m
 p
 
 # export to file
-ggsave(here("figures", "le-cause-decomp-2014-2017.png"), plot=p, width=11, height=10)
-
-# alternate color scheme
-# women
-wr <- ggplot(subset(raw15, gender=="Women")) + 
-  geom_vline(xintercept = 0, linetype="dotted", colour="grey60") +
-  geom_bar(data=subset(raw15, gender=="Women" & total<0), aes(y=codf, weight=total), width=0.5, colour = "#e41a1c", fill="#e41a1c") + 
-  geom_bar(data=subset(raw15, gender=="Women" & total>=0), aes(y=codf, weight=total), width=0.5, colour = "#377eb8", fill = "#377eb8") +  
-  geom_text(aes(y=codf, x=total, label = round(total, 2), 
-            hjust=ifelse(total > 0, -0.3, 1.2))) +
-  facet_wrap(~raceeth, nrow=1) +
-  scale_y_discrete(limits = rev(levels(raw15$codf))) +
-  scale_x_continuous(limits=c(-1.1, 1), breaks=c(-1, 0, 1)) +
-  labs(y = "", x = "") + 
-  ggtitle("Cause contribution to change in life expectancy at birth, 2014-2017", subtitle="Women") +
-  stheme + theme(panel.spacing = unit(2, "lines")) +
-  theme(axis.text.y = element_text(size = 14))
-  
-# men
-mr <- ggplot(subset(raw15, gender=="Men")) + 
-  geom_vline(xintercept = 0, linetype="dotted", colour="grey60") +
-  geom_bar(data=subset(raw15, gender=="Men" & total<0), aes(y=codf, weight=total), width=0.5, colour = "#e41a1c", fill="#e41a1c") + 
-  geom_bar(data=subset(raw15, gender=="Men" & total>=0), aes(y=codf, weight=total), width=0.5, colour = "#377eb8", fill = "#377eb8") +  
-  geom_text(aes(y=codf, x=total, label = round(total, 2), 
-            hjust=ifelse(total > 0, -0.3, 1.2))) +
-  facet_wrap(~raceeth, nrow=1) +
-  scale_y_discrete(limits = rev(levels(raw15$codf))) +
-  scale_x_continuous(limits=c(-1.1, 1), breaks=c(-1, 0, 1)) +
-  labs(y = "", x = "Years") + 
-  ggtitle("", subtitle="Men") +
-  stheme + theme(panel.spacing = unit(2, "lines")) +
-  theme(axis.text.y = element_text(size = 14,))
-  
-
-# put both plots together
-pr <- wr / mr 
-pr
-
-# export to file
-ggsave(here("figures", "le-cause-decomp-2014-2017.png"), 
-       plot=pr, width=11, height=10)
-
+ggsave(here("figures", "le-cause-decomp-2010-2018.png"), plot=p, width=11, height=10)
 
 
 ## 5
 ## Age and cause in the same plot (Appendix)
 
 # Raw data
-rawd <- read_csv(here("data", "le-age-cause-decomp-2014-2017.csv"))
+rawd <- read_csv(here("data", "le-age-cause-decomp-2010-2018.csv"))
 
 rawt <- rawd %>%
   group_by(sex, race, cod, age) %>%
@@ -318,6 +240,10 @@ raw4 <- rawc %>%
   group_by(gender, raceeth, age4f, codf) %>%
   summarise(total = sum(total))
 
+raw15 <- rawc %>%
+  group_by(gender, raceeth, codf) %>%
+  summarise(total = sum(total))
+
 acw <- ggplot(subset(raw4, gender=="Women")) + 
   geom_vline(xintercept = 0, linetype="dotted", colour="grey60") +
   geom_bar(aes(y=codf, weight=total, fill=age4f), width=0.75) +
@@ -327,14 +253,14 @@ acw <- ggplot(subset(raw4, gender=="Women")) +
             aes(y=codf, x=total, label = round(total, 2), 
             hjust=ifelse(total > 0, -0.3, 1.2))) +
   scale_y_discrete(limits = rev(levels(raw4$codf))) +
-  scale_x_continuous(limits=c(-1, 1), breaks=c(-1, 0, 1)) +
+  scale_x_continuous(limits=c(-1, 2), breaks=c(-1, 0, 1, 2)) +
  labs(y = "", x = "Years") + 
  stheme + theme(panel.spacing = unit(2, "lines"), 
                  legend.position="top", legend.text = element_text(size=14),
                 legend.title=element_text(size=14))
 
 # export to file
-ggsave(here("figures", "le-age-cause-decomp-2014-2017-women.png"), 
+ggsave(here("figures", "le-age-cause-decomp-2010-2018-women.png"), 
        plot=acw, width=11, height=7.5)
 
 # Figure for Men
@@ -347,13 +273,13 @@ acm <- ggplot(subset(raw4, gender=="Men")) +
             aes(y=codf, x=total, label = round(total, 2), 
             hjust=ifelse(total > 0, -0.3, 1.2))) +
   scale_y_discrete(limits = rev(levels(raw15$codf))) +
-  scale_x_continuous(limits=c(-1.1, 1), breaks=c(-1, 0, 1)) +
+  scale_x_continuous(limits=c(-1.1, 2), breaks=c(-1, 0, 1, 2)) +
   labs(y = "", x = "Years") +
   stheme + theme(panel.spacing = unit(2, "lines"), 
                  legend.position="top", legend.text = element_text(size=14),
                 legend.title=element_text(size=14)) 
 
 # export to file
-ggsave(here("figures", "le-age-cause-decomp-2014-2017-men.png"), 
+ggsave(here("figures", "le-age-cause-decomp-2010-2018-men.png"), 
        plot=acm, width=11, height=8)
 

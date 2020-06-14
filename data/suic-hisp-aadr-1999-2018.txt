@@ -1,0 +1,108 @@
+"Notes"	"Gender"	"Gender Code"	"Year"	"Year Code"	Deaths	Population	Crude Rate	Age Adjusted Rate
+	"Female"	"F"	"1999"	"1999"	265	16501431	1.6	1.9
+	"Female"	"F"	"2000"	"2000"	262	17144023	1.5	1.7
+	"Female"	"F"	"2001"	"2001"	274	18058983	1.5	1.6
+	"Female"	"F"	"2002"	"2002"	303	18799575	1.6	1.8
+	"Female"	"F"	"2003"	"2003"	296	19531088	1.5	1.6
+	"Female"	"F"	"2004"	"2004"	367	20265561	1.8	2.0
+	"Female"	"F"	"2005"	"2005"	347	21035554	1.6	1.8
+	"Female"	"F"	"2006"	"2006"	364	21839437	1.7	1.8
+	"Female"	"F"	"2007"	"2007"	387	22652813	1.7	1.8
+	"Female"	"F"	"2008"	"2008"	390	23470879	1.7	1.8
+	"Female"	"F"	"2009"	"2009"	438	24263445	1.8	2.0
+	"Female"	"F"	"2010"	"2010"	493	24858794	2.0	2.1
+	"Female"	"F"	"2011"	"2011"	496	25602066	1.9	2.0
+	"Female"	"F"	"2012"	"2012"	545	26098137	2.1	2.2
+	"Female"	"F"	"2013"	"2013"	586	26610478	2.2	2.3
+	"Female"	"F"	"2014"	"2014"	662	27369609	2.4	2.5
+	"Female"	"F"	"2015"	"2015"	716	27989392	2.6	2.6
+	"Female"	"F"	"2016"	"2016"	724	28454666	2.5	2.6
+	"Female"	"F"	"2017"	"2017"	758	29167532	2.6	2.6
+	"Female"	"F"	"2018"	"2018"	844	29637561	2.8	2.8
+	"Male"	"M"	"1999"	"1999"	1430	17436364	8.2	10.3
+	"Male"	"M"	"2000"	"2000"	1525	18161795	8.4	10.3
+	"Male"	"M"	"2001"	"2001"	1576	19085113	8.3	10.1
+	"Male"	"M"	"2002"	"2002"	1651	19818045	8.3	10.1
+	"Male"	"M"	"2003"	"2003"	1711	20518341	8.3	9.9
+	"Male"	"M"	"2004"	"2004"	1840	21235814	8.7	10.0
+	"Male"	"M"	"2005"	"2005"	1841	21988060	8.4	9.6
+	"Male"	"M"	"2006"	"2006"	1813	22766868	8.0	9.0
+	"Male"	"M"	"2007"	"2007"	2078	23544040	8.8	10.3
+	"Male"	"M"	"2008"	"2008"	1955	24322906	8.0	9.5
+	"Male"	"M"	"2009"	"2009"	2135	25064044	8.5	9.9
+	"Male"	"M"	"2010"	"2010"	2168	25618800	8.5	9.9
+	"Male"	"M"	"2011"	"2011"	2224	26443211	8.4	9.4
+	"Male"	"M"	"2012"	"2012"	2292	26929571	8.5	9.5
+	"Male"	"M"	"2013"	"2013"	2279	27460892	8.3	9.3
+	"Male"	"M"	"2014"	"2014"	2584	28017930	9.2	10.3
+	"Male"	"M"	"2015"	"2015"	2587	28603401	9.0	9.9
+	"Male"	"M"	"2016"	"2016"	2944	29015621	10.1	10.9
+	"Male"	"M"	"2017"	"2017"	3175	29779197	10.7	11.2
+	"Male"	"M"	"2018"	"2018"	3469	30234185	11.5	12.1
+"---"
+"Dataset: Underlying Cause of Death, 1999-2018"
+"Query Parameters:"
+"Hispanic Origin: Hispanic or Latino"
+"ICD-10 113 Cause List: #Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)"
+"Group By: Gender; Year"
+"Show Totals: False"
+"Show Zero Values: True"
+"Show Suppressed: False"
+"Standard Population: 2000 U.S. Std. Population"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: Jun 3, 2020 5:39:21 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Underlying Cause of Death"
+"1999-2018 on CDC WONDER Online Database, released in 2020. Data are from the Multiple Cause of Death Files, 1999-2018, as"
+"compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
+"at http://wonder.cdc.gov/ucd-icd10.html on Jun 3, 2020 5:39:21 PM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. Circumstances in Georgia for the years 2008 and 2009 have resulted in unusually high death counts for the ICD-10 cause of"
+"death code R99, ""Other ill-defined and unspecified causes of mortality."" Caution should be used in interpreting these data."
+"More information: http://wonder.cdc.gov/wonder/help/ucd.html#Georgia-Reporting-Anomalies."
+"3. Circumstances in New Jersey for the year 2009 have resulted in unusually high death counts for the ICD-10 cause of death code"
+"R99, ""Other ill-defined and unspecified causes of mortality"" and therefore unusually low death counts in other ICD-10 codes,"
+"most notably R95, ""Sudden Infant Death Syndrome"" and X40-X49, ""Unintentional poisoning."" Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#New-Jersey-Reporting-Anomalies."
+"4. Circumstances in California resulted in unusually high death counts for the ICD-10 cause of death code R99, ""Other"
+"ill-defined and unspecified causes of mortality"" for deaths occurring in years 2000 and 2001. Caution should be used in"
+"interpreting these data. More information: http://wonder.cdc.gov/wonder/help/ucd.html#California-Reporting-Anomalies."
+"5. The populations used to calculate standard age-adjusted rates are documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2000 Standard Population."
+"6. The method used to calculate age-adjusted rates is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Age-Adjusted Rates."
+"7. Deaths for persons of unknown age are included in counts and crude rates, but are not included in age-adjusted rates."
+"8. Deaths of persons with Hispanic origin ""Not Stated"" are included in ""All"" counts and rates, but are not distributed among"
+"Hispanic Origin groups, so are not included in the Hispanic Origin specific counts and rates. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Not Stated."
+"9. Information included on the death certificate about the race and Hispanic ethnicity of the decedent is reported by the"
+"funeral director as provided by an informant, often the surviving next of kin, or, in the absence of an informant, on the basis"
+"of observation. Race and ethnicity information from the census is by self-report. To the extent that race and Hispanic origin"
+"are inconsistent between these two data sources, death rates will be biased. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Racial Differences."
+"10. The population figures for year 2018 are bridged-race estimates of the July 1 resident population, from the Vintage 2018"
+"postcensal series released by NCHS on June 25, 2019. The population figures for year 2017 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2017 postcensal series released by NCHS on June 27, 2018. The population figures for"
+"year 2016 are bridged-race estimates of the July 1 resident population, from the Vintage 2016 postcensal series released by NCHS"
+"on June 26, 2017. The population figures for year 2015 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2015 postcensal series released by NCHS on June 28, 2016. The population figures for year 2014 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2014 postcensal series released by NCHS on June 30, 2015. The"
+"population figures for year 2013 are bridged-race estimates of the July 1 resident population, from the Vintage 2013 postcensal"
+"series released by NCHS on June 26, 2014. The population figures for year 2012 are bridged-race estimates of the July 1 resident"
+"population, from the Vintage 2012 postcensal series released by NCHS on June 13, 2013. The population figures for year 2011 are"
+"bridged-race estimates of the July 1 resident population, from the Vintage 2011 postcensal series released by NCHS on July 18,"
+"2012. Population figures for 2010 are April 1 Census counts. The population figures for years 2001 - 2009 are bridged-race"
+"estimates of the July 1 resident population, from the revised intercensal county-level 2000 - 2009 series released by NCHS on"
+"October 26, 2012. Population figures for 2000 are April 1 Census counts. Population figures for 1999 are from the 1990-1999"
+"intercensal series of July 1 estimates. Population figures for the infant age groups are the number of live births."
+"<br/><b>Note:</b> Rates and population figures for years 2001 - 2009 differ slightly from previously published reports, due to"
+"use of the population estimates which were available at the time of release."
+"11. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

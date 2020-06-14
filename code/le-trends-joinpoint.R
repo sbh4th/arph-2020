@@ -55,13 +55,13 @@ w <- ggplot(subset(raw, age3==1 & sex==1 & race!=1),
   scale_color_manual(values=c("#e41a1c", "#377eb8", "#4daf4a",
   "#984ea3")) + ggtitle("Life expectancy at birth (years)", subtitle="Women") + 
   annotate("text", label = "Non-Hispanic\nAsian/Pacific Islander", 
-           x = 1999, y = 90, size = 5, colour = "#e41a1c", hjust=0) +
+           x = 1999, y = 90.5, size = 5, colour = "#e41a1c", hjust=0) +
   annotate("text", label = "Hispanic", 
-           x = 2013, y = 85, size = 5, colour = "#984ea3", hjust=0) +
+           x = 2013, y = 84.5, size = 5, colour = "#984ea3", hjust=0) +
   annotate("text", label = "Non-Hispanic White", 
-           x = 2005, y = 82, size = 5, colour = "#4daf4a", hjust=0) +
+           x = 1999, y = 78, size = 5, colour = "#4daf4a", hjust=0) +
   annotate("text", label = "Non-Hispanic\nBlack", 
-           x = 1999, y = 77, size = 5, colour = "#377eb8", hjust=0) +
+           x = 1999, y = 72.5, size = 5, colour = "#377eb8", hjust=0) +
   stheme 
 
 # men
@@ -79,14 +79,16 @@ p <- w + m
 p
 
 # export to file
-ggsave(here("figures", "le-jp0.png"), plot=p, width=11, height=6.5)
+# ggsave(here("figures", "le-jp0.png"), plot=p, width=11, height=6.5)
+ggsave(here("figures", "le-jp0.png"), plot=p, width=11, height=5.5)
+
 
 
 ##### 4  #####
 ##### Make plots of life expectancy trends at age 25
 
 # women
-w <- ggplot(subset(raw, age3==2 & sex==1 & race!=1),
+w25 <- ggplot(subset(raw, age3==2 & sex==1 & race!=1),
   aes(x = year0, y = ex, colour = raceeth)) + 
   geom_point(alpha=0.3, size=2) + geom_line(aes(x=year0, y=exm, 
   colour = raceeth), size=1) + labs(y = "", x = "") + 
@@ -104,7 +106,7 @@ w <- ggplot(subset(raw, age3==2 & sex==1 & race!=1),
   stheme 
 
 # men
-m <- ggplot(subset(raw, age3==2 & sex==2 & race!=1), 
+m25 <- ggplot(subset(raw, age3==2 & sex==2 & race!=1), 
   aes(x = year0, y = ex, colour = raceeth)) + 
   geom_point(alpha=0.3, size=2) + geom_line(aes(x=year0, y=exm, 
   colour = raceeth), size=1)  + labs(y = "", x = "") + 
@@ -114,7 +116,7 @@ m <- ggplot(subset(raw, age3==2 & sex==2 & race!=1),
   stheme 
 
 # side by side
-p <- w + m 
+p25 <- w25 + m25 
 p
 
 # export to file
@@ -122,10 +124,10 @@ ggsave(here("figures", "le-jp25.png"), plot=p, width=11, height=6.5)
 
 
 ##### 4  #####
-##### Make plots of life expectancy trends at age 25
+##### Make plots of life expectancy trends at age 65
 
 # women
-w <- ggplot(subset(raw, age3==3 & sex==1 & race!=1),
+w65 <- ggplot(subset(raw, age3==3 & sex==1 & race!=1),
   aes(x = year0, y = ex, colour = raceeth)) + 
   geom_point(alpha=0.3, size=2) + geom_line(aes(x=year0, y=exm, 
   colour = raceeth), size=1) + labs(y = "", x = "") + 
@@ -143,7 +145,7 @@ w <- ggplot(subset(raw, age3==3 & sex==1 & race!=1),
   stheme 
 
 # men
-m <- ggplot(subset(raw, age3==3 & sex==1 & race!=1), 
+m65 <- ggplot(subset(raw, age3==3 & sex==1 & race!=1), 
   aes(x = year0, y = ex, colour = raceeth)) + 
   geom_point(alpha=0.3, size=2) + geom_line(aes(x=year0, y=exm, 
   colour = raceeth), size=1) + labs(y = "", x = "") + 
@@ -153,9 +155,34 @@ m <- ggplot(subset(raw, age3==3 & sex==1 & race!=1),
   stheme 
 
 # side by side
-p <- w + m 
+p65 <- w65 + m65 
 p
+
+t <- (w25 + m25) / (w65 + m65)
+t
 
 # export to file
 ggsave(here("figures", "le-jp65.png"), plot=p, width=11, height=6.5)
+
+ggsave(here("figures", "le-jp2565.png"), plot=t, height=11, width=11)
+
+
+ggplot(subset(raw, age3!=1 & sex==1 & race!=1), 
+  aes(x = year0, y = ex, colour = raceeth, group=age3)) + 
+  geom_point(alpha=0.3, size=2) +
+  geom_line(data=subset(raw, age3==2 & sex==1 & race==2),
+            aes(x=year0, y=exm, colour = raceeth), size=1) +
+  geom_line(data=subset(raw, age3==2 & sex==1 & race==3),
+            aes(x=year0, y=exm, colour = raceeth), size=1) +
+  geom_line(data=subset(raw, age3==2 & sex==1 & race==4),
+            aes(x=year0, y=exm, colour = raceeth), size=1) +
+  geom_line(data=subset(raw, age3==2 & sex==1 & race==5),
+            aes(x=year0, y=exm, colour = raceeth), size=1) + 
+  labs(y = "", x = "") + 
+  scale_y_continuous(limits=c(0,70)) 
+
++ 
+  scale_color_manual(values=c("#e41a1c", "#377eb8", "#4daf4a",
+  "#984ea3")) + ggtitle("", subtitle="Men") 
+
 

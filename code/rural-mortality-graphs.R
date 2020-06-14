@@ -3,7 +3,7 @@
 #  input:    seer-ur-1974.txt; seer-ur-2013.txt
 #  output:   rural-mort.png; urban-rural-gradient.png
 #  project:  ARPH Life Expectancy
-#  author:   sam harper \ 2020-05-01
+#  author:   sam harper \ 2020-05-28
 
 # 0
 # load libraries
@@ -31,10 +31,11 @@ d13$urdef <- 4
 
 d <- bind_rows(d74,d13)
 
-d$ur <- factor(d$ur, levels = c(0,1,2,3,4,5,6,7,8,9,10), labels = c("Metro", "Metro >1m", 
-  "Metro >250k-1m", "Metro <250k", "Non-metro", 
-  "Large urban, metro-adjacent", "Large urban, metro-non-adjacent", 
-  "Small urban, metro-adjacent", "Small urban, metro-non-adjacent", "Rural, metro-adjacent",
+d$ur <- factor(d$ur, levels = c(0,1,2,3,4,5,6,7,8,9,10), 
+  labels = c("Metro", "Metro >1m", "Metro >250k-1m", 
+  "Metro <250k", "Non-metro", "Large urban, metro-adjacent", 
+  "Large urban, metro-non-adjacent", "Small urban, metro-adjacent", 
+  "Small urban, metro-non-adjacent", "Rural, metro-adjacent",
   "Rural, metro-non-adjacent"))
 
 d$urdef <- factor(d$urdef, levels = c(0,4), labels = c("1974 rural definition", "2013 rural definition"))
@@ -46,7 +47,7 @@ d$yearc <- ifelse(d$year==14, 2015, d$yearc)
 dur <- subset(d, (ur=="Metro" | ur == "Non-metro") & urdef=="2013 rural definition" & gender!=0) 
 # "#1b9e77", "#d95f02", "#7570b3"
 
-stheme <- theme_classic() + theme(plot.title = element_text(size = 18, face = "bold"), plot.subtitle = element_text(size=16)) + theme(axis.text.x = element_text(size = 16, colour = "grey60"), axis.title.y=element_text(size=16, angle=90, colour="grey60"), axis.text.y = element_text(size = 16, colour="grey60"), legend.position="none", panel.grid.major.y = element_line(linetype="dotted", colour="grey60"), panel.grid.major.x = element_line(colour="white"), panel.grid.minor = element_line(colour="white")) + theme(axis.line.x=element_line(colour="white"), axis.line.y=element_line(colour="white"), axis.ticks = element_blank())
+stheme <- theme_classic() + theme(plot.title = element_text(size = 18, face = "bold"), plot.subtitle = element_text(size=16)) + theme(axis.text.x = element_text(size = 16, colour = "grey60"), axis.title.y=element_text(size=16, angle=90, colour="grey60"), axis.text.y = element_text(size = 16, colour="grey60"), legend.position="none", panel.grid.major.y = element_line(linetype="dotted", colour="grey60"), panel.grid.major.x = element_line(colour="white"), panel.grid.minor = element_line(colour="white")) + theme(axis.line.x=element_line(colour="white"), axis.line.y=element_line(colour="white"), axis.ticks = element_blank(), strip.text = element_text(size = 16), strip.background = element_rect(colour="white"))
 
 p <- ggplot(dur, aes(x=yearc, y=aadr)) + 
   geom_line(data=subset(dur, ur=="Metro" & gender==1), 
@@ -111,3 +112,54 @@ p3
 
 ggsave(here("figures", "rural-mort-poison.png"), 
        plot=p3, width=11, height=6.5)
+
+
+
+
+dur <- subset(d, (ur != "Metro" & ur != "Non-metro") & urdef=="2013 rural definition" & gender==0 & yearc>=1970) 
+
+dur6 <- dur %>%
+  mutate(recode_factor(ur, `Metro >1m` = `Metro >1m`, 
+        `Metro >250k-1m` = `Metro >250k-1m`, `Metro <250k` = `Metro <250k`,
+        `Large urban, metro-adjacent` = `Non-metro >20k`,
+        `Large urban, metro-non-adjacent` = `Non-metro >20k`,
+        `Small urban, metro-adjacent` = `Non-metro >2500-20k`,
+        `mall urban, metro-non-adjacent` = `Non-metro >2500-20k`
+        
+        
+                       
+                       
+                       
+                       ) $ur6 <- factor(dur$ur, levels = c(0,1,2,3,4,5,6,7,8,9,10), 
+  labels = c("Metro", "Metro >1m", "Metro >250k-1m", 
+  "Metro <250k", "Non-metro", "Large urban, metro-adjacent", 
+  "Large urban, metro-non-adjacent", "Small urban, metro-adjacent", 
+  "Small urban, metro-non-adjacent", "Rural, metro-adjacent",
+  "Rural, metro-non-adjacent"))
+
+b <- 
+ggplot(dur, aes(x=yearc, y=aadr, colour=ur, label=ur)) + 
+  geom_segment(aes(x = 1970, y = 600, xend = 2015, yend = 600), 
+               linetype="dotted", color='grey60', show.legend=FALSE) +
+  geom_segment(aes(x = 1970, y = 800, xend = 2015, yend = 800), 
+               linetype="dotted", color='grey60', show.legend=FALSE) +
+    geom_segment(aes(x = 1970, y = 1000, xend = 2015, yend = 1000), 
+               linetype="dotted", color='grey60', show.legend=FALSE) +
+    geom_segment(aes(x = 1970, y = 1200, xend = 2015, yend = 1200), 
+               linetype="dotted", color='grey60', show.legend=FALSE) +
+  geom_line(aes(colour=ur), size=1.5, show.legend=FALSE) + 
+  geom_text_repel(data=subset(dur, yearc==2015), xlim = 2016, 
+                  hjust = 1, point.padding = 0.2) +
+  scale_x_continuous(limits=c(1970, 2030), 
+                     breaks=c(1970,1980,1990,2000,2010)) + 
+  scale_y_continuous(limits=c(600,1300)) +
+  ylab("") + xlab("") + ggtitle("Age-adjusted death rate per 100,000") + stheme + 
+  theme(legend.position = "none", 
+        panel.grid.major.y = element_line(colour="white")) +
+  scale_color_manual(values=c("#3f007d", "#6a51a3", "#9e9ac8", 
+    "#00441b", "#006d2c", "#238b45", "#41ab5d", "#74c476", "#a1d99b")) 
+
+ggsave(here("figures", "rural-mort-trends.png"), 
+       plot=b, width=11, height=7)
+
++ scale_color_brewer(type="seq", palette = "BuGn")

@@ -3,7 +3,7 @@
 #  input:    none
 #  output:   
 #  project:  ARPH Life Expectancy
-#  author:   sam harper \ 2020-04-09
+#  author:   sam harper \ 2020-05-28
 
 # 0
 # load libraries
@@ -44,18 +44,42 @@ sar <- bind_rows(sa2, sah2)
 
 # create new race group
 sar$raceabb <- recode_factor(sar$racen, 
-  `1` = "NHAPI", `2` = "NHB", `3` = "NHW", `4`= "Hispanic")
+  `1` = "NH API", `2` = "NH Black", `3` = "NH White", `4`= "Hispanic")
 
 sar$age <- paste(sar$acode, "yrs", sep=" ")
 
-w <- ggplot(subset(sar, gender=="Female"), aes(x=year, y=rate, colour=raceabb, label=raceabb)) + geom_line(show.legend=T) + facet_wrap(~age, scales="free", ncol=5) + scale_color_discrete(name="") + xlab("") + ylab("") + ggtitle("Death rates per 100,000 by single years of age for women, 1999-2018") + theme_classic() + theme(axis.text.x = element_text(colour = "grey60"), axis.text.y = element_text( colour="grey60"), panel.grid.major.y = element_line(linetype="dotted", colour="grey60"), panel.grid.major.x = element_line(colour="white"), panel.grid.minor = element_line(colour="white")) + theme(axis.line.x=element_line(colour="white"), axis.line.y=element_line(colour="white"), axis.ticks = element_blank(), strip.background = element_rect(colour="white")) + theme(legend.position="top")
+w <- ggplot(subset(sar, gender=="Female"), 
+            aes(x=year, y=rate, colour=raceabb, label=raceabb)) + 
+  geom_line(show.legend=T) + facet_wrap(~age, scales="free", ncol=5) + 
+  scale_color_manual(name="", values=c("#e41a1c", "#377eb8", "#4daf4a", "#984ea3")) + xlab("") + ylab("") + 
+  ggtitle("Death rates per 100,000 by single years of age for women, 1999-2018") + 
+  theme_classic() + 
+  theme(axis.text.x = element_text(colour = "grey60"), 
+        axis.text.y = element_text( colour="grey60"), 
+        panel.grid.major.y = element_line(linetype="dotted", colour="grey60"), 
+        panel.grid.major.x = element_line(colour="white"), 
+        panel.grid.minor = element_line(colour="white")) + 
+  theme(axis.line.x=element_line(colour="white"), axis.line.y=element_line(colour="white"), axis.ticks = element_blank(), strip.background = element_rect(colour="white")) + theme(legend.position="top")
 
 ggsave(here("figures", "single-ages-women.png"), plot=w, height=11, width=8.5)
 
-m <- ggplot(subset(sar, gender=="Male"), aes(x=year, y=rate, colour=raceabb, label=raceabb)) + geom_line(show.legend=T) + facet_wrap(~age, scales="free", ncol=5) + scale_color_discrete(name="") + xlab("") + ylab("") + ggtitle("Death rates per 100,000 by single years of age for men, 1999-2018") + theme_classic() + theme(axis.text.x = element_text(colour = "grey60"), axis.text.y = element_text( colour="grey60"), panel.grid.major.y = element_line(linetype="dotted", colour="grey60"), panel.grid.major.x = element_line(colour="white"), panel.grid.minor = element_line(colour="white")) + theme(axis.line.x=element_line(colour="white"), axis.line.y=element_line(colour="white"), axis.ticks = element_blank(), strip.background = element_rect(colour="white")) + theme(legend.position="top")
+m <- ggplot(subset(sar, gender=="Male"), 
+            aes(x=year, y=rate, colour=raceabb, label=raceabb)) + 
+  geom_line(show.legend=T) + facet_wrap(~age, scales="free", ncol=5) + 
+  scale_color_manual(name="", values=c("#e41a1c", "#377eb8", "#4daf4a", "#984ea3")) +
+  xlab("") + ylab("") + 
+  ggtitle("Death rates per 100,000 by single years of age for men, 1999-2018") + 
+  theme_classic() + 
+    theme(axis.text.x = element_text(colour = "grey60"), 
+          axis.text.y = element_text( colour="grey60"), 
+          panel.grid.major.y = element_line(linetype="dotted", colour="grey60"),
+          panel.grid.major.x = element_line(colour="white"), 
+          panel.grid.minor = element_line(colour="white")) + 
+    theme(axis.line.x=element_line(colour="white"), axis.line.y=element_line(colour="white"), axis.ticks = element_blank(), strip.background = element_rect(colour="white")) + theme(legend.position="top")
+
+ggsave(here("figures", "single-ages-men.png"), plot=m, height=11, width=8.5)
 
 
-stheme <- theme_classic() + theme(plot.title = element_text(size = 18, face = "bold"), plot.subtitle = element_text(size=16, colour="grey60")) + theme(axis.text.x = element_text(size = 16, colour = "grey60"), axis.title.y=element_text(size=16, angle=90, colour="grey60"), axis.text.y = element_text(size = 16, colour="grey60"), legend.position="none", panel.grid.major.y = element_line(linetype="dotted", colour="grey60"), panel.grid.major.x = element_line(colour="white"), panel.grid.minor = element_line(colour="white")) + theme(axis.line.x=element_line(colour="white"), axis.line.y=element_line(colour="white"), axis.ticks = element_blank(),strip.text = element_text(size = 16), strip.background = element_rect(colour="white"))
 
 
 p25 <- ggplot(subset(sar, gender=="Male" & acode==25), 
