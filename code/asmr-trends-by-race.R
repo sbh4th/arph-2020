@@ -1,7 +1,7 @@
 #  program:  asmr-trends-by-race.R
 #  task:     age-specific mortality trends by race
-#  input:    none
-#  output:   asmr-1968-1978.txt,
+#  input:    asmr-sex-race-nhisp-1999-2018.txt, asmr-sex-race-hisp-1999-2018.txt
+#  output:   asmr-trends-by-race.png
 #  project:  ARPH Life Expectancy
 #  author:   sam harper \ 2020-06-24
 
