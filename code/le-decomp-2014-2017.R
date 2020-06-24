@@ -3,7 +3,7 @@
 #  input:    le-age-cause-decomp.csv
 #  output:   le-age-decomp-2014-2017.png, le-cause-decomp-2014-2017.png
 #  project:  ARPH Life Expectancy
-#  author:   sam harper \ 2020-06-22
+#  author:   sam harper \ 2020-06-24
 
 # 0
 # load libraries
@@ -18,7 +18,7 @@ here::here()
 ## Read in raw data and label it
 
 # Raw data
-rawd <- read_csv(here("data", "le-age-cause-decomp-2014-2017.csv"))
+rawd <- read_csv(here("data/cdc-wonder", "le-age-cause-decomp-2014-2017.csv"))
 
 rawt <- rawd %>%
   group_by(sex, race, age) %>%
@@ -62,11 +62,6 @@ stheme <- theme_classic() + theme(plot.title = element_text(size = 18, face = "b
 ##### 3  #####
 ## Plot of decomposition by age
 
-# different color for total change 
-# (reversed so need to assign it to <1y)
-a <- levels(raw$age4f)
-b <- ifelse(a == "<1 yrs", "#e41a1c", "grey60")
-
 # women
 wr <- ggplot(subset(raw4, gender=="Women")) + 
   geom_vline(xintercept = 0, linetype="dotted", colour="grey60") +
@@ -82,6 +77,7 @@ wr <- ggplot(subset(raw4, gender=="Women")) +
   stheme + theme(panel.spacing = unit(2, "lines")) +
   theme(axis.text.y = element_text(size = 14))
 
+# men
 mr <- ggplot(subset(raw4, gender=="Men")) + 
   geom_vline(xintercept = 0, linetype="dotted", colour="grey60") +
   geom_bar(data=subset(raw4, gender=="Men" & total<0), aes(y=age4f, weight=total), width=0.5, colour = "#e41a1c", fill="#e41a1c") + 
