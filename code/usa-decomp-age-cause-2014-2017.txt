@@ -1,0 +1,907 @@
+--------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/samharper/git/arph-2020/code/usa-decomp-age-cause-2014-2017.
+> txt
+  log type:  text
+ opened on:  24 Jun 2020, 11:23:20
+
+. 
+. //  program: usa-decomp-age-cause-2014-2017.do
+. //  task:    decompose life expectancy by sex and race over time        
+. //  input:   allcause and cause-specific mortality from CDC WONDER
+. //  output:  none
+. //  project: life expectancy    
+. //  author:  sam harper \ 2020-06-24
+. 
+. 
+. // #0
+. // program setup
+. 
+. version 16
+
+. set linesize 80
+
+. clear all
+
+. macro drop _all
+
+. 
+. 
+. 
+. // #1
+. // load the mortality data, downloaded from CDC WONDER database
+. tempname nhisp
+
+. import delimited "data/cdc-wonder/us-age-cause-nhisp-2014-2017.txt", ///
+>   encoding(ISO-8859-1) clear
+(14 vars, 24,008 obs)
+
+. 
+. * drop extra rows for Notes from CDC WONDER
+. drop if year==.
+(72 observations deleted)
+
+. drop notes
+
+. 
+. * fix up variable names and labels
+. encode gender, gen(sex)
+
+. encode race, gen(race4)
+
+. drop if race4==1 // drop American Indians (unreliable)
+(5,984 observations deleted)
+
+. drop race
+
+. rename race4 race
+
+. replace race = race - 1
+(17,952 real changes made)
+
+. label define race 1 "NH API" 2 "NH Black" 3 "NH White", modify
+
+. label values race race
+
+. 
+. replace tenyearagegroups="01-04 years" if tenyearagegroups=="1-4 years"
+(1,632 real changes made)
+
+. replace tenyearagegroups="05-14 years" if tenyearagegroups=="5-14 years"
+(1,632 real changes made)
+
+. replace tenyearagegroups="00-01 years" if tenyearagegroups=="< 1 year"
+(1,632 real changes made)
+
+. encode tenyearagegroups, gen(age)
+
+. rename (deaths population icd10113causelist) (count pop icdcode)
+
+. 
+. * extract numeric causes of death from CDCs 113 cause list
+. gen cod113s=substr(icd10113causelistcode,7,3)
+
+. destring cod113s, gen(cod113)
+cod113s: all characters numeric; cod113 generated as int
+
+. 
+. * recode to a small number of causes (arbitrary)
+. recode cod113 (16 = 6 "HIV") (19 = 2 "Cancers") (46 = 3 "Diabetes") ///
+>   (52 = 4 "Alzheimer's") (53 = 1 "CVDs") (76 = 5 "Flu/pneumonia") ///
+>   (82 = 7 "Chronic Resp dx") (93 = 8 "Liver dx") (97 = 9 "Kidney dx") ///
+>   (114 = 10 "MV crashes") (122 = 11 "Poisoning") ///
+>   (124 = 12 "Suicide") (127 = 13 "Homicide") ///
+>   (1/15 17 18 44 45 47 50 51 79 87/92 96 102/105 108/111 115 116 118/121 ///
+>   123 130 131 134/136 = 14 "Residual") ///
+>   (20/43 48 49 54/75 77 78 80 81 83/86 94 95 98/101 106 107 112 113 117 ///
+>   125 126 128 129 132 133 = .), gen(cod14)
+(17820 differences between cod113 and cod14)
+
+. 
+. * summarize over sex, age, cause and year  
+. collapse (sum) count (max) pop, by(sex race age cod14 year)
+
+. 
+. * drop extra cells for causes subsumed within broad categories
+. * to avoid double counting
+. drop if cod14==.
+(132 observations deleted)
+
+. drop if year==.
+(0 observations deleted)
+
+. 
+. * save as temporary dataset
+. save "data/cdc-wonder/`nhisp'.dta", replace
+(note: file data/cdc-wonder/__000000.dta not found)
+file data/cdc-wonder/__000000.dta saved
+
+. 
+. 
+. // #2 Hispanics
+. // load the mortality data, downloaded from CDC WONDER database
+. tempname hisp
+
+. import delimited "data/cdc-wonder/us-age-cause-hisp-2014-2017.txt", ///
+>   encoding(ISO-8859-1) clear
+(12 vars, 6,056 obs)
+
+. 
+. * drop extra rows for Notes from CDC WONDER
+. drop if year==.
+(72 observations deleted)
+
+. drop notes
+
+. 
+. * fix up variable names and labels
+. encode gender, gen(sex)
+
+. gen race = 4
+
+. 
+. replace tenyearagegroups="01-04 years" if tenyearagegroups=="1-4 years"
+(544 real changes made)
+
+. replace tenyearagegroups="05-14 years" if tenyearagegroups=="5-14 years"
+(544 real changes made)
+
+. replace tenyearagegroups="00-01 years" if tenyearagegroups=="< 1 year"
+(544 real changes made)
+
+. encode tenyearagegroups, gen(age)
+
+. rename (deaths population icd10113causelist) (count pop icdcode)
+
+. 
+. * extract numeric causes of death from CDCs 113 cause list
+. gen cod113s=substr(icd10113causelistcode,7,3)
+
+. destring cod113s, gen(cod113)
+cod113s: all characters numeric; cod113 generated as int
+
+. 
+. * recode to a small number of causes (arbitrary)
+. recode cod113 (16 = 6 "HIV") (19 = 2 "Cancers") (46 = 3 "Diabetes") ///
+>   (52 = 4 "Alzheimer's") (53 = 1 "CVDs") (76 = 5 "Flu/pneumonia") ///
+>   (82 = 7 "Chronic Resp dx") (93 = 8 "Liver dx") (97 = 9 "Kidney dx") ///
+>   (114 = 10 "MV crashes") (122 = 11 "Poisoning") ///
+>   (124 = 12 "Suicide") (127 = 13 "Homicide") ///
+>   (1/15 17 18 44 45 47 50 51 79 87/92 96 102/105 108/111 115 116 118/121 ///
+>   123 130 131 134/136 = 14 "Residual") ///
+>   (20/43 48 49 54/75 77 78 80 81 83/86 94 95 98/101 106 107 112 113 117 ///
+>   125 126 128 129 132 133 = .), gen(cod14)
+(5940 differences between cod113 and cod14)
+
+. 
+. * summarize over sex, age, cause and year  
+. collapse (sum) count (max) pop, by(sex race age cod14 year)
+
+. 
+. * drop extra cells for causes subsumed within broad categories
+. * to avoid double counting
+. drop if cod14==.
+(44 observations deleted)
+
+. drop if year==.
+(0 observations deleted)
+
+. 
+. save "data/cdc-wonder/`hisp'.dta", replace
+(note: file data/cdc-wonder/__000001.dta not found)
+file data/cdc-wonder/__000001.dta saved
+
+. 
+. use "data/cdc-wonder/`nhisp'.dta", clear
+
+. append using "data/cdc-wonder/`hisp'.dta"
+(note: variable race was long, now double to accommodate using data's values)
+(label cod14 already defined)
+(label age already defined)
+(label sex already defined)
+
+. 
+. * calculate crude rates, label some variables
+. gen rate = count / pop * 100000
+
+. label define race 1 "NH API" 2 "NH Black" 3 "NH White" 4 "Hispanic", modify
+
+. label values race race
+
+. label var cod14 "cause of death"
+
+. label var rate "death rate"
+
+. label var count "no. of deaths"
+
+. label var pop "mid-year population"
+
+. 
+. * save this dataset for life expectancy calculations
+. save "data/cdc-wonder/usa-decomp-age-cause-2014-2017.dta", replace
+file data/cdc-wonder/usa-decomp-age-cause-2014-2017.dta saved
+
+. 
+. 
+. // #2
+. // set up for life table calculation
+. 
+. * sum deaths and population over causes (i.e., ignoring cause of death)
+. use "data/cdc-wonder/usa-decomp-age-cause-2014-2017.dta", clear
+
+. collapse (sum) count (max) pop, by(sex race age year)
+
+. 
+. * mortality rate
+. gen rate = count / pop * 100000
+
+. label var rate "death rate per 100,000"
+
+. 
+. * have a look at the rates by year
+. table age year race, c(mean rate) by(sex) format(%7.1f)
+
+--------------------------------------------------------------------------------
+Gender and  |                           Race and Year                           
+Ten-Year    | ---- NH API ---  --- NH Black --  --- NH White --  --- Hispanic --
+Age Groups  |    2014    2017     2014    2017     2014    2017     2014    2017
+------------+-------------------------------------------------------------------
+Female      |
+00-01 years |   348.7   396.7   1013.7  1001.0    450.8   409.1    431.5   430.8
+01-04 years |    13.0    11.3     34.0    37.3     20.2    18.6     17.3    17.2
+05-14 years |     6.8     7.9     15.1    16.7      9.8    10.9      9.7     9.5
+15-24 years |    17.9    22.2     44.2    50.7     37.4    42.4     27.1    31.0
+25-34 years |    25.2    27.3     93.7   106.3     73.0    89.9     41.2    49.2
+35-44 years |    49.9    50.6    203.5   210.4    143.2   154.2     78.1    81.9
+45-54 years |   123.5   130.1    472.2   456.3    325.0   323.3    184.7   182.9
+55-64 years |   285.0   292.6    999.8  1012.0    653.5   677.8    443.7   436.7
+65-74 years |   704.2   693.5   1924.1  1920.7   1465.6  1467.4   1040.3  1035.2
+75-84 years |  2259.2  2209.5   4447.4  4373.1   4091.0  4011.0   2940.5  2883.8
+  85+ years |  8016.8  8178.5  11854.7 11661.5  13322.4 13706.9   9273.2  9154.8
+------------+-------------------------------------------------------------------
+Male        |
+00-01 years |   400.5   464.0   1184.7  1214.4    549.6   504.2    508.1   499.2
+01-04 years |    14.9    19.6     45.3    42.9     24.9    26.1     20.1    21.5
+05-14 years |    10.2     9.4     22.2    24.9     14.2    14.7     12.5    12.7
+15-24 years |    45.0    49.6    142.3   169.8     90.6   100.4     75.4    87.7
+25-34 years |    54.9    60.0    224.6   266.8    155.5   194.6    103.5   128.8
+35-44 years |    84.6    92.3    323.4   381.8    226.5   263.4    149.1   168.9
+45-54 years |   215.4   219.3    691.9   721.2    510.2   508.9    340.5   348.6
+55-64 years |   523.6   506.3   1649.2  1674.4   1084.4  1104.3    787.5   787.4
+65-74 years |  1114.5  1154.1   3109.9  3179.3   2172.0  2183.0   1656.3  1641.1
+75-84 years |  3059.7  3089.1   6295.6  6250.8   5509.7  5386.6   4112.6  4097.0
+  85+ years |  9354.5  9288.1  13548.1 13175.7  15322.5 15546.4  10338.7 10172.5
+--------------------------------------------------------------------------------
+
+. 
+. * group by sex and year for faster life table construction
+. egen class=group(sex race year)
+
+. 
+. * define number of years in age interval (10-year age groups)
+. gen n=1 if age==1
+(160 missing values generated)
+
+. replace n=4 if age==2
+(16 real changes made)
+
+. replace n=10 if age>2
+(144 real changes made)
+
+. replace n=1 if age==11
+(16 real changes made)
+
+. label var n "no. years in age interval"
+
+. 
+. * average person-years contributed by those dying within interval
+. * assumed to be 1/2 apart from infant mortality
+. gen ax=0.1 if age==1 // infants
+(160 missing values generated)
+
+. replace ax=0.5 if age>1 & age<=11 // all other age groups
+(160 real changes made)
+
+. 
+. * life table variables
+. foreach var in m q p l d L T e var_q v sv var_e se_e {
+  2.         qui gen `var'x=.
+  3.         }
+
+. 
+. * labels
+. label var ax "avg time contributed by deaths"
+
+. label var mx "death rate at age x"
+
+. label var qx "probability of death at age x"
+
+. label var px "probability of survival at age x"
+
+. label var lx "number alive at age x"
+
+. label var dx "expected deaths at age x"
+
+. label var Lx "person-years lived in interval"
+
+. label var Tx "time lived beyond age x"
+
+. label var ex "life expectancy at age x"
+
+. label var var_qx "variance of prob. of death"
+
+. label var vx "Chiang formula for variance"
+
+. label var svx "sum of Chiang formula"
+
+. label var var_ex "variance of life expectancy"
+
+. label var se_ex "standard error of life expectancy"
+
+. 
+. 
+. 
+. // #4
+. // calculate life table values by group
+. 
+. sort class age
+
+. 
+. qui levelsof class, local(levels)
+
+. foreach l of local levels {
+  2. 
+.         * mortality rate
+.         qui replace mx=count/pop if class==`l'   
+  3.         
+.         * probability of death  
+.         qui replace qx=n*mx/(1+n*(1-ax)*mx) if class==`l'
+  4.         qui replace qx = 1 if age==11 & class==`l'
+  5.         
+.         * conditional prob of survival
+.         qui replace px=1-qx if class==`l'
+  6.         
+.         * no alive at beginning of interval
+.         qui replace lx = 100000 if age==1 & class==`l'
+  7.         qui replace lx = lx[_n-1] * px[_n-1] if age>1 & class==`l'
+  8.         
+.         * Generate deaths by differencing the number of survivors and 
+.         * noting that everyone dies in the end
+.         qui replace dx = lx - lx[_n+1] if class==`l'
+  9.         qui replace dx = lx if age==11 & class==`l'
+ 10.         
+.         * Compute person-years lived in each age group
+.         * n for those who survive the age group and nax for those who die
+.         qui replace Lx = n * (lx[_n+1] + (ax*dx)) if class==`l'
+ 11.         qui replace Lx = lx/mx if age==11 & class==`l'
+ 12.         
+. 
+.         /* Accumulating from the bottom up is a bit tricky because Stata likes
+>  
+>         to sum from the top down. You could sort the data from oldest to 
+>         youngest, sum, and then sort again. I will subtract the cumulative 
+>         sum from the total.*/
+.         qui sum Lx if class==`l'
+ 13.         qui replace Tx = r(sum) - sum(Lx) + Lx if class==`l'
+ 14.         
+.         
+.         * Compute life expectancy 
+.         *(time lived after each age / survivors to that age)
+.         qui replace ex = Tx/lx if class==`l'
+ 15.         
+.         * variance of cond. probability of death
+.         qui replace var_qx = [n^2 * mx*(1-ax*n*mx)] / [pop*(1+(1-ax)*n*mx)^3] 
+> if class==`l'
+ 16.         qui replace var_qx = 0 in -1 if class==`l'
+ 17. 
+. 
+.         * calculate second part of Chiang formula for variance of LE [add cite
+> ] 
+.         qui replace vx = (lx^2)*[((1-ax)*n+ex[_n+1])^2]*var_qx if class==`l'
+ 18.         qui replace vx = 0 in -1 if class==`l'
+ 19.         
+.         * sum of vx
+.         qui sum vx if class==`l'
+ 20.         qui replace svx = r(sum) - sum(vx) + vx if class==`l'
+ 21.         
+.         * variance and se of life expectancy
+.         qui replace var_ex = svx / lx^2 if class==`l'
+ 22.         qui replace se_ex = sqrt(var_ex) if class==`l'
+ 23.         }
+
+. 
+. 
+. * specify a few formats
+. format %6.3f ax ex var_ex se_ex
+
+. format %8.6f mx qx px
+
+. format %9.0fc pop count lx dx Lx Tx
+
+. 
+. * table of life expectancies by year
+. table race year sex if age==1, c(mean ex) format(%4.2f)
+
+----------------------------------------
+          |       Gender and Year       
+          | -- Female --    --- Male ---
+     Race |  2014   2017     2014   2017
+----------+-----------------------------
+   NH API | 89.94  89.71    85.49  85.31
+ NH Black | 78.79  78.78    72.67  72.02
+ NH White | 81.32  81.08    76.63  76.26
+ Hispanic | 86.31  86.40    81.26  81.05
+----------------------------------------
+
+. 
+. 
+. 
+. // #5
+. // Decompose by age
+. 
+. // drop unnecessary variables and reshape the data to wide format with
+. // rows for each sex year age and colums for each race group
+. 
+. keep lx Tx Lx mx sex race year age
+
+. reshape wide lx Tx Lx mx, i(sex race age) j(year)
+(note: j = 2014 2017)
+
+Data                               long   ->   wide
+-----------------------------------------------------------------------------
+Number of obs.                      176   ->      88
+Number of variables                   8   ->      11
+j variable (2 values)              year   ->   (dropped)
+xij variables:
+                                     lx   ->   lx2014 lx2017
+                                     Tx   ->   Tx2014 Tx2017
+                                     Lx   ->   Lx2014 Lx2017
+                                     mx   ->   mx2014 mx2017
+-----------------------------------------------------------------------------
+
+. 
+. /* decompose LE by age, using formulas from Arriaga (1984) 
+>         Measuring and explaining the change in life expectancies. 
+>         Demography 1984;21: 83-96. */
+.         
+. * choose first and last years for decomposition
+. local first 2014
+
+. local last 2017
+
+. 
+. * generate direct effect
+. gen de=(lx`last'/100000) * ((Lx`first'/lx`first') - (Lx`last'/lx`last'))
+
+. label var de "direct effect"
+
+. 
+. * generate indirect effect and interaction term
+. gen ie=(Tx2014[_n+1]/100000) * ///
+>   ((lx`last'/lx`first') - (lx`last'[_n+1]/lx`first'[_n+1])) if age!=11
+(8 missing values generated)
+
+. replace ie=0 if age==11
+(8 real changes made)
+
+. label var ie "indirect effect+interact"
+
+. 
+. * total effect (direct + indirect + interaction)
+. * contribution in years of LE
+. gen te=de+ie
+
+. label var te "diff in life exp"
+
+. 
+. keep de ie te mx`first' mx`last' sex race age
+
+. 
+. * reshape dataset to wide format to calculate total
+. reshape wide de ie te mx`first' mx`last', i(sex race) j(age)
+(note: j = 1 2 3 4 5 6 7 8 9 10 11)
+
+Data                               long   ->   wide
+-----------------------------------------------------------------------------
+Number of obs.                       88   ->       8
+Number of variables                   8   ->      57
+j variable (11 values)              age   ->   (dropped)
+xij variables:
+                                     de   ->   de1 de2 ... de11
+                                     ie   ->   ie1 ie2 ... ie11
+                                     te   ->   te1 te2 ... te11
+                                 mx2014   ->   mx20141 mx20142 ... mx201411
+                                 mx2017   ->   mx20171 mx20172 ... mx201711
+-----------------------------------------------------------------------------
+
+. 
+. foreach var of newlist de ie te {
+  2.         egen `var'12 = rsum(`var'*) // sum across age groups
+  3.         }
+
+. 
+. * reshape dataset back to long
+. reshape long de ie te mx`first' mx`last', i(sex race) j(age)
+(note: j = 1 2 3 4 5 6 7 8 9 10 11 12)
+(note: mx201412 not found)
+(note: mx201712 not found)
+
+Data                               wide   ->   long
+-----------------------------------------------------------------------------
+Number of obs.                        8   ->      96
+Number of variables                  60   ->       8
+j variable (12 values)                    ->   age
+xij variables:
+                       de1 de2 ... de12   ->   de
+                       ie1 ie2 ... ie12   ->   ie
+                       te1 te2 ... te12   ->   te
+           mx20141 mx20142 ... mx201412   ->   mx2014
+           mx20171 mx20172 ... mx201712   ->   mx2017
+-----------------------------------------------------------------------------
+
+. 
+. * total across all age groups
+. label define age 12 "Total", add
+
+. label values age age
+
+. 
+. * proportional contribution
+. sort sex race age
+
+. bysort sex race: gen pctgap=( te[_n] / te[12] ) * 100
+
+. 
+. table age race, c(sum te) by(sex) format(%4.3f)
+
+----------------------------------------------------
+Gender and  |
+Ten-Year    |                  Race                 
+Age Groups  |   NH API  NH Black  NH White  Hispanic
+------------+---------------------------------------
+Female      |
+00-01 years |    0.043    -0.010    -0.034    -0.001
+01-04 years |   -0.006     0.010    -0.005    -0.000
+05-14 years |    0.009     0.011     0.008    -0.001
+15-24 years |    0.029     0.038     0.031     0.026
+25-34 years |    0.013     0.062     0.087     0.045
+35-44 years |    0.004     0.027     0.046     0.018
+45-54 years |    0.026    -0.047    -0.005    -0.007
+55-64 years |    0.023     0.025     0.055    -0.019
+65-74 years |   -0.023    -0.004     0.003    -0.009
+75-84 years |   -0.062    -0.045    -0.052    -0.057
+  85+ years |    0.174    -0.061     0.106    -0.086
+      Total |    0.231     0.006     0.238    -0.091
+------------+---------------------------------------
+Male        |
+00-01 years |    0.054     0.021    -0.035    -0.007
+01-04 years |    0.016    -0.007     0.003     0.004
+05-14 years |   -0.006     0.017     0.003     0.002
+15-24 years |    0.030     0.145     0.056     0.075
+25-34 years |    0.028     0.182     0.183     0.130
+35-44 years |    0.035     0.195     0.137     0.082
+45-54 years |    0.014     0.071    -0.004     0.026
+55-64 years |   -0.046     0.040     0.037    -0.000
+65-74 years |    0.069     0.061     0.012    -0.022
+75-84 years |    0.028    -0.017    -0.056    -0.011
+  85+ years |   -0.045    -0.057     0.035    -0.075
+      Total |    0.177     0.652     0.371     0.203
+----------------------------------------------------
+
+. table age race, c(sum pctgap) by(sex) format(%3.2f)
+
+----------------------------------------------------
+Gender and  |
+Ten-Year    |                  Race                 
+Age Groups  |   NH API  NH Black  NH White  Hispanic
+------------+---------------------------------------
+Female      |
+00-01 years |    18.62   -154.11    -14.21      0.66
+01-04 years |    -2.68    156.50     -2.06      0.44
+05-14 years |     3.94    173.35      3.37      1.19
+15-24 years |    12.75    596.14     12.85    -28.37
+25-34 years |     5.41    964.25     36.51    -49.80
+35-44 years |     1.65    424.56     19.18    -19.51
+45-54 years |    11.43   -738.04     -2.30      7.59
+55-64 years |    10.10    395.43     23.03     20.69
+65-74 years |    -9.75    -66.82      1.05     10.20
+75-84 years |   -26.78   -706.71    -21.97     62.04
+  85+ years |    75.32   -944.55     44.54     94.86
+      Total |   100.00    100.00    100.00    100.00
+------------+---------------------------------------
+Male        |
+00-01 years |    30.52      3.27     -9.33     -3.55
+01-04 years |     8.85     -1.00      0.92      2.14
+05-14 years |    -3.58      2.60      0.87      0.91
+15-24 years |    17.03     22.28     15.00     37.07
+25-34 years |    15.85     27.85     49.28     63.92
+35-44 years |    20.05     29.90     36.82     40.38
+45-54 years |     7.85     10.91     -0.96     12.70
+55-64 years |   -25.97      6.11      9.98     -0.12
+65-74 years |    39.11      9.32      3.19    -10.70
+75-84 years |    15.80     -2.55    -15.15     -5.61
+  85+ years |   -25.53     -8.67      9.36    -37.13
+      Total |   100.00    100.00    100.00    100.00
+----------------------------------------------------
+
+. 
+. /*
+> graph hbar (sum) te if sex==1, over(age) by(race, note("")) ///
+>   label scheme(tufte) ytitle(" ", margin(small)) bar(1, lcolor(black) /// 
+>   lwidth(medium) fcolor(lavender)) ///
+>   ytitle("Years of life expectancy", size(medsmall)) ///
+>   name(women, replace)
+>   
+> graph hbar (sum) te if sex==2, over(age) by(race, note("")) ///
+>   label scheme(tufte) ytitle(" ", margin(small)) bar(1, lcolor(black) /// 
+>   lwidth(medium) fcolor(lavender)) ///
+>   ytitle("Years of life expectancy", size(medsmall)) ///
+>   name(men, replace)
+> */
+. 
+. * save this as a dataset for plotting in R
+. export delimited using ///
+>   "data/cdc-wonder/le-age-decomp-2014-2017.csv", nolabel replace
+(note: file data/cdc-wonder/le-age-decomp-2014-2017.csv not found)
+file data/cdc-wonder/le-age-decomp-2014-2017.csv saved
+
+.   
+. * save as temporary dataset for cause-specific decompositon
+. tempname agerace
+
+. save "data/cdc-wonder/`agerace'.dta", replace
+(note: file data/cdc-wonder/__000002.dta not found)
+file data/cdc-wonder/__000002.dta saved
+
+. 
+. 
+. 
+. // #6
+. // estimate cause-specific proportion of deaths
+. 
+. * load the mortality data
+. use "data/cdc-wonder/usa-decomp-age-cause-2014-2017.dta", clear
+
+. 
+. * calculate proportion of deaths for each cause by sex, year age
+. rename cod14 cod
+
+. drop pop rate
+
+. reshape wide count, i(sex race age cod) j(year)
+(note: j = 2014 2017)
+
+Data                               long   ->   wide
+-----------------------------------------------------------------------------
+Number of obs.                     2464   ->    1232
+Number of variables                   6   ->       6
+j variable (2 values)              year   ->   (dropped)
+xij variables:
+                                  count   ->   count2014 count2017
+-----------------------------------------------------------------------------
+
+. 
+. * choose first and last years for decomposition
+. local first 2014
+
+. local last 2017 
+
+. 
+. * now reshape wide again to get deaths by cause as variables
+. reshape wide count`first' count`last', i(sex race age) j(cod)
+(note: j = 1 2 3 4 5 6 7 8 9 10 11 12 13 14)
+
+Data                               long   ->   wide
+-----------------------------------------------------------------------------
+Number of obs.                     1232   ->      88
+Number of variables                   6   ->      31
+j variable (14 values)              cod   ->   (dropped)
+xij variables:
+                              count2014   ->   count20141 count20142 ... count20
+> 1414
+                              count2017   ->   count20171 count20172 ... count20
+> 1714
+-----------------------------------------------------------------------------
+
+. 
+. * total deaths for each group
+. foreach v of numlist `first' `last' {
+  2.   egen tdeaths`v' = rsum(count`v'*)
+  3. }
+
+. 
+. * proportion of deaths for each cause, by age, year, race
+. forvalues i=1/14 {
+  2.   gen pdeaths`first'`i' = count`first'`i' / tdeaths`first'
+  3.   gen pdeaths`last'`i' = count`last'`i' / tdeaths`last'
+  4. }
+
+. 
+. * save dataset for merging with age-decompositions
+. tempname codrace
+
+. save "data/cdc-wonder/`codrace'.dta", replace
+(note: file data/cdc-wonder/__000003.dta not found)
+file data/cdc-wonder/__000003.dta saved
+
+. 
+. 
+. // #7
+. // now decomposition by age and cause of death
+. 
+. * load the age decomposition
+. use "data/cdc-wonder/`agerace'.dta", clear
+
+. drop if age==12 // drop total for all ages
+(8 observations deleted)
+
+. 
+. * merge with proportion of deaths by cause
+. merge 1:1 sex race age using "data/cdc-wonder/`codrace'.dta"
+(note: variable age was byte, now long to accommodate using data's values)
+(label age already defined)
+(label sex already defined)
+(label race already defined)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             0
+    matched                                88  (_merge==3)
+    -----------------------------------------
+
+. drop _merge
+
+. 
+. /* formula for partitioning of each age group component by cause of death
+>   from Arriaga EE. Changing trends in mortality decline during the last
+>   decades. In Ruzicka et al. Differential mortality: Methodological issues 
+>   and biosocial factors. 1989;p. 105–29.*/
+. 
+. local i = 1
+
+. while `i' < 15 {
+  2.         gen cause`i' = te* (((mx`first'*pdeaths`first'`i') - ///
+>           (mx`last'*pdeaths`last'`i')) ///
+>         / (mx`first'-mx`last'))
+  3.         local ++i
+  4. }
+
+. 
+. * drop proportions of deaths by cause
+. drop count* pdeaths*
+
+. 
+. * reshape long by cause
+. reshape long cause, i(sex race age) j(cod)
+(note: j = 1 2 3 4 5 6 7 8 9 10 11 12 13 14)
+
+Data                               wide   ->   long
+-----------------------------------------------------------------------------
+Number of obs.                       88   ->    1232
+Number of variables                  25   ->      13
+j variable (14 values)                    ->   cod
+xij variables:
+              cause1 cause2 ... cause14   ->   cause
+-----------------------------------------------------------------------------
+
+. 
+. rename cause cont
+
+. label var cont "contribution to LE gap"
+
+. 
+. * save this as a dataset for plotting in R
+. export delimited using ///
+>   "data/cdc-wonder/le-age-cause-decomp-2014-2017.csv", nolabel replace
+(note: file data/cdc-wonder/le-age-cause-decomp-2014-2017.csv not found)
+file data/cdc-wonder/le-age-cause-decomp-2014-2017.csv saved
+
+. 
+.   
+. * proportional contribution to change in the gap
+. egen gap=total(cont), by(sex race)
+
+. gen pctgapc=cont/gap * 100
+
+. 
+. table cod race, contents(sum pctgapc) row by(sex) format(%3.1f)
+
+--------------------------------------------------------
+Gender and      |                  Race                 
+cause of death  |   NH API  NH Black  NH White  Hispanic
+----------------+---------------------------------------
+Female          |
+           CVDs |     45.2    -681.9       7.2       8.6
+        Cancers |    -59.9   -2794.6     -54.9      82.9
+       Diabetes |     19.1    -210.9       1.4      23.4
+    Alzheimer's |     92.2    1904.0      50.2    -249.7
+  Flu/pneumonia |     21.6    -314.8      -5.1      44.3
+            HIV |     -0.2    -494.8      -0.8       3.7
+Chronic Resp dx |     -8.7     386.2      13.1      -9.6
+       Liver dx |      1.4      25.8       8.6      14.9
+      Kidney dx |      2.3      60.4      -1.0     -19.6
+     MV crashes |      1.1     674.6       8.7     -18.2
+      Poisoning |      4.6    1715.8      59.8     -47.1
+        Suicide |      9.0     367.0       6.1      -6.9
+       Homicide |      0.9     495.5       4.7     -10.0
+       Residual |    -28.6   -1032.3       1.9     283.1
+                | 
+          Total |    100.0     100.0     100.0     100.0
+----------------+---------------------------------------
+Male            |
+           CVDs |     54.1       7.7       2.0       3.4
+        Cancers |    -85.1     -36.7     -47.5     -72.2
+       Diabetes |     27.9       6.6       3.5      12.3
+    Alzheimer's |     51.0       5.7      13.5      40.8
+  Flu/pneumonia |    -12.1      -3.4      -5.2     -26.0
+            HIV |      0.4      -7.6      -1.9      -7.8
+Chronic Resp dx |    -30.4       1.4       0.0      -8.5
+       Liver dx |     10.3       0.7       2.5       0.4
+      Kidney dx |     -0.4       1.6      -1.9      -2.8
+     MV crashes |     -8.6      15.6       7.7      25.7
+      Poisoning |     43.5      50.6      91.1      93.9
+        Suicide |     26.0       8.0      19.0      20.6
+       Homicide |      2.5      34.9       4.6      19.0
+       Residual |     20.9      14.9      12.7       1.1
+                | 
+          Total |    100.0     100.0     100.0     100.0
+--------------------------------------------------------
+
+. 
+. collapse (sum) cont, by(sex race cod)
+
+. 
+. reshape wide cont, i(sex race) j(cod)
+(note: j = 1 2 3 4 5 6 7 8 9 10 11 12 13 14)
+
+Data                               long   ->   wide
+-----------------------------------------------------------------------------
+Number of obs.                      112   ->       8
+Number of variables                   4   ->      16
+j variable (14 values)              cod   ->   (dropped)
+xij variables:
+                                   cont   ->   cont1 cont2 ... cont14
+-----------------------------------------------------------------------------
+
+. egen cont15 = rsum(cont*)
+
+. reshape long cont, i(sex race) j(cod)
+(note: j = 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15)
+
+Data                               wide   ->   long
+-----------------------------------------------------------------------------
+Number of obs.                        8   ->     120
+Number of variables                  17   ->       4
+j variable (15 values)                    ->   cod
+xij variables:
+                 cont1 cont2 ... cont15   ->   cont
+-----------------------------------------------------------------------------
+
+. 
+. label define cod 15 "Total", add
+
+. 
+. * proportional contribution
+. sort sex race cod
+
+. bysort sex race: gen pctgapc=cont[_n] / cont[15] * 100
+
+. 
+. * erase temporary datasets
+. erase "data/cdc-wonder/`hisp'.dta"
+
+. erase "data/cdc-wonder/`nhisp'.dta"
+
+. erase "data/cdc-wonder/`agerace'.dta"
+
+. erase "data/cdc-wonder/`codrace'.dta"
+
+. 
+. 
+. log close
+      name:  <unnamed>
+       log:  /Users/samharper/git/arph-2020/code/usa-decomp-age-cause-2014-2017.
+> txt
+  log type:  text
+ closed on:  24 Jun 2020, 11:23:22
+--------------------------------------------------------------------------------

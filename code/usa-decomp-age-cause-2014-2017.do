@@ -1,12 +1,12 @@
 capture log close
-log using usa-decomp-age-cause-2014-2017, replace text
+log using "code/usa-decomp-age-cause-2014-2017.txt", replace text
 
 //  program: usa-decomp-age-cause-2014-2017.do
 //  task:    decompose life expectancy by sex and race over time        
 //  input:   allcause and cause-specific mortality from CDC WONDER
 //  output:  none
 //  project: life expectancy	
-//  author:  sam harper \ 2020-05-27
+//  author:  sam harper \ 2020-06-24
 
 
 // #0
@@ -22,7 +22,7 @@ macro drop _all
 // #1
 // load the mortality data, downloaded from CDC WONDER database
 tempname nhisp
-import delimited "data/us-age-cause-nhisp-2014-2017.txt", ///
+import delimited "data/cdc-wonder/us-age-cause-nhisp-2014-2017.txt", ///
   encoding(ISO-8859-1) clear
 
 * drop extra rows for Notes from CDC WONDER
@@ -69,13 +69,13 @@ drop if cod14==.
 drop if year==.
 
 * save as temporary dataset
-save "data/`nhisp'.dta", replace
+save "data/cdc-wonder/`nhisp'.dta", replace
 
 
 // #2 Hispanics
 // load the mortality data, downloaded from CDC WONDER database
 tempname hisp
-import delimited "data/us-age-cause-hisp-2014-2017.txt", ///
+import delimited "data/cdc-wonder/us-age-cause-hisp-2014-2017.txt", ///
   encoding(ISO-8859-1) clear
 
 * drop extra rows for Notes from CDC WONDER
@@ -115,10 +115,10 @@ collapse (sum) count (max) pop, by(sex race age cod14 year)
 drop if cod14==.
 drop if year==.
 
-save "data/`hisp'.dta", replace
+save "data/cdc-wonder/`hisp'.dta", replace
 
-use "data/`nhisp'.dta", clear
-append using "data/`hisp'.dta"
+use "data/cdc-wonder/`nhisp'.dta", clear
+append using "data/cdc-wonder/`hisp'.dta"
 
 * calculate crude rates, label some variables
 gen rate = count / pop * 100000
@@ -130,14 +130,14 @@ label var count "no. of deaths"
 label var pop "mid-year population"
 
 * save this dataset for life expectancy calculations
-save "data/usa-decomp-age-cause-2014-2017.dta", replace
+save "data/cdc-wonder/usa-decomp-age-cause-2014-2017.dta", replace
 
 
 // #2
 // set up for life table calculation
 
 * sum deaths and population over causes (i.e., ignoring cause of death)
-use "data/usa-decomp-age-cause-2014-2017.dta", clear
+use "data/cdc-wonder/usa-decomp-age-cause-2014-2017.dta", clear
 collapse (sum) count (max) pop, by(sex race age year)
 
 * mortality rate
@@ -330,11 +330,11 @@ graph hbar (sum) te if sex==2, over(age) by(race, note("")) ///
 
 * save this as a dataset for plotting in R
 export delimited using ///
-  "data/le-age-decomp-2014-2017.csv", nolabel replace
+  "data/cdc-wonder/le-age-decomp-2014-2017.csv", nolabel replace
   
 * save as temporary dataset for cause-specific decompositon
 tempname agerace
-save "data/`agerace'.dta", replace
+save "data/cdc-wonder/`agerace'.dta", replace
 
 
 
@@ -342,7 +342,7 @@ save "data/`agerace'.dta", replace
 // estimate cause-specific proportion of deaths
 
 * load the mortality data
-use "data/usa-decomp-age-cause-2014-2017.dta", clear
+use "data/cdc-wonder/usa-decomp-age-cause-2014-2017.dta", clear
 
 * calculate proportion of deaths for each cause by sex, year age
 rename cod14 cod
@@ -369,18 +369,18 @@ forvalues i=1/14 {
 
 * save dataset for merging with age-decompositions
 tempname codrace
-save "data/`codrace'.dta", replace
+save "data/cdc-wonder/`codrace'.dta", replace
 
 
 // #7
 // now decomposition by age and cause of death
 
 * load the age decomposition
-use "data/`agerace'.dta", clear
+use "data/cdc-wonder/`agerace'.dta", clear
 drop if age==12 // drop total for all ages
 
 * merge with proportion of deaths by cause
-merge 1:1 sex race age using "data/`codrace'.dta"
+merge 1:1 sex race age using "data/cdc-wonder/`codrace'.dta"
 drop _merge
 
 /* formula for partitioning of each age group component by cause of death
@@ -407,7 +407,7 @@ label var cont "contribution to LE gap"
 
 * save this as a dataset for plotting in R
 export delimited using ///
-  "data/le-age-cause-decomp-2014-2017.csv", nolabel replace
+  "data/cdc-wonder/le-age-cause-decomp-2014-2017.csv", nolabel replace
 
   
 * proportional contribution to change in the gap
@@ -427,6 +427,12 @@ label define cod 15 "Total", add
 * proportional contribution
 sort sex race cod
 bysort sex race: gen pctgapc=cont[_n] / cont[15] * 100
+
+* erase temporary datasets
+erase "data/cdc-wonder/`hisp'.dta"
+erase "data/cdc-wonder/`nhisp'.dta"
+erase "data/cdc-wonder/`agerace'.dta"
+erase "data/cdc-wonder/`codrace'.dta"
 
 
 log close

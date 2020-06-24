@@ -124,13 +124,13 @@ dur6 <- dur %>%
         `Large urban, metro-adjacent` = `Non-metro >20k`,
         `Large urban, metro-non-adjacent` = `Non-metro >20k`,
         `Small urban, metro-adjacent` = `Non-metro >2500-20k`,
-        `mall urban, metro-non-adjacent` = `Non-metro >2500-20k`
+        `Small urban, metro-non-adjacent` = `Non-metro >2500-20k`)
         
         
                        
                        
                        
-                       ) $ur6 <- factor(dur$ur, levels = c(0,1,2,3,4,5,6,7,8,9,10), 
+d$ur6 <- factor(dur$ur, levels = c(0,1,2,3,4,5,6,7,8,9,10), 
   labels = c("Metro", "Metro >1m", "Metro >250k-1m", 
   "Metro <250k", "Non-metro", "Large urban, metro-adjacent", 
   "Large urban, metro-non-adjacent", "Small urban, metro-adjacent", 

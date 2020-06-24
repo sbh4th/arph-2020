@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}INTRODUCTION}{2}% 
+\contentsline {section}{\numberline {2}FIRST-LEVEL HEADING}{2}% 
+\contentsline {subsection}{\numberline {2.1}Second-Level Heading}{2}% 
+\contentsline {subsubsection}{\numberline {2.1.1}Third-Level Heading}{2}% 
+\contentsline {paragraph}{\numberline {2.1.1.1}Fourth-Level Heading}{2}% 
+\contentsline {section}{\numberline {3}ELEMENTS\ OF\ THE\ MANUSCRIPT}{2}% 
+\contentsline {subsection}{\numberline {3.1}Figures}{2}% 
+\contentsline {subsection}{\numberline {3.2}Tables}{2}% 
+\contentsline {subsection}{\numberline {3.3}Lists and Extracts}{3}% 
+\contentsline {subsection}{\numberline {3.4}Sidebars and Margin Notes}{3}% 
+\contentsline {subsection}{\numberline {3.5}Equations}{3}% 

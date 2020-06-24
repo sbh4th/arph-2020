@@ -108,6 +108,44 @@ p
 # export to file
 ggsave(here("figures", "le-age-decomp-2010-2018.png"), plot=p, width=11, height=8.5)
 
+# alternative color scheme
+wr <- ggplot(subset(raw4, gender=="Women")) + 
+  geom_vline(xintercept = 0, linetype="dotted", colour="grey60") +
+  geom_bar(data=subset(raw4, gender=="Women" & total<0), aes(y=age4f, weight=total), width=0.5, colour = "#e41a1c", fill="#e41a1c") + 
+  geom_bar(data=subset(raw4, gender=="Women" & total>=0), aes(y=age4f, weight=total), width=0.5, colour = "#377eb8", fill = "#377eb8") +  
+  geom_text(aes(y=age4f, x=total, label = round(total, 2), 
+            hjust=ifelse(total > 0, -0.2, 1.2))) +
+  facet_wrap(~raceeth, nrow=1) +
+  scale_y_discrete(limits = rev(levels(raw4$age4f))) +
+  scale_x_continuous(limits=c(-1, 2), breaks=c(-1, 0, 1, 2)) +
+  labs(y = "", x = "Years") + 
+  ggtitle("Age group contribution to change in life expectancy at birth, 2014-2017", subtitle="Women") +
+  stheme + theme(panel.spacing = unit(2, "lines")) +
+  theme(axis.text.y = element_text(size = 14))
+
+mr <- ggplot(subset(raw4, gender=="Men")) + 
+  geom_vline(xintercept = 0, linetype="dotted", colour="grey60") +
+  geom_bar(data=subset(raw4, gender=="Men" & total<0), aes(y=age4f, weight=total), width=0.5, colour = "#e41a1c", fill="#e41a1c") + 
+  geom_bar(data=subset(raw4, gender=="Men" & total>=0), aes(y=age4f, weight=total), width=0.5, colour = "#377eb8", fill = "#377eb8") +  
+  geom_text(aes(y=age4f, x=total, label = round(total, 2), 
+            hjust=ifelse(total > 0, -0.2, 1.2))) +
+  facet_wrap(~raceeth, nrow=1) +
+  scale_y_discrete(limits = rev(levels(raw4$age4f))) +
+  scale_x_continuous(limits=c(-1, 2), breaks=c(-1, 0, 1, 2)) +
+  labs(y = "", x = "Years") + 
+  ggtitle("", subtitle="Men") +
+  stheme + theme(panel.spacing = unit(2, "lines"))+
+  theme(axis.text.y = element_text(size = 14))
+
+
+# put both plots together
+pr <- wr / mr 
+pr
+
+# export to file
+ggsave(here("figures", "le-age-decomp-2010-2018.png"), 
+       plot=pr, width=11, height=8.5)
+
 
 
 ##### 4  #####

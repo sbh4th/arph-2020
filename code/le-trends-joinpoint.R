@@ -3,7 +3,7 @@
 #  input:    jp-le-age-sex-race.txt
 #  output:   jp-le0.png, jp-le25.png, jp-le65.png
 #  project:  ARPH Life Expectancy
-#  author:   sam harper \ 2020-04-07
+#  author:   sam harper \ 2020-06-24
 
 # 0
 # load libraries
@@ -20,7 +20,7 @@ here::here()
 ##### from SEER*Stat
 
 # Raw data
-raw <- read_tsv(here("data", "jp-le-age-sex-race.txt"))
+raw <- read_tsv(here("data/seer-stat", "jp-le-age-sex-race.txt"))
   
 raw <-rename(raw, exm = Model, ex_se = `Standard Error`)
 
@@ -39,9 +39,11 @@ raw$raceeth <- recode_factor(raw$race, `1`= "Non-Hispanic AIAN",
 # age-group
 raw$gender <- recode_factor(raw$sex, `1`= "Women", `2`= "Men")
 
+
 ##### 2  #####
 # first some theme modifications for all graphs
 stheme <- theme_classic() + theme(plot.title = element_text(size = 18, face = "bold"), plot.subtitle = element_text(size=16)) + theme(axis.text.x = element_text(size = 16, colour = "grey60"), axis.title.y=element_text(size=16, angle=90, colour="grey60"), axis.text.y = element_text(size = 16, colour="grey60"), legend.position="none", panel.grid.major.y = element_line(linetype="dotted", colour="grey60"), panel.grid.major.x = element_line(colour="white"), panel.grid.minor = element_line(colour="white")) + theme(axis.line.x=element_line(colour="white"), axis.line.y=element_line(colour="white"), axis.ticks = element_blank(), strip.text = element_text(size = 16), strip.background = element_rect(colour="white"))
+
 
 ##### 3  #####
 ##### Make plots of life expectancy trends at birth
@@ -79,7 +81,6 @@ p <- w + m
 p
 
 # export to file
-# ggsave(here("figures", "le-jp0.png"), plot=p, width=11, height=6.5)
 ggsave(here("figures", "le-jp0.png"), plot=p, width=11, height=5.5)
 
 
@@ -158,6 +159,7 @@ m65 <- ggplot(subset(raw, age3==3 & sex==1 & race!=1),
 p65 <- w65 + m65 
 p
 
+# age 25 and age 65 in same plot
 t <- (w25 + m25) / (w65 + m65)
 t
 
@@ -167,22 +169,5 @@ ggsave(here("figures", "le-jp65.png"), plot=p, width=11, height=6.5)
 ggsave(here("figures", "le-jp2565.png"), plot=t, height=11, width=11)
 
 
-ggplot(subset(raw, age3!=1 & sex==1 & race!=1), 
-  aes(x = year0, y = ex, colour = raceeth, group=age3)) + 
-  geom_point(alpha=0.3, size=2) +
-  geom_line(data=subset(raw, age3==2 & sex==1 & race==2),
-            aes(x=year0, y=exm, colour = raceeth), size=1) +
-  geom_line(data=subset(raw, age3==2 & sex==1 & race==3),
-            aes(x=year0, y=exm, colour = raceeth), size=1) +
-  geom_line(data=subset(raw, age3==2 & sex==1 & race==4),
-            aes(x=year0, y=exm, colour = raceeth), size=1) +
-  geom_line(data=subset(raw, age3==2 & sex==1 & race==5),
-            aes(x=year0, y=exm, colour = raceeth), size=1) + 
-  labs(y = "", x = "") + 
-  scale_y_continuous(limits=c(0,70)) 
-
-+ 
-  scale_color_manual(values=c("#e41a1c", "#377eb8", "#4daf4a",
-  "#984ea3")) + ggtitle("", subtitle="Men") 
 
 
