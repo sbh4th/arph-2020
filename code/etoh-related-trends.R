@@ -1,6 +1,6 @@
 #  program:  etoh-related-trends.R
 #  task:     trends on alcohol-related mortality
-#  input:    etoh-k70-1999-2018.txt, etoh-f10-1999-2018.txt
+#  input:    liver-race-aadr-1999-2018.txt, liver-hisp-aadr-1999-2018.txt
 #  output:   etoh-related-trends.png
 #  project:  ARPH Life Expectancy
 #  author:   sam harper \ 2020-06-24
@@ -20,7 +20,7 @@ here::here()
 
 # age-adjusted rates for non-Hispanics
 # cirrhosis and chronic liver dx
-e <- read_tsv(here("data", "liver-race-aadr-1999-2018.txt"), skip=1, 
+e <- read_tsv(here("data/cdc-wonder", "liver-race-aadr-1999-2018.txt"), skip=1, 
   col_names=c("notes", "gender", "gcode", "race", "rcode", "year", "ycode", 
               "deaths", "pop", "crate", "aadr"), n_max=160,
   col_types = "cccfcdcdddd")
@@ -30,7 +30,7 @@ e2 <- select(e, gender, race, year, deaths, pop, aadr) %>%
   mutate(racen = as.numeric(race), rate = deaths / pop * 100000)
 
 # age-adjusted rates for Hispanics
-eh <- read_tsv(here("data", "liver-hisp-aadr-1999-2018.txt"), skip=1, 
+eh <- read_tsv(here("data/cdc-wonder", "liver-hisp-aadr-1999-2018.txt"), skip=1, 
   col_names=c("notes", "gender", "gcode", "year", "ycode", 
               "deaths", "pop", "crate", "aadr"), n_max=40,
   col_types = "cccdcdddd")
