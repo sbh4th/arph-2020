@@ -1,22 +1,22 @@
 --------------------------------------------------------------------------------
       name:  <unnamed>
-       log:  /Users/samharper/git/arph-2020/code/usa-decomp-sex-race.log
+       log:  /Users/samharper/git/arph-2020/code/usa-le-sex-race.txt
   log type:  text
- opened on:   8 Apr 2020, 10:23:01
+ opened on:  24 Jun 2020, 17:52:32
 
 . 
-. //  program: usa-decomp-sex-race.do
-. //  task:    decompose life expectancy by sex and race over time        
-. //  input:   allcause mortality
-. //  output:  none
+. //  program: usa-le-sex-race.do
+. //  task:    calculate life expectancy by sex and race over time        
+. //  input:   asmr-sex-race-nhisp-1999-2018.txt, asmr-sex-race-hisp-1999-2018
+. //  output:  le-age-sex-race.csv
 . //  project: life expectancy    
-. //  author:  sam harper \ 2020-04-08
+. //  author:  sam harper \ 2020-06-24
 . 
 . 
 . // #0
 . // program setup
 . 
-. version 14
+. version 16
 
 . set linesize 80
 
@@ -31,7 +31,7 @@
 . // load the mortality data, downloaded from CDC WONDER database
 . tempname nhisp
 
-. import delimited "data/asmr-sex-race-nhisp-1999-2018.txt", ///
+. import delimited "data/cdc-wonder/asmr-sex-race-nhisp-1999-2018.txt", ///
 >   encoding(ISO-8859-1)clear
 (12 vars, 1,816 obs)
 
@@ -78,15 +78,15 @@
 . drop gender-tenyearagegroupscode yearcode cruderate
 
 . 
-. save "data/`nhisp'", replace
-(note: file data/__000000.dta not found)
-file data/__000000.dta saved
+. save "data/cdc-wonder/`nhisp'", replace
+(note: file data/cdc-wonder/__000000.dta not found)
+file data/cdc-wonder/__000000.dta saved
 
 . 
 . * Now for Hispanics
 . tempname hisp
 
-. import delimited "data/asmr-sex-race-hisp-1999-2018.txt", ///
+. import delimited "data/cdc-wonder/asmr-sex-race-hisp-1999-2018.txt", ///
 >   encoding(ISO-8859-1)clear
 (10 vars, 496 obs)
 
@@ -128,14 +128,14 @@ file data/__000000.dta saved
 . drop gender-tenyearagegroupscode yearcode cruderate
 
 . 
-. save "data/`hisp'", replace
-(note: file data/__000001.dta not found)
-file data/__000001.dta saved
+. save "data/cdc-wonder/`hisp'", replace
+(note: file data/cdc-wonder/__000001.dta not found)
+file data/cdc-wonder/__000001.dta saved
 
 . 
-. use "data/`nhisp'", clear
+. use "data/cdc-wonder/`nhisp'", clear
 
-. append using "data/`hisp'"
+. append using "data/cdc-wonder/`hisp'"
 (note: variable race was long, now double to accommodate using data's values)
 (label age already defined)
 (label race already defined)
@@ -152,20 +152,23 @@ file data/__000001.dta saved
 
 . 
 . * save this dataset for life expectancy calculations (#3)
-. save "data/usa-decomp-2015-race", replace
-file data/usa-decomp-2015-race.dta saved
+. save "data/cdc-wonder/usa-le-sex-race", replace
+(note: file data/cdc-wonder/usa-le-sex-race.dta not found)
+file data/cdc-wonder/usa-le-sex-race.dta saved
 
 . 
 . * erase temporary datasets
-. erase "data/`nhisp'.dta"
+. erase "data/cdc-wonder/`nhisp'.dta"
 
-. erase "data/`hisp'.dta"
+. erase "data/cdc-wonder/`hisp'.dta"
 
 . 
 . 
 . 
 . // #2
 . // set up for life table calculation
+. use "data/cdc-wonder/usa-le-sex-race.dta", clear
+
 . 
 . * have a look at the rates by year
 . table age year race, c(mean rate) by(sex) format(%7.1f)
@@ -683,7 +686,7 @@ Hispanic    |
 . 
 . 
 . 
-. // #4
+. // #3
 . // calculate life table values by group
 . 
 . sort class age
@@ -762,50 +765,34 @@ Hispanic    |
 
 . 
 . * table of life expectancies by year
-. table race year sex if age==1, c(mean ex) format(%4.2f)
-note: table too wide, sex moved to by()
+. table year sex race if age==1 & race>1, c(mean ex) format(%4.1f)
 
------------------------------------------------------------------------------
-Gender    |
-and       |
-Race-ethn |                               Year                               
-icity     |  1999  2000  2001  2002  2003  2004  2005  2006  2007  2008  2009
-----------+------------------------------------------------------------------
-Female    |
-  NH AIAN | 78.72 80.02 79.43 79.33 78.87 79.30 78.97 79.27 79.55 79.61 79.70
-   NH API | 86.62 86.98 87.08 87.34 87.35 87.85 87.95 88.14 88.52 88.29 88.70
- NH Black | 74.91 75.01 75.25 75.31 75.54 75.97 76.10 76.59 76.96 77.30 77.79
- NH White | 79.85 79.87 79.92 79.94 80.05 80.40 80.36 80.65 80.85 80.80 81.18
- Hispanic | 83.04 83.28 83.26 83.55 83.57 84.22 84.10 84.42 84.87 84.83 85.43
-----------+------------------------------------------------------------------
-Male      |
-  NH AIAN | 73.25 74.20 73.82 73.44 73.09 73.57 73.12 73.62 73.55 73.62 74.22
-   NH API | 81.27 81.55 81.98 82.20 82.50 83.08 82.95 83.29 83.75 83.99 84.23
- NH Black | 67.79 68.11 68.45 68.63 68.78 69.34 69.41 69.79 70.25 70.85 71.36
- NH White | 74.67 74.77 74.91 74.94 75.14 75.54 75.52 75.80 76.02 76.03 76.40
- Hispanic | 77.23 77.42 77.60 77.71 77.95 78.60 78.21 78.88 79.30 79.70 80.12
------------------------------------------------------------------------------
-
------------------------------------------------------------------
-Gender    |
-and       |
-Race-ethn |                         Year                         
-icity     |  2010  2011  2012  2013  2014  2015  2016  2017  2018
-----------+------------------------------------------------------
-Female    |
-  NH AIAN | 79.49 79.66 80.12 80.17 79.88 79.75 80.06 79.87 80.85
-   NH API | 88.81 89.23 89.12 89.46 89.98 89.65 89.74 89.73 89.96
- NH Black | 78.06 78.27 78.60 78.61 78.78 78.75 78.62 78.77 78.84
- NH White | 81.20 81.17 81.30 81.28 81.33 81.11 81.18 81.09 81.26
- Hispanic | 85.44 85.84 85.83 85.96 86.34 86.31 86.39 86.43 86.51
-----------+------------------------------------------------------
-Male      |
-  NH AIAN | 73.64 74.23 74.10 74.17 73.93 73.71 73.43 73.69 73.72
-   NH API | 84.10 84.65 84.81 84.70 85.54 85.36 85.47 85.35 85.47
- NH Black | 71.82 72.19 72.34 72.38 72.65 72.37 72.07 72.00 72.02
- NH White | 76.46 76.49 76.64 76.62 76.63 76.46 76.33 76.26 76.44
- Hispanic | 80.16 80.84 80.89 81.01 81.27 81.21 81.06 81.07 81.05
------------------------------------------------------------------
+--------------------------------------------------------------------------------
+          |                      Race-ethnicity and Gender                      
+          | --- NH API ---    -- NH Black --    -- NH White --    -- Hispanic --
+     Year | Female    Male    Female    Male    Female    Male    Female    Male
+----------+---------------------------------------------------------------------
+     1999 |   86.6    81.3      74.9    67.8      79.8    74.7      83.0    77.2
+     2000 |   87.0    81.6      75.0    68.1      79.9    74.8      83.3    77.4
+     2001 |   87.1    82.0      75.3    68.4      79.9    74.9      83.3    77.6
+     2002 |   87.3    82.2      75.3    68.6      79.9    74.9      83.5    77.7
+     2003 |   87.4    82.5      75.5    68.8      80.0    75.1      83.6    77.9
+     2004 |   87.8    83.1      76.0    69.3      80.4    75.5      84.2    78.6
+     2005 |   87.9    82.9      76.1    69.4      80.4    75.5      84.1    78.2
+     2006 |   88.1    83.3      76.6    69.8      80.6    75.8      84.4    78.9
+     2007 |   88.5    83.8      77.0    70.2      80.9    76.0      84.9    79.3
+     2008 |   88.3    84.0      77.3    70.9      80.8    76.0      84.8    79.7
+     2009 |   88.7    84.2      77.8    71.4      81.2    76.4      85.4    80.1
+     2010 |   88.8    84.1      78.1    71.8      81.2    76.5      85.4    80.2
+     2011 |   89.2    84.7      78.3    72.2      81.2    76.5      85.8    80.8
+     2012 |   89.1    84.8      78.6    72.3      81.3    76.6      85.8    80.9
+     2013 |   89.5    84.7      78.6    72.4      81.3    76.6      86.0    81.0
+     2014 |   90.0    85.5      78.8    72.7      81.3    76.6      86.3    81.3
+     2015 |   89.7    85.4      78.8    72.4      81.1    76.5      86.3    81.2
+     2016 |   89.7    85.5      78.6    72.1      81.2    76.3      86.4    81.1
+     2017 |   89.7    85.3      78.8    72.0      81.1    76.3      86.4    81.1
+     2018 |   90.0    85.5      78.8    72.0      81.3    76.4      86.5    81.0
+--------------------------------------------------------------------------------
 
 . 
 . * export for joinpoint analysis
@@ -823,208 +810,16 @@ Male      |
 . sort age3 sex race year0
 
 . export delimited age3 sex race year0 ex se_ex using ///
->   "data/le-age-sex-race.csv" if age==1 | age==5 | age==9, ///
+>   "data/cdc-wonder/le-age-sex-race.csv" if age==1 | age==5 | age==9, ///
 >   nolabel replace
-(note: file data/le-age-sex-race.csv not found)
-file data/le-age-sex-race.csv saved
-
-. 
-. // #5
-. // Decompose by age
-. 
-. // drop unnecessary variables and reshape the data to wide format with
-. // rows for each sex year age and colums for each race group
-. 
-. keep lx Tx Lx mx sex race year age
-
-. reshape wide lx Tx Lx mx, i(sex race age) j(year)
-(note: j = 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012
->  2013 2014 2015 2016 2017 2018)
-
-Data                               long   ->   wide
------------------------------------------------------------------------------
-Number of obs.                     2200   ->     110
-Number of variables                   8   ->      83
-j variable (20 values)             year   ->   (dropped)
-xij variables:
-                                     lx   ->   lx1999 lx2000 ... lx2018
-                                     Tx   ->   Tx1999 Tx2000 ... Tx2018
-                                     Lx   ->   Lx1999 Lx2000 ... Lx2018
-                                     mx   ->   mx1999 mx2000 ... mx2018
------------------------------------------------------------------------------
-
-. 
-. /* decompose LE by age, using formulas from Arriaga (1984) 
->         Measuring and explaining the change in life expectancies. 
->         Demography 1984;21: 83-96. */
-. 
-. * generate direct effect
-. gen de=(lx2018/100000) * ((Lx2010/lx2010) - (Lx2018/lx2018))
-
-. label var de "direct effect"
-
-. 
-. * generate indirect effect and interaction term
-. gen ie=(Tx2010[_n+1]/100000) * ///
->   ((lx2018/lx2010) - (lx2018[_n+1]/lx2010[_n+1])) if age!=11
-(10 missing values generated)
-
-. replace ie=0 if age==11
-(10 real changes made)
-
-. label var ie "indirect effect+interact"
-
-. 
-. * total effect (direct + indirect + interaction)
-. * contribution in years of LE
-. gen te=de+ie
-
-. label var te "diff in life exp"
-
-. 
-. keep de ie te mx2010 mx2018 sex race age
-
-. 
-. * reshape dataset to wide format to calculate total
-. reshape wide de ie te mx2010 mx2018, i(sex race) j(age)
-(note: j = 1 2 3 4 5 6 7 8 9 10 11)
-
-Data                               long   ->   wide
------------------------------------------------------------------------------
-Number of obs.                      110   ->      10
-Number of variables                   8   ->      57
-j variable (11 values)              age   ->   (dropped)
-xij variables:
-                                     de   ->   de1 de2 ... de11
-                                     ie   ->   ie1 ie2 ... ie11
-                                     te   ->   te1 te2 ... te11
-                                 mx2010   ->   mx20101 mx20102 ... mx201011
-                                 mx2018   ->   mx20181 mx20182 ... mx201811
------------------------------------------------------------------------------
-
-. 
-. foreach var of newlist de ie te {
-  2.         egen `var'12 = rsum(`var'*) // sum across age groups
-  3.         }
-
-. 
-. * reshape dataset back to long
-. reshape long de ie te mx2010 mx2018, i(sex race) j(age)
-(note: j = 1 2 3 4 5 6 7 8 9 10 11 12)
-(note: mx201012 not found)
-(note: mx201812 not found)
-
-Data                               wide   ->   long
------------------------------------------------------------------------------
-Number of obs.                       10   ->     120
-Number of variables                  60   ->       8
-j variable (12 values)                    ->   age
-xij variables:
-                       de1 de2 ... de12   ->   de
-                       ie1 ie2 ... ie12   ->   ie
-                       te1 te2 ... te12   ->   te
-           mx20101 mx20102 ... mx201012   ->   mx2010
-           mx20181 mx20182 ... mx201812   ->   mx2018
------------------------------------------------------------------------------
-
-. 
-. * total across all age groups
-. label define age 12 "Total", add
-
-. label values age age
-
-. 
-. * proportional contribution
-. sort sex race age
-
-. bysort sex race: gen pctgap=te[_n] / te[12]
-
-. 
-. table age race, c(sum te) by(sex)
-
--------------------------------------------------------------------
-Gender and  |
-Ten-Year    |                    Race-ethnicity                    
-Age Groups  |   NH AIAN     NH API   NH Black   NH White   Hispanic
-------------+------------------------------------------------------
-Female      |
-00-01 years |  .0224641   .0261981   -.075176  -.0521693    -.05116
-01-04 years | -.0303306  -.0081569  -.0043632  -.0090592  -.0118928
-05-14 years |  .0717284   .0119427   .0239514  -.0026086   .0069949
-15-24 years |  -.026378   .0183139   .0301344   .0157477   .0203403
-25-34 years |  .2125151  -.0014896   .0559092   .1067654   .0632332
-35-44 years |  .2579486    .013703   .0310406   .0770473   .0364443
-45-54 years |  .1841932  -.0265899   -.119926   .0315657  -.0423025
-55-64 years |  .0903827  -.0134993   .0178407   .0954346  -.0395021
-65-74 years | -.2950117   -.201141  -.1598911  -.1322288  -.1008695
-75-84 years | -.3660722  -.3065909   -.225455  -.2054643  -.2065531
-  85+ years | -1.483993  -.6535534  -.3519617   .0224159  -.7481446
-      Total | -1.362553  -1.140863  -.7778966  -.0525537  -1.073412
-------------+------------------------------------------------------
-Male        |
-00-01 years | -.0439355   .0112382  -.0687159  -.0509963  -.0563334
-01-04 years |  -.017195  -.0056731   .0021235  -.0065738  -.0111239
-05-14 years | -.0406519   .0159043    .017022  -.0022943  -.0007973
-15-24 years | -.0305882   .0225135   .0639497  -.0022975   .0411198
-25-34 years |  .4640279   .0356831   .1259201   .1884653    .139617
-35-44 years |  .3979328   .0409625   .2219789   .1591281   .1102903
-45-54 years |  .3759316    .018676  -.0078066  -.0124576  -.0129056
-55-64 years |  .3183773    .041995  -.0495223   .1245006  -.0286473
-65-74 years | -.0570738  -.1261993  -.0511198  -.0753764  -.1399655
-75-84 years | -.2916704  -.3294089  -.2015802  -.2270054  -.2690758
-  85+ years |  -1.15619  -1.092746  -.2517413  -.0721911   -.662707
-      Total |  -.081035  -1.367054  -.1994918   .0229014  -.8905288
--------------------------------------------------------------------
-
-. table age race, c(sum pctgap) by(sex)
-
--------------------------------------------------------------------
-Gender and  |
-Ten-Year    |                    Race-ethnicity                    
-Age Groups  |   NH AIAN     NH API   NH Black   NH White   Hispanic
-------------+------------------------------------------------------
-Female      |
-00-01 years | -.0164867  -.0229634     .09664   .9926856   .0476611
-01-04 years |  .0222601   .0071498    .005609     .17238   .0110794
-05-14 years | -.0526427  -.0104681    -.03079   .0496364  -.0065165
-15-24 years |  .0193592  -.0160527  -.0387383  -.2996497  -.0189492
-25-34 years | -.1559683   .0013057  -.0718723   -2.03155  -.0589086
-35-44 years | -.1893127  -.0120111  -.0399032  -1.466069  -.0339518
-45-54 years | -.1351824   .0233069    .154167  -.6006374   .0394094
-55-64 years | -.0663333   .0118325  -.0229346  -1.815945   .0368005
-65-74 years |  .2165139    .176306   .2055429   2.516073   .0939709
-75-84 years |  .2686664   .2687359   .2898264   3.909609   .1924267
-  85+ years |  1.089126   .5728586    .452453  -.4265327   .6969781
-      Total |         1          1          1          1          1
-------------+------------------------------------------------------
-Male        |
-00-01 years |  .5421788  -.0082207   .3444547  -2.226773   .0632584
-01-04 years |  .2121922   .0041499  -.0106448  -.2870493   .0124914
-05-14 years |  .5016582   -.011634  -.0853269  -.1001834   .0008953
-15-24 years |  .3774683  -.0164687  -.3205629  -.1003203  -.0461746
-25-34 years | -5.726264  -.0261022  -.6312045   8.229407  -.1567798
-35-44 years | -4.910627   -.029964  -1.112722   6.948387  -.1238481
-45-54 years | -4.639125  -.0136615   .0391325   -.543967    .014492
-55-64 years | -3.928885  -.0307194   .2482423   5.436362   .0321689
-65-74 years |  .7043108   .0923147     .25625  -3.291339   .1571713
-75-84 years |  3.599313   .2409626   1.010469  -9.912274   .3021528
-  85+ years |  14.26778   .7993433   1.261913   -3.15225   .7441724
-      Total |         1          1          1          1          1
--------------------------------------------------------------------
-
-. 
-. 
-. * save this as a dataset for plotting in R
-. export delimited using ///
->   "data/le-age-decomp.csv", nolabel replace
-(note: file data/le-age-decomp.csv not found)
-file data/le-age-decomp.csv saved
+(note: file data/cdc-wonder/le-age-sex-race.csv not found)
+file data/cdc-wonder/le-age-sex-race.csv saved
 
 . 
 . 
 . log close
       name:  <unnamed>
-       log:  /Users/samharper/git/arph-2020/code/usa-decomp-sex-race.log
+       log:  /Users/samharper/git/arph-2020/code/usa-le-sex-race.txt
   log type:  text
- closed on:   8 Apr 2020, 10:23:01
+ closed on:  24 Jun 2020, 17:52:33
 --------------------------------------------------------------------------------
