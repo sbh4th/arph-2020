@@ -1,9 +1,9 @@
-#  program:  cod-plot-use.R
-#  task:     analyses of LE in OECD countries
+#  program:  asmr-trends-usa.R
+#  task:     age-specific mortality trends by race
 #  input:    none
 #  output:   aadr-sex-race-cod-1990-2017.txt
 #  project:  ARPH Life Expectancy
-#  author:   sam harper \ 2020-03-10
+#  author:   sam harper \ 2020-06-24
 
 # 0
 # load libraries
