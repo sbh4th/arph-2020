@@ -1,6 +1,6 @@
 #  program:  age-cvd-trends-by-race.R
 #  task:     age-specific CVD mortality trends
-#  input:    aaasdr-cvd-1990-2017.txt, etoh-f10-1999-2018.txt
+#  input:    aaasdr-cvd-1990-2017.txt
 #  output:   age-cvd-trends-by-race.png
 #  project:  ARPH Life Expectancy
 #  author:   sam harper \ 2020-06-24
