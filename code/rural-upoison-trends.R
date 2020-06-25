@@ -18,7 +18,8 @@ here::here()
 ##### 1  #####
 ##### Read in data
 
-upur <- read_tsv(here("data", "unint-poison-ur-1999-2018-allages.txt"), skip=1, 
+upur <- read_tsv(here("data/cdc-wonder", 
+                      "unint-poison-ur-1999-2018-allages.txt"), skip=1, 
   col_names=c("notes", "ur", "urcode", "year", "ycode", 
               "deaths", "pop", "crate", "arate"), n_max=120,
   col_types = "ccddddddd")
