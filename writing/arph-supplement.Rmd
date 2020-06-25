@@ -32,22 +32,22 @@ fontsize: 11pt
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# \textsf{DATA SOURCES AND METHODS}  
+# | DATA SOURCES AND METHODS  
 
-## \textsf{Data}  
+## | Data  
 
 We used a number of data sources to construct plots and to analyze life expectancy trends. Data on The underlying data source for our study was the US National Vital Statistics System, maintained by the National Center for Health Statistics (NCHS), which collects information on all deaths occurring in the United States each year. Although NCHS collects data on race and gender, accurate mortality statistics for Indigenous Americans are difficult to produce because of misclassification of Indigenous individuals as white on death certificates. Thirty percent of deaths to Indigenous individuals are estimated to be misclassified, hindering abilities to calculate life expectancy, attribute changes to specific causes of death, or calculate accurate, cause-specific mortality rates. In 2008, Arias and colleagues adjusted for misreporting of Indigenous ethnicity and estimated life expectancy for this group to be 71.1, 2.8 years lower than the next-lowest life expectancy estimate for Non-Hispanic Blacks. The age-adjusted mortality rate from opioid overdoses (not adjusted for ethnicity misreporting) was estimated to be between the mortality rates for non-Hispanic whites and non-Hispanic blacks during 2017-2018 (4). Even with under-reporting Indigenous Americans have the highest reported rates of suicide, and the second-highest reported rate of homicide in 2016 (5). While based on older data from 2009-2011, age-adjusted mortality rates that also adjusted for misreporting of Indigenous ethnicity were higher than the rates computed for all races for nearly all causes of death, with the highest rate ratios for alcohol-induced deaths, chronic liver disease and cirrhosis, diabetes, injuries, influenza/pneumonia, and drug poisoning (all with rate ratios >= 1.8) (6).
 
-### CDC WONDER
+### | CDC WONDER
 We extracted mortality data by age, gender, and cause of death for various analyses using the CDC's Wide-ranging Online Data for Epidemiologic Research, called WONDER [@wonder2020]
 
 
-### SEER Stat  
+### | SEER Stat  
 We calculated mortality rates by single-year-of-age and cause of death between 1983 and 2003 using software from the National Cancer Institute's Surveillance Research Program [@nci2019],for which the National Center for Health Statistics provides the underlying mortality data and population estimates.
 
 Accurate mortality statistics for Indigenous Americans are difficult to produce because of misclassification of Indigenous individuals as white on death certificates.  Thirty percent of deaths to Indigenous individuals are estimated to be misclassified, hindering abilities to calculate life expectancy, attribute changes to specific causes of death, or calculate accurate, cause-specific mortality rates. In 2008, Arias and colleagues adjusted for misreporting of Indigenous ethnicity and estimated life expectancy for this group to be 71.1, 2.8 years lower than the next-lowest life expectancy estimate for Non-Hispanic Blacks (3). The age-adjusted mortality rate from opioid overdoses (not adjusted for ethnicity misreporting) was estimated to be between the mortality rates for non-Hispanic whites and non-Hispanic blacks during 2017-2018 (4). Even with under-reporting Indigenous Americans have the highest reported rates of suicide, and the second-highest reported rate of homicide  in 2016 (5). While based on older data from 2009-2011, age-adjusted mortality rates that also adjusted for misreporting of Indigenous ethnicity were higher than the rates computed for all races for nearly all causes of death, with the highest rate ratios for alcohol-induced deaths, chronic liver disease and cirrhosis, diabetes, injuries, influenza/pneumonia, and drug poisoning (6).
 
-## \textsf{Estimation of life expectancy and decomposition}  
+## | Estimation of life expectancy and decomposition 
 We used standard methods for creating abridged life tables [@preston2001], with nineteen 5-year age groups (0-1, 1-4, 5-9, ... , 85+) . We calculated the contribution of each age group and cause-of-death to the difference in life expectancy between the years 2014 and 2017 using the methods developed by Arriaga [@arriaga1984]. Briefly, the contribution of a particular age group is both a direct function of the difference in age-specific mortality rates at that age plus an additional contribution resulting from the fact that mortality differences at a given age will produce additional survivors at older ages [@arriaga1984], given by the formula below:
 
 $$ _{n}\Delta_{x}=\left[\underbrace{l_{x}^{2017}/l_{0}^{2017}}_{\textrm{fraction of survivors}}\times\overbrace{\left(\dfrac{_{n}L_{x}^{2014}}{l_{x}^{2014}}-\dfrac{_{n}L_{x}^{2017}}{l_{x}^{2017}}\right)}^{\textrm{direct effect}}\right]+\overbrace{\left[\dfrac{T_{x+n}^{2014}}{l_{x+n}^{2014}}\times\dfrac{\dfrac{l_{x}^{2017}l_{x+n}^{2014}}{l_{x}^{2014}}-l_{x+n}^{2017}}{l_{0}^{2017}}\right]}^{\textrm{indirect effect + interaction}} $$
@@ -78,7 +78,7 @@ The total difference in life expectancy at birth between 2017 and 2014 is the su
 all causes of death. Likewise, the contribution of a particular cause
 of death is the sum of its contributions across age groups. 
 
-# \textsf{SUPPLEMENTAL TABLES AND FIGURES} 
+# | SUPPLEMENTAL TABLES AND FIGURES
 The data and code to reproduce these tables and figures are provided here:  
 
 \newpage
@@ -167,14 +167,14 @@ knitr::include_graphics("../figures/rural-aadr-trends.png")
 
 
 \newpage
-**Supplemental Figure 9.** Decomposition of the urban-rural life expectancy gap by cause-of-death, 1969-71 and 2012-16. Source: Authors' calculations of data from SEER*Stat (3).  Data: https://osf.io/rj83e/, https://osf.io/rwc68/, Code: https://osf.io/4nezp/, https://osf.io/d23fz/
+**Supplemental Figure 9.** Decomposition of the urban-rural life expectancy gap by cause-of-death, 1969-71 and 2012-16. Source: Authors' calculations of data from SEER*Stat [@nci2019].  Data: https://osf.io/rj83e/, https://osf.io/rwc68/, Code: https://osf.io/4nezp/, https://osf.io/d23fz/
 ```{r, out.width = "100%"}
 knitr::include_graphics("../figures/ur-decomp-plot.png")
 ```
 
 
 \newpage
-**Supplemental Figure 10.** Trends in age-adjusted unintentional poisoning death rates by urban-rural classification scheme, 1999-2018. Source: Authors' calculations of data from SEER*Stat (3).  Data: Code:
+**Supplemental Figure 10.** Trends in age-adjusted unintentional poisoning death rates by urban-rural classification scheme, 1999-2018. Source: Authors' calculations of data from SEER*Stat [@nci2019].  Data: https://osf.io/zsbfw/ Code: https://osf.io/m7k2u/
 ```{r sf10, out.width = "100%"}
 knitr::include_graphics("../figures/rural-upoison-trends.png")
 ```
@@ -199,6 +199,6 @@ knitr::include_graphics("../figures/nhwm-45-54-maps.png")
 
 
 \newpage
-# \textsf{LITERATURE CITED}  
+# | LITERATURE CITED 
 
 
