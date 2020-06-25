@@ -141,13 +141,13 @@ knitr::include_graphics("../figures/le-jp2565.png")
 ```
 
 \newpage
-**Supplemental Figure 5.** Mortality rates by single years of age by race-ethnicity for women, ages 25-64. Source: Authors' calculations of data from CDC WONDER [@wonder2020]. Data: Code:
+**Supplemental Figure 5.** Mortality rates by single years of age by race-ethnicity for women, ages 25-64. Source: Authors' calculations of data from CDC WONDER [@wonder2020]. Data: https://osf.io/uvyx4/, https://osf.io/pytev/ Code: https://osf.io/vb28p/
 ```{r, out.width = "90%"}
 knitr::include_graphics("../figures/single-ages-women.png")
 ```
 
 \newpage
-**Supplemental Figure 6.** Mortality rates by single years of age by race-ethnicity for men, ages 25-64. Source: Authors' calculations of data from CDC WONDER [@wonder2020]. Data: Code:
+**Supplemental Figure 6.** Mortality rates by single years of age by race-ethnicity for men, ages 25-64. Source: Authors' calculations of data from CDC WONDER [@wonder2020]. Data: https://osf.io/uvyx4/, https://osf.io/pytev/ Code: https://osf.io/vb28p/
 ```{r, out.width = "90%"}
 knitr::include_graphics("../figures/single-ages-men.png")
 ```

@@ -1,9 +1,9 @@
 #  program:  le-decomp-2010-2018.R
-#  task:     le decomposition graphs
+#  task:     le decomposition graphs for 2010 to 2018
 #  input:    le-age-cause-decomp-2010-2018.csv
 #  output:   le-age-decomp-2010-2018.png, le-cause-decomp-2010-2018.png
 #  project:  ARPH Life Expectancy
-#  author:   sam harper \ 2020-06-24
+#  author:   sam harper \ 2020-06-25
 
 # 0
 # load libraries
