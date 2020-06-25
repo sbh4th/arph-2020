@@ -117,7 +117,7 @@ Changes   &                   &                  &  &                    &      
 \end{table}
 
 \newpage
-**Supplemental Figure 1.** Life expectancy at birth in the United States and 29 other high-income countries, 1969-2017. Source: World Development Indicators [@theworldbankgroup2020]. Data: Code:
+**Supplemental Figure 1.** Life expectancy at birth in the United States and 29 other high-income countries, 1969-2017. Source: World Development Indicators [@theworldbankgroup2020]. Data: https://osf.io/d2b7c/, https://osf.io/n4mj6/ Code:
 ```{r, out.width = "100%"}
 knitr::include_graphics("../figures/us-le-trends-gender.png")
 ```

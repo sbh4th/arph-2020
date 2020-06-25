@@ -1,6 +1,6 @@
 #  program:  wdi-le-plot-oecd.R
 #  task:     analyses of LE in OECD countries
-#  input:    wdi-le-gender.csv
+#  input:    wdi-le-gender.csv, wdi-jp-le-data.txt
 #  output:   us-le-trends-gender.png, us-le-change.png
 #  project:  ARPH Life Expectancy
 #  author:   sam harper \ 2020-06-24
