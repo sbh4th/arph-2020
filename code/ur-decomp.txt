@@ -1,0 +1,577 @@
+-------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/samharper/git/arph-2020/code/ur-decomp.txt
+  log type:  text
+ opened on:  25 Jun 2020, 12:36:20
+
+. 
+. //  program: ur-decomp.do
+. //  task:    decompose life expectancy by sex and race over time        
+. //  input:   age- and ca
+. //  output:  none
+. //  project: ARPH life expectancy       
+. //  author:  sam harper \ 2020-06-25
+. 
+. 
+. // #0
+. // program setup
+. 
+. version 16
+
+. set linesize 80
+
+. clear all
+
+. macro drop _all
+
+. 
+. 
+. // #1
+. // bring in mortality data from SEER*Stat
+. 
+. insheet cod6 sex age19 year ur rate count pop using ///
+>   "data/seer-stat/asmr-rural-urban-2016.txt", clear
+(8 vars, 1,368 obs)
+
+. drop rate
+
+. 
+. * define labels for age groups
+. label var age19 "age group"
+
+. label define age19  0 "00 years" 1 "01-04 years" 2 "05-09 years" ///
+>   3 "10-14 years" 4 "15-19 years" 5 "20-24 years" 6 "25-29 years" ///
+>   7 "30-34 years" 8 "35-39 years" 9 "40-44 years" 10 "45-49 years" ///
+>   11 "50-54 years" 12 "55-59 years" 13 "60-64 years" 14 "65-69 years" ///
+>   15 "70-74 years" 16 "75-79 years" 17 "80-84 years" 18 "85+ years", modify
+
+. label values age19 age19
+
+. 
+. * label values for sex
+. label var sex "sex"
+
+. label define sex 0 "Both sexes" 1 "Male" 2 "Female", modify
+
+. label values sex sex
+
+. 
+. * label values for rural-urban
+. label var ur "urban/rural"
+
+. label define ur 0 "Urban" 1 "Rural", modify
+
+. label values ur ur
+
+. 
+. * label values for year
+. label var year "death year"
+
+. label define year 0 "1969-71" 1 "2012-2016", modify
+
+. label values year year
+
+. 
+. * destring counts of death
+. destring count, replace
+count: all characters numeric; replaced as long
+(51 missing values generated)
+
+. 
+. * proportion of population with suppressed data
+. sum pop if count== .
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+         pop |         51    474734.3    304162.9      58989    1445085
+
+. scalar miss = r(sum)
+
+. sum pop if count!= .
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+         pop |      1,317    2.00e+07    2.78e+07      58989   1.12e+08
+
+. scalar nmiss = r(sum)
+
+. disp "Proportion of population with suppressed cells= " ///
+>   as result %4.2f miss/nmiss*100 "%"
+Proportion of population with suppressed cells= 0.09%
+
+. 
+. * impute death count of 1-9 based on uniform for missing
+. set seed 83797
+
+. replace count = floor((9 - 1 + 1)*runiform() + 1) if count== .
+(51 real changes made)
+
+. 
+. save "data/seer-stat/ur-data.dta", replace
+file data/seer-stat/ur-data.dta saved
+
+. 
+. * collapse by age
+. collapse (sum) count (mean) pop, by(sex age19 year ur)
+
+. 
+. 
+. // #2
+. // First collapse across causes regions and estimate LE 
+. 
+. gen rate=count/pop
+
+. label var rate "death rate"
+
+. label var count "no. of deaths"
+
+. label var pop "mid-year population"
+
+. 
+. egen class=group(sex ur year)
+
+. 
+. // #2
+. // set up for life table calculation
+. 
+. * define number of years in age interval
+. gen n=1 if age19==0 | age19==18
+(204 missing values generated)
+
+. replace n=4 if age19==1
+(12 real changes made)
+
+. replace n=5 if age19>1 & age19<18
+(192 real changes made)
+
+. label var n "no. years in age interval"
+
+. replace n=. if age19==18
+(12 real changes made, 12 to missing)
+
+. 
+. * average person-years contributed by those dying within interval
+. gen ax=0.1 if age19==0
+(216 missing values generated)
+
+. replace ax=0.5 if age19>0 & age19<=18
+(216 real changes made)
+
+. 
+. * life table variables
+. foreach var in m q p l d L T e var_q v sv var_e se_e {
+  2.         qui gen `var'x=.
+  3.         }
+
+. 
+. * labels
+. label var ax "avg time contributed by deaths"
+
+. label var mx "death rate at age x"
+
+. label var qx "probability of death at age x"
+
+. label var px "probability of survival at age x"
+
+. label var lx "number alive at age x"
+
+. label var dx "expected deaths at age x"
+
+. label var Lx "person-years lived in interval"
+
+. label var Tx "time lived beyond age x"
+
+. label var ex "life expectancy at age x"
+
+. label var var_qx "variance of prob. of death"
+
+. label var vx "Chiang formula for variance"
+
+. label var svx "sum of Chiang formula"
+
+. label var var_ex "variance of life expectancy"
+
+. label var se_ex "standard error of life expectancy"
+
+. 
+. 
+. // #3
+. // calculate life table values by group
+. 
+. sort class age19
+
+. 
+. qui levelsof class, local(levels)
+
+. foreach l of local levels {
+  2. 
+.                 * mortality rate
+.         qui replace mx=count/pop if class==`l'    
+  3.         
+.         * probability of death  
+.         qui replace qx=n*mx/(1+n*(1-ax)*mx) if class==`l'
+  4.         qui replace qx = 1 if age19==18 & class==`l'
+  5.         
+.         * conditional prob of survival
+.         qui replace px=1-qx if class==`l'
+  6.         
+.         
+.         
+.         * no alive at beginning of interval
+.         qui replace lx = 100000 if age19==0 & class==`l'
+  7.         qui replace lx = lx[_n-1] * px[_n-1] if age19>0 & class==`l'
+  8.         
+. 
+.         
+.         * Generate deaths by differencing the number of survivors 
+.         * and noting that everyone dies in the end
+.         qui replace dx = lx - lx[_n+1] if class==`l'
+  9.         qui replace dx = lx if age19==18 & class==`l'
+ 10.         
+.         * Compute person-years lived in each age group
+.         * n for those who survive the age group and nax for those who die
+.         qui replace Lx = n * (lx[_n+1] + (ax*dx)) if class==`l'
+ 11.         qui replace Lx = lx/mx if age19==18 & class==`l'
+ 12.         
+. 
+.         /* Accumulating from the bottom up is a bit tricky because 
+>         Stata likes to sum from the top down. 
+>         You could sort the data from oldest to youngest, sum, 
+>         and then sort again. I will subtract the cumulative sum from the total
+> .*/
+.         qui sum Lx if class==`l'
+ 13.         qui replace Tx = r(sum) - sum(Lx) + Lx if class==`l'
+ 14.         
+.         
+.         * Compute life expectancy (time lived after each age / survivors to th
+> at age)
+.         qui replace ex = Tx/lx if class==`l'
+ 15.         
+.         * variance of cond. probability of death
+.         qui replace var_qx = [n^2 * mx*(1-ax*n*mx)] / [pop*(1+(1-ax)*n*mx)^3] 
+> if class==`l'
+ 16.         qui replace var_qx = 0 in -1 if class==`l'
+ 17. 
+. 
+.         * calculate second part of Chiang formula for variance of LE [add cite
+> ] 
+.         qui replace vx = (lx^2)*[((1-ax)*n+ex[_n+1])^2]*var_qx if class==`l'
+ 18.         qui replace vx = 0 in -1 if class==`l'
+ 19.         
+.         * sum of vx
+.         qui sum vx if class==`l'
+ 20.         qui replace svx = r(sum) - sum(vx) + vx if class==`l'
+ 21.         
+.         * variance and se of life expectancy
+.         qui replace var_ex = svx / lx^2 if class==`l'
+ 22.         qui replace se_ex = sqrt(var_ex) if class==`l'
+ 23.         }
+
+. 
+. 
+. * specify a few formats
+. format %6.3f ax ex var_ex se_ex
+
+. format %8.6f mx qx px
+
+. format %9.0fc pop count lx dx Lx Tx
+
+. 
+. table ur year if age19==0, c(mean ex) by(sex) format(%3.1f)
+
+---------------------------------
+sex and    |
+urban/rura |      death year     
+l          |   1969-71  2012-2016
+-----------+---------------------
+Both sexes |
+     Urban |      70.8       79.2
+     Rural |      70.5       76.9
+-----------+---------------------
+Male       |
+     Urban |      67.1       76.7
+     Rural |      66.4       74.4
+-----------+---------------------
+Female     |
+     Urban |      74.8       81.6
+     Rural |      75.1       79.6
+---------------------------------
+
+. 
+. 
+. // #4
+. // Decompose by age
+. 
+. // drop unnecessary variables and reshape the data to wide format with
+. // rows for each sex year age and colums for each race group
+. 
+. keep lx Tx Lx mx sex year age19 ur
+
+. reshape wide lx Tx Lx mx, i(sex year age19) j(ur)
+(note: j = 0 1)
+
+Data                               long   ->   wide
+-----------------------------------------------------------------------------
+Number of obs.                      228   ->     114
+Number of variables                   8   ->      11
+j variable (2 values)                ur   ->   (dropped)
+xij variables:
+                                     lx   ->   lx0 lx1
+                                     Tx   ->   Tx0 Tx1
+                                     Lx   ->   Lx0 Lx1
+                                     mx   ->   mx0 mx1
+-----------------------------------------------------------------------------
+
+. 
+.         /* decompose LE by age, using formulas from Arriaga (1984) 
+>         Measuring and explaining the change in life expectancies. 
+>         Demography 1984;21: 83-96. */
+. 
+.         /* generate direct effect */
+. gen de=(lx1/100000) * ((Lx0/lx0) - (Lx1/lx1))
+
+. label var de "direct effect"
+
+. 
+.         /* generate indirect effect and interaction term */
+. gen ie=(Tx0[_n+1]/100000) * ((lx1/lx0) - (lx1[_n+1]/lx0[_n+1])) if age19!=18
+(6 missing values generated)
+
+. replace ie=0 if age19==18
+(6 real changes made)
+
+. label var ie "indirect effect+interact"
+
+. 
+.         /* total effect (direct + indirect + interaction) */
+. gen te=de+ie
+
+. label var te "diff in life exp"
+
+. 
+.         /* calculate total LE gap by race in each year */
+. egen gap=total(te), by(sex year)
+
+. gen pctgap=te/gap
+
+. 
+. table age19 year sex, contents(sum pctgap) row
+
+--------------------------------------------------------------------------------
+            |                         sex and death year                        
+            | ---- Both sexes ----   ------- Male -------   ------ Female ------
+  age group |   1969-71  2012-2016     1969-71  2012-2016     1969-71  2012-2016
+------------+-------------------------------------------------------------------
+   00 years |  .4222118   .0334249    .2575868   .0368923   -.5221477   .0338721
+01-04 years |   .160687   .0233626    .1172206   .0235098   -.1433781   .0239294
+05-09 years |  .0785354   .0111495    .0428495    .012221    -.108845   .0112692
+10-14 years |  .0959987   .0136435    .0756194   .0169904     -.06807   .0115771
+15-19 years |   .364827   .0424946    .2845733   .0502366   -.2334974   .0367102
+20-24 years |  .6428089   .0628007    .6055118   .0778343   -.2605424   .0421981
+25-29 years |  .3117444   .0573613    .2715109   .0594032   -.1576096   .0552538
+30-34 years |  .1921435   .0599553    .1795868   .0635518   -.0689484   .0570697
+35-39 years |  .1382859   .0668253     .131632   .0644338   -.0505986   .0738078
+40-44 years | -.0316442   .0780303    .0357768   .0775956    .2050919   .0839233
+45-49 years | -.0793332   .0868725   -.0254607   .0841176    .1948169   .0977511
+50-54 years | -.1956842   .0798742   -.0602892   .0794268    .4389238   .0853226
+55-59 years | -.2978338   .0761927    -.160649   .0844202    .5005623   .0660126
+60-64 years | -.3600429   .0600496   -.2529311   .0564873    .4819218   .0599252
+65-69 years | -.3157796    .064271   -.2249374   .0598126    .5270371   .0647834
+70-74 years | -.2209198   .0611409   -.1908487   .0575874    .3628959   .0574014
+75-79 years | -.1371851   .0518907   -.1067688   .0483862    .3133749   .0468522
+80-84 years |  .0468641   .0254969   -.0214676   .0252863   -.0719149   .0188105
+  85+ years |  .1843164   .0451634    .0414845   .0218066   -.3390724   .0735302
+            | 
+      Total |         1          1           1          1           1          1
+--------------------------------------------------------------------------------
+
+. 
+. keep sex year age19 mx0 mx1 te 
+
+. save "data/seer-stat/ur-age.dta", replace
+file data/seer-stat/ur-age.dta saved
+
+. 
+. 
+. 
+. 
+. // #5
+. // cause-specific deaths
+. 
+. * load the mortality data
+. 
+. use "data/seer-stat/ur-data.dta", clear
+
+. 
+. * label for causes of death
+. label var cod6 "cause of death"
+
+. 
+. label define cod6 0 "Cancers" 1 "CVD" 2 "Communicable" 3 "Injuries" ///
+>   4 "Infant" 5 "Other", modify
+
+. label values cod6 cod6
+
+.   
+. * calculate proportion of deaths for each cause by sex, year age
+. rename cod6 cod
+
+. drop pop
+
+. reshape wide count, i(year sex age19 cod) j(ur)
+(note: j = 0 1)
+
+Data                               long   ->   wide
+-----------------------------------------------------------------------------
+Number of obs.                     1368   ->     684
+Number of variables                   6   ->       6
+j variable (2 values)                ur   ->   (dropped)
+xij variables:
+                                  count   ->   count0 count1
+-----------------------------------------------------------------------------
+
+. 
+. rename count0 countu
+
+. rename count1 countr
+
+. 
+. * now reshape wide again to get deaths by cause as variables
+. reshape wide countu countr, i(year sex age19) j(cod)
+(note: j = 0 1 2 3 4 5)
+
+Data                               long   ->   wide
+-----------------------------------------------------------------------------
+Number of obs.                      684   ->     114
+Number of variables                   6   ->      15
+j variable (6 values)               cod   ->   (dropped)
+xij variables:
+                                 countu   ->   countu0 countu1 ... countu5
+                                 countr   ->   countr0 countr1 ... countr5
+-----------------------------------------------------------------------------
+
+. 
+. * total deaths for each group
+. foreach v of newlist u r {
+  2.   egen tdeaths`v' = rsum(count`v'0 count`v'1 count`v'2 count`v'3 ///
+>     count`v'4 count`v'5)
+  3. }
+
+. 
+. * proportion of deaths for each cause, by age, year, race
+. forvalues i=0/5 {
+  2.   local j=`i'+1
+  3.   gen pdeathsu`j' = countu`i' / tdeathsu
+  4.   gen pdeathsr`j' = countr`i' / tdeathsr
+  5. }
+
+. 
+. drop count*
+
+. 
+. save "data/seer-stat/ur-cod.dta", replace
+file data/seer-stat/ur-cod.dta saved
+
+. 
+. 
+. 
+. // #6
+. // now decomposition by age and cause of death
+. 
+. use "data/seer-stat/ur-age.dta", clear
+
+. merge 1:1 year sex age19 using "data/seer-stat/ur-cod.dta"
+(label age19 already defined)
+(label sex already defined)
+(label year already defined)
+
+    Result                           # of obs.
+    -----------------------------------------
+    not matched                             0
+    matched                               114  (_merge==3)
+    -----------------------------------------
+
+. drop _merge
+
+. 
+. local i = 1
+
+. while `i' < 7 {
+  2.         gen cause`i' = te* (((mx0*pdeathsu`i') - (mx1*pdeathsr`i')) / (mx0-
+> mx1))
+  3.         local ++i
+  4. }
+
+. 
+. * drop proportions of deaths
+. drop pdeaths*
+
+. 
+. egen cause7 = rsum(cause*)
+
+. 
+. * reshape long by cause
+. reshape long cause, i(year sex age19) j(cod6)
+(note: j = 1 2 3 4 5 6 7)
+
+Data                               wide   ->   long
+-----------------------------------------------------------------------------
+Number of obs.                      114   ->     798
+Number of variables                  15   ->      10
+j variable (7 values)                     ->   cod6
+xij variables:
+               cause1 cause2 ... cause7   ->   cause
+-----------------------------------------------------------------------------
+
+. 
+. * label for causes of death
+. label var cod6 "cause of death"
+
+. label define cod6 1 "CVD" 2 "Cancers" 3 "Communicable" 4 "Injuries" ///
+>   5 "Infant" 6 "Other" 7 "Total", modify
+
+. label values cod6 cod6
+
+. 
+. rename cause cont
+
+. label var cont "contribution to LE gap"
+
+. 
+. 
+. * contribution to change in the gap
+. sort sex age19 cod year
+
+. gen diff = .
+(798 missing values generated)
+
+. 
+. tempvar start
+
+. gen `start'=.
+(798 missing values generated)
+
+. bysort sex age19 cod: replace `start' = cont[1]
+(798 real changes made)
+
+. bysort sex age19 cod: replace diff = cont[_n] - `start'
+(798 real changes made)
+
+. 
+. 
+. * sum over age group, by gender and cause
+. collapse (sum) cont, by(year sex cod6)
+
+. 
+. * export summary by cause for plotting
+. export delimited using "data/seer-stat/ur-decomp-cod.csv", nolabel replace
+(note: file data/seer-stat/ur-decomp-cod.csv not found)
+file data/seer-stat/ur-decomp-cod.csv saved
+
+.   
+. log close
+      name:  <unnamed>
+       log:  /Users/samharper/git/arph-2020/code/ur-decomp.txt
+  log type:  text
+ closed on:  25 Jun 2020, 12:36:21
+--------------------------------------------------------------------------------

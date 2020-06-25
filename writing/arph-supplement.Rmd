@@ -160,7 +160,7 @@ knitr::include_graphics("../figures/le-age-decomp-2010-2018.png")
 ```
 
 \newpage
-**Supplemental Figure 8.** Age-adjusted death rates per 100,000 by urban (purple) or rural (green) categorization, 1969-2016. Source: Authors' calculations of data from SEER*Stat [@nci2019].  Data: Code:
+**Supplemental Figure 8.** Age-adjusted death rates per 100,000 by urban (purple) or rural (green) categorization, 1969-2016. Source: Authors' calculations of data from SEER*Stat [@nci2019]. Data: https://osf.io/rj83e/ Code: https://osf.io/b856t/
 ```{r, out.width = "100%"}
 knitr::include_graphics("../figures/rural-aadr-trends.png")
 ```

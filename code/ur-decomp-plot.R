@@ -3,7 +3,7 @@
 #  input:    ur-decomp-cod.csv
 #  output:   ur-decomp-plot.png
 #  project:  ARPH Life Expectancy
-#  author:   sam harper \ 2020-06-23
+#  author:   sam harper \ 2020-06-25
 
 ##### 0
 ##### load libraries
@@ -18,7 +18,7 @@ here::here()
 ##### 1  #####
 ##### Read in data
 
-dc <- read_csv(here("data", "ur-decomp-cod.csv"))
+dc <- read_csv(here("data/seer-stat", "ur-decomp-cod.csv"))
 dc$val <- sprintf("%.2f", round(dc$cont, 1))
 
 dc$codn <- factor(dc$cod6, levels = c(7,6,5,4,3,2,1), labels=c("Total", "Other", "Infant", "Injuries", "Communicable", "CVDs", "Cancers"))
