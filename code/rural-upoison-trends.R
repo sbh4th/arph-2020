@@ -3,10 +3,10 @@
 #  input:    unint-poison-ur-1999-2018-allages.txt
 #  output:   rural-upoison-trends.png
 #  project:  ARPH Life Expectancy
-#  author:   sam harper \ 2020-06-23
+#  author:   sam harper \ 2020-06-25
 
-# 0
-# load libraries
+##### 0 #####
+##### load libraries
 library(tidyverse)
 library(here)
 library(ggrepel)
@@ -15,8 +15,8 @@ library(directlabels)
 
 here::here()
 
-# 1
-# read in data
+##### 1  #####
+##### Read in data
 
 upur <- read_tsv(here("data", "unint-poison-ur-1999-2018-allages.txt"), skip=1, 
   col_names=c("notes", "ur", "urcode", "year", "ycode", 

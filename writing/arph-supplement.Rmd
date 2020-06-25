@@ -167,7 +167,7 @@ knitr::include_graphics("../figures/rural-aadr-trends.png")
 
 
 \newpage
-**Supplemental Figure 9.** Decomposition of the urban-rural life expectancy gap by cause-of-death, 1969-71 and 2012-16. Source: Authors' calculations of data from SEER*Stat (3).  Data: Code:
+**Supplemental Figure 9.** Decomposition of the urban-rural life expectancy gap by cause-of-death, 1969-71 and 2012-16. Source: Authors' calculations of data from SEER*Stat (3).  Data: https://osf.io/rj83e/, https://osf.io/rwc68/, Code: https://osf.io/4nezp/, https://osf.io/d23fz/
 ```{r, out.width = "100%"}
 knitr::include_graphics("../figures/ur-decomp-plot.png")
 ```
