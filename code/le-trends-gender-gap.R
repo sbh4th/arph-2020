@@ -3,12 +3,11 @@
 #  input:    jp-le-age-sex-race.txt
 #  output:   le-gender-gap.png
 #  project:  ARPH Life Expectancy
-#  author:   sam harper \ 2020-04-30
+#  author:   sam harper \ 2020-06-25
 
 # 0
 # load libraries
 library(tidyverse)
-library(plotly)
 library(here)
 library(ggrepel)
 library(patchwork)
@@ -20,7 +19,7 @@ here::here()
 ##### from SEER*Stat
 
 # Raw data
-raw <- read_tsv(here("data", "jp-le-age-sex-race.txt"))
+raw <- read_tsv(here("data/seer-stat", "jp-le-age-sex-race.txt"))
   
 raw <-rename(raw, exm = Model, ex_se = `Standard Error`) %>%
   select(age3, sex, race, year0, ex)
@@ -45,6 +44,8 @@ raw2$raceeth <- recode_factor(raw2$race, `1`= "Non-Hispanic AIAN",
 ##### 2  #####
 # first some theme modifications for all graphs
 stheme <- theme_classic() + theme(plot.title = element_text(size = 18, face = "bold"), plot.subtitle = element_text(size=16)) + theme(axis.text.x = element_text(size = 16, colour = "grey60"), axis.title.y=element_text(size=16, angle=90, colour="grey60"), axis.text.y = element_text(size = 16, colour="grey60"), legend.position="none", panel.grid.major.y = element_line(linetype="dotted", colour="grey60"), panel.grid.major.x = element_line(colour="white"), panel.grid.minor = element_line(colour="white")) + theme(axis.line.x=element_line(colour="white"), axis.line.y=element_line(colour="white"), axis.ticks = element_blank(), strip.text = element_text(size = 16), strip.background = element_rect(colour="white"))
+
+
 
 ##### 3  #####
 ##### Make plots of life expectancy trends at birth
