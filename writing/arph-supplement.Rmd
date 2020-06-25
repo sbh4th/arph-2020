@@ -123,19 +123,19 @@ knitr::include_graphics("../figures/us-le-trends-gender.png")
 ```
 
 \newpage
-**Supplemental Figure 2.** Annual year-on-year change in life expectancy, USA and average of 29 other OECD countries. Source: World Development Indicators (6). Data: https://osf.io/d2b7c/, https://osf.io/n4mj6/ Code: https://osf.io/muyrk/
+**Supplemental Figure 2.** Annual year-on-year change in life expectancy, USA and average of 29 other OECD countries. Source: World Development Indicators [@theworldbankgroup2020]. Data: https://osf.io/d2b7c/, https://osf.io/n4mj6/ Code: https://osf.io/muyrk/
 ```{r, out.width = "100%"}
 knitr::include_graphics("../figures/us-le-change.png")
 ```
 
 \newpage
-**Supplemental Figure 3.** Trends the gender gap in life expectancy by age and race-ethnicity, 1999-2018. Source: Authors' calculations of data from CDC WONDER [@wonder2020]. Data: Code:
+**Supplemental Figure 3.** Trends the gender gap in life expectancy by age and race-ethnicity, 1999-2018. Source: Authors' calculations of data from CDC WONDER [@wonder2020]. Data: https://osf.io/4s2rz/ Code: https://osf.io/5xywp/
 ```{r, out.width = "100%"}
 knitr::include_graphics("../figures/le-gender-gap.png")
 ```
 
 \newpage
-**Supplemental Figure 4.** Life expectancy at age 25 and age 65 in the United States, by gender and race-ethnicity, 1999-2018. Source: Authors' calculations of data from CDC WONDER [@wonder2020]. Data: Code:
+**Supplemental Figure 4.** Life expectancy at age 25 and age 65 in the United States, by gender and race-ethnicity, 1999-2018. Source: Authors' calculations of data from CDC WONDER [@wonder2020]. Data: https://osf.io/hz864/ https://osf.io/4s2rz/ Code:
 ```{r, out.width = "100%"}
 knitr::include_graphics("../figures/le-jp2565.png")
 ```
