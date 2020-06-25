@@ -154,7 +154,7 @@ knitr::include_graphics("../figures/single-ages-men.png")
 
 
 \newpage
-**Supplemental Figure 7.** Age groups contributing to the change in life expectancy at birth in the United States between 2010 and 2018, by gender and race-ethnicity. Red color indicates age groups contributing a decline, blue color indicates age groups contributing an increase. Source: Authors' calculations of data from CDC WONDER [@wonder2020]. Data: Code:
+**Supplemental Figure 7.** Age groups contributing to the change in life expectancy at birth in the United States between 2010 and 2018, by gender and race-ethnicity. Red color indicates age groups contributing a decline, blue color indicates age groups contributing an increase. Source: Authors' calculations of data from CDC WONDER [@wonder2020]. Data: https://osf.io/tk8q3/, https://osf.io/mctx3/ https://osf.io/utdnv/ Code: https://osf.io/g9mp2/, https://osf.io/qd5w4/
 ```{r, out.width = "100%"}
 knitr::include_graphics("../figures/le-age-decomp-2010-2018.png")
 ```
@@ -186,7 +186,7 @@ knitr::include_graphics("../figures/liverca-race-trends.png")
 ```
 
 \newpage
-**Supplemental Figure 12.** Causes of death contributing to the change in life expectancy at birth in the United States between 2010 and 2018, by gender and race-ethnicity. Red color indicates causes contributing a decline, blue color indicates causes contributing an increase. Source: Authors’ calculations of data from CDC WONDER [@wonder2020]. Data: Code:
+**Supplemental Figure 12.** Causes of death contributing to the change in life expectancy at birth in the United States between 2010 and 2018, by gender and race-ethnicity. Red color indicates causes contributing a decline, blue color indicates causes contributing an increase. Source: Authors’ calculations of data from CDC WONDER [@wonder2020]. Data: https://osf.io/tk8q3/, https://osf.io/mctx3/, https://osf.io/utdnv/ Code: https://osf.io/g9mp2/, https://osf.io/qd5w4/
 ```{r sf12, out.width = "100%"}
 knitr::include_graphics("../figures/le-cause-decomp-2010-2018.png")
 ```
