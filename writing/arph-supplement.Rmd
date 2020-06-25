@@ -180,7 +180,7 @@ knitr::include_graphics("../figures/rural-upoison-trends.png")
 ```
 
 \newpage
-**Supplemental Figure 11.** Trends in age-adjusted liver cancer death rates by race-ethnicity and gender, 1999-2018. Source: Authors' calculations of data from CDC WONDER (1). Data: Code:
+**Supplemental Figure 11.** Trends in age-adjusted liver cancer death rates by race-ethnicity and gender, 1999-2018. Source: Authors' calculations of data from CDC WONDER [@wonder2020]. Data: https://osf.io/stj6a/, https://osf.io/d5jkh/ Code: https://osf.io/ybdmx/
 ```{r sf11, out.width = "100%"}
 knitr::include_graphics("../figures/liverca-race-trends.png")
 ```

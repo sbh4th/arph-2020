@@ -1,7 +1,7 @@
 #  program:  liverca-trends.R
-#  task:     trends on alcohol-related mortality
+#  task:     trends in liver cancer by race and gender
 #  input:    liverca-age-1999-2018.txt, liverca-age-hisp-1999-2018.txt
-#  output:   
+#  output:   liverca-race-trends.png
 #  project:  ARPH Life Expectancy
 #  author:   sam harper \ 2020-06-25
 

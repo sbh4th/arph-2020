@@ -1,43 +1,32 @@
-#  program:  nhwm-mortality-graphs.R
-#  task:     urban-rural trends
+#  program:  nhwm-45-54-cause-map.R
+#  task:     US maps by cause for NHW men
 #  input:    nhw-all-45-54-state.txt; nhw-suicide-45-54-state.txt
 #            nhw-etoh-45-54-state.txt; nhw-poison-45-54-state.txt
 #  output:   nhwm-45-54-maps.png
 #  project:  ARPH Life Expectancy
-#  author:   sam harper \ 2020-05-26
+#  author:   sam harper \ 2020-06-25
 
-# 0
-# load libraries
+##### 0  #####
+##### load libraries
 
 library(tidyverse)
-# library(urbnmapr)
-# library(urbnthemes)
-# test <- data.frame(urbnmapr::states) filter to get AK / HI?
-    
-# set_urbn_defaults(style = "map")
-
 library(maps)
 library(ggmap)
 library(ggthemes)
 library(datasets)
 library(patchwork)
 
-## 1 ##
-# load the map data for US states
+##### 1  #####
+##### load the map data for US states
 
 us_states <- map_data("state")
 
-# add state abbreviations
-# st.abb <- data.frame(abb=state.abb, region=tolower(state.name), 
-  #                   stringsAsFactors = FALSE)
-# states <- merge(us_states, st.abb, by="region")
 
-
-## 2 ##
-## Bring in death data
+##### 2 #####
+##### Bring in death data
 
 # All causes
-df <- read_tsv(here("data", "nhw-all-45-54-state.txt"), skip=1, 
+df <- read_tsv(here("data/cdc-wonder", "nhw-all-45-54-state.txt"), skip=1, 
   col_names=c("notes", "state", "stcode", "deaths", "pop", "rate"), n_max=51,  
   col_types = "ccdddd")
     
@@ -47,7 +36,7 @@ df1 <- df %>%
 
 
 # Suicides
-df <- read_tsv(here("data", "nhw-suicide-45-54-state.txt"), skip=1, 
+df <- read_tsv(here("data/cdc-wonder", "nhw-suicide-45-54-state.txt"), skip=1, 
   col_names=c("notes", "state", "stcode", "deaths", "pop", "rate"), n_max=51,  
   col_types = "ccdddd")
 
@@ -56,7 +45,7 @@ df2 <- df %>%
 
 
 # Alcohol-induced causes
-df <- read_tsv(here("data", "nhw-etoh-45-54-state.txt"), skip=1, 
+df <- read_tsv(here("data/cdc-wonder", "nhw-etoh-45-54-state.txt"), skip=1, 
   col_names=c("notes", "state", "stcode", "deaths", "pop", "rate"), n_max=51,  
   col_types = "ccdddd")
 
@@ -64,7 +53,7 @@ df3 <- df %>%
   mutate(cause=3, region = tolower(`state`)) 
 
 # Unintentional overdoses
-df <- read_tsv(here("data", "nhw-poison-45-54-state.txt"), skip=1, 
+df <- read_tsv(here("data/cdc-wonder", "nhw-poison-45-54-state.txt"), skip=1, 
   col_names=c("notes", "state", "stcode", "deaths", "pop", "rate"), n_max=51,  
   col_types = "ccdddd")
 
@@ -77,8 +66,8 @@ all4 <- bind_rows(df1,df2,df3,df4) %>%
   left_join(us_states)
 
 
-## 3 ##
-## Draw the maps
+##### 3 #####
+##### Draw the maps
 
 
 # Map for all causes
