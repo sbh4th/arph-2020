@@ -83,7 +83,7 @@ The data and code to reproduce these tables and figures are provided here:
 
 \newpage
 
-**Supplemental Table 1.** Life expectancy by gender and race-ethnicity, 1999-2018. Source: Authors’ calculations of data from CDC WONDER [@wonder2020]. Data: Code:  
+**Supplemental Table 1.** Life expectancy by gender and race-ethnicity, 1999-2018. Source: Authors’ calculations of data from CDC WONDER [@wonder2020]. Data: https://osf.io/y4fzx/, https://osf.io/wsdvb/ Code: https://osf.io/ewxm7/  
 
 \begin{table}[h]
 \begin{tabular}{@{}llllllllllll@{}}
