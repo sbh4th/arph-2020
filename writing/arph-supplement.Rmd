@@ -22,7 +22,6 @@ header-includes:
   - \usepackage{booktabs}
   - \usepackage{sectsty}
   - \allsectionsfont{\bfseries\sffamily}
-  - \renewcommand{\maketitlehooka}{\textsf}
 bibliography: arph-2020.bib
 urlcolor: blue
 fontsize: 11pt
