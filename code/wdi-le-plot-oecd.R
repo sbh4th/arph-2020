@@ -3,7 +3,7 @@
 #  input:    wdi-le-gender.csv, wdi-jp-le-data.txt
 #  output:   us-le-trends-gender.png, us-le-change.png
 #  project:  ARPH Life Expectancy
-#  author:   sam harper \ 2020-06-24
+#  author:   sam harper \ 2020-06-26
 
 # 0
 # load libraries
