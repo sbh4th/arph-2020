@@ -42,6 +42,7 @@ dljp <- filter(dl, Year>=1970 & (`Country Code` == "OED" |
   arrange(group, `Country Code`, Year) %>%
   group_by(group, `Country Code`) %>%
   mutate(country = `Country Code`, year0 = row_number() - 1) %>%
+  select(`Country Code`,Year,LE,group,country,year0) %>%
   write_delim(here("data/wdi", "us-oed-le-gender.csv"), delim = ",")
 
 # quick tables
