@@ -1,9 +1,9 @@
 #  program:  le-trends-joinpoint.R
 #  task:     le trends with joinpoint analysis
 #  input:    jp-le-age-sex-race.txt
-#  output:   jp-le0.png, jp-le25.png, jp-le65.png
+#  output:   jp-le0.png, jp-le2565.png
 #  project:  ARPH Life Expectancy
-#  author:   sam harper \ 2020-06-24
+#  author:   sam harper \ 2020-06-27
 
 # 0
 # load libraries
@@ -121,7 +121,7 @@ p25 <- w25 + m25
 p
 
 # export to file
-ggsave(here("figures", "le-jp25.png"), plot=p, width=11, height=6.5)
+# ggsave(here("figures", "le-jp25.png"), plot=p, width=11, height=6.5)
 
 
 ##### 4  #####
@@ -146,7 +146,7 @@ w65 <- ggplot(subset(raw, age3==3 & sex==1 & race!=1),
   stheme 
 
 # men
-m65 <- ggplot(subset(raw, age3==3 & sex==1 & race!=1), 
+m65 <- ggplot(subset(raw, age3==3 & sex==2 & race!=1), 
   aes(x = year0, y = ex, colour = raceeth)) + 
   geom_point(alpha=0.3, size=2) + geom_line(aes(x=year0, y=exm, 
   colour = raceeth), size=1) + labs(y = "", x = "") + 
@@ -164,7 +164,7 @@ t <- (w25 + m25) / (w65 + m65)
 t
 
 # export to file
-ggsave(here("figures", "le-jp65.png"), plot=p, width=11, height=6.5)
+# ggsave(here("figures", "le-jp65.png"), plot=p, width=11, height=6.5)
 
 ggsave(here("figures", "le-jp2565.png"), plot=t, height=11, width=11)
 

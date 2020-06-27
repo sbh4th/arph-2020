@@ -3,7 +3,7 @@
 #  input:    ur-decomp-cod.csv
 #  output:   ur-decomp-plot.png
 #  project:  ARPH Life Expectancy
-#  author:   sam harper \ 2020-06-25
+#  author:   sam harper \ 2020-06-27
 
 ##### 0
 ##### load libraries
@@ -44,11 +44,11 @@ rw <- ggplot(subset(dc, sex==2 & cod6!=7),
   geom_text_repel(data=subset(dc, sex==2 & year==1 & cod6!=7), colour="black", 
                   fontface="bold", nudge_x = 0.2, direction = "both", hjust = 0, 
                   segment.size = 0.2, point.padding = 1.5, size=3.5) +
-  annotate("text", label = "Years contributed to\nthe rural-urban\nlife expectancy gap", x = -1, y = 1, size = 5, hjust=0, colour = "grey60") +
+  annotate("text", label = "Years contributed to\nthe urban-rural\nlife expectancy gap", x = -1, y = 1, size = 5, hjust=0, colour = "grey60") +
   scale_color_manual(values=c("#4daf4a","#377eb8", "#e41a1c", "#984ea3", "#ff7f00", "#f781bf")) +
-  annotate("text", label="1969-71\n(-0.3 yrs)", x = 0, y = 1.5, size = 5, 
+  annotate("text", label="1969-71\n(-0.3 yr gap)", x = 0, y = 1.5, size = 5, 
            hjust="center", colour = "grey60") +
-  annotate("text", label="2012-2016\n(2.0 yrs)", x = 1, y = 1.5, size = 5, 
+  annotate("text", label="2012-2016\n(2.0 yr gap)", x = 1, y = 1.5, size = 5, 
            hjust="center", colour = "grey60") +
   theme_classic() + ggtitle("Women") +
   theme(
@@ -81,9 +81,9 @@ rm <- ggplot(subset(dc, sex==1 & cod6!=7),
   geom_text_repel(data=subset(dc, sex==1 & year==1 & cod6!=7), colour="black", 
                   fontface="bold", nudge_x = 0.2, direction = "both", hjust = 0, segment.size = 0.2, point.padding = 1.5, size=3.5) +
   scale_color_manual(values=c("#4daf4a","#377eb8", "#e41a1c", "#984ea3", "#ff7f00", "#f781bf")) +
-  annotate("text", label="1969-71\n(0.7 yrs)", x = 0, y = 1.5, size = 5, 
+  annotate("text", label="1969-71\n(0.7 yr gap)", x = 0, y = 1.5, size = 5, 
            hjust="center", colour = "grey60") +
-  annotate("text", label="2012-16\n(2.3 yrs)", x = 1, y = 1.5, size = 5, 
+  annotate("text", label="2012-16\n(2.3 yr gap)", x = 1, y = 1.5, size = 5, 
            hjust="center", colour = "grey60") +
   theme_classic() + ggtitle("Men") +
   theme(

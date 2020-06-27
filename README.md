@@ -1,2 +1,2 @@
 # arph-2020
-Data, code, and other materials for forthcoming paper in Annual Review of Public Health
+This project contains files, folders, and materials for a review paper on the social determinants of the recent decline in life expectancy in the United States, to be published in 2021 in the Annual Review of Public Health.
