@@ -28,7 +28,6 @@ bibliography: arph-2020.bib
 csl: arph.csl
 urlcolor: blue
 link-citations: true
-fontsize: 11pt
 abstract: "In recent years life expectancy has stagnated in the United States, followed by three consecutive years of decline. The decline is small in absolute terms, but is unprecedented and has generated considerable research interest and theorizing about potential causes. Recent trends show the decline has affected nearly all race-ethnic and gender groups, and the proximate causes of the decline are increases in opioid overdose deaths, suicide, homicide, and Alzheimer’s disease. A slowdown in the long-term decline in mortality from cardiovascular diseases has also prevented life expectancy from further improvements. Although a popular explanation for the decline is the cumulative decline in living standards across generations, recent trends suggest that distinct mechanisms for specific causes of death are more plausible explanations. Interventions to stem the increase in overdose deaths, reduce access to mechanisms that contribute to violent deaths, and decrease cardiovascular risk over the life course are urgently needed to improve mortality in the United States. \\par \\textbf{Keywords:} life expectancy, opioids, cardiovascular diseases, suicide, homicide, health inequalities"
 ---
 
@@ -238,4 +237,4 @@ To be clear, we agree that there are strong reasons to address declining economi
 
 As we have documented, the decline in overall life expectancy in the United States is a complex phenomenon. Big picture narratives are often compelling because of their simplicity and ability to “explain it all” [@daveysmith1996], but risk missing the trees for the forest. This does not mean that overarching theories and explanations are not useful, but the hard work of understanding America’s recent mortality crisis and its social causes will require better understanding of how social determinants interact with specific exposures and resources to affect the mortality trajectories of different populations. 
 
-# | LITERATURE CITED
+# 8 | LITERATURE CITED
