@@ -2,16 +2,17 @@
 title: "Declining Life Expectancy in the United States: Missing the Trees for the Forest"
 author:
   - name: Sam Harper
-    institute: eboh, ihsp
+    institute: eboh, ihsp, eras
   - name: Corinne A. Riddell
     institute: ucb
   - name: Nicholas B. King
     institute: eboh, ihsp, bmu
 institute:
-  - eboh: Department of Epidemiology, Biostatistics & Occupational Health, McGill University, Montreal Canada
+  - eboh: Department of Epidemiology, Biostatistics & Occupational Health, McGill University, Montreal Canada (sam.harper@mcgill.ca)
   - ihsp: Institute for Health and Social Policy, McGill University, Montreal, Canada
-  - ucb: Division of Epidemiology & Biostatistics, School of Public Health, UC Berkeley, Berkeley, USA
-  - bmu: Biomedical Ethics Unit, McGill University, Montreal, Canada
+  - eras: Department of Public Health, Erasmus Medical Center, Rotterdam, The Netherlands
+  - ucb: Division of Epidemiology & Biostatistics, School of Public Health, UC Berkeley, Berkeley, USA (c.riddell@berkeley.edu)
+  - bmu: Biomedical Ethics Unit, McGill University, Montreal, Canada (nicholas.king@mcgill.ca)
 output:
   bookdown::pdf_document2:
     number_sections: yes
