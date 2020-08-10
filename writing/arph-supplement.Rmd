@@ -2,7 +2,7 @@
 title: "Supplemental Material: Declining Life Expectancy in the United States: Missing the Trees for the Forest"
 author:
   - name: Sam Harper
-    institute: eboh, ihsp
+    institute: eboh, ihsp, eras
   - name: Corinne A. Riddell
     institute: ucb
   - name: Nicholas B. King
@@ -10,6 +10,7 @@ author:
 institute:
   - eboh: Department of Epidemiology, Biostatistics & Occupational Health, McGill University, Montreal Canada
   - ihsp: Institute for Health and Social Policy, McGill University, Montreal, Canada
+  - eras: Department of Public Health, Erasmus Medical Center, Rotterdam, The Netherlands
   - ucb: Division of Epidemiology & Biostatistics, School of Public Health, UC Berkeley, Berkeley, USA
   - bmu: Biomedical Ethics Unit, McGill University, Montreal, Canada
 output:
@@ -22,7 +23,8 @@ header-includes:
   - \usepackage{booktabs}
   - \usepackage{sectsty}
   - \allsectionsfont{\bfseries\sffamily}
-  - \usepackage{fourier}
+  - \sectionfont{\sffamily\large}
+  - \usepackage[font=sf, labelfont={sf,bf}, margin=1cm]{caption}
 bibliography: arph-2020.bib
 urlcolor: blue
 fontsize: 11pt
@@ -33,22 +35,22 @@ fontsize: 11pt
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# | DATA SOURCES AND METHODS  
+# DATA SOURCES AND METHODS  
 
-## | Data  
+## Data  
 
 We used a number of data sources to construct plots and to analyze life expectancy trends. Data on US life expectancy and life expectancy for other Organization for Economic Cooperation and Development countries were abstracted using the World Bank's World Development Indicators online database [@theworldbankgroup2020], specifically the series on life expectancy at birth. For estimates within the US, the underlying data source was the US National Vital Statistics System, maintained by the [National Center for Health Statistics](https://www.cdc.gov/nchs/index.htm), which collects information on all deaths occurring in the United States each year. 
 
 Although NCHS collects data on race and gender, accurate mortality statistics for the "American Indian and Alaska Native" group are difficult to produce because of misclassification of Indigenous individuals as white on death certificates. Thirty percent of deaths to Indigenous individuals are estimated to be misclassified, hindering abilities to calculate life expectancy or calculate accurate, cause-specific mortality rates. In 2008, Arias and colleagues [@arias2008] adjusted for misreporting of Indigenous ethnicity and estimated life expectancy for this group to be 71.1, 2.8 years lower than the next-lowest life expectancy estimate for Non-Hispanic Blacks. The age-adjusted mortality rate from opioid overdoses (not adjusted for ethnicity misreporting) was estimated to be between the mortality rates for non-Hispanic whites and non-Hispanic blacks during 2017 [@woolf2019]. Even with under-reporting Indigenous Americans have the highest reported rates of suicide, and the second-highest reported rate of homicide [@kochanek2019]. A more recent update by Arias and colleagues [@arias2016] found that the quality of reporting for the American Indian and Alaska Native population remains poor. For these reasons we were unable to estimate life expectancy and cause-specific mortality for this population.
 
-### | CDC WONDER
+### CDC WONDER
 We extracted mortality data by age, gender, and cause of death for various analyses using the CDC's Wide-ranging Online Data for Epidemiologic Research, called [WONDER](https://wonder.cdc.gov/) [@wonder2020]. We used the "Underlying Cause of Death 1999-2018" [database](https://wonder.cdc.gov/wonder/help/ucd.html#) to generate mortality trends by age, gender, race, ethnicity, and cause-of-death, as well as geography for some figures.
 
 
-### | SEER Stat  
+### SEER Stat  
 In addition to CDC WONDER we also used the SEER\*Stat interface [@nci2019] to produce some mortality rates that were more difficult to do using CDC WONDER, such as age-adjusted rates within broad age categories, as well as longer term trends for some causes of death. However, the underlying data for SEER\*Stat are also maintained and produced by NCHS. See the mortality documentation at the SEER\*Stat [website](https://seer.cancer.gov/mortality/).
 
-## | Estimation of life expectancy and decomposition 
+## Estimation of life expectancy and decomposition 
 We used standard methods for creating abridged life tables [@preston2001], with 11 10-year age groups (0-1, 1-4, 5-14, ... , 85+). We calculated the contribution of each age group and cause-of-death to the difference in life expectancy between the years 2014 and 2017 using the methods developed by Arriaga [@arriaga1984]. Briefly, the contribution of a particular age group is both a direct function of the difference in age-specific mortality rates at that age plus an additional contribution resulting from the fact that mortality differences at a given age will produce additional survivors at older ages [@arriaga1984], given by the formula below:
 
 $$ _{n}\Delta_{x}=\left[\underbrace{l_{x}^{2017}/l_{0}^{2017}}_{\textrm{fraction of survivors}}\times\overbrace{\left(\dfrac{_{n}L_{x}^{2014}}{l_{x}^{2014}}-\dfrac{_{n}L_{x}^{2017}}{l_{x}^{2017}}\right)}^{\textrm{direct effect}}\right]+\overbrace{\left[\dfrac{T_{x+n}^{2014}}{l_{x+n}^{2014}}\times\dfrac{\dfrac{l_{x}^{2017}l_{x+n}^{2014}}{l_{x}^{2014}}-l_{x+n}^{2017}}{l_{0}^{2017}}\right]}^{\textrm{indirect effect + interaction}} $$
@@ -79,11 +81,11 @@ The total difference in life expectancy at birth between 2017 and 2014 is the su
 all causes of death. Likewise, the contribution of a particular cause
 of death is the sum of its contributions across age groups. 
 
-## | Joinpoint analysis of life expectancy trends
+## Joinpoint analysis of life expectancy trends
 
 We also used joinpoint regression software [@nci2020] to examine when trends in life expectancy and mortality may have changed in recent years. This was used to produce the estiamtes of changes in US life expectancy relative to OECD countries, as well as for the estimates of US life expectancy trends by gender and race-ethnicity. This program uses segmented weighted least squares regression and iteratively adds up to 5 segments and uses a permutation test [@kim2000] to select the model that best fits the observed data.
 
-# | SUPPLEMENTAL TABLES AND FIGURES
+# SUPPLEMENTAL TABLES AND FIGURES
 The data and code to reproduce these tables and figures are provided via the links in each caption, as well as in a public repository at the Open Science Foundation: https://osf.io/ypwfh/.  
 
 \newpage
@@ -204,6 +206,6 @@ knitr::include_graphics("../figures/nhwm-45-54-maps.png")
 
 
 \newpage
-# | LITERATURE CITED 
+# LITERATURE CITED 
 
 

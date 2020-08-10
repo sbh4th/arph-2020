@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.7.18)  18 JUL 2020 18:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.7.18)  10 AUG 2020 10:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -360,211 +360,56 @@ LaTeX Warning: Command \underbar  has changed.
 LaTeX Warning: Command \underline  has changed.
                Check if current package is valid.
 
-) (/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/fourier/fourier.sty
-Package: fourier 2020/03/03 2.2 fourier-GUTenberg package
-Now handling font encoding FML ...
-... no UTF-8 mapping file for font encoding FML
-Now handling font encoding FMS ...
-... no UTF-8 mapping file for font encoding FMS
-Now handling font encoding FMX ...
-... no UTF-8 mapping file for font encoding FMX
-(/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
-LaTeX Font Info:    Trying to load font information for T1+futs on input line 1
-12.
-(/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/fourier/t1futs.fd
-File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
-))
-(/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/fourier/fourier-orns.sty
-Package: fourier-orns 2020/03/03 2.2 fourier-ornaments package
+) (/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/05/30 v3.4k Customizing captions (AR)
+(/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/07/20 v1.12b caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen171
+\captionmargin@=\dimen172
+\captionwidth=\dimen173
+\caption@tempdima=\dimen174
+\caption@indent=\dimen175
+\caption@parindent=\dimen176
+\caption@hangindent=\dimen177
+Package caption Info: Standard document class detected.
 )
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 63.
-LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 63.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> T1/futs/m/n on input line 63.
-LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 63.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/futs/m/n on input line 63.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  T1/futs/m/n --> T1/futs/b/n on input line 64.
-LaTeX Font Info:    Redeclaring symbol font `letters' on input line 72.
-LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
-(Font)              `letters' in the math version `normal' on input line 72.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/lmm/m/it --> FML/futmi/m/it on input line 72.
-LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
-(Font)              `letters' in the math version `bold' on input line 72.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/lmm/b/it --> FML/futmi/m/it on input line 72.
-\symotherletters=\mathgroup6
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  FML/futmi/m/it --> FML/futmi/b/it on input line 74.
-LaTeX Font Info:    Overwriting symbol font `otherletters' in version `bold'
-(Font)                  FML/futm/m/it --> FML/futm/b/it on input line 75.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 76.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 77.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 79.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 81.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 82.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 83.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 84.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 85.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 86.
-LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 126.
-LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 126.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> FMS/futm/m/n on input line 126.
-LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 126.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> FMS/futm/m/n on input line 126.
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 127.
-LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 1
-27.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> FMX/futm/m/n on input line 127.
-LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 127
-.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> FMX/futm/m/n on input line 127.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 128.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> T1/futs/bx/n on input line 128.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/futs/bx/n on input line 128.
-LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 129.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 130.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T1/futs/m/it on input line 130.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T1/futs/m/it on input line 130.
-LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 131.
-LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 132.
-LaTeX Font Info:    Redeclaring math symbol \leqslant on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \geqslant on input line 139.
-LaTeX Font Info:    Redeclaring math symbol \vDash on input line 142.
-LaTeX Font Info:    Redeclaring math symbol \blacktriangleleft on input line 14
-3.
-LaTeX Font Info:    Redeclaring math symbol \blacktriangleright on input line 1
-44.
-LaTeX Font Info:    Redeclaring math symbol \nleqslant on input line 145.
-LaTeX Font Info:    Redeclaring math symbol \ngeqslant on input line 146.
-LaTeX Font Info:    Redeclaring math symbol \parallel on input line 147.
-LaTeX Font Info:    Redeclaring math symbol \nparallel on input line 148.
-LaTeX Font Info:    Redeclaring math symbol \nvDash on input line 150.
-LaTeX Font Info:    Redeclaring math symbol \intercal on input line 151.
-LaTeX Font Info:    Redeclaring math symbol \hslash on input line 152.
-LaTeX Font Info:    Redeclaring math symbol \nexists on input line 153.
-LaTeX Font Info:    Redeclaring math symbol \complement on input line 154.
-LaTeX Font Info:    Redeclaring math symbol \varsubsetneq on input line 155.
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 161.
-LaTeX Font Info:    Redeclaring math symbol \smallsetminus on input line 162.
-LaTeX Font Info:    Redeclaring math symbol \subsetneqq on input line 163.
-LaTeX Font Info:    Redeclaring math symbol \rightrightarrows on input line 164
-.
-LaTeX Font Info:    Redeclaring math symbol \leftleftarrows on input line 165.
-LaTeX Font Info:    Redeclaring math symbol \square on input line 166.
-LaTeX Font Info:    Redeclaring math symbol \curvearrowleft on input line 167.
-LaTeX Font Info:    Redeclaring math symbol \curvearrowright on input line 168.
-
-LaTeX Font Info:    Redeclaring math symbol \blacksquare on input line 169.
-LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 199.
-LaTeX Font Info:    Redeclaring math symbol \varvarrho on input line 200.
-LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 223.
-LaTeX Font Info:    Redeclaring math delimiter \vert on input line 228.
-LaTeX Font Info:    Redeclaring math delimiter \lvert on input line 230.
-LaTeX Font Info:    Redeclaring math delimiter \rvert on input line 232.
-LaTeX Font Info:    Redeclaring math delimiter \lVert on input line 234.
-LaTeX Font Info:    Redeclaring math delimiter \rVert on input line 236.
-LaTeX Font Info:    Redeclaring math delimiter \Downarrow on input line 238.
-LaTeX Font Info:    Redeclaring math delimiter \backslash on input line 240.
-LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 242.
-LaTeX Font Info:    Redeclaring math delimiter \langle on input line 244.
-LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 246.
-LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 248.
-LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 250.
-LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 252.
-LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 254.
-LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 256.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 260.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 261.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 262.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 263.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 264.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 265.
-LaTeX Font Info:    Redeclaring math accent \check on input line 266.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 267.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 268.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 269.
-\symUfutm=\mathgroup7
+\c@caption@flags=\count272
+\c@continuedfloat=\count273
+Package caption Info: hyperref package is loaded.
 )
 (/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdfm
 ode.def
 File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count272
+\l__kernel_color_stack_int=\count274
 \l__pdf_internal_box=\box47
 ) (./arph-supplement.aux)
 \openout1 = `arph-supplement.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 78.
-LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-78.
-(/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/fourier/fmlfutm.fd
-File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
-)
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 78.
-LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-78.
-(/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/fourier/fmsfutm.fd
-File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
-)
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 78.
-LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-78.
-(/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/fourier/fmxfutm.fd
-File: fmxfutm.fd futm-extension
-)
-LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
 
 (/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-ba
 se.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-(/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
 
 (/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys
 .cfg
@@ -572,7 +417,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box48
-Package hyperref Info: Link coloring ON on input line 78.
+Package hyperref Info: Link coloring ON on input line 79.
 (/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 (/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
@@ -582,11 +427,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 estring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count273
+\c@section@level=\count275
 )
-LaTeX Info: Redefining \ref on input line 78.
-LaTeX Info: Redefining \pageref on input line 78.
-LaTeX Info: Redefining \nameref on input line 78.
+LaTeX Info: Redefining \ref on input line 79.
+LaTeX Info: Redefining \pageref on input line 79.
+LaTeX Info: Redefining \nameref on input line 79.
 (./arph-supplement.out) (./arph-supplement.out)
 \@outlinefile=\write3
 \openout3 = `arph-supplement.out'.
@@ -625,179 +470,189 @@ LaTeX Info: Redefining \nameref on input line 78.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 78.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 78.
-LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 80.
-(/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/fourier/fmlfutmi.fd
-File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
+1.
+(/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 80.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 80.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 80.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 80.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
+1.
+(/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+81.
+(/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+81.
+(/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 81.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 81.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 81.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 81.
 
 (/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 80.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 81.
 
 (/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 80.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 80.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 80.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 81.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 81.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 81.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 81.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 81.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 81.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 82.
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 9
-2.
+4.
 (/Users/samharper/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [1
 
 {/Users/samharper/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-] [2] [3] [4]
-<../figures/us-le-trends-gender.png, id=79, 3312.375pt x 1957.3125pt>
+] [2] [3]
+Overfull \hbox (10.89359pt too wide) in paragraph at lines 232--260
+[][] 
+ []
+
+[4]
+<../figures/us-le-trends-gender.png, id=84, 3312.375pt x 1957.3125pt>
 File: ../figures/us-le-trends-gender.png Graphic file (type png)
 <use ../figures/us-le-trends-gender.png>
 Package pdftex.def Info: ../figures/us-le-trends-gender.png  used on input line
- 268.
+ 270.
 (pdftex.def)             Requested size: 469.74393pt x 277.57596pt.
 [5 <../figures/us-le-trends-gender.png>]
-<../figures/us-le-change.png, id=90, 3312.375pt x 2559.5625pt>
+<../figures/us-le-change.png, id=94, 3312.375pt x 2559.5625pt>
 File: ../figures/us-le-change.png Graphic file (type png)
 <use ../figures/us-le-change.png>
-Package pdftex.def Info: ../figures/us-le-change.png  used on input line 278.
+Package pdftex.def Info: ../figures/us-le-change.png  used on input line 280.
 (pdftex.def)             Requested size: 469.74393pt x 362.98395pt.
 [6 <../figures/us-le-change.png>]
-<../figures/le-gender-gap.png, id=99, 3312.375pt x 1957.3125pt>
+<../figures/le-gender-gap.png, id=102, 3312.375pt x 1957.3125pt>
 File: ../figures/le-gender-gap.png Graphic file (type png)
 <use ../figures/le-gender-gap.png>
-Package pdftex.def Info: ../figures/le-gender-gap.png  used on input line 288.
+Package pdftex.def Info: ../figures/le-gender-gap.png  used on input line 290.
 (pdftex.def)             Requested size: 469.74393pt x 277.57596pt.
 [7 <../figures/le-gender-gap.png>]
-<../figures/le-jp2565.png, id=109, 3312.375pt x 3312.375pt>
+<../figures/le-jp2565.png, id=112, 3312.375pt x 3312.375pt>
 File: ../figures/le-jp2565.png Graphic file (type png)
 <use ../figures/le-jp2565.png>
-Package pdftex.def Info: ../figures/le-jp2565.png  used on input line 299.
+Package pdftex.def Info: ../figures/le-jp2565.png  used on input line 301.
 (pdftex.def)             Requested size: 469.74393pt x 469.74393pt.
 [8 <../figures/le-jp2565.png>]
-<../figures/single-ages-women.png, id=118, 2559.5625pt x 3312.375pt>
+<../figures/single-ages-women.png, id=122, 2559.5625pt x 3312.375pt>
 File: ../figures/single-ages-women.png Graphic file (type png)
 <use ../figures/single-ages-women.png>
 Package pdftex.def Info: ../figures/single-ages-women.png  used on input line 3
-10.
+12.
 (pdftex.def)             Requested size: 422.77826pt x 547.12482pt.
 [9 <../figures/single-ages-women.png>]
-<../figures/single-ages-men.png, id=127, 2559.5625pt x 3312.375pt>
+<../figures/single-ages-men.png, id=131, 2559.5625pt x 3312.375pt>
 File: ../figures/single-ages-men.png Graphic file (type png)
 <use ../figures/single-ages-men.png>
-Package pdftex.def Info: ../figures/single-ages-men.png  used on input line 321
+Package pdftex.def Info: ../figures/single-ages-men.png  used on input line 323
 .
 (pdftex.def)             Requested size: 422.77826pt x 547.12482pt.
 [10 <../figures/single-ages-men.png>]
-<../figures/le-age-decomp-2010-2018.png, id=138, 3312.375pt x 2559.5625pt>
+<../figures/le-age-decomp-2010-2018.png, id=142, 3312.375pt x 2559.5625pt>
 File: ../figures/le-age-decomp-2010-2018.png Graphic file (type png)
 <use ../figures/le-age-decomp-2010-2018.png>
 Package pdftex.def Info: ../figures/le-age-decomp-2010-2018.png  used on input 
-line 335.
+line 337.
 (pdftex.def)             Requested size: 469.74393pt x 362.98395pt.
 [11 <../figures/le-age-decomp-2010-2018.png>]
-<../figures/rural-aadr-trends.png, id=147, 3312.375pt x 2107.875pt>
+<../figures/rural-aadr-trends.png, id=150, 3312.375pt x 2107.875pt>
 File: ../figures/rural-aadr-trends.png Graphic file (type png)
 <use ../figures/rural-aadr-trends.png>
 Package pdftex.def Info: ../figures/rural-aadr-trends.png  used on input line 3
-45.
+47.
 (pdftex.def)             Requested size: 469.74393pt x 298.92795pt.
 [12 <../figures/rural-aadr-trends.png>]
-<../figures/ur-decomp-plot.png, id=158, 3312.375pt x 2409.0pt>
+<../figures/ur-decomp-plot.png, id=161, 3312.375pt x 2409.0pt>
 File: ../figures/ur-decomp-plot.png Graphic file (type png)
 <use ../figures/ur-decomp-plot.png>
-Package pdftex.def Info: ../figures/ur-decomp-plot.png  used on input line 355.
+Package pdftex.def Info: ../figures/ur-decomp-plot.png  used on input line 357.
 
 (pdftex.def)             Requested size: 469.74393pt x 341.63194pt.
 [13 <../figures/ur-decomp-plot.png>]
-<../figures/rural-upoison-trends.png, id=167, 2409.0pt x 1957.3125pt>
+<../figures/rural-upoison-trends.png, id=170, 2409.0pt x 1957.3125pt>
 File: ../figures/rural-upoison-trends.png Graphic file (type png)
 <use ../figures/rural-upoison-trends.png>
 Package pdftex.def Info: ../figures/rural-upoison-trends.png  used on input lin
-e 365.
+e 367.
 (pdftex.def)             Requested size: 469.73474pt x 381.65947pt.
 [14 <../figures/rural-upoison-trends.png>]
-<../figures/liverca-race-trends.png, id=176, 3312.375pt x 2107.875pt>
+<../figures/liverca-race-trends.png, id=179, 3312.375pt x 2107.875pt>
 File: ../figures/liverca-race-trends.png Graphic file (type png)
 <use ../figures/liverca-race-trends.png>
 Package pdftex.def Info: ../figures/liverca-race-trends.png  used on input line
- 376.
+ 378.
 (pdftex.def)             Requested size: 469.74393pt x 298.92795pt.
 [15 <../figures/liverca-race-trends.png>]
-<../figures/le-cause-decomp-2010-2018.png, id=188, 3312.375pt x 3011.25pt>
+<../figures/le-cause-decomp-2010-2018.png, id=191, 3312.375pt x 3011.25pt>
 File: ../figures/le-cause-decomp-2010-2018.png Graphic file (type png)
 <use ../figures/le-cause-decomp-2010-2018.png>
 Package pdftex.def Info: ../figures/le-cause-decomp-2010-2018.png  used on inpu
-t line 390.
+t line 392.
 (pdftex.def)             Requested size: 469.74393pt x 427.03993pt.
 [16 <../figures/le-cause-decomp-2010-2018.png>]
-<../figures/nhwm-45-54-maps.png, id=199, 2409.0pt x 1957.3125pt>
+<../figures/nhwm-45-54-maps.png, id=203, 2409.0pt x 1957.3125pt>
 File: ../figures/nhwm-45-54-maps.png Graphic file (type png)
 <use ../figures/nhwm-45-54-maps.png>
-Package pdftex.def Info: ../figures/nhwm-45-54-maps.png  used on input line 402
+Package pdftex.def Info: ../figures/nhwm-45-54-maps.png  used on input line 404
 .
 (pdftex.def)             Requested size: 469.73474pt x 381.65947pt.
 [17 <../figures/nhwm-45-54-maps.png>]
-Overfull \hbox (85.84686pt too wide) in paragraph at lines 473--477
-[][]\T1/futs/m/n/10.95 The World Bank Group. 2020. ``World De-vel-op-ment In-di
--ca-tors | Data-Bank.'' https://databank.worldbank.org/source/world-
+Overfull \hbox (120.82375pt too wide) in paragraph at lines 475--479
+[][]\T1/lmr/m/n/10.95 The World Bank Group. 2020. ``World De-vel-op-ment In-di-
+ca-tors | Data-Bank.'' https://databank.worldbank.org/source/world-
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 483.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 485.
 [18]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 483.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 485.
 (./arph-supplement.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 483.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 483.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 485.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 485.
 Package rerunfilecheck Info: File `arph-supplement.out' has not changed.
-(rerunfilecheck)             Checksum: 3313AD136C1607FDA46C87440DC85BC2;1521.
+(rerunfilecheck)             Checksum: 544FB4B96FB86DDC163B040FC89D37A0;1417.
  ) 
 Here is how much of TeX's memory you used:
- 11472 strings out of 482854
- 165103 string characters out of 5955702
- 438229 words of memory out of 5000000
- 26533 multiletter control sequences out of 15000+600000
- 622554 words of font info for 111 fonts, out of 8000000 for 9000
+ 12276 strings out of 482854
+ 182278 string characters out of 5955702
+ 458465 words of memory out of 5000000
+ 27361 multiletter control sequences out of 15000+600000
+ 591202 words of font info for 64 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 43i,13n,37p,814b,319s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/Users/samharper/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}{/Us
-ers/samharper/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</Users/s
-amharper/Library/TinyTeX/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb>
-</Users/samharper/Library/TinyTeX/texmf-dist/fonts/type1/public/fourier/fourier
--ml.pfb></Users/samharper/Library/TinyTeX/texmf-dist/fonts/type1/public/fourier
-/fourier-ms.pfb></Users/samharper/Library/TinyTeX/texmf-dist/fonts/type1/public
-/lm/lmssbx10.pfb></Users/samharper/Library/TinyTeX/texmf-dist/fonts/type1/adobe
-/utopia/putb8a.pfb></Users/samharper/Library/TinyTeX/texmf-dist/fonts/type1/ado
-be/utopia/putr8a.pfb></Users/samharper/Library/TinyTeX/texmf-dist/fonts/type1/a
-dobe/utopia/putri8a.pfb>
-Output written on arph-supplement.pdf (18 pages, 5498923 bytes).
+ 43i,13n,43p,814b,319s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/Users/samharper/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/U
+sers/samharper/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Us
+ers/samharper/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/s
+amharper/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/sa
+mharper/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</Users/sam
+harper/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/samh
+arper/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmex10.pfb></Users/samha
+rper/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/samhar
+per/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></Users/samharpe
+r/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/samharper/
+Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/samharper/Li
+brary/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/samharper/Libr
+ary/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/samharper/Library
+/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/samharper/Library/
+TinyTeX/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></Users/samharper/Library
+/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
+Output written on arph-supplement.pdf (18 pages, 5613036 bytes).
 PDF statistics:
- 268 PDF objects out of 1000 (max. 8388607)
- 212 compressed objects within 3 object streams
- 48 named destinations out of 1000 (max. 500000)
+ 292 PDF objects out of 1000 (max. 8388607)
+ 232 compressed objects within 3 object streams
+ 49 named destinations out of 1000 (max. 500000)
  130 words of extra memory for PDF output out of 10000 (max. 10000000)
 
