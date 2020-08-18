@@ -3,7 +3,7 @@
 #  input:    uppoison-race-1999-2018.txt, uppison-hisp-1999-2018.txt
 #  output:   upoison-race-trends.png
 #  project:  ARPH Life Expectancy
-#  author:   sam harper \ 2020-06-24
+#  author:   sam harper \ 2020-08-18
 
 # 0
 # load libraries

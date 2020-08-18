@@ -3,7 +3,7 @@
 #  input:    le-age-cause-decomp.csv
 #  output:   le-age-decomp-2014-2017.png, le-cause-decomp-2014-2017.png
 #  project:  ARPH Life Expectancy
-#  author:   sam harper \ 2020-06-24
+#  author:   sam harper \ 2020-08-18
 
 # 0
 # load libraries

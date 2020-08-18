@@ -3,7 +3,7 @@
 #  input:    asmr-sex-race-nhisp-1999-2018.txt, asmr-sex-race-hisp-1999-2018.txt
 #  output:   asmr-trends-by-race.png
 #  project:  ARPH Life Expectancy
-#  author:   sam harper \ 2020-06-24
+#  author:   sam harper \ 2020-08-18
 
 # 0
 # load libraries
@@ -89,4 +89,3 @@ p2 <- p + plot_annotation(
   title = 'Age-specific death rates per 100,000, by gender and race-ethnicity', theme = theme(plot.title = element_text(size = 18)))
 
 ggsave(here("figures", "asmr-trends-by-race.png"), plot=p2, width=11, height=8.5)
-  

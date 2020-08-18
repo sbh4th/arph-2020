@@ -3,7 +3,7 @@
 #  input:    liver-race-aadr-1999-2018.txt, liver-hisp-aadr-1999-2018.txt
 #  output:   etoh-related-trends.png
 #  project:  ARPH Life Expectancy
-#  author:   sam harper \ 2020-06-24
+#  author:   sam harper \ 2020-08-18
 
 # 0
 # load libraries
@@ -208,3 +208,4 @@ p
 
 # export to file
 ggsave(here("figures", "etoh-related-trends.png"), plot=p, width=11, height=7)
+

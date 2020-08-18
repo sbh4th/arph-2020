@@ -3,7 +3,7 @@
 #  input:    aaasdr-cvd-1990-2017.txt
 #  output:   age-cvd-trends-by-race.png
 #  project:  ARPH Life Expectancy
-#  author:   sam harper \ 2020-06-24
+#  author:   sam harper \ 2020-08-18
 
 # 0
 # load libraries

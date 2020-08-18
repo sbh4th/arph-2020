@@ -3,7 +3,7 @@
 #  input:    jp-le-age-sex-race.txt
 #  output:   jp-le0.png, jp-le2565.png
 #  project:  ARPH Life Expectancy
-#  author:   sam harper \ 2020-06-27
+#  author:   sam harper \ 2020-08-18
 
 # 0
 # load libraries
@@ -82,7 +82,6 @@ p
 
 # export to file
 ggsave(here("figures", "le-jp0.png"), plot=p, width=11, height=5.5)
-
 
 
 ##### 4  #####
