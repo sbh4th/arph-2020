@@ -3,7 +3,7 @@
 #  input:    asmr-sex-race-nhisp-1999-2018.txt, asmr-sex-race-hisp-1999-2018.txt
 #  output:   asmr-trends-by-race.png
 #  project:  ARPH Life Expectancy
-#  author:   sam harper \ 2020-08-18
+#  author:   sam harper \ 2021-03-28
 
 # 0
 # load libraries
@@ -68,7 +68,7 @@ m <- ggplot(subset(ar, gender == "Male"),
        aes(x = year, y = rate, colour = racen)) + 
   geom_line(show.legend=T, size=1.5) + facet_wrap(~ age4, nrow=1, scales="free") +
   scale_color_manual(name="Race-Ethnicity", 
-    values=c("#4daf4a","#377eb8", "#e41a1c", "#984ea3")) + labs(y = "", x = "") +
+    values=c("#e41a1c", "#377eb8", "#4daf4a", "#984ea3")) + labs(y = "", x = "") +
   ggtitle("Men") + scale_x_continuous(breaks=c(2005,2015)) +
   stheme 
 
@@ -77,7 +77,7 @@ w <- ggplot(subset(ar, gender == "Female"),
        aes(x = year, y = rate, colour = racen)) + 
   geom_line(show.legend=T, size=1.5) + facet_wrap(~ age4, nrow=1, scales="free") +
   scale_color_manual(name="Race-Ethnicity", 
-    values=c("#4daf4a","#377eb8", "#e41a1c", "#984ea3")) + labs(y = "", x = "") +
+    values=c("#e41a1c", "#377eb8", "#4daf4a", "#984ea3")) + labs(y = "", x = "") +
   ggtitle("Women") + scale_x_continuous(breaks=c(2005,2015)) + 
   stheme 
 
